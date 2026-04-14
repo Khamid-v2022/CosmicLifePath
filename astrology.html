@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celestia — Your Cosmic Path</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8cc85;
+    --gold-dim: #7a6230;
+    --bg: #05060e;
+    --bg2: #080b18;
+    --fg: #e8e4d9;
+    --fg-dim: #9a9480;
+    --accent: #4a6fa5;
+    --accent2: #7e5c9e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Custom cursor */
+  .cursor {
+    width: 10px; height: 10px;
+    background: var(--gold);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.15s ease;
+    mix-blend-mode: screen;
+  }
+  .cursor-ring {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(201,168,76,0.5);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.35s ease, width 0.3s, height 0.3s, opacity 0.3s;
+  }
+
+  /* Canvas */
+  #starCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Nav */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 28px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(5,6,14,0.9) 0%, transparent 100%);
+  }
+  .nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--fg-dim); font-size: 0.75rem; display: block; letter-spacing: 0.4em; margin-top: 2px; }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #c8c2ae;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px 80px;
+  }
+
+  /* Orrery rings */
+  .orrery {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; height: 700px;
+    pointer-events: none;
+  }
+  .ring {
+    position: absolute;
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,76,0.1);
+    transform: translate(-50%, -50%);
+  }
+  .ring-1 { width: 200px; height: 200px; border-color: rgba(201,168,76,0.18); animation: spin 40s linear infinite; }
+  .ring-2 { width: 360px; height: 360px; border-color: rgba(201,168,76,0.1); animation: spin 70s linear infinite reverse; }
+  .ring-3 { width: 560px; height: 560px; border-color: rgba(201,168,76,0.06); animation: spin 120s linear infinite; }
+  .ring-4 { width: 700px; height: 700px; border-color: rgba(201,168,76,0.04); }
+
+  .ring-dot {
+    position: absolute;
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(201,168,76,0.6);
+    top: -3px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .ring-dot-sm {
+    width: 4px; height: 4px;
+    top: -2px;
+    box-shadow: 0 0 8px 2px rgba(201,168,76,0.4);
+  }
+
+  @keyframes spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+  .hero-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.55em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: fadeUp 1s 0.4s forwards;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeUp 1s 0.6s forwards;
+  }
+  .hero-title em { font-style: italic; color: var(--gold-light); }
+  .hero-sub {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: var(--fg-dim);
+    max-width: 360px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+    opacity: 0;
+    animation: fadeUp 1s 0.8s forwards;
+  }
+  .hero-cta {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: #0c0d18;
+    background: var(--gold);
+    padding: 15px 40px;
+    border: none;
+    cursor: none;
+    transition: all 0.3s;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeUp 1s 1s forwards;
+  }
+  .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.3); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Divider */
+  .divider {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 60px;
+  }
+  .divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, rgba(201,168,76,0.3), transparent); max-width: 200px; }
+  .divider-glyph { color: var(--gold); font-size: 1rem; opacity: 0.6; }
+
+  /* Zodiac section */
+  .zodiac-section {
+    position: relative;
+    z-index: 1;
+    padding: 60px 60px 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .section-title em { font-style: italic; color: var(--gold-light); }
+  .section-desc {
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--fg-dim);
+    margin-bottom: 60px;
+    line-height: 1.7;
+  }
+
+  /* Zodiac grid */
+  .zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  .zodiac-card {
+    position: relative;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(201,168,76,0.08);
+    padding: 40px 20px 32px;
+    text-align: center;
+    cursor: none;
+    overflow: hidden;
+    transition: background 0.4s, border-color 0.4s, transform 0.4s;
+    group: true;
+  }
+  .zodiac-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.06) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .zodiac-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(201,168,76,0.4), transparent);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .zodiac-card:hover {
+    background: rgba(201,168,76,0.04);
+    border-color: rgba(201,168,76,0.25);
+    transform: translateY(-4px);
+    z-index: 2;
+  }
+  .zodiac-card:hover::before { opacity: 1; }
+  .zodiac-card:hover::after { opacity: 1; }
+
+  .zodiac-card .bg-num {
+    position: absolute;
+    top: 16px; right: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.06);
+    line-height: 1;
+    pointer-events: none;
+    transition: color 0.4s;
+  }
+  .zodiac-card:hover .bg-num { color: rgba(201,168,76,0.12); }
+
+  .zodiac-icon {
+    width: 80px; height: 80px;
+    margin: 0 auto 22px;
+    position: relative;
+    transition: filter 0.4s, transform 0.4s;
+  }
+  .zodiac-card:hover .zodiac-icon {
+    filter: drop-shadow(0 0 10px rgba(200,215,255,0.7)) drop-shadow(0 0 22px rgba(180,200,255,0.4));
+    transform: scale(1.1);
+  }
+  .zodiac-icon svg { width: 100%; height: 100%; overflow: visible; }
+
+  .zodiac-dates {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+  }
+  .zodiac-card:hover .zodiac-dates { color: var(--gold); }
+
+  .zodiac-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+    transition: color 0.3s;
+  }
+  .zodiac-card:hover .zodiac-name { color: var(--gold-light); }
+
+  .zodiac-element {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--fg-dim);
+    text-transform: uppercase;
+  }
+
+  /* Footer strip */
+  .footer-strip {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--fg-dim);
+    max-width: 500px;
+    line-height: 1.6;
+  }
+  .footer-quote strong { color: var(--gold-light); font-weight: 400; }
+  .footer-copy {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: rgba(154,148,128,0.4);
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="starCanvas"></canvas>
+
+<nav>
+  <a href="#" class="nav-logo">
+    CELESTIA
+    <span>ASTROLOGY</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Horoscope</a></li>
+    <li><a href="#">Birth Chart</a></li>
+    <li><a href="#">Transits</a></li>
+    <li><a href="#">Readings</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="orrery">
+    <div class="ring ring-1"><div class="ring-dot"></div></div>
+    <div class="ring ring-2"><div class="ring-dot ring-dot-sm"></div></div>
+    <div class="ring ring-3"><div class="ring-dot ring-dot-sm" style="top:auto;bottom:-2px;"></div></div>
+    <div class="ring ring-4"></div>
+  </div>
+
+  <p class="hero-eyebrow">The Language of the Stars</p>
+  <h1 class="hero-title">Discover Your<br><em>Celestial Path</em></h1>
+  <p class="hero-sub">Ancient wisdom encoded in the heavens. Explore your natal chart, planetary alignments, and the deeper patterns of your life.</p>
+  <a href="#zodiac" class="hero-cta">Explore Your Sign</a>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <span class="divider-glyph">✦</span>
+  <div class="divider-line"></div>
+</div>
+
+<!-- Zodiac Section -->
+<section class="zodiac-section" id="zodiac">
+  <p class="section-label">The Twelve Archetypes</p>
+  <h2 class="section-title">Select Your <em>Zodiac Sign</em></h2>
+  <p class="section-desc">Each sign carries a distinct constellation of energies, virtues, and cosmic lessons.</p>
+
+  <div class="zodiac-grid">
+
+    <!-- ARIES -->
+    <div class="zodiac-card" onclick="openSign('Aries')">
+      <span class="bg-num">I</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gA" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blA" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="32" ry="32" fill="url(#blA)"/>
+          <g filter="url(#gA)">
+            <line x1="40" y1="55" x2="40" y2="36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M40 36 Q32 24 26 30 Q20 38 28 42" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M40 36 Q48 24 54 30 Q60 38 52 42" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Mar 21 – Apr 19</p>
+      <h3 class="zodiac-name">Aries</h3>
+      <p class="zodiac-element">Fire · Cardinal</p>
+    </div>
+
+    <!-- TAURUS -->
+    <div class="zodiac-card" onclick="openSign('Taurus')">
+      <span class="bg-num">II</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gT" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blT" cx="50%" cy="55%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="44" rx="30" ry="30" fill="url(#blT)"/>
+          <g filter="url(#gT)">
+            <circle cx="40" cy="46" r="16" stroke="white" stroke-width="2.2" fill="none"/>
+            <path d="M24 38 Q24 28 32 26 Q40 24 40 30" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M56 38 Q56 28 48 26 Q40 24 40 30" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Apr 20 – May 20</p>
+      <h3 class="zodiac-name">Taurus</h3>
+      <p class="zodiac-element">Earth · Fixed</p>
+    </div>
+
+    <!-- GEMINI -->
+    <div class="zodiac-card" onclick="openSign('Gemini')">
+      <span class="bg-num">III</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gG" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blG" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blG)"/>
+          <g filter="url(#gG)">
+            <line x1="30" y1="20" x2="30" y2="60" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="50" y1="20" x2="50" y2="60" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M24 20 Q32 26 40 20 Q48 14 56 20" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M24 60 Q32 54 40 60 Q48 66 56 60" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">May 21 – Jun 20</p>
+      <h3 class="zodiac-name">Gemini</h3>
+      <p class="zodiac-element">Air · Mutable</p>
+    </div>
+
+    <!-- CANCER -->
+    <div class="zodiac-card" onclick="openSign('Cancer')">
+      <span class="bg-num">IV</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gC" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blC" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blC)"/>
+          <g filter="url(#gC)">
+            <!-- Upper crab claw arc (opens left) -->
+            <path d="M46 28 Q56 28 58 36 Q60 46 50 46 Q44 46 44 40" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <!-- Lower crab claw arc (opens right) -->
+            <path d="M34 52 Q24 52 22 44 Q20 34 30 34 Q36 34 36 40" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <circle cx="46" cy="26" r="3.5" stroke="white" stroke-width="2" fill="none"/>
+            <circle cx="34" cy="54" r="3.5" stroke="white" stroke-width="2" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Jun 21 – Jul 22</p>
+      <h3 class="zodiac-name">Cancer</h3>
+      <p class="zodiac-element">Water · Cardinal</p>
+    </div>
+
+    <!-- LEO -->
+    <div class="zodiac-card" onclick="openSign('Leo')">
+      <span class="bg-num">V</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gL" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blL" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blL)"/>
+          <g filter="url(#gL)">
+            <circle cx="32" cy="34" r="10" stroke="white" stroke-width="2.2" fill="none"/>
+            <path d="M42 34 Q50 34 52 44 Q54 52 50 56 Q46 60 44 56" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M44 56 Q42 62 46 64" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Jul 23 – Aug 22</p>
+      <h3 class="zodiac-name">Leo</h3>
+      <p class="zodiac-element">Fire · Fixed</p>
+    </div>
+
+    <!-- VIRGO -->
+    <div class="zodiac-card" onclick="openSign('Virgo')">
+      <span class="bg-num">VI</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gV" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blV" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blV)"/>
+          <g filter="url(#gV)">
+            <line x1="20" y1="28" x2="20" y2="56" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M20 28 Q20 18 28 18 Q36 18 36 28 L36 56" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M36 28 Q36 18 44 18 Q52 18 52 28 L52 48 Q52 58 60 58 Q63 58 63 55" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Aug 23 – Sep 22</p>
+      <h3 class="zodiac-name">Virgo</h3>
+      <p class="zodiac-element">Earth · Mutable</p>
+    </div>
+
+    <!-- LIBRA -->
+    <div class="zodiac-card" onclick="openSign('Libra')">
+      <span class="bg-num">VII</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gLi" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blLi" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blLi)"/>
+          <g filter="url(#gLi)">
+            <line x1="18" y1="52" x2="62" y2="52" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="18" y1="62" x2="62" y2="62" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+            <path d="M22 52 Q40 36 58 52" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Sep 23 – Oct 22</p>
+      <h3 class="zodiac-name">Libra</h3>
+      <p class="zodiac-element">Air · Cardinal</p>
+    </div>
+
+    <!-- SCORPIO -->
+    <div class="zodiac-card" onclick="openSign('Scorpio')">
+      <span class="bg-num">VIII</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gSc" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blSc" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blSc)"/>
+          <g filter="url(#gSc)">
+            <line x1="18" y1="28" x2="18" y2="52" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M18 28 Q18 18 26 18 Q34 18 34 28 L34 52" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M34 28 Q34 18 42 18 Q50 18 50 28 L50 50" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M50 50 Q56 50 58 44 L62 39" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M62 39 L56 37" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M62 39 L60 45" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Oct 23 – Nov 21</p>
+      <h3 class="zodiac-name">Scorpio</h3>
+      <p class="zodiac-element">Water · Fixed</p>
+    </div>
+
+    <!-- SAGITTARIUS -->
+    <div class="zodiac-card" onclick="openSign('Sagittarius')">
+      <span class="bg-num">IX</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gSa" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blSa" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blSa)"/>
+          <g filter="url(#gSa)">
+            <line x1="40" y1="62" x2="40" y2="18" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M40 18 L28 30" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M40 18 L52 30" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="26" y1="40" x2="54" y2="40" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Nov 22 – Dec 21</p>
+      <h3 class="zodiac-name">Sagittarius</h3>
+      <p class="zodiac-element">Fire · Mutable</p>
+    </div>
+
+    <!-- CAPRICORN -->
+    <div class="zodiac-card" onclick="openSign('Capricorn')">
+      <span class="bg-num">X</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gCp" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blCp" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blCp)"/>
+          <g filter="url(#gCp)">
+            <path d="M22 22 Q22 14 30 14 Q38 14 38 24 L38 44" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <line x1="22" y1="22" x2="22" y2="50" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M38 44 Q46 44 50 38 Q56 30 53 48 Q51 58 46 56 Q40 54 38 58" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Dec 22 – Jan 19</p>
+      <h3 class="zodiac-name">Capricorn</h3>
+      <p class="zodiac-element">Earth · Cardinal</p>
+    </div>
+
+    <!-- AQUARIUS -->
+    <div class="zodiac-card" onclick="openSign('Aquarius')">
+      <span class="bg-num">XI</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gAq" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blAq" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blAq)"/>
+          <g filter="url(#gAq)">
+            <path d="M16 34 Q22 26 28 34 Q34 42 40 34 Q46 26 52 34 Q58 42 64 34" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 48 Q22 40 28 48 Q34 56 40 48 Q46 40 52 48 Q58 56 64 48" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Jan 20 – Feb 18</p>
+      <h3 class="zodiac-name">Aquarius</h3>
+      <p class="zodiac-element">Air · Fixed</p>
+    </div>
+
+    <!-- PISCES -->
+    <div class="zodiac-card" onclick="openSign('Pisces')">
+      <span class="bg-num">XII</span>
+      <div class="zodiac-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="gPs" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <radialGradient id="blPs" cx="50%" cy="50%" r="45%">
+              <stop offset="0%" stop-color="rgba(210,220,255,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="40" rx="30" ry="30" fill="url(#blPs)"/>
+          <g filter="url(#gPs)">
+            <path d="M28 18 Q14 26 14 40 Q14 54 28 62" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M52 18 Q66 26 66 40 Q66 54 52 62" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <line x1="18" y1="40" x2="62" y2="40" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <p class="zodiac-dates">Feb 19 – Mar 20</p>
+      <h3 class="zodiac-name">Pisces</h3>
+      <p class="zodiac-element">Water · Mutable</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-strip">
+  <p class="footer-quote">"As above, so below — the <strong>cosmos speaks</strong> in the language of patterns, and we are its most intricate verse."</p>
+  <p class="footer-copy">© 2026 CELESTIA<br>ALL RIGHTS RESERVED</p>
+</footer>
+
+<!-- Modal -->
+<div id="modal" style="display:none;position:fixed;inset:0;z-index:500;background:rgba(5,6,14,0.92);backdrop-filter:blur(12px);align-items:center;justify-content:center;">
+  <div style="max-width:500px;width:90%;padding:60px;border:1px solid rgba(201,168,76,0.2);position:relative;">
+    <button onclick="closeModal()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:var(--gold-dim);font-size:1.2rem;cursor:none;font-family:'Cinzel',serif;">✕</button>
+    <p id="modal-dates" style="font-size:0.6rem;letter-spacing:0.4em;color:var(--gold-dim);margin-bottom:12px;"></p>
+    <h2 id="modal-name" style="font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;margin-bottom:4px;"></h2>
+    <p id="modal-element" style="font-size:0.65rem;letter-spacing:0.3em;color:var(--fg-dim);margin-bottom:32px;"></p>
+    <p id="modal-desc" style="font-size:0.85rem;line-height:1.9;color:var(--fg-dim);letter-spacing:0.04em;"></p>
+  </div>
+</div>
+
+<script>
+// === Custom cursor ===
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function animCursor() {
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  cursor.style.transform = `translate(${mx-5}px,${my-5}px)`;
+  ring.style.transform = `translate(${rx-18}px,${ry-18}px)`;
+  requestAnimationFrame(animCursor);
+})();
+document.querySelectorAll('a,button,.zodiac-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width='54px';ring.style.height='54px';ring.style.opacity='0.8'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px';ring.style.height='36px';ring.style.opacity='1'; });
+});
+
+// === Starfield ===
+const canvas = document.getElementById('starCanvas');
+const ctx = canvas.getContext('2d');
+let W, H, stars = [];
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight * 3;
+}
+resize(); window.addEventListener('resize', resize);
+
+for (let i = 0; i < 380; i++) {
+  stars.push({
+    x: Math.random(), y: Math.random(),
+    r: Math.random() * 1.5 + 0.2,
+    o: Math.random() * 0.75 + 0.25,
+    tw: Math.random() * Math.PI * 2,
+    ts: 0.003 + Math.random() * 0.005
+  });
+}
+
+// Fixed real-ish constellation shapes (normalized 0-1 coords)
+const constellations = [
+  // Orion-like
+  { pts:[[0.12,0.06],[0.15,0.10],[0.11,0.14],[0.18,0.14],[0.20,0.08],[0.14,0.18],[0.17,0.22]], lines:[[0,1],[1,2],[1,3],[3,4],[1,5],[5,6]] },
+  // Dipper-like left
+  { pts:[[0.68,0.04],[0.74,0.05],[0.79,0.07],[0.83,0.06],[0.83,0.11],[0.79,0.12],[0.74,0.11]], lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,1]] },
+  // Cross shape right
+  { pts:[[0.88,0.18],[0.92,0.14],[0.96,0.18],[0.92,0.22],[0.92,0.18]], lines:[[0,4],[1,4],[2,4],[3,4]] },
+  // Triangle lower left
+  { pts:[[0.08,0.38],[0.16,0.32],[0.22,0.40],[0.14,0.44]], lines:[[0,1],[1,2],[2,3],[3,0]] },
+  // Cassiopeia-like top center
+  { pts:[[0.35,0.03],[0.40,0.07],[0.45,0.03],[0.50,0.07],[0.55,0.03]], lines:[[0,1],[1,2],[2,3],[3,4]] },
+  // Scorpius tail lower right
+  { pts:[[0.78,0.42],[0.82,0.38],[0.87,0.40],[0.90,0.36],[0.93,0.39],[0.91,0.44]], lines:[[0,1],[1,2],[2,3],[3,4],[4,5]] },
+];
+
+// === Fiery Meteors ===
+const meteors = [];
+function spawnMeteor() {
+  // Random angle: mostly diagonal top-left to bottom-right, some variation
+  const angle = (Math.PI / 5) + (Math.random() - 0.5) * (Math.PI / 8);
+  const startX = Math.random() * W * 1.2 - W * 0.1;
+  const startY = -20 - Math.random() * 60;
+  const speed = 12 + Math.random() * 18;
+  const length = 90 + Math.random() * 120;
+  const size = 1.5 + Math.random() * 2;
+  // Fire color: white core, orange mid, red/transparent tail
+  meteors.push({ x: startX, y: startY, vx: Math.cos(angle)*speed, vy: Math.sin(angle)*speed,
+    length, size, life: 1.0, decay: 0.008 + Math.random()*0.006,
+    firePhase: Math.random()*Math.PI*2 });
+}
+// Spawn interval: 3-8 seconds apart
+let nextMeteorTime = Date.now() + 2000 + Math.random()*3000;
+
+let scrollY = 0;
+window.addEventListener('scroll', () => scrollY = window.scrollY);
+let t = 0;
+
+function drawCanvas() {
+  ctx.clearRect(0, 0, W, H);
+  
+  // Deep space background
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, '#05060e');
+  grad.addColorStop(0.25, '#070a18');
+  grad.addColorStop(0.6, '#060810');
+  grad.addColorStop(1, '#05060e');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, W, H);
+
+  // ── Milky Way band ── diagonal soft glow across hero
+  const mwAngle = Math.PI * 0.18;
+  const mwCx = W * 0.5, mwCy = H * 0.13;
+  const mwLen = W * 4.0;   // extend FAR beyond edges so no cutoff
+  const mwW = W * 0.30;
+  ctx.save();
+  ctx.translate(mwCx, mwCy);
+  ctx.rotate(mwAngle);
+  // Outer soft band (cross-axis fade only, no along-axis fade → no cutoff)
+  const mwBand = ctx.createLinearGradient(0, -mwW/2, 0, mwW/2);
+  mwBand.addColorStop(0,    'transparent');
+  mwBand.addColorStop(0.22, 'rgba(130,150,215,0.032)');
+  mwBand.addColorStop(0.5,  'rgba(165,178,230,0.055)');
+  mwBand.addColorStop(0.78, 'rgba(130,150,215,0.032)');
+  mwBand.addColorStop(1,    'transparent');
+  ctx.fillStyle = mwBand;
+  ctx.fillRect(-mwLen/2, -mwW/2, mwLen, mwW);
+  // Inner bright core strip
+  const mwCore = ctx.createLinearGradient(0, -mwW*0.16, 0, mwW*0.16);
+  mwCore.addColorStop(0,   'transparent');
+  mwCore.addColorStop(0.5, 'rgba(200,212,245,0.038)');
+  mwCore.addColorStop(1,   'transparent');
+  ctx.fillStyle = mwCore;
+  ctx.fillRect(-mwLen/2, -mwW*0.16, mwLen, mwW*0.32);
+  ctx.restore();
+
+  // Dense star cluster along milky way (tiny bright specks)
+  ctx.save();
+  for(let i = 0; i < 180; i++) {
+    const px = (i / 180);
+    // Position along the band with scatter
+    const bx = (px - 0.5) * mwLen + mwCx + Math.cos(mwAngle) * (Math.random()-0.5)*20;
+    const by = mwCy + Math.sin(mwAngle) * (px-0.5)*mwLen*0.3 + (Math.random()-0.5)*mwW*0.6;
+    const br = 0.3 + Math.random()*0.7;
+    const bo = 0.2 + Math.random()*0.35;
+    ctx.beginPath();
+    ctx.arc(bx, by, br, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(210,218,240,${bo})`;
+    ctx.fill();
+  }
+  ctx.restore();
+
+  // Nebula color blobs
+  const nebPos = [[0.2,0.10],[0.78,0.06],[0.5,0.30],[0.15,0.52],[0.87,0.44]];
+  const nebColors = ['rgba(74,111,165,0.05)','rgba(126,92,158,0.045)','rgba(201,168,76,0.022)','rgba(74,111,165,0.04)','rgba(126,92,158,0.05)'];
+  nebPos.forEach(([nx,ny],i) => {
+    const ng = ctx.createRadialGradient(nx*W, ny*H, 0, nx*W, ny*H, W*0.28);
+    ng.addColorStop(0, nebColors[i]); ng.addColorStop(1, 'transparent');
+    ctx.fillStyle = ng; ctx.fillRect(0,0,W,H);
+  });
+
+  // ── Constellations (more visible) ──
+  t += 0.016;
+  constellations.forEach(({ pts, lines }) => {
+    // Draw lines first
+    ctx.strokeStyle = 'rgba(201,168,76,0.22)';
+    ctx.lineWidth = 0.85;
+    ctx.setLineDash([3, 5]);
+    lines.forEach(([a,b]) => {
+      ctx.beginPath();
+      ctx.moveTo(pts[a][0]*W, pts[a][1]*H);
+      ctx.lineTo(pts[b][0]*W, pts[b][1]*H);
+      ctx.stroke();
+    });
+    ctx.setLineDash([]);
+    // Draw star dots
+    pts.forEach(([px,py]) => {
+      // Glow
+      const gd = ctx.createRadialGradient(px*W, py*H, 0, px*W, py*H, 5);
+      gd.addColorStop(0, 'rgba(232,204,133,0.45)');
+      gd.addColorStop(1, 'transparent');
+      ctx.fillStyle = gd; ctx.fillRect(px*W-5, py*H-5, 10, 10);
+      // Core dot
+      ctx.beginPath(); ctx.arc(px*W, py*H, 1.6, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(232,204,133,0.85)'; ctx.fill();
+    });
+  });
+
+  // ── Stars ──
+  stars.forEach(s => {
+    s.tw += s.ts;
+    const twinkle = 0.5 + 0.5 * Math.sin(s.tw);
+    const opacity = s.o * (0.55 + 0.45 * twinkle);
+    ctx.beginPath();
+    ctx.arc(s.x*W, s.y*H, s.r, 0, Math.PI*2);
+    const isGold = Math.sin(s.tw*0.3) > 0.6;
+    ctx.fillStyle = isGold ? `rgba(232,204,133,${opacity})` : `rgba(240,240,255,${opacity})`;
+    ctx.fill();
+  });
+
+  // ── Fiery Meteors ──
+  const now = Date.now();
+  if(now >= nextMeteorTime) {
+    spawnMeteor();
+    nextMeteorTime = now + 3000 + Math.random()*5000;
+  }
+  for(let i = meteors.length-1; i >= 0; i--) {
+    const m = meteors[i];
+    m.x += m.vx; m.y += m.vy;
+    m.life -= m.decay;
+    m.firePhase += 0.3;
+    if(m.life <= 0 || m.y > H*0.4) { meteors.splice(i,1); continue; }
+
+    const tx = m.x - Math.cos(Math.atan2(m.vy,m.vx))*m.length;
+    const ty = m.y - Math.sin(Math.atan2(m.vy,m.vx))*m.length;
+
+    // Tail gradient: white core → amber → orange → deep red → transparent
+    const mg = ctx.createLinearGradient(tx, ty, m.x, m.y);
+    mg.addColorStop(0,   'transparent');
+    mg.addColorStop(0.35,'rgba(180,60,20,'+( m.life*0.18)+')');
+    mg.addColorStop(0.6, 'rgba(240,110,30,'+( m.life*0.45)+')');
+    mg.addColorStop(0.82,'rgba(255,200,80,'+( m.life*0.75)+')');
+    mg.addColorStop(1,   'rgba(255,255,240,'+( m.life*0.95)+')');
+
+    ctx.strokeStyle = mg;
+    ctx.lineWidth = m.size * m.life;
+    ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(m.x, m.y); ctx.stroke();
+
+    // Bright leading head glow
+    const hg = ctx.createRadialGradient(m.x, m.y, 0, m.x, m.y, m.size*5*m.life);
+    hg.addColorStop(0,   `rgba(255,240,200,${m.life*0.9})`);
+    hg.addColorStop(0.3, `rgba(255,160,60,${m.life*0.5})`);
+    hg.addColorStop(0.7, `rgba(200,80,20,${m.life*0.2})`);
+    hg.addColorStop(1,   'transparent');
+    ctx.fillStyle = hg;
+    ctx.beginPath(); ctx.arc(m.x, m.y, m.size*5*m.life, 0, Math.PI*2); ctx.fill();
+
+    // Tiny flickering sparks near head
+    for(let sp=0; sp<3; sp++) {
+      const sa = Math.atan2(m.vy,m.vx) + (Math.random()-0.5)*1.2;
+      const sd = 3 + Math.random()*8;
+      const sx2 = m.x + Math.cos(sa)*sd;
+      const sy2 = m.y + Math.sin(sa)*sd;
+      ctx.beginPath(); ctx.arc(sx2, sy2, 0.6+Math.random()*0.8, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,${140+Math.floor(Math.random()*80)},40,${m.life*(0.3+Math.random()*0.4)})`;
+      ctx.fill();
+    }
+  }
+
+  requestAnimationFrame(drawCanvas);
+}
+drawCanvas();
+
+// === Zodiac data ===
+const signs = {
+  Aries: { dates:'Mar 21 – Apr 19', element:'Fire · Cardinal', desc:'The first sign of the zodiac, Aries embodies the primordial spark of creation. Ruled by Mars, you are the pioneer — courageous, instinctual, and driven by an unquenchable desire to forge new territory. Your soul path is one of initiation and authentic self-expression.' },
+  Taurus: { dates:'Apr 20 – May 20', element:'Earth · Fixed', desc:'Governed by Venus, Taurus is the architect of beauty and abundance. Your cosmic gift is the ability to transform the material world into sanctuary. Patient and sensuous, your path is one of cultivation — building lasting value from the raw material of existence.' },
+  Gemini: { dates:'May 21 – Jun 20', element:'Air · Mutable', desc:'Quicksilver Mercury rules your restless, brilliant mind. Gemini is the cosmic weaver who draws connections where others see only disparate threads. Your life path is an eternal conversation with the universe, gathering wisdom from every encounter and synthesizing it into insight.' },
+  Cancer: { dates:'Jun 21 – Jul 22', element:'Water · Cardinal', desc:'Lunar Cancer is the guardian of memory and sacred belonging. Ruled by the Moon, you navigate the world through feeling, and your remarkable intuition opens doors that remain invisible to others. Your path is one of emotional alchemy — turning vulnerability into luminous strength.' },
+  Leo: { dates:'Jul 23 – Aug 22', element:'Fire · Fixed', desc:'Solar Leo burns with the radiance of pure creative fire. Ruled by the Sun, you are here to illuminate the world and awaken others to their own divine spark. Your path is the heroic journey — learning that true sovereignty comes not from recognition, but from the generosity of your open heart.' },
+  Virgo: { dates:'Aug 23 – Sep 22', element:'Earth · Mutable', desc:'Mercury-ruled Virgo is the sacred craftsperson of the zodiac. You carry an extraordinary capacity for discernment — to perceive the subtle architecture underlying apparent chaos. Your life path is one of refinement and devotion, of rendering the invisible visible through patient, loving attention.' },
+  Libra: { dates:'Sep 23 – Oct 22', element:'Air · Cardinal', desc:'Venus-ruled Libra is the cosmic diplomat, born attuned to the precise geometry of harmony and justice. Your path is one of relational artistry — learning to hold the tension between self and other, beauty and truth, until the scale finds its perfect, resonant equilibrium.' },
+  Scorpio: { dates:'Oct 23 – Nov 21', element:'Water · Fixed', desc:'Scorpio, ruled by Pluto and Mars, descends fearlessly into the underworld of experience. You are the alchemist who transmutes shadow into gold. Your soul path demands radical honesty and the willingness to be reborn — endlessly transformed by the fires of deep, unsparing self-knowledge.' },
+  Sagittarius: { dates:'Nov 22 – Dec 21', element:'Fire · Mutable', desc:'Jupiter-ruled Sagittarius is the philosopher-explorer of the zodiac, forever pursuing the horizon where meaning lives. Your path is one of expanding consciousness — bridging the distance between what is known and what is possible, guided by an arrow pointed at the absolute truth of things.' },
+  Capricorn: { dates:'Dec 22 – Jan 19', element:'Earth · Cardinal', desc:'Saturn-ruled Capricorn carries the wisdom of endurance. You understand, with rare clarity, that the most sacred things are built slowly, with integrity, in the dark. Your cosmic path is one of mastery — ascending the mountain not for recognition, but because the summit reveals the whole.' },
+  Aquarius: { dates:'Jan 20 – Feb 18', element:'Air · Fixed', desc:'Aquarius, guided by Uranus and Saturn, holds the frequency of the future. You are the visionary who perceives the interconnectedness of all systems. Your path is one of radical service — dissolving the boundaries that separate, and transmitting the current of collective awakening.' },
+  Pisces: { dates:'Feb 19 – Mar 20', element:'Water · Mutable', desc:'Neptune-ruled Pisces dissolves the boundary between self and cosmos. The dreamer and the mystic, you carry an innate understanding that all separation is illusion. Your path is one of compassionate transcendence — learning to honor both the ocean of oneness and the sacred vessel of your particular life.' }
+};
+
+function openSign(name) {
+  const s = signs[name];
+  document.getElementById('modal-name').textContent = name;
+  document.getElementById('modal-dates').textContent = s.dates.toUpperCase();
+  document.getElementById('modal-element').textContent = s.element.toUpperCase();
+  document.getElementById('modal-desc').textContent = s.desc;
+  const m = document.getElementById('modal');
+  m.style.display = 'flex';
+  m.style.opacity = '0';
+  requestAnimationFrame(() => { m.style.transition='opacity 0.35s'; m.style.opacity='1'; });
+}
+function closeModal() {
+  const m = document.getElementById('modal');
+  m.style.opacity = '0';
+  setTimeout(() => m.style.display='none', 350);
+}
+document.getElementById('modal').addEventListener('click', e => {
+  if(e.target === document.getElementById('modal')) closeModal();
+});
+
+// Scroll parallax for hero
+window.addEventListener('scroll', () => {
+  const hero = document.querySelector('.hero');
+  if(hero) hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+});
+</script>
+</body>
+</html>

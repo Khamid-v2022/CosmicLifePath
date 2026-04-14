@@ -1,7 +1,4 @@
 (() => {
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  const interactiveEls = document.querySelectorAll('a, button, select, .js-open-sign');
   const safeStorage = {
     get(key) {
       try {
@@ -18,42 +15,6 @@
       }
     },
   };
-
-  if (cursor && ring) {
-    let mx = 0;
-    let my = 0;
-    let rx = 0;
-    let ry = 0;
-
-    document.addEventListener('mousemove', (event) => {
-      mx = event.clientX;
-      my = event.clientY;
-    });
-
-    const animateCursor = () => {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
-      ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
-      requestAnimationFrame(animateCursor);
-    };
-
-    animateCursor();
-
-    interactiveEls.forEach((element) => {
-      element.addEventListener('mouseenter', () => {
-        ring.style.width = '54px';
-        ring.style.height = '54px';
-        ring.style.opacity = '0.8';
-      });
-
-      element.addEventListener('mouseleave', () => {
-        ring.style.width = '36px';
-        ring.style.height = '36px';
-        ring.style.opacity = '1';
-      });
-    });
-  }
 
   const canvas = document.getElementById('starCanvas');
   if (canvas) {

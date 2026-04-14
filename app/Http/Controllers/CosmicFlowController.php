@@ -190,6 +190,21 @@ class CosmicFlowController extends Controller
         ]);
     }
 
+    public function sales(): View
+    {
+        $birth = session('cosmic.reading.birth');
+        $contact = session('cosmic.reading.contact');
+
+        abort_unless(is_array($birth) && is_array($contact), 404);
+
+        return view('sales-page', [
+            'name' => $contact['name'],
+            'email' => $contact['email'],
+            'sign' => $birth['sign'],
+            'formattedDate' => $birth['formatted_date'],
+        ]);
+    }
+
     private function validatedBirthDateFromQuery(Request $request): array
     {
         $signSlug = (string) $request->query('sign');

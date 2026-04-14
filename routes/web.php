@@ -13,4 +13,5 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::post('/final-step', 'storeContact')->name('reading.contact.submit');
     Route::get('/generating-reading', 'loading')->name('reading.loading');
     Route::get('/your-reading', 'summary')->name('reading.summary');
+    Route::get('/special-offer', 'sales')->name('sales.page');
 });

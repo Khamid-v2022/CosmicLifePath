@@ -17,8 +17,6 @@
   @stack('head')
 </head>
 <body class="cosmic-body">
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
   <canvas id="starCanvas"></canvas>
 
   @unless (View::hasSection('hideHeader'))

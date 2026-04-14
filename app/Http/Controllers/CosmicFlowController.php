@@ -150,9 +150,23 @@ class CosmicFlowController extends Controller
 
     public function loading(): View
     {
-        abort_unless(session()->has('cosmic.reading.birth') && session()->has('cosmic.reading.contact'), 404);
+        $birth = session('cosmic.reading.birth');
+        $contact = session('cosmic.reading.contact');
 
-        return view('reading-loading');
+        abort_unless(is_array($birth) && is_array($contact), 404);
+
+        return view('reading-loading', [
+            'name' => $contact['name'],
+            'sign' => $birth['sign'],
+            'formattedDate' => $birth['formatted_date'],
+            'formattedTime' => $birth['time_unknown']
+                ? 'Time not provided'
+                : sprintf('%02d:%02d %s', $birth['hour'], $birth['minute'], $birth['meridiem']),
+            'birthPlace' => $birth['place_unknown']
+                ? 'Place not provided'
+                : $birth['birth_place'],
+            'videoUrl' => config('services.cosmic.video_url'),
+        ]);
     }
 
     public function summary(): View

@@ -39,4 +39,8 @@ return [
         'key' => env('GOOGLE_MAPS_API_KEY'),
     ],
 
+    'cosmic' => [
+        'video_url' => env('COSMIC_READING_VIDEO_URL'),
+    ],
+
 ];

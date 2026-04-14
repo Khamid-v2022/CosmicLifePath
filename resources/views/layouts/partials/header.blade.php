@@ -1,3 +1,4 @@
+<!-- <nav class="cosmic-nav navbar navbar-expand-lg"> -->
 <nav class="cosmic-nav navbar navbar-expand-lg fixed-top">
   <div class="container-fluid px-lg-5 justify-content-center">
     <a class="nav-logo text-decoration-none d-inline-flex align-items-center" href="{{ route('landing') }}" aria-label="Cosmic Life Path Reading">

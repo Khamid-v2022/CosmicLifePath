@@ -64,7 +64,7 @@ html {
 
 .cosmic-nav {
   z-index: 100;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background: linear-gradient(to bottom, rgba(5, 6, 14, 0.9) 0%, transparent 100%);
 }
@@ -80,17 +80,15 @@ html {
 }
 
 .nav-logo {
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  letter-spacing: 0.25em;
-  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
 }
 
-.nav-logo span {
-  color: var(--fg-dim);
-  font-size: 0.7rem;
+.header-logo-img {
+  /* height: 100px; */
+  height: clamp(3rem, 5vw, 6.7rem);
+  width: auto;
   display: block;
-  letter-spacing: 0.35em;
 }
 
 .nav-links {
@@ -355,6 +353,18 @@ html {
   transition: opacity 0.35s;
 }
 
+.zodiac-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.4), transparent);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
 .zodiac-card:hover,
 .zodiac-card:focus {
   background: rgba(201, 168, 76, 0.04);
@@ -363,7 +373,9 @@ html {
 }
 
 .zodiac-card:hover::before,
-.zodiac-card:focus::before {
+.zodiac-card:focus::before,
+.zodiac-card:hover::after,
+.zodiac-card:focus::after {
   opacity: 1;
 }
 
@@ -372,30 +384,50 @@ html {
   top: 0.75rem;
   right: 0.9rem;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.6rem;
-  color: rgba(201, 168, 76, 0.09);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: rgba(201, 168, 76, 0.06);
+  line-height: 1;
+  transition: color 0.35s;
+}
+
+.zodiac-card:hover .bg-num,
+.zodiac-card:focus .bg-num {
+  color: rgba(201, 168, 76, 0.12);
 }
 
 .zodiac-icon {
-  font-size: 3rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  color: #dfe5f8;
-  text-shadow: 0 0 20px rgba(200, 215, 255, 0.35);
-  transition: transform 0.35s;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.35rem;
+  position: relative;
+  transition: filter 0.4s, transform 0.4s;
+}
+
+.zodiac-icon svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .zodiac-card:hover .zodiac-icon,
 .zodiac-card:focus .zodiac-icon {
-  transform: scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(200, 215, 255, 0.7)) drop-shadow(0 0 22px rgba(180, 200, 255, 0.4));
+  transform: scale(1.1);
 }
 
 .zodiac-dates {
   font-size: 0.6rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: var(--gold-dim);
   text-transform: uppercase;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.zodiac-card:hover .zodiac-dates,
+.zodiac-card:focus .zodiac-dates {
+  color: var(--gold);
 }
 
 .zodiac-name {
@@ -403,6 +435,12 @@ html {
   font-size: 0.95rem;
   letter-spacing: 0.14em;
   margin-bottom: 0.35rem;
+  transition: color 0.3s;
+}
+
+.zodiac-card:hover .zodiac-name,
+.zodiac-card:focus .zodiac-name {
+  color: var(--gold-light);
 }
 
 .zodiac-element {

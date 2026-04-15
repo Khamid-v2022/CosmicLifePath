@@ -18,7 +18,7 @@ html {
 }
 
 main {
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 6rem);
 }
 b, strong {
   font-weight: 700;
@@ -491,14 +491,18 @@ textarea:-webkit-autofill:focus {
   position: relative;
   z-index: 1;
   border-top: 1px solid var(--line);
-  padding: 2.5rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  justify-content: space-between;
+  padding: 1rem;
   align-items: center;
+  color: rgba(154, 148, 128, 0.4);
+}
+.footer-tems a {
+  color: rgba(154, 148, 128, 0.4);
+  text-decoration: none;
 }
 
+.footer-tems a:hover {
+  color: rgba(154, 148, 128, 0.8);
+}
 .footer-quote {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -509,10 +513,10 @@ textarea:-webkit-autofill:focus {
 }
 
 .footer-copy {
-  font-size: 0.62rem;
+  font-size: 0.9rem;
   letter-spacing: 0.18em;
   color: rgba(154, 148, 128, 0.4);
-  text-align: right;
+  /* text-align: right; */
   margin-bottom: 0;
 }
 

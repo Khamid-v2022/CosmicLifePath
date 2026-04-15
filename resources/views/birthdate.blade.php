@@ -45,29 +45,6 @@
             </div>
         </form>
 
-        <div class="social-proof-wrap mt-5">
-            <div class="trust-pill">★★★★★ Rated 4.9/5 by 12,000+ cosmic seekers</div>
-            <div class="row g-3 mt-2">
-            <div class="col-md-4">
-                <div class="proof-card">
-                <p class="proof-quote">“I felt seen in a way no generic horoscope ever delivered.”</p>
-                <p class="proof-name">— Mina K.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="proof-card">
-                <p class="proof-quote">“The reading highlighted gifts I had ignored for years.”</p>
-                <p class="proof-name">— Daniel R.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="proof-card">
-                <p class="proof-quote">“Beautiful, accurate, and surprisingly personal from the very first step.”</p>
-                <p class="proof-name">— Yuna P.</p>
-                </div>
-            </div>
-            </div>
-        </div>
     </div>
   </section>
 @endsection
@@ -80,5 +57,13 @@
       day: @json(old('day')),
       year: @json(old('year')),
     };
+
+        window.COSMIC_SOCIAL_PROOF = {
+            enabled: true,
+            mode: 'quiz',
+            visibleMs: 5000,
+            minDelayMs: 5000,
+            maxDelayMs: 30000,
+        };
   </script>
 @endpush

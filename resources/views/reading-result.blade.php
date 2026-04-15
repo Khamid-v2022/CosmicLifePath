@@ -93,32 +93,19 @@
           <a href="{{ route('sales.page') }}" class="hero-cta btn step-next-btn">Continue to My Offer</a>
         </div>
 
-        <div class="social-proof-wrap mt-5 text-center">
-          <div class="trust-pill">Someone just purchased their full report</div>
-          <div class="row g-3 mt-2">
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“This gave me a clearer direction than any generic horoscope ever could.”</p>
-                <p class="proof-name">— Emma R.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“I ended up buying the full report because the insight felt so precise.”</p>
-                <p class="proof-name">— Liam P.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“Beautifully explained and genuinely intriguing from start to finish.”</p>
-                <p class="proof-name">— Chloe S.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-       
       </article>
     </div>
   </section>
 @endsection
+
+@push('scripts')
+  <script>
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'summary',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
+    };
+  </script>
+@endpush

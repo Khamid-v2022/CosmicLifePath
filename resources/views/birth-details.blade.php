@@ -79,29 +79,6 @@
         <p id="birthPlacePageError" class="birth-help text-center mt-3 @if($errors->has('birth_place')) is-visible @endif">{{ $errors->first('birth_place') }}</p>
       </form>
 
-      <div class="social-proof-wrap mt-5">
-        <div class="trust-pill">★★★★★ Trusted by 12,000+ readers seeking deeper life direction</div>
-        <div class="row g-3 mt-2">
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“The birth-time step made the reading feel truly personal.”</p>
-              <p class="proof-name">— Aria S.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“Even the flow feels calm, premium, and easy to complete.”</p>
-              <p class="proof-name">— Lucas M.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“The details matched my personality better than I expected.”</p>
-              <p class="proof-name">— Hana J.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 @endsection
@@ -115,6 +92,14 @@
       birthPlace: @json(old('birth_place', request('birth_place'))),
       timeUnknown: @json((bool) old('time_unknown', request()->boolean('time_unknown'))),
       placeUnknown: @json((bool) old('place_unknown', request()->boolean('place_unknown'))),
+    };
+
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'quiz',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
     };
   </script>
 

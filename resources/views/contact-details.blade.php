@@ -43,29 +43,18 @@
         </div>
       </div>
 
-      <div class="social-proof-wrap mt-5 text-center">
-        <div class="trust-pill">★★★★★ Loved by 12,000+ readers worldwide</div>
-        <div class="row g-3 mt-2">
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“The reading felt uncannily personal from the first screen.”</p>
-              <p class="proof-name">— Elise T.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“I discovered strengths I had never fully recognized in myself.”</p>
-              <p class="proof-name">— Noah V.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="proof-card">
-              <p class="proof-quote">“Elegant, clear, and surprisingly insightful.”</p>
-              <p class="proof-name">— Mia L.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 @endsection
+
+@push('scripts')
+  <script>
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'quiz',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
+    };
+  </script>
+@endpush

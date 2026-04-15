@@ -584,4 +584,205 @@
     emailInput.addEventListener('input', storeContactDraft);
     contactDetailsForm.addEventListener('submit', storeContactDraft);
   }
+
+  const SOCIAL_PROOF_ITEMS = [
+    { name: 'Barbara K.', country: 'Georgia', action: 'just started their free reading', minutesAgo: 3 },
+    { name: 'Ava M.', country: 'Texas', action: 'just started their free reading', minutesAgo: 2 },
+    { name: 'Daniel H.', country: 'Florida', action: 'just started their free reading', minutesAgo: 5 },
+    { name: 'Sofia L.', country: 'California', action: 'just started their free reading', minutesAgo: 4 },
+    { name: 'Lucas B.', country: 'Ontario', action: 'just started their free reading', minutesAgo: 7 },
+    { name: 'Mina P.', country: 'Seoul', action: 'just started their free reading', minutesAgo: 1 },
+    { name: 'Emma R.', country: 'New York', action: 'just started their free reading', minutesAgo: 8 },
+    { name: 'Noah S.', country: 'Arizona', action: 'just started their free reading', minutesAgo: 6 },
+    { name: 'Chloe T.', country: 'Melbourne', action: 'just started their free reading', minutesAgo: 9 },
+    { name: 'Liam C.', country: 'Dublin', action: 'just started their free reading', minutesAgo: 5 },
+    { name: 'Grace W.', country: 'Colorado', action: 'just started their free reading', minutesAgo: 11 },
+    { name: 'Hana J.', country: 'Busan', action: 'just started their free reading', minutesAgo: 12 },
+    { name: 'Mason D.', country: 'Nevada', action: 'just started their free reading', minutesAgo: 10 },
+    { name: 'Aria N.', country: 'London', action: 'just started their free reading', minutesAgo: 4 },
+    { name: 'Ethan V.', country: 'Berlin', action: 'just started their free reading', minutesAgo: 14 },
+    { name: 'Zoe Q.', country: 'Auckland', action: 'just started their free reading', minutesAgo: 3 },
+    { name: 'Olivia Y.', country: 'Vancouver', action: 'just unlocked their reading summary', minutesAgo: 6 },
+    { name: 'James G.', country: 'Wisconsin', action: 'just unlocked their reading summary', minutesAgo: 9 },
+    { name: 'Ella F.', country: 'Manchester', action: 'just unlocked their reading summary', minutesAgo: 12 },
+    { name: 'Henry A.', country: 'Montreal', action: 'just unlocked their reading summary', minutesAgo: 7 },
+    { name: 'Yuna K.', country: 'Tokyo', action: 'just unlocked their reading summary', minutesAgo: 15 },
+    { name: 'Mila O.', country: 'Perth', action: 'just unlocked their reading summary', minutesAgo: 18 },
+    { name: 'Leo Z.', country: 'Chicago', action: 'just unlocked their reading summary', minutesAgo: 11 },
+    { name: 'Aiden I.', country: 'Bristol', action: 'just unlocked their reading summary', minutesAgo: 16 },
+    { name: 'Nora U.', country: 'Osaka', action: 'just unlocked their reading summary', minutesAgo: 13 },
+    { name: 'Mia X.', country: 'Auckland', action: 'just unlocked their reading summary', minutesAgo: 10 },
+    { name: 'Charlotte E.', country: 'Tennessee', action: 'just purchased the full cosmic report', minutesAgo: 4 },
+    { name: 'Liam P.', country: 'Oregon', action: 'just purchased the full cosmic report', minutesAgo: 8 },
+    { name: 'Sophia M.', country: 'Sydney', action: 'just purchased the full cosmic report', minutesAgo: 3 },
+    { name: 'Elijah R.', country: 'Utah', action: 'just purchased the full cosmic report', minutesAgo: 6 },
+    { name: 'Amelia S.', country: 'Toronto', action: 'just purchased the full cosmic report', minutesAgo: 5 },
+    { name: 'Benjamin L.', country: 'Madrid', action: 'just purchased the full cosmic report', minutesAgo: 11 },
+    { name: 'Harper D.', country: 'Daejeon', action: 'just purchased the full cosmic report', minutesAgo: 7 },
+    { name: 'Logan C.', country: 'Austin', action: 'just purchased the full cosmic report', minutesAgo: 9 },
+    { name: 'Isla P.', country: 'Edinburgh', action: 'just purchased the full cosmic report', minutesAgo: 14 },
+    { name: 'Jack W.', country: 'Brisbane', action: 'just purchased the full cosmic report', minutesAgo: 6 },
+    { name: 'Scarlett H.', country: 'San Diego', action: 'just purchased the full cosmic report', minutesAgo: 12 },
+    { name: 'Evelyn B.', country: 'Paris', action: 'just purchased the full cosmic report', minutesAgo: 13 },
+    { name: 'Sebastian T.', country: 'Oslo', action: 'just purchased the full cosmic report', minutesAgo: 15 },
+    { name: 'Abigail N.', country: 'Cape Town', action: 'just purchased the full cosmic report', minutesAgo: 10 },
+  ];
+
+  const socialProofState = {
+    initialized: false,
+    timer: null,
+    popup: null,
+    host: null,
+    lastIndex: -1,
+  };
+
+  function getSocialProofPool(mode) {
+    if (mode === 'purchase') {
+      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('purchased'));
+    }
+
+    if (mode === 'summary') {
+      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('unlocked'));
+    }
+
+    if (mode === 'quiz') {
+      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('started'));
+    }
+
+    return SOCIAL_PROOF_ITEMS;
+  }
+
+  function pickRandomSocialProof(pool) {
+    if (!pool.length) {
+      return null;
+    }
+
+    if (pool.length === 1) {
+      socialProofState.lastIndex = 0;
+      return pool[0];
+    }
+
+    let index = Math.floor(Math.random() * pool.length);
+    while (index === socialProofState.lastIndex) {
+      index = Math.floor(Math.random() * pool.length);
+    }
+
+    socialProofState.lastIndex = index;
+    return pool[index];
+  }
+
+  function clearSocialProofTimer() {
+    if (socialProofState.timer) {
+      window.clearTimeout(socialProofState.timer);
+      socialProofState.timer = null;
+    }
+  }
+
+  function destroySocialProofPopup() {
+    if (socialProofState.popup) {
+      socialProofState.popup.remove();
+      socialProofState.popup = null;
+    }
+  }
+
+  function minutesAgoLabel(minutesAgo) {
+    const value = Math.max(1, Number(minutesAgo) || 1);
+    return value === 1 ? '1 min ago' : `${value} mins ago`;
+  }
+
+  function createPopupElement(item) {
+    const initial = (item.name || '?').trim().charAt(0).toUpperCase() || '?';
+    const card = document.createElement('div');
+    card.className = 'social-proof-popup';
+    card.setAttribute('role', 'status');
+    card.setAttribute('aria-live', 'polite');
+
+    card.innerHTML = `
+      <div class="social-proof-avatar" aria-hidden="true">${initial}</div>
+      <div class="social-proof-content">
+        <p class="social-proof-name">${item.name} from ${item.country}</p>
+        <p class="social-proof-action">${item.action}</p>
+        <p class="social-proof-time">${minutesAgoLabel(item.minutesAgo)}</p>
+      </div>
+      <button type="button" class="social-proof-close" aria-label="Close notification">&times;</button>
+    `;
+
+    const closeButton = card.querySelector('.social-proof-close');
+    if (closeButton) {
+      closeButton.addEventListener('click', () => {
+        card.classList.remove('is-visible');
+      });
+    }
+
+    return card;
+  }
+
+  function showSocialProofCycle(config) {
+    const mode = config.mode || 'all';
+    const pool = getSocialProofPool(mode);
+    const item = pickRandomSocialProof(pool);
+    if (!item || !socialProofState.host) {
+      return;
+    }
+
+    destroySocialProofPopup();
+
+    const popup = createPopupElement(item);
+    socialProofState.popup = popup;
+    socialProofState.host.appendChild(popup);
+
+    window.requestAnimationFrame(() => {
+      popup.classList.add('is-visible');
+    });
+
+    const visibleMs = Number(config.visibleMs) > 0 ? Number(config.visibleMs) : 5000;
+    const fadeMs = Number(config.fadeMs) > 0 ? Number(config.fadeMs) : 700;
+    const minDelayMs = Number(config.minDelayMs) > 0 ? Number(config.minDelayMs) : 5000;
+    const maxDelayMs = Number(config.maxDelayMs) > 0 ? Number(config.maxDelayMs) : 30000;
+    const nextDelay = Math.floor(Math.random() * Math.max(1, maxDelayMs - minDelayMs + 1)) + minDelayMs;
+
+    socialProofState.timer = window.setTimeout(() => {
+      popup.classList.remove('is-visible');
+
+      socialProofState.timer = window.setTimeout(() => {
+        if (popup.parentNode) {
+          popup.remove();
+        }
+        showSocialProofCycle(config);
+      }, fadeMs + nextDelay);
+    }, visibleMs);
+  }
+
+  window.initCosmicSocialProof = function initCosmicSocialProof(rawConfig = {}) {
+    if (socialProofState.initialized) {
+      return;
+    }
+
+    const enabled = rawConfig && rawConfig.enabled !== false;
+    if (!enabled) {
+      return;
+    }
+
+    const host = document.createElement('div');
+    host.className = 'social-proof-host';
+    document.body.appendChild(host);
+
+    socialProofState.host = host;
+    socialProofState.initialized = true;
+
+    showSocialProofCycle(rawConfig);
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearSocialProofTimer();
+      } else {
+        clearSocialProofTimer();
+        showSocialProofCycle(rawConfig);
+      }
+    });
+  };
+
+  if (window.COSMIC_SOCIAL_PROOF && window.COSMIC_SOCIAL_PROOF.enabled) {
+    window.initCosmicSocialProof(window.COSMIC_SOCIAL_PROOF);
+  }
 })();

@@ -53,29 +53,6 @@
           </div>
         </div>
 
-        <div class="social-proof-wrap mt-5 text-center">
-          <div class="trust-pill">Someone just purchased their full cosmic report</div>
-          <div class="row g-3 mt-2">
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“I upgraded instantly because the insight felt deeply personal.”</p>
-                <p class="proof-name">— Sophia M.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“The full report gave me clarity I had been missing for years.”</p>
-                <p class="proof-name">— Daniel H.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="proof-card h-100">
-                <p class="proof-quote">“Beautifully presented and worth every second of the wait.”</p>
-                <p class="proof-name">— Ava T.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -83,6 +60,14 @@
 
 @push('scripts')
   <script>
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'purchase',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
+    };
+
     const loadingStage = document.getElementById('loadingStage');
     const videoStage = document.getElementById('videoStage');
     const playButton = document.getElementById('playVideoButton');

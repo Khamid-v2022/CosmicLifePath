@@ -255,18 +255,22 @@
       pageError.classList.toggle('is-visible', Boolean(message));
     };
 
-    for (let hour = 1; hour <= 12; hour += 1) {
-      const option = document.createElement('option');
-      option.value = String(hour);
-      option.textContent = String(hour).padStart(2, '0');
-      hourSelect.appendChild(option);
+    if (hourSelect.options.length === 0) {
+      for (let hour = 1; hour <= 12; hour += 1) {
+        const option = document.createElement('option');
+        option.value = String(hour);
+        option.textContent = String(hour).padStart(2, '0');
+        hourSelect.appendChild(option);
+      }
     }
 
-    for (let minute = 0; minute <= 59; minute += 1) {
-      const option = document.createElement('option');
-      option.value = String(minute).padStart(2, '0');
-      option.textContent = String(minute).padStart(2, '0');
-      minuteSelect.appendChild(option);
+    if (minuteSelect.options.length === 0) {
+      for (let minute = 0; minute <= 59; minute += 1) {
+        const option = document.createElement('option');
+        option.value = String(minute).padStart(2, '0');
+        option.textContent = String(minute).padStart(2, '0');
+        minuteSelect.appendChild(option);
+      }
     }
 
     hourSelect.value = String(preferredState.hour);

@@ -72,7 +72,7 @@ class CosmicFlowController extends Controller
             'day' => ['required', 'integer', 'between:1,31'],
             'year' => ['required', 'integer', 'between:1900,2008'],
             'hour' => ['nullable', 'integer', 'between:1,12'],
-            'minute' => ['nullable', 'integer', 'between:0,59'],
+            'minute' => ['nullable', 'numeric', 'between:0,59'],
             'meridiem' => ['nullable', 'in:AM,PM'],
             'birth_place' => ['nullable', 'string', 'max:255'],
             'time_unknown' => ['nullable', 'boolean'],

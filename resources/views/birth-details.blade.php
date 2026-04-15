@@ -10,6 +10,12 @@
 
       <p class="step-copy">You selected <strong>{{ $sign['label'] }}</strong> and your birth date is <strong>{{ $formattedDate }}</strong>.</p>
 
+      @php
+        $selectedHour = (string) old('hour', request('hour', '12'));
+        $selectedMinute = str_pad((string) old('minute', request('minute', '00')), 2, '0', STR_PAD_LEFT);
+        $selectedMeridiem = old('meridiem', request('meridiem', 'AM'));
+      @endphp
+
       <form method="POST" action="{{ route('birth.details.submit') }}" id="birthDetailsForm" class="birth-form mt-4">
         @csrf
         <input type="hidden" name="sign" value="{{ $signSlug }}">
@@ -24,18 +30,23 @@
               <div class="row g-2 birth-inline-selects">
                 <div class="col-4">
                   <select id="birthHour" name="hour" class="form-select cosmic-select">
-                    <option value="">Hour</option>
+                    @for ($hour = 1; $hour <= 12; $hour++)
+                      <option value="{{ $hour }}" @selected($selectedHour === (string) $hour)>{{ str_pad((string) $hour, 2, '0', STR_PAD_LEFT) }}</option>
+                    @endfor
                   </select>
                 </div>
                 <div class="col-4">
                   <select id="birthMinute" name="minute" class="form-select cosmic-select">
-                    <option value="">Min</option>
+                    @for ($minute = 0; $minute <= 59; $minute++)
+                      @php $minuteValue = str_pad((string) $minute, 2, '0', STR_PAD_LEFT); @endphp
+                      <option value="{{ $minuteValue }}" @selected($selectedMinute === $minuteValue)>{{ $minuteValue }}</option>
+                    @endfor
                   </select>
                 </div>
                 <div class="col-4">
                   <select id="birthMeridiem" name="meridiem" class="form-select cosmic-select">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
+                    <option value="AM" @selected($selectedMeridiem === 'AM')>AM</option>
+                    <option value="PM" @selected($selectedMeridiem === 'PM')>PM</option>
                   </select>
                 </div>
               </div>

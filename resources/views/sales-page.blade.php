@@ -14,6 +14,10 @@
         <p class="section-label text-center">Special Offer</p>
         <h1 class="section-title step-title text-center mb-4">The Cosmos Has Guided You Here Today On {{ $today }}, {{ $name }}...<br>Now Is The Time To Begin Your Magical Journey As You Follow Your <i>Cosmic Life Path</i></h1>
 
+        <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
+          <img src="{{ asset('imgs/sale-page/main-header.jpg') }}" alt="Cosmic life path hero" class="img-fluid cosmic-result-image article-feature-image">
+        </div>
+
         <p class="step-copy article-copy">All the <strong>unique obstacles and challenges</strong> you have faced in life have guided you here right now, {{ $name }}.</p>
         <p class="step-copy article-copy">This is exactly where you are supposed to be.</p>
         <p class="step-copy article-copy">There’s a reason why you incarnated here on earth.</p>
@@ -21,41 +25,92 @@
         <p class="step-copy article-copy">It’s vital right now that you discover and follow your <strong>distinct <i>Cosmic Life Path</i></strong> so you can play your part in the transition we are currently going through on Earth.</p>
 
 
-        <h2 class="article-subtitle mt-5">It’s what drives me to create this special Cosmic Life Path reading for people like you {{ $name }}...</h2>
-        <p class="step-copy article-copy">The <i><strong>Cosmic Life Path</strong></i> is like a cosmic, divine map... guiding you to the path to live the kind of life you were meant to live...that brings you the greatest joy and abundance.</p>
-        <p class="step-copy article-copy">It’s like a <i>‘cheat code’</i> to levelling up FAST and finally living the kind of life you’ve been dreaming of...while clearing all the obstacles away to that special life you were meant to live.</p>
+        <h2 class="article-subtitle mt-0">It’s what drives me to create this special Cosmic Life Path reading for people like you {{ $name }}...</h2>
+        
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">The <i><strong>Cosmic Life Path</strong></i> is like a cosmic, divine map... guiding you to the path to live the kind of life you were meant to live...that brings you the greatest joy and abundance.</p>
+            <p class="step-copy article-copy">It’s like a <i>‘cheat code’</i> to levelling up FAST and finally living the kind of life you’ve been dreaming of...while clearing all the obstacles away to that special life you were meant to live.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/introduction.jpg') }}" alt="Introduction to the cosmic reading" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> was designed by the <strong>unique cosmic energy patterns of the planets at the time of your birth</strong>.</p>
         <p class="step-copy article-copy">You are now uncovering that divine plan for your life right now.</p>
         <p class="step-copy article-copy">You’re about to discover special talents and gifts you never knew you had, along with how to use them to carry out your life purpose and attract wealth effortlessly.</p>
         <p class="step-copy article-copy">{{ $name }}, you will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carrying all your life that have prevented the success you want to manifest.</p>
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> will reveal the secret <strong>you alone can recognize</strong> to have an intimate soul-mate relationship.</p>
         <p class="step-copy article-copy">You will discover <strong>your unique health challenges</strong> and how to overcome them.</p>
-        <p class="step-copy article-copy">You will discover all this and more inside your...</p>
+        <p class="step-copy article-copy mb-0">You will discover all this and more inside your...</p>
 
 
         <h2 class="section-title step-title article-major-title mt-5"><strong>Cosmic Life Path Reading</strong></h2>
         <p class="step-copy article-copy">Here’s just some of what you will discover inside your <i>Cosmic Life Path Reading {{ $name }}:</i></p>
 
-        <h3 class="article-subtitle mt-4">Your Cosmic Personality Code:</h3>
-        <p class="step-copy article-copy">This is who you are at the core of your being. The hidden parts of your personality that you are not aware of. You will see hidden gifts <strong>you alone possess,</strong> along with <strong>your distinctive blind spots</strong> that stop you from using them to attract more abundance.</p>
+        <h3 class="article-subtitle mt-0">Your Cosmic Personality Code:</h3>
+        <div class="article-inline-media article-inline-media-left media-image-left my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy mb-0">This is who you are at the core of your being. The hidden parts of your personality that you are not aware of. You will see hidden gifts <strong>you alone possess,</strong> along with <strong>your distinctive blind spots</strong> that stop you from using them to attract more abundance.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/personality-code.jpg') }}" alt="Your cosmic personality code" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
-        <h3 class="article-subtitle mt-4">Your Cosmic Potential Unleashed:</h3>
-        <p class="step-copy article-copy">Here you will learn the fastest, easiest way to unleash <strong>your extraordinary full potential</strong> to achieve any goal you put your mind to. Most people are shocked when they realise how much potential they have.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <h3 class="article-subtitle mt-0">Your Cosmic Potential Unleashed:</h3>
+            <p class="step-copy article-copy mb-0">Here you will learn the fastest, easiest way to unleash <strong>your extraordinary full potential</strong> to achieve any goal you put your mind to. Most people are shocked when they realise how much potential they have.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/potential-unleashed.jpg') }}" alt="Your cosmic potential unleashed" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
-        <h3 class="article-subtitle mt-4">Your Cosmic Mind Power:</h3>
+        <h3 class="article-subtitle mt-0">Your Cosmic Mind Power:</h3>
         <p class="step-copy article-copy">This is the best way to <strong>program your particular mind</strong> for quick and easy success.</p>
-        <p class="step-copy article-copy">Everyone’s mind works differently.</p>
-        <p class="step-copy article-copy">This part of your <i>Cosmic Life Path Reading</i> is designed to help you use your own mind as a tool for success. This is very powerful.</p>
+            
+        <div class="article-inline-media media-image-left my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">Everyone’s mind works differently.</p>
+            <p class="step-copy article-copy mb-0">This part of your <i>Cosmic Life Path Reading</i> is designed to help you use your own mind as a tool for success. This is very powerful.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/mind-power.jpg') }}" alt="Your cosmic mind power" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
-        <h3 class="article-subtitle mt-4">Cosmic Vibrant Health Unlocked</h3>
-        <p class="step-copy article-copy">In this part of the reading, I will reveal to you the key to having vibrant health and wellness <strong>according to your individual Cosmic Life Path charts,</strong> no matter what your genetics or family history.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <h3 class="article-subtitle mt-0">Cosmic Vibrant Health Unlocked</h3>
+            <p class="step-copy article-copy mb-0">In this part of the reading, I will reveal to you the key to having vibrant health and wellness <strong>according to your individual Cosmic Life Path charts,</strong> no matter what your genetics or family history.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/vibrant-health.jpg') }}" alt="Cosmic vibrant health unlocked" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
-        <h3 class="article-subtitle mt-4">Cosmic Wealth Key</h3>
-        <p class="step-copy article-copy">Every <i>Cosmic Life Path Reading</i> has a <strong>unique Cosmic Wealth key.</strong> This Cosmic Wealth Key is <strong>unique to you and you alone.</strong> It’s your key to manifesting wealth and abundance in the least amount of time possible.</p>
+        <h3 class="article-subtitle mt-0">Cosmic Wealth Key</h3>
+        <div class="article-inline-media media-image-left my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy mb-0">Every <i>Cosmic Life Path Reading</i> has a <strong>unique Cosmic Wealth key.</strong> This Cosmic Wealth Key is <strong>unique to you and you alone.</strong> It’s your key to manifesting wealth and abundance in the least amount of time possible.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/wealth-key.jpg') }}" alt="Cosmic wealth key" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
-        <h3 class="article-subtitle mt-4">Cosmic Trauma Release</h3>
-        <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to <strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p><br>
-        <p class="step-copy article-copy">You might not realise it yet {{ $name }}, but...</p>
+        <h3 class="article-subtitle mt-0">Cosmic Trauma Release</h3>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to <strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p>
+            <p class="step-copy article-copy mb-0">You might not realise it yet {{ $name }}, but...</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/trauma-release.jpg') }}" alt="Cosmic trauma release" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
 
 
         <h2 class="section-title step-title article-major-title mt-5">A <i>Cosmic Life Path Reading</i> Will Transform Your Life...</h2>
@@ -118,11 +173,6 @@
         <p class="step-copy article-copy">All because you tapped into <strong>unique talents and gifts</strong> you never knew you possessed before that created an amazing new life for you and your loved ones.</p>
         <p class="step-copy article-copy"><strong>Hit the add to cart button below</strong> right now and get instant access to your <i>Cosmic Life Path Reading</i>.</p>
         <p class="step-copy article-copy">After you <strong>hit the add to cart button,</strong> you will be taken immediately to a page that looks like this.</p>
-
-        <div class="article-image-wrap text-center my-4">
-          <img src="{{ asset('imgs/sample-2.png') }}" alt="Checkout preview placeholder" class="img-fluid cosmic-result-image">
-        </div>
-
         <p class="step-copy article-copy">After you enter your details, you will be sent your reading within 12 hours.</p>
 
         <div class="offer-cta-block text-center my-5">
@@ -139,12 +189,14 @@
         <p class="step-copy article-copy">And there’s more...</p>
 
 
-        <h2 class="section-title step-title article-major-title mt-5">Act Now and get these FAST-ACTION bonuses completely FREE</h2>
-
+        <h2 class="section-title step-title article-major-title mt-0">Act Now and get these FAST-ACTION bonuses completely FREE</h2>
+        <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
+            <img src="{{ asset('imgs/sale-page/bounses.jpg') }}" alt="Fast-action bonuses" class="img-fluid cosmic-result-image article-feature-image">
+        </div>
         <h3 class="article-subtitle mt-4">Year of the Horse Prosperity Guide</h3>
         <p class="offer-value">Normal value $47</p>
         <p class="step-copy article-copy">2026 is the Chinese Astrology year of the horse. No matter what star sign you are, you can use the secrets in this report on The Year Of The Horse to prosper like never before in your life.</p>
-
+        
         <h3 class="article-subtitle mt-4">Your Soul-Urge Number</h3>
         <p class="offer-value">Normal value $67</p>
         <p class="step-copy article-copy">This report goes perfectly with a <i>Cosmic Life Path reading</i>.</p>
@@ -157,7 +209,7 @@
         <p class="step-copy article-copy">This report will help you to track the days in a lunar month when you are most likely to experience a financial windfall.</p>
         <p class="step-copy article-copy">Whether you’re buying a raffle ticket or a scratch-off card, this lunar money map will be an invaluable guide.</p>
         <p class="step-copy article-copy">These bonuses have a combined value of $181. They are yours here today for FREE.</p>
-        <p class="step-copy article-copy"><strong>Hit the add to cart button</strong> below right now and get instant access to your <i>Cosmic Life Path Reading</i>.</p>
+        <p class="step-copy article-copy mb-0"><strong>Hit the add to cart button</strong> below right now and get instant access to your <i>Cosmic Life Path Reading</i>.</p>
 
         <div class="offer-cta-block text-center my-5">
           <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
@@ -166,11 +218,18 @@
         </div>
 
 
-        <h2 class="section-title step-title article-major-title mt-5">{{ $name }}, Right now, you're standing at a fork in the road…</h2>
+        <h2 class="section-title step-title article-major-title mt-0">{{ $name }}, Right now, you're standing at a fork in the road…</h2>
         <p class="step-copy article-copy"><strong>The first path is the one you already know.</strong></p>
-        <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
-        <p class="step-copy article-copy">The bills don't get lighter. The relationship doesn't get easier.</p>
-        <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
+            <p class="step-copy article-copy">The bills don't get lighter. The relationship doesn't get easier.</p>
+            <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/call-action.jpg') }}" alt="Fork in the road call to action" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
         <p class="step-copy article-copy">A year from now, you'll be in the same spot, wondering why nothing ever seems to shift — not because you're not trying, but because you never had the right starting point.</p>
         <p class="step-copy article-copy"><strong>The second path begins with your <i>Cosmic Life Path Reading</i>.</strong></p>
         <p class="step-copy article-copy">Not with promises.</p>
@@ -182,7 +241,7 @@
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
         <p class="step-copy article-copy">The fork is right in front of you, {{ $name }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
-        <p class="step-copy article-copy">Hit the add to cart button below right now and get instant access to your personal Cosmic Life Path Reading.</p>
+        <p class="step-copy article-copy mb-0">Hit the add to cart button below right now and get instant access to your personal Cosmic Life Path Reading.</p>
 
         <div class="offer-cta-block text-center my-5">
           <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>

@@ -762,30 +762,73 @@ textarea:-webkit-autofill:focus {
   font-weight: 700;
   line-height: 1.25;
   color: var(--gold-light);
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.1rem;
 }
 
 .article-image-wrap {
-  margin-top: 0.5rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.article-image-right {
-  float: right;
-  width: min(42%, 280px);
-  margin-left: 1.5rem;
+.article-inline-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.8fr);
+  gap: 1.5rem;
+  align-items: center;
 }
 
-.article-image-left {
-  float: left;
-  width: min(42%, 280px);
-  margin-right: 1.5rem;
+.article-inline-media-left {
+  grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.2fr);
+}
+
+.media-image-left .article-inline-visual {
+  order: 1;
+}
+
+.media-image-left .article-inline-copy {
+  order: 2;
+}
+
+.article-inline-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-inline-copy .article-copy:last-child {
+  margin-bottom: 0;
+}
+
+.article-hero-image-wrap,
+.article-wide-image-wrap {
+  text-align: center;
+}
+
+.article-inline-visual {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.35rem;
+}
+
+.article-feature-image {
+  max-width: 72%;
+  margin-inline: auto;
 }
 
 .cosmic-result-image {
   width: 100%;
   border: 1px solid rgba(201, 168, 76, 0.16);
   box-shadow: 0 0 32px rgba(201, 168, 76, 0.08);
+  object-fit: cover;
+}
+
+.article-inline-visual .cosmic-result-image {
+  /* width: min(100%, 220px); */
+  max-height: 240px;
+  min-height: 0;
   object-fit: cover;
 }
 
@@ -824,7 +867,8 @@ textarea:-webkit-autofill:focus {
 .article-major-title {
   text-align: left;
   font-size: clamp(2rem, 4vw, 2.8rem);
-  margin-bottom: 1rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1.4rem;
 }
 
 .offer-callout,
@@ -1016,6 +1060,15 @@ textarea:-webkit-autofill:focus {
   .nav-links .nav-link {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .article-inline-media,
+  .article-inline-media-left {
+    grid-template-columns: 1fr;
+  }
+
+  .article-feature-image {
+    max-width: 100%;
   }
 }
 

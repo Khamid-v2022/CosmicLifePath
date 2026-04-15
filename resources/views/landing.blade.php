@@ -277,10 +277,10 @@
       <div class="ring ring-4"></div>
     </div>
 
-    <p class="hero-eyebrow">The Language of the Stars</p>
-    <h1 class="hero-title">Discover Your<br><em>Celestial Path</em></h1>
-    <p class="hero-sub">Ancient wisdom encoded in the heavens. Explore your natal chart, planetary alignments, and the deeper patterns of your life.</p>
-    <a href="#zodiac" class="hero-cta btn">Explore Your Sign</a>
+    <p class="hero-eyebrow">FREE PERSONALISED READING</p>
+    <h1 class="hero-title">Discover Your<br><em>Cosmic Life Path</em></h1>
+    <p class="hero-sub">Uncover the hidden gifts, secret talents, and divine purpose the cosmos encoded into you the moment you were born</p>
+    <a href="#zodiac" class="hero-cta btn">REVEAL MY COSMIC PATH →</a>
   </section>
 
   <div class="divider container-fluid">
@@ -290,19 +290,19 @@
   </div>
 
   <section class="zodiac-section container" id="zodiac">
-    <p class="section-label">The Twelve Archetypes</p>
-    <h2 class="section-title">Step #1:<em> Select Your Star Sign below</em></h2>
-    <p class="section-desc">Your FREE Personalised Cosmic Life Path Reading Reveals Hidden Gifts, Talents… <br>And Your Unique Divine Purpose In Life</p>
+    <p class="section-label">THE TWELVE COSMIC SIGNS</p>
+    <h2 class="section-title">Step #1:<em> Select Your Star Sign Below</em></h2>
+    <p class="section-desc">⚠ Due to high demand, availability is limited. Select your sign now to secure your FREE reading.</p>
 
     <div class="row g-2 zodiac-grid">
       @foreach ($signs as $sign)
         <div class="col-6 col-md-4 col-xl-3">
           <a href="{{ route('birthdate', ['sign' => strtolower($sign['name'])]) }}" class="zodiac-card js-open-sign w-100 d-block text-decoration-none" data-sign-slug="{{ strtolower($sign['name']) }}">
-            <span class="bg-num">{{ $sign['roman'] }}</span>
+            <!-- <span class="bg-num">{{ $sign['roman'] }}</span> -->
             <div class="zodiac-icon" aria-hidden="true">{!! $signSvgs[$sign['name']] !!}</div>
             <p class="zodiac-dates">{{ $sign['dates'] }}</p>
             <h3 class="zodiac-name">{{ $sign['name'] }}</h3>
-            <p class="zodiac-element">{{ $sign['element'] }}</p>
+            <!-- <p class="zodiac-element">{{ $sign['element'] }}</p> -->
           </a>
         </div>
       @endforeach

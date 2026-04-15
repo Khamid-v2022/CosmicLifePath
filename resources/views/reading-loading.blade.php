@@ -16,10 +16,11 @@
         <p class="loading-subtext">Mapping your cosmic energy patterns...</p>
       </div>
 
+      
       <div id="videoStage" class="reading-stage video-stage-panel" aria-hidden="true">
         <div class="result-intro-copy">
           <h2 class="mb-2">Your reading is almost ready, {{ $name }}...</h2>
-          <p class="step-copy mb-0">Celestra has been working on your Cosmic Life Path — and before you see what she's uncovered, there's something you should know about the woman who prepared it for you.</p>
+          <p class="step-copy mb-0">What she's uncovered about you is extraordinary — knowing who she is will make every word of it more powerful.</p>
         </div>
 
         <div class="video-intro-wrap mt-4">

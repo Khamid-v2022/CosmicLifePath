@@ -249,6 +249,33 @@
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>
 
+        <div class="social-proof-wrap mt-5 text-center">
+          <div class="trust-pill">Real client experiences</div>
+          <div class="row g-4 mt-2">
+            <div class="col-md-4">
+              <div class="proof-card h-100 text-center">
+                <img src="{{ asset('imgs/avatar/elise.png') }}" alt="James Smith" class="testimonial-avatar">
+                <p class="proof-name mb-2">James Smith <span class="d-block mt-2 testimonial-location">Madison, Wisconsin</span></p>
+                <p class="proof-quote">“I have a strong sense that positive changes are on the horizon for both my career and my relationships. Sending love and light to everyone.”</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="proof-card h-100 text-center">
+                <img src="{{ asset('imgs/avatar/noah.png') }}" alt="Elizabeth Garcia" class="testimonial-avatar">
+                <p class="proof-name mb-2">Elizabeth Garcia <span class="d-block mt-2 testimonial-location">Franklin, Tennessee</span></p>
+                <p class="proof-quote">“I really loved receiving my Cosmic Life Path Reading—it helped guide me through some difficult decisions during a challenging time in my life. Now I’m patiently waiting to see how everything unfolds.”</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="proof-card h-100 text-center">
+                <img src="{{ asset('imgs/avatar/mia.png') }}" alt="Lauren Martinez" class="testimonial-avatar">
+                <p class="proof-name mb-2">Lauren Martinez <span class="d-block mt-2 testimonial-location">Ashland, Oregon</span></p>
+                <p class="proof-quote">“I’ve had my cards read before, but nothing compares to the Cosmic Life Path Reading. She understood things about me that I never even shared. It honestly feels like a huge weight has been lifted, and I can finally breathe easier. I’ll definitely be coming back for more readings. Thank you, Samira!”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="offer-cta-block text-center my-5">
           <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>

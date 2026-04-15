@@ -21,49 +21,6 @@ class CosmicFlowController extends Controller
         ]);
     }
 
-    public function storeBirthdate(Request $request): RedirectResponse
-    {
-        $validated = $request->validate([
-            'sign' => ['required', 'string'],
-            'month' => ['required', 'integer', 'between:1,12'],
-            'day' => ['required', 'integer', 'between:1,31'],
-            'year' => ['required', 'integer', 'between:1900,2008'],
-        ]);
-
-        $sign = $this->findSignOrFail($validated['sign']);
-        $month = (int) $validated['month'];
-        $day = (int) $validated['day'];
-        $year = (int) $validated['year'];
-        $allowedDays = $sign['months'][$month] ?? [];
-
-        if (! in_array($day, $allowedDays, true)) {
-            return back()
-                ->withErrors(['day' => 'Please select a valid birth date for your chosen sign.'])
-                ->withInput();
-        }
-
-        return redirect()->route('birth.details', [
-            'sign' => $validated['sign'],
-            'month' => $month,
-            'day' => $day,
-            'year' => $year,
-        ]);
-    }
-
-    public function birthDetails(Request $request): View
-    {
-        $details = $this->validatedBirthDateFromQuery($request);
-
-        return view('birth-details', [
-            'sign' => $details['sign'],
-            'signSlug' => $details['sign']['slug'],
-            'month' => $details['month'],
-            'day' => $details['day'],
-            'year' => $details['year'],
-            'formattedDate' => sprintf('%02d / %02d / %04d', $details['month'], $details['day'], $details['year']),
-        ]);
-    }
-
     public function storeBirthDetails(Request $request): RedirectResponse
     {
         $validated = $request->validate([
@@ -203,25 +160,6 @@ class CosmicFlowController extends Controller
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
         ]);
-    }
-
-    private function validatedBirthDateFromQuery(Request $request): array
-    {
-        $signSlug = (string) $request->query('sign');
-        $sign = $this->findSignOrFail($signSlug);
-        $month = (int) $request->query('month');
-        $day = (int) $request->query('day');
-        $year = (int) $request->query('year');
-
-        abort_unless($year >= 1900 && $year <= 2008, 404);
-        abort_unless(in_array($day, $sign['months'][$month] ?? [], true), 404);
-
-        return [
-            'sign' => $sign,
-            'month' => $month,
-            'day' => $day,
-            'year' => $year,
-        ];
     }
 
     private function findSignOrFail(string $slug): array

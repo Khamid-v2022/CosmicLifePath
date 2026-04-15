@@ -120,20 +120,20 @@
       ctx.restore();
 
       // Dense star cluster along milky way (tiny bright specks)
-      ctx.save();
-      for(let i = 0; i < 180; i++) {
-        const px = (i / 180);
-        // Position along the band with scatter
-        const bx = (px - 0.5) * mwLen + mwCx + Math.cos(mwAngle) * (Math.random()-0.5)*20;
-        const by = mwCy + Math.sin(mwAngle) * (px-0.5)*mwLen*0.3 + (Math.random()-0.5)*mwW*0.6;
-        const br = 0.3 + Math.random()*0.7;
-        const bo = 0.2 + Math.random()*0.35;
-        ctx.beginPath();
-        ctx.arc(bx, by, br, 0, Math.PI*2);
-        ctx.fillStyle = `rgba(210,218,240,${bo})`;
-        ctx.fill();
-      }
-      ctx.restore();
+      // ctx.save();
+      // for(let i = 0; i < 180; i++) {
+      //   const px = (i / 180);
+      //   // Position along the band with scatter
+      //   const bx = (px - 0.5) * mwLen + mwCx + Math.cos(mwAngle) * (Math.random()-0.5)*20;
+      //   const by = mwCy + Math.sin(mwAngle) * (px-0.5)*mwLen*0.3 + (Math.random()-0.5)*mwW*0.6;
+      //   const br = 0.3 + Math.random()*0.7;
+      //   const bo = 0.2 + Math.random()*0.35;
+      //   ctx.beginPath();
+      //   ctx.arc(bx, by, br, 0, Math.PI*2);
+      //   ctx.fillStyle = `rgba(210,218,240,${bo})`;
+      //   ctx.fill();
+      // }
+      // ctx.restore();
 
       // Nebula color blobs
       const nebPos = [[0.2,0.10],[0.78,0.06],[0.5,0.30],[0.15,0.52],[0.87,0.44]];
@@ -255,6 +255,13 @@
     const daySelect = document.getElementById('birthDay');
     const yearSelect = document.getElementById('birthYear');
     const dayHelp = document.getElementById('birthDayHelp');
+    const stageDate = document.getElementById('birthStageDate');
+    const stageDetails = document.getElementById('birthStageDetails');
+    const stageNextButton = document.getElementById('birthStageNext');
+    const stage2BirthDateDisplay = document.getElementById('stage2BirthDateDisplay');
+    const hiddenBirthMonth = document.getElementById('hiddenBirthMonth');
+    const hiddenBirthDay = document.getElementById('hiddenBirthDay');
+    const hiddenBirthYear = document.getElementById('hiddenBirthYear');
     const signInput = birthForm.querySelector('input[name="sign"]');
     const monthRules = window.COSMIC_FORM_RULE || {};
     const savedState = window.COSMIC_FORM_STATE || {};
@@ -272,6 +279,62 @@
       day: savedState.day || (storedBirthData?.sign === signInput?.value ? storedBirthData.day : ''),
       year: savedState.year || (storedBirthData?.sign === signInput?.value ? storedBirthData.year : ''),
     };
+
+    const formatBirthDate = (month, day, year) => {
+      if (!month || !day || !year) {
+        return 'Not selected';
+      }
+
+      return `${String(month).padStart(2, '0')} / ${String(day).padStart(2, '0')} / ${String(year).padStart(4, '0')}`;
+    };
+
+    const syncBirthDateToDetailsForm = () => {
+      if (hiddenBirthMonth) {
+        hiddenBirthMonth.value = monthSelect.value || '';
+      }
+
+      if (hiddenBirthDay) {
+        hiddenBirthDay.value = daySelect.value || '';
+      }
+
+      if (hiddenBirthYear) {
+        hiddenBirthYear.value = yearSelect.value || '';
+      }
+
+      if (stage2BirthDateDisplay) {
+        stage2BirthDateDisplay.textContent = formatBirthDate(monthSelect.value, daySelect.value, yearSelect.value);
+      }
+    };
+
+    const activateDetailsStage = (animated = true) => {
+      if (!stageDate || !stageDetails) {
+        return;
+      }
+
+      syncBirthDateToDetailsForm();
+
+      if (!animated) {
+        stageDate.classList.add('d-none');
+        stageDate.classList.remove('is-active', 'is-exit');
+        stageDetails.classList.remove('d-none', 'is-exit');
+        stageDetails.classList.add('is-active');
+        return;
+      }
+
+      stageDate.classList.add('is-exit');
+      stageDate.classList.remove('is-active');
+
+      window.setTimeout(() => {
+        stageDate.classList.add('d-none');
+        stageDate.classList.remove('is-exit');
+        stageDetails.classList.remove('d-none', 'is-exit');
+
+        window.requestAnimationFrame(() => {
+          stageDetails.classList.add('is-active');
+        });
+      }, 460);
+    };
+
     const monthNames = {
       1: 'January',
       2: 'February',
@@ -354,27 +417,54 @@
     monthSelect.addEventListener('change', () => {
       setHelp('');
       populateDays();
+      syncBirthDateToDetailsForm();
     });
 
     daySelect.addEventListener('mousedown', warnIfMonthMissing);
     daySelect.addEventListener('focus', warnIfMonthMissing);
-    daySelect.addEventListener('change', () => setHelp(''));
+    daySelect.addEventListener('change', () => {
+      setHelp('');
+      syncBirthDateToDetailsForm();
+    });
+
+    yearSelect.addEventListener('change', () => {
+      syncBirthDateToDetailsForm();
+    });
 
     birthForm.addEventListener('submit', (event) => {
-      if (!monthSelect.value) {
-        setHelp('Please select your birth month first.');
-        event.preventDefault();
-        daySelect.focus();
-        return;
-      }
-
-      safeStorage.set('cosmicLifePath.birthdate', JSON.stringify({
-        sign: signInput?.value || '',
-        month: monthSelect.value,
-        day: daySelect.value,
-        year: yearSelect.value,
-      }));
+      event.preventDefault();
     });
+
+    if (stageNextButton) {
+      stageNextButton.addEventListener('click', () => {
+        if (!monthSelect.value) {
+          setHelp('Please select your birth month first.');
+          daySelect.focus();
+          return;
+        }
+
+        if (!daySelect.value) {
+          setHelp('Please select your birth day.');
+          daySelect.focus();
+          return;
+        }
+
+        if (!yearSelect.value) {
+          setHelp('Please select your birth year.');
+          yearSelect.focus();
+          return;
+        }
+
+        safeStorage.set('cosmicLifePath.birthdate', JSON.stringify({
+          sign: signInput?.value || '',
+          month: monthSelect.value,
+          day: daySelect.value,
+          year: yearSelect.value,
+        }));
+
+        activateDetailsStage(true);
+      });
+    }
 
     if (preferredState.month) {
       monthSelect.value = String(preferredState.month);
@@ -385,6 +475,11 @@
     }
 
     populateDays(preferredState.day ? String(preferredState.day) : '');
+    syncBirthDateToDetailsForm();
+
+    if (savedState.stage === 'details') {
+      activateDetailsStage(false);
+    }
   }
 
   const birthDetailsForm = document.getElementById('birthDetailsForm');

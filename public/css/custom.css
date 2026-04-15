@@ -815,6 +815,7 @@ textarea:-webkit-autofill:focus {
   align-items: flex-start;
   justify-content: center;
   padding-top: 0.35rem;
+  min-width: 200px;
 }
 
 .article-feature-image {

@@ -8,7 +8,7 @@
     $checkoutUrl = 'https://www.google.com';
   @endphp
 
-  <section class="step-section container">
+  <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
         <p class="section-label text-center">Special Offer</p>

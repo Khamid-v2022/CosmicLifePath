@@ -3,7 +3,7 @@
 @section('title', 'Step #4 - Reading Summary')
 
 @section('content')
-  <section class="step-section container">
+  <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto text-center">
       <p class="section-label">Step #4</p>
       <h1 class="section-title step-title">Your cosmic details have been captured</h1>

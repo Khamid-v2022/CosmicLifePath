@@ -57,7 +57,7 @@
                             <select id="birthDay" name="day" class="form-select cosmic-select" required>
                                 <option value="">Day</option>
                             </select>
-                            <p id="birthDayHelp" class="birth-help"></p>
+                            
                         </div>
                         <div class="col-md-4">
                             <select id="birthYear" name="year" class="form-select cosmic-select" required>
@@ -68,12 +68,13 @@
 
                     <div class="text-center">
                         <button type="button" id="birthStageNext" class="hero-cta btn step-next-btn mt-4">Next</button>
+                        <p id="birthDayHelp" class="birth-help"></p>
                     </div>
                 </form>
             </div>
 
             <div id="birthStageDetails" class="birth-stage @if($initialStage === 'details') is-active @else d-none @endif">
-                <h2 class="section-title">Step #2:<em> Enter Your Time & Place of Birth</em></h2>
+                <h2 class="section-title">Step #3:<em> Enter Your Time & Place of Birth</em></h2>
 
                 <p class="step-copy mb-0">You selected <strong>{{ $sign['label'] }}</strong>.</p>
                 <p class="step-copy">Your birth date is <strong id="stage2BirthDateDisplay">{{ $formattedDate }}</strong>.</p>

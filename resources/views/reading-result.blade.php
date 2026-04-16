@@ -3,7 +3,7 @@
 @section('title', 'Your Generic Results')
 
 @section('content')
-  <section class="step-section container">
+  <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
         <h1 class="section-title step-title text-center mb-4">Greetings, {{ $name }}. <br>It’s No Coincidence Our Paths Have Connected At This Point In Your Life Journey…</h1>

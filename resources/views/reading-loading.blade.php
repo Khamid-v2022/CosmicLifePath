@@ -3,23 +3,23 @@
 @section('title', 'Generating Your Reading')
 
 @section('content')
-  <section class="step-section container">
-    <div class="step-panel mx-auto text-center loading-panel">
-      <div id="loadingStage" class="reading-stage reading-stage-active">
-        <h2 class="section-title step-title mb-3">Please Don't Close This Page, {{ $name }}...</h2>
-        <p class="step-copy mb-0">Your Cosmic Life Path Reading Is Being Generated Right Now.</p>
+  <section class="small-gap-start step-section container">
+    
+    <div id="loadingStage" class="reading-stage reading-stage-active text-center">
+      <h2 class="section-title step-title mb-3">Please Don't Close This Page, {{ $name }}...</h2>
+      <p class="step-copy mb-0">Your Cosmic Life Path Reading Is Being Generated Right Now.</p>
 
-        <div class="spinner-image-wrap my-4">
-          <img src="{{ asset('imgs/spinner.png') }}" alt="Generating your cosmic reading" class="spinner-image mx-auto">
-        </div>
-
-        <p class="loading-subtext">Mapping your cosmic energy patterns...</p>
+      <div class="spinner-image-wrap my-4">
+        <img src="{{ asset('imgs/spinner.png') }}" alt="Generating your cosmic reading" class="spinner-image mx-auto">
       </div>
 
-      
-      <div id="videoStage" class="reading-stage video-stage-panel" aria-hidden="true">
+      <p class="loading-subtext">Mapping your cosmic energy patterns...</p>
+    </div>
+
+    <div id="videoStage" class="step-panel reading-stage video-stage-panel mx-auto text-center loading-panel" aria-hidden="true">
+      <div class="">
         <div class="result-intro-copy">
-          <h2 class="mb-2">Your reading is almost ready, {{ $name }}...</h2>
+          <h2 class="mb-2 section-title">Your reading is almost ready, {{ $name }}...</h2>
           <p class="step-copy mb-0">What she's uncovered about you is extraordinary — knowing who she is will make every word of it more powerful.</p>
         </div>
 
@@ -47,7 +47,7 @@
             @endif
           </div>
 
-          <p class="loading-subtext mt-3">Watch this before viewing your results — and discover how Celestra can help you.</p>
+          <!-- <p class="loading-subtext mt-3">Watch this before viewing your results — and discover how Celestra can help you.</p> -->
 
           <div class="text-center mt-4">
             <a href="{{ route('reading.summary') }}" id="showReadingButton" class="hero-cta btn d-none">✨ Show Me My Cosmic Life Path Reading ✨</a>
@@ -97,12 +97,12 @@
       if (showReadingButton) {
         window.setTimeout(function () {
           showReadingButton.classList.remove('d-none');
-        }, 12000);
+        }, 90000);
       }
 
       window.setTimeout(function () {
         redirectToResults();
-      }, 18000);
+      }, 300000);
     }
 
     window.setTimeout(function () {

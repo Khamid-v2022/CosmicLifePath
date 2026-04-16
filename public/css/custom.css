@@ -84,6 +84,16 @@ textarea:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 1000px rgba(8, 11, 24, 0.95) inset;
 }
 
+.btn {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767.98px) {
+  .btn {
+    font-size: 0.75rem;
+  }
+}
+
 #starCanvas {
   position: fixed;
   inset: 0;
@@ -154,7 +164,7 @@ textarea:-webkit-autofill:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0rem 1rem 4rem;
+  /* padding: 0rem 1rem 4rem; */
 }
 
 .orrery {
@@ -249,7 +259,7 @@ textarea:-webkit-autofill:focus {
 
 .hero-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.3em;
   color: var(--gold);
   text-transform: uppercase;
@@ -285,8 +295,8 @@ textarea:-webkit-autofill:focus {
 }
 
 .hero-cta {
-  /* font-family: 'Cinzel', serif; */
-  font-size: 0.75rem;
+  /* font-family: 'Cinzel', serif;
+  font-size: 0.75rem; */
   font-weight: 600;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -346,10 +356,10 @@ textarea:-webkit-autofill:focus {
 
 .section-label {
   font-family: 'Cinzel', serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.6em;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--gold-dim);
   text-align: center;
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -372,7 +382,6 @@ textarea:-webkit-autofill:focus {
   font-size: 1.2rem;
   letter-spacing: 0.06em;
   color: var(--fg-dim);
-  margin-bottom: 2.8rem;
   line-height: 1.8;
 }
 
@@ -497,18 +506,17 @@ textarea:-webkit-autofill:focus {
   margin-bottom: 0;
   font-weight: 400;
 }
-
 .footer-strip {
   position: relative;
   z-index: 1;
   border-top: 1px solid var(--line);
   padding: 1rem;
   align-items: center;
-  color: rgba(154, 148, 128, 0.4);
+  color: rgba(154, 148, 128, 1);
 }
 .footer-tems a {
-  color: rgba(154, 148, 128, 0.4);
   text-decoration: none;
+  color: rgba(154, 148, 128, 1);
 }
 
 .footer-tems a:hover {
@@ -526,7 +534,6 @@ textarea:-webkit-autofill:focus {
 .footer-copy {
   font-size: 0.9rem;
   letter-spacing: 0.18em;
-  color: rgba(154, 148, 128, 0.4);
   /* text-align: right; */
   margin-bottom: 0;
 }
@@ -600,12 +607,16 @@ textarea:-webkit-autofill:focus {
 .step-section {
   position: relative;
   z-index: 1;
-  padding-top: 9rem;
+  padding-top: 14rem;
   padding-bottom: 5rem;
 }
 
+.small-gap-start.step-section {
+  padding-top: 9rem;
+}
+
 @media (max-width: 575.98px) {
-  .step-section {
+  .step-section, .small-gap-start.step-section {
     padding-top: 5rem;
   }
 }
@@ -624,6 +635,11 @@ textarea:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+@media (max-width: 575.98px) {
+  .step-title {
+    font-size: 1.5rem;
+  }
+}
 .step-copy {
   text-align: center;
   /* font-size: 0.9rem; */
@@ -674,6 +690,12 @@ textarea:-webkit-autofill:focus {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .birth-label {
+    font-size: 0.75rem;
+  }
 }
 
 .birth-inline-selects .form-select,
@@ -962,7 +984,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .proof-image-wrapper {
-  width: 50%;
+  max-width: 74px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -1120,7 +1142,8 @@ textarea:-webkit-autofill:focus {
 }
 
 .spinner-image {
-  width: min(260px, 65vw);
+  max-width: 400px;
+  width: 70%;
   height: auto;
   animation: spinLoader 9s linear infinite;
   filter: drop-shadow(0 0 24px rgba(201, 168, 76, 0.22));
@@ -1256,7 +1279,7 @@ textarea:-webkit-autofill:focus {
   }
 
   .hero-eyebrow, .section-label, .section-desc, .step-copy {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 

@@ -3,14 +3,14 @@
 @section('title', 'Final Step - Contact Details')
 
 @section('content')
-  <section class="step-section container">
+  <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto">
       <h2 class="section-title mb-4">Final Step:<em> Where should we send your reading to?</em></h2>
       
       <div class="row g-4 align-items-start">
         <div class="col-lg-6  order-2 order-lg-1">
           <div class="birth-card h-100">
-            <p class="birth-label"><strong>YOUR READING IS BEING PREPARED BY</strong> <em>Psychic Celestra Vonn</em></p>
+            <p class="birth-label mb-4"><strong>YOUR READING IS BEING PREPARED BY</strong> <em>Psychic Celestra Vonn</em></p>
             <ul class="cosmic-benefits mb-0">
               <li>Discover the hidden gifts and talents unique to you alone</li>
               <li>Uncover the personal blocks quietly holding you back from abundance</li>
@@ -43,10 +43,10 @@
       </div>
       
 
-      <div class="social-proof-wrap mt-5 text-center">
+      <div class="social-proof-wrap mt-3 mt-md-5 text-center">
         <div class="trust-pill">★★★★★ Loved by 12,000+ readers worldwide</div>
-        <div class="row g-3 mt-2">
-          <div class="col-md-4">
+        <div class="row mt-3">
+          <div class="col-md-4 mb-3">
             <div class="proof-card">
               <div class="proof-image-wrapper">
                 <img src="{{ asset('imgs/avatar/elise.png') }}" alt="Cosmic reading testimonial" class="proof-image mb-3">
@@ -55,7 +55,7 @@
               <p class="proof-name">— Elise T., London</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="proof-card">
               <div class="proof-image-wrapper">
                 <img src="{{ asset('imgs/avatar/noah.png') }}" alt="Cosmic reading testimonial" class="proof-image mb-3">
@@ -64,7 +64,7 @@
               <p class="proof-name">— Noah V., Melbourne</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="proof-card">
               <div class="proof-image-wrapper">
                 <img src="{{ asset('imgs/avatar/mia.png') }}" alt="Cosmic reading testimonial" class="proof-image mb-3">

@@ -291,8 +291,8 @@
 
   <section class="zodiac-section container" id="zodiac">
     <p class="section-label">THE TWELVE COSMIC SIGNS</p>
-    <h2 class="section-title">Step #1:<em> Select Your Star Sign Below</em></h2>
-    <p class="section-desc">⚠ Due to high demand, availability is limited. Select your sign now to secure your FREE reading.</p>
+    <h2 class="section-title mb-5">Step #1:<em> Select Your Star Sign Below</em></h2>
+    
 
     <div class="row g-2 zodiac-grid">
       @foreach ($signs as $sign)
@@ -307,5 +307,6 @@
         </div>
       @endforeach
     </div>
+    <p class="section-desc mt-4"><span class="text-warning">⚠</span> Due to high demand, availability is limited. Select your sign now to secure your FREE reading.</p>
   </section>
 @endsection

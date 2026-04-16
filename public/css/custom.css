@@ -250,7 +250,7 @@ textarea:-webkit-autofill:focus {
 .hero-eyebrow {
   font-family: 'Cinzel', serif;
   font-size: 1.2rem;
-  letter-spacing: 0.55em;
+  letter-spacing: 0.3em;
   color: var(--gold);
   text-transform: uppercase;
   margin-bottom: 1.25rem;
@@ -1243,7 +1243,7 @@ textarea:-webkit-autofill:focus {
 
 @media (max-width: 767.98px) {
   .hero-eyebrow {
-    letter-spacing: 0.34em;
+    letter-spacing: 0.1em;
   }
 
   .hero-sub {

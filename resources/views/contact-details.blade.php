@@ -10,7 +10,7 @@
       <div class="row g-4 align-items-start">
         <div class="col-lg-6  order-2 order-lg-1">
           <div class="birth-card h-100">
-            <p class="birth-label mb-4"><strong>YOUR READING IS BEING PREPARED BY</strong> <em>Psychic Celestra Vonn</em></p>
+            <p class="birth-label"><strong>YOUR READING IS BEING PREPARED BY</strong> <em>Psychic Celestra Vonn</em></p>
             <ul class="cosmic-benefits mb-0">
               <li>Discover the hidden gifts and talents unique to you alone</li>
               <li>Uncover the personal blocks quietly holding you back from abundance</li>
@@ -39,12 +39,16 @@
               <button type="submit" class="hero-cta btn step-next-btn mt-4 w-100">Get My FREE Cosmic Life Path Reading...</button>
             </form>
           </div>
+
+          <div class="mt-4 justify-content-center d-flex d-lg-none">
+            <div class="trust-pill">★★★★★ Loved by 12,000+ readers worldwide</div>
+          </div>
         </div>
       </div>
       
 
       <div class="social-proof-wrap mt-3 mt-md-5 text-center">
-        <div class="trust-pill">★★★★★ Loved by 12,000+ readers worldwide</div>
+        <div class="trust-pill d-none d-lg-inline-block">★★★★★ Loved by 12,000+ readers worldwide</div>
         <div class="row mt-3">
           <div class="col-md-4 mb-3">
             <div class="proof-card">

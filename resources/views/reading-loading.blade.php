@@ -50,7 +50,7 @@
           <!-- <p class="loading-subtext mt-3">Watch this before viewing your results — and discover how Celestra can help you.</p> -->
 
           <div class="text-center mt-4">
-            <a href="{{ route('reading.summary') }}" id="showReadingButton" class="hero-cta btn d-none">✨ Show Me My Cosmic Life Path Reading ✨</a>
+            <a href="{{ route('reading.summary') }}" id="showReadingButton" class="hero-cta btn d-none">Show Me My Cosmic Life Path Reading</a>
           </div>
         </div>
 

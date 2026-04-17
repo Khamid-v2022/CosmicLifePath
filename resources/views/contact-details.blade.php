@@ -24,6 +24,19 @@
             <form method="POST" action="{{ route('reading.contact.submit') }}" id="contactDetailsForm" class="contact-form">
               @csrf
 
+              <!-- Hidden fields to persist birth data -->
+              <input type="hidden" name="birth_sign_slug" value="{{ $birth['sign_slug'] }}">
+              <input type="hidden" name="birth_month" value="{{ $birth['month'] }}">
+              <input type="hidden" name="birth_day" value="{{ $birth['day'] }}">
+              <input type="hidden" name="birth_year" value="{{ $birth['year'] }}">
+              <input type="hidden" name="birth_formatted_date" value="{{ $birth['formatted_date'] }}">
+              <input type="hidden" name="birth_hour" value="{{ $birth['hour'] }}">
+              <input type="hidden" name="birth_minute" value="{{ $birth['minute'] }}">
+              <input type="hidden" name="birth_meridiem" value="{{ $birth['meridiem'] }}">
+              <input type="hidden" name="birth_time_unknown" value="{{ $birth['time_unknown'] ? '1' : '0' }}">
+              <input type="hidden" name="birth_place" value="{{ $birth['birth_place'] }}">
+              <input type="hidden" name="birth_place_unknown" value="{{ $birth['place_unknown'] ? '1' : '0' }}">
+
               <label class="birth-label" for="contactName">Name</label>
               <input type="text" id="contactName" name="name" class="form-control cosmic-input mb-3" value="{{ old('name') }}" required>
 

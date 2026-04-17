@@ -90,7 +90,25 @@
         <p class="step-copy article-copy"><strong>Click the button below now</strong> to experience a <strong>true personalised Cosmic Life Path Reading.</strong></p>
 
         <div class="text-center mt-5">
-          <a href="{{ route('sales.page') }}" class="hero-cta btn step-next-btn">Continue to My Offer</a>
+          <form id="salesPageForm" method="POST" action="{{ route('sales.page') }}" style="display: inline;">
+            @csrf
+            <!-- Hidden fields to persist birth data -->
+            <input type="hidden" name="birth_sign_slug" value="{{ $birth['sign_slug'] }}">
+            <input type="hidden" name="birth_month" value="{{ $birth['month'] }}">
+            <input type="hidden" name="birth_day" value="{{ $birth['day'] }}">
+            <input type="hidden" name="birth_year" value="{{ $birth['year'] }}">
+            <input type="hidden" name="birth_formatted_date" value="{{ $birth['formatted_date'] }}">
+            <input type="hidden" name="birth_hour" value="{{ $birth['hour'] }}">
+            <input type="hidden" name="birth_minute" value="{{ $birth['minute'] }}">
+            <input type="hidden" name="birth_meridiem" value="{{ $birth['meridiem'] }}">
+            <input type="hidden" name="birth_time_unknown" value="{{ $birth['time_unknown'] ? '1' : '0' }}">
+            <input type="hidden" name="birth_place" value="{{ $birth['birth_place'] }}">
+            <input type="hidden" name="birth_place_unknown" value="{{ $birth['place_unknown'] ? '1' : '0' }}">
+            <!-- Hidden fields to persist contact data -->
+            <input type="hidden" name="contact_name" value="{{ $name }}">
+            <input type="hidden" name="contact_email" value="{{ $email }}">
+            <button type="submit" class="hero-cta btn step-next-btn">Continue to My Offer</button>
+          </form>
         </div>
 
       </article>

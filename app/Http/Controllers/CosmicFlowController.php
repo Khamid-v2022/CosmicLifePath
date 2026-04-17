@@ -57,7 +57,7 @@ class CosmicFlowController extends Controller
                 ->withInput();
         }
 
-        $request->session()->put('cosmic.reading.birth', [
+        $birth = [
             'sign' => $sign,
             'sign_slug' => $validated['sign'],
             'month' => $month,
@@ -70,25 +70,68 @@ class CosmicFlowController extends Controller
             'time_unknown' => $timeUnknown,
             'birth_place' => $birthPlace,
             'place_unknown' => $placeUnknown,
-        ]);
+        ];
+
+        // Store in session
+        $request->session()->put('cosmic.reading.birth', $birth);
 
         return redirect()->route('reading.contact');
     }
 
-    public function contact(): View
+    public function contact(Request $request): View
     {
-        $birth = session('cosmic.reading.birth');
+        // Try to get birth data from form submission first, then fall back to session
+        $birth = null;
+
+        if ($request->has('birth_sign_slug')) {
+            // Reconstruct birth data from hidden fields
+            $birth = [
+                'sign_slug' => $request->input('birth_sign_slug'),
+                'sign' => $this->findSignOrFail($request->input('birth_sign_slug')),
+                'month' => (int) $request->input('birth_month'),
+                'day' => (int) $request->input('birth_day'),
+                'year' => (int) $request->input('birth_year'),
+                'formatted_date' => $request->input('birth_formatted_date'),
+                'hour' => (int) $request->input('birth_hour'),
+                'minute' => (int) $request->input('birth_minute'),
+                'meridiem' => $request->input('birth_meridiem'),
+                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
+                'birth_place' => $request->input('birth_place'),
+                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+            ];
+        } else {
+            // Fall back to session
+            $birth = $request->session()->get('cosmic.reading.birth');
+        }
 
         abort_unless(is_array($birth), 404);
 
-        return view('contact-details', [
-            'birth' => $birth,
-        ]);
+        return view('contact-details', ['birth' => $birth]);
     }
 
     public function storeContact(Request $request): RedirectResponse
     {
-        $birth = $request->session()->get('cosmic.reading.birth');
+        // Get birth data from form submission
+        $birth = null;
+
+        if ($request->has('birth_sign_slug')) {
+            $birth = [
+                'sign_slug' => $request->input('birth_sign_slug'),
+                'sign' => $this->findSignOrFail($request->input('birth_sign_slug')),
+                'month' => (int) $request->input('birth_month'),
+                'day' => (int) $request->input('birth_day'),
+                'year' => (int) $request->input('birth_year'),
+                'formatted_date' => $request->input('birth_formatted_date'),
+                'hour' => (int) $request->input('birth_hour'),
+                'minute' => (int) $request->input('birth_minute'),
+                'meridiem' => $request->input('birth_meridiem'),
+                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
+                'birth_place' => $request->input('birth_place'),
+                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+            ];
+        } else {
+            $birth = $request->session()->get('cosmic.reading.birth');
+        }
 
         abort_unless(is_array($birth), 404);
 
@@ -97,18 +140,49 @@ class CosmicFlowController extends Controller
             'email' => ['required', 'email', 'max:190'],
         ]);
 
-        $request->session()->put('cosmic.reading.contact', [
+        $contact = [
             'name' => trim($validated['name']),
             'email' => trim($validated['email']),
-        ]);
+        ];
+
+        // Store in session
+        $request->session()->put('cosmic.reading.contact', $contact);
+        $request->session()->put('cosmic.reading.birth', $birth);
 
         return redirect()->route('reading.loading');
     }
 
-    public function loading(): View
+    public function loading(Request $request): View
     {
-        $birth = session('cosmic.reading.birth');
-        $contact = session('cosmic.reading.contact');
+        // Try to get data from form submission first, then fall back to session
+        $birth = null;
+        $contact = null;
+
+        if ($request->has('birth_sign_slug')) {
+            $birth = [
+                'sign_slug' => $request->input('birth_sign_slug'),
+                'sign' => $this->findSignOrFail($request->input('birth_sign_slug')),
+                'month' => (int) $request->input('birth_month'),
+                'day' => (int) $request->input('birth_day'),
+                'year' => (int) $request->input('birth_year'),
+                'formatted_date' => $request->input('birth_formatted_date'),
+                'hour' => (int) $request->input('birth_hour'),
+                'minute' => (int) $request->input('birth_minute'),
+                'meridiem' => $request->input('birth_meridiem'),
+                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
+                'birth_place' => $request->input('birth_place'),
+                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+            ];
+
+            $contact = [
+                'name' => $request->input('contact_name'),
+                'email' => $request->input('contact_email'),
+            ];
+        } else {
+            // Fall back to session
+            $birth = $request->session()->get('cosmic.reading.birth');
+            $contact = $request->session()->get('cosmic.reading.contact');
+        }
 
         abort_unless(is_array($birth) && is_array($contact), 404);
 
@@ -123,13 +197,42 @@ class CosmicFlowController extends Controller
                 ? 'Place not provided'
                 : $birth['birth_place'],
             'videoUrl' => config('services.cosmic.video_url'),
+            'birth' => $birth,
+            'contact' => $contact,
         ]);
     }
 
-    public function summary(): View
+    public function summary(Request $request): View
     {
-        $birth = session('cosmic.reading.birth');
-        $contact = session('cosmic.reading.contact');
+        // Try to get data from form submission first, then fall back to session
+        $birth = null;
+        $contact = null;
+
+        if ($request->has('birth_sign_slug')) {
+            $birth = [
+                'sign_slug' => $request->input('birth_sign_slug'),
+                'sign' => $this->findSignOrFail($request->input('birth_sign_slug')),
+                'month' => (int) $request->input('birth_month'),
+                'day' => (int) $request->input('birth_day'),
+                'year' => (int) $request->input('birth_year'),
+                'formatted_date' => $request->input('birth_formatted_date'),
+                'hour' => (int) $request->input('birth_hour'),
+                'minute' => (int) $request->input('birth_minute'),
+                'meridiem' => $request->input('birth_meridiem'),
+                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
+                'birth_place' => $request->input('birth_place'),
+                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+            ];
+
+            $contact = [
+                'name' => $request->input('contact_name'),
+                'email' => $request->input('contact_email'),
+            ];
+        } else {
+            // Fall back to session
+            $birth = $request->session()->get('cosmic.reading.birth');
+            $contact = $request->session()->get('cosmic.reading.contact');
+        }
 
         abort_unless(is_array($birth) && is_array($contact), 404);
 
@@ -144,13 +247,42 @@ class CosmicFlowController extends Controller
             'birthPlace' => $birth['place_unknown']
                 ? 'Place not provided'
                 : $birth['birth_place'],
+            'birth' => $birth,
+            'contact' => $contact,
         ]);
     }
 
-    public function sales(): View
+    public function sales(Request $request): View
     {
-        $birth = session('cosmic.reading.birth');
-        $contact = session('cosmic.reading.contact');
+        // Try to get data from form submission first, then fall back to session
+        $birth = null;
+        $contact = null;
+
+        if ($request->has('birth_sign_slug')) {
+            $birth = [
+                'sign_slug' => $request->input('birth_sign_slug'),
+                'sign' => $this->findSignOrFail($request->input('birth_sign_slug')),
+                'month' => (int) $request->input('birth_month'),
+                'day' => (int) $request->input('birth_day'),
+                'year' => (int) $request->input('birth_year'),
+                'formatted_date' => $request->input('birth_formatted_date'),
+                'hour' => (int) $request->input('birth_hour'),
+                'minute' => (int) $request->input('birth_minute'),
+                'meridiem' => $request->input('birth_meridiem'),
+                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
+                'birth_place' => $request->input('birth_place'),
+                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+            ];
+
+            $contact = [
+                'name' => $request->input('contact_name'),
+                'email' => $request->input('contact_email'),
+            ];
+        } else {
+            // Fall back to session
+            $birth = $request->session()->get('cosmic.reading.birth');
+            $contact = $request->session()->get('cosmic.reading.contact');
+        }
 
         abort_unless(is_array($birth) && is_array($contact), 404);
 
@@ -159,6 +291,8 @@ class CosmicFlowController extends Controller
             'email' => $contact['email'],
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
+            'birth' => $birth,
+            'contact' => $contact,
         ]);
     }
 

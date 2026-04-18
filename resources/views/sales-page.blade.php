@@ -39,13 +39,13 @@
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> was designed by the <strong>unique cosmic energy patterns of the planets at the time of your birth</strong>.</p>
         <p class="step-copy article-copy">You are now uncovering that divine plan for your life right now.</p>
         <p class="step-copy article-copy">You’re about to discover special talents and gifts you never knew you had, along with how to use them to carry out your life purpose and attract wealth effortlessly.</p>
-        <p class="step-copy article-copy">{{ $name }}, you will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carrying all your life that have prevented the success you want to manifest.</p>
+        <p class="step-copy article-copy">{{ $name }}, you will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carryvu want to manifest.</p>
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> will reveal the secret <strong>you alone can recognize</strong> to have an intimate soul-mate relationship.</p>
         <p class="step-copy article-copy">You will discover <strong>your unique health challenges</strong> and how to overcome them.</p>
         <p class="step-copy article-copy mb-0">You will discover all this and more inside your...</p>
 
 
-        <h2 class="section-title step-title article-major-title mt-5"><strong>Cosmic Life Path Reading Full Report</strong></h2>
+        <h2 class="section-title step-title article-major-title mt-5" style="text-transform: capitalize;"><strong >{{$birth['sign_slug']}} Cosmic Life Path Reading Full Report</strong></h2>
 
 
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
@@ -82,21 +82,24 @@
         </div>
 
         <h3 class="article-subtitle mt-0">Cosmic Vibrant Health Unlocked</h3>
-        <p class="step-copy article-copy mb-0">In this part of the reading, I will reveal to you the key to having vibrant health and wellness <strong>according to your individual Cosmic Life Path charts,</strong> no matter what your genetics or family history.</p>
+        <p class="step-copy article-copy">In this part of the reading, I will reveal to you the key to having vibrant health and wellness <strong>according to your individual Cosmic Life Path charts,</strong> no matter what your genetics or family history.</p>
 
 
         <h3 class="article-subtitle mt-0">Cosmic Wealth Key</h3>
         <div class="article-inline-media media-image-left my-4">
-          <div class="article-inline-copy">
+          <div class="article-inline-copy order-2 order-md-1">
             <p class="step-copy article-copy mb-0">Every <i>Cosmic Life Path Reading</i> has a <strong>unique Cosmic Wealth key.</strong> This Cosmic Wealth Key is <strong>unique to you and you alone.</strong> It’s your key to manifesting wealth and abundance in the least amount of time possible.</p>
           </div>
-          <div class="article-inline-visual">
-            <img src="{{ asset('imgs/sale-page/wealth-key.jpg') }}" alt="Cosmic wealth key" class="img-fluid cosmic-result-image">
+          <div class="article-inline-visual order-1 order-md-2">
+            <!-- <img src="{{ asset('imgs/sale-page/wealth-key.jpg') }}" alt="Cosmic wealth key" class="img-fluid cosmic-result-image"> -->
+             <img src="{{ asset('imgs/sale-page/trauma-release.jpg') }}" alt="Cosmic trauma release" class="img-fluid cosmic-result-image">
           </div>
         </div>
 
         <h3 class="article-subtitle mt-0">Cosmic Trauma Release</h3>
-        <div class="article-inline-media my-4">
+        <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to<strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p>
+        <p class="step-copy article-copy mb-0">You might not realise it yet, {{ $name }}, but...</p>
+        <!-- <div class="article-inline-media my-4">
           <div class="article-inline-copy">
             <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to <strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p>
             <p class="step-copy article-copy mb-0">You might not realise it yet, {{ $name }}, but...</p>
@@ -104,7 +107,7 @@
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/sale-page/trauma-release.jpg') }}" alt="Cosmic trauma release" class="img-fluid cosmic-result-image">
           </div>
-        </div>
+        </div> -->
 
 
         <h2 class="section-title step-title article-major-title mt-5">A <i>Cosmic Life Path Reading</i> Will Transform Your Life...</h2>
@@ -185,7 +188,7 @@
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
           </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
+          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>
@@ -206,11 +209,11 @@
         <h3 class="article-subtitle mt-4">Year of the Horse Prosperity Guide</h3>
 
         <div class="article-inline-media my-4">
-          <div class="article-inline-copy">
+          <div class="article-inline-copy order-2 order-md-1">
             <p class="offer-value">Normal value $47</p>
             <p class="step-copy article-copy">2026 is the Chinese Astrology year of the horse. No matter what star sign you are, you can use the secrets in this report on The Year Of The Horse to prosper like never before in your life.</p>
           </div>
-          <div class="article-inline-visual">
+          <div class="article-inline-visual order-1 order-md-2">
             <img src="{{ asset('imgs/ebook/horse-guide.png') }}" alt="Year of the Horse Prosperity Guide" class="" style="max-width: 200px;">
           </div>
         </div>
@@ -218,10 +221,10 @@
 
         <h3 class="article-subtitle mt-4">Your Soul-Urge Number</h3>
         <div class="article-inline-media article-inline-media-left my-4">
-          <div class="article-inline-visual  order-2 order-md-1">
+          <div class="article-inline-visual ">
             <img src="{{ asset('imgs/ebook/your-soul-urge.png') }}" alt="Your Soul-Urge Number" class="" style="max-width: 200px;">
           </div>
-          <div class="article-inline-copy order-1 order-md-2">
+          <div class="article-inline-copy order-2 order-md-1">
             <p class="offer-value">Normal value $67</p>
             <p class="step-copy article-copy">This report goes perfectly with a <i>Cosmic Life Path reading</i>.</p>
             <p class="step-copy article-copy">Your <i>soul urge number</i> comes from numerology and is worked out from your date of birth and name.</p>
@@ -232,13 +235,13 @@
         <h3 class="article-subtitle mt-4">Your Lunar Money Path</h3>
 
         <div class="article-inline-media my-4">
-          <div class="article-inline-copy">
+          <div class="article-inline-copy order-2 order-md-1">
             <p class="offer-value">Normal value $167</p>
             <p class="step-copy article-copy">The moon has a powerful influence over who we are and what we can achieve in this life.</p>
             <p class="step-copy article-copy">This report will help you to track the days in a lunar month when you are most likely to experience a financial windfall.</p>
             <p class="step-copy article-copy">Whether you’re buying a raffle ticket or a scratch-off card, this lunar money map will be an invaluable guide.</p>
           </div>
-          <div class="article-inline-visual">
+          <div class="article-inline-visual order-1 order-md-2">
             <img src="{{ asset('imgs/ebook/your-lunar-money.png') }}" alt="Your Lunar Money Path" class="" style="max-width: 200px;">
           </div>
         </div>
@@ -251,7 +254,7 @@
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
           </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
+          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>
@@ -267,14 +270,25 @@
         <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
         <p class="step-copy article-copy">A year from now, you'll be in the same spot, wondering why nothing ever seems to shift — not because you're not trying, but because you never had the right starting point.</p>
         <p class="step-copy article-copy"><strong>The second path begins with your <i>Cosmic Life Path Reading</i>.</strong></p>
-        <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
-          <img src="{{ asset('imgs/correct-way.png') }}" alt="Bad idea" class="img-fluid cosmic-result-image article-feature-image">
+        
+
+         <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-md-1">
+            <p class="step-copy article-copy">Not with promises.</p>
+            <p class="step-copy article-copy">With clarity.</p>
+            <p class="step-copy article-copy">A deep, personalised understanding of who you are, how you're wired, and what you've been working against without even knowing it.</p>
+            <p class="step-copy article-copy">From that clarity, things begin to move. Money flows more freely — not by accident, but because you're finally playing to your strengths.</p>
+            <p class="step-copy article-copy">The financial breathing room you've been craving starts to feel real. Security. Flexibility. The ability to say yes to things that used to be out of reach.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-md-2">
+            <img src="{{ asset('imgs/correct-way.png') }}" alt="Good idea" class="img-fluid">
+            <!-- <img src="{{ asset('imgs/ebook/your-lunar-money.png') }}" alt="Your Lunar Money Path" class="" style="max-width: 200px;"> -->
+          </div>
         </div>
-        <p class="step-copy article-copy">Not with promises.</p>
-        <p class="step-copy article-copy">With clarity.</p>
-        <p class="step-copy article-copy">A deep, personalised understanding of who you are, how you're wired, and what you've been working against without even knowing it.</p>
-        <p class="step-copy article-copy">From that clarity, things begin to move. Money flows more freely — not by accident, but because you're finally playing to your strengths.</p>
-        <p class="step-copy article-copy">The financial breathing room you've been craving starts to feel real. Security. Flexibility. The ability to say yes to things that used to be out of reach.</p>
+
+
+
+       
         <p class="step-copy article-copy">Your relationships deepen. Your energy lifts. Your health starts reflecting the life you're building rather than the stress you've been carrying.</p>
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
@@ -285,7 +299,7 @@
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
           </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
+          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>
@@ -321,7 +335,7 @@
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
           </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Send me my Personal Cosmic Life Path Reading today</a>
+          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>

@@ -947,11 +947,11 @@ textarea:-webkit-autofill:focus {
   order: 2;
 }
 
-.article-inline-copy {
+/* .article-inline-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .article-inline-copy .article-copy:last-child {
   margin-bottom: 0;
@@ -1038,7 +1038,7 @@ textarea:-webkit-autofill:focus {
 .cosmic-benefits li {
   margin-bottom: 0.76rem;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 575.98px) {
@@ -1053,7 +1053,7 @@ textarea:-webkit-autofill:focus {
   margin-bottom: 1.4rem;
 }
 
-.offer-callout,
+/* .offer-callout, */
 .offer-cta-block {
   border: 1px solid rgba(201, 168, 76, 0.16);
   background: rgba(255, 255, 255, 0.03);

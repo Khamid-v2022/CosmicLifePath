@@ -13,7 +13,7 @@ class CosmicFlowController extends Controller
         return view('landing');
     }
 
-    public function birthdate(string $sign): View
+    public function birthdate(string $sign)
     {
         return view('birthdate', [
             'signSlug' => $sign,
@@ -41,7 +41,10 @@ class CosmicFlowController extends Controller
         $day = (int) $validated['day'];
         $year = (int) $validated['year'];
 
-        abort_unless(in_array($day, $sign['months'][$month] ?? [], true), 404);
+        // abort_unless(in_array($day, $sign['months'][$month] ?? [], true), 404);
+        if (!in_array($day, $sign['months'][$month] ?? [], true)) {
+            return redirect()->route('landing');
+        }
 
         $timeUnknown = (bool) ($validated['time_unknown'] ?? false);
         $placeUnknown = (bool) ($validated['place_unknown'] ?? false);
@@ -78,7 +81,7 @@ class CosmicFlowController extends Controller
         return redirect()->route('reading.contact');
     }
 
-    public function contact(Request $request): View
+    public function contact(Request $request): View|RedirectResponse
     {
         // Try to get birth data from form submission first, then fall back to session
         $birth = null;
@@ -104,7 +107,10 @@ class CosmicFlowController extends Controller
             $birth = $request->session()->get('cosmic.reading.birth');
         }
 
-        abort_unless(is_array($birth), 404);
+        // abort_unless(is_array($birth), 404);
+        if (!is_array($birth)) {
+            return redirect()->route('landing');
+        }
 
         return view('contact-details', ['birth' => $birth]);
     }
@@ -133,7 +139,10 @@ class CosmicFlowController extends Controller
             $birth = $request->session()->get('cosmic.reading.birth');
         }
 
-        abort_unless(is_array($birth), 404);
+        // abort_unless(is_array($birth), 404);
+        if (!is_array($birth)) {
+            return redirect()->route('landing');
+        }
 
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:100'],
@@ -152,7 +161,7 @@ class CosmicFlowController extends Controller
         return redirect()->route('reading.loading');
     }
 
-    public function loading(Request $request): View
+    public function loading(Request $request): View|RedirectResponse
     {
         // Try to get data from form submission first, then fall back to session
         $birth = null;
@@ -184,7 +193,10 @@ class CosmicFlowController extends Controller
             $contact = $request->session()->get('cosmic.reading.contact');
         }
 
-        abort_unless(is_array($birth) && is_array($contact), 404);
+        // abort_unless(is_array($birth) && is_array($contact), 404);
+        if (!is_array($birth) || !is_array($contact)) {
+            return redirect()->route('landing');
+        }
 
         return view('reading-loading', [
             'name' => $contact['name'],
@@ -234,7 +246,10 @@ class CosmicFlowController extends Controller
             $contact = $request->session()->get('cosmic.reading.contact');
         }
 
-        abort_unless(is_array($birth) && is_array($contact), 404);
+        // abort_unless(is_array($birth) && is_array($contact), 404);
+        if (!is_array($birth) || !is_array($contact)) {
+            return redirect()->route('landing');
+        }
 
         return view('reading-result', [
             'name' => $contact['name'],
@@ -252,7 +267,7 @@ class CosmicFlowController extends Controller
         ]);
     }
 
-    public function sales(Request $request): View
+    public function sales(Request $request)
     {
         // Try to get data from form submission first, then fall back to session
         $birth = null;
@@ -284,7 +299,10 @@ class CosmicFlowController extends Controller
             $contact = $request->session()->get('cosmic.reading.contact');
         }
 
-        abort_unless(is_array($birth) && is_array($contact), 404);
+        // abort_unless(is_array($birth) && is_array($contact), 404);
+        if (!is_array($birth) || !is_array($contact)) {
+            return redirect()->route('landing');
+        }
 
         return view('sales-page', [
             'name' => $contact['name'],

@@ -419,6 +419,13 @@
           </div>
         </div>
 
+        <div class="text-center my-5">
+          <a href="#section_pricing" class="btn hero-cta btn step-next-btn">
+            I Am Ready — Send My Full Report Now →
+          </a>
+          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
+        </div>
+
         <div class="mt-5">
           <h3 class="article-subtitle mt-4">Order Bump #1  —  Add for just $9.95</h3>
           <p class="step-copy article-copy"><strong>Your Cosmic Lucky Dates: A 12-Month Celestial Calendar</strong></p>
@@ -429,12 +436,7 @@
           <p class="step-copy article-copy">Discover the cities, countries, and environments around the world cosmically aligned with your sign — and the exact changes you can make to your home and workspace right now to activate that same powerful energy wherever you are.</p>
         </div>
 
-        <div class="text-center my-5">
-          <a href="#section_pricing" class="btn hero-cta btn step-next-btn">
-            I Am Ready — Send My Full Report Now →
-          </a>
-          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
-        </div>
+       
       </article>
     </div>
   </section>

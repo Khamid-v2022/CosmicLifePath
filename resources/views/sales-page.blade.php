@@ -64,7 +64,7 @@
             <p class="step-copy article-copy mb-0">Here you will learn the fastest, easiest way to unleash <strong>your extraordinary full potential</strong> to achieve any goal you put your mind to. Most people are shocked when they realise how much potential they have.</p>
           </div>
           <div class="article-inline-visual">
-            <img src="{{ asset('imgs/sale-page/potential-unleashed.jpg') }}" alt="Your cosmic potential unleashed" class="img-fluid cosmic-result-image">
+            <img src="{{ asset('imgs/sale-page/potential-unleashed.jpg') }}" alt="Your cosmic potential unleashed" class="img-fluid cosmic-result-image" style="max-height: 168px">
           </div>
         </div>
 
@@ -120,7 +120,7 @@
         <h3 class="article-subtitle mt-4">And there’s more...</h3>
 
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
-          <img src="{{ asset('imgs/life.png') }}" alt="Cosmic life path hero" class="img-fluid cosmic-result-image article-feature-image">
+          <img src="{{ asset('imgs/sale-page/life.png') }}" alt="Cosmic life path hero" class="img-fluid cosmic-result-image article-feature-image">
         </div>
 
         <p class="step-copy article-copy">As you discover your individual life purpose from a <i>Cosmic Life Path Reading,</i> you will also:</p>
@@ -131,13 +131,22 @@
         </ul>
 
         <p class="step-copy article-copy">A <i>Cosmic Life Path Reading</i> helps you to move into harmony with the path the universe had in store for you, based on cosmic energy patterns of the planets at the time of your birth. You will find new opportunities coming into your life.</p>
-        <p class="step-copy article-copy">People who have gotten a <i>Cosmic Life Path Reading...</i></p>
-        <ul class="cosmic-benefits article-copy ps-0" style="list-style-type: none;">
-          <li>- ...get promotions or pay rises out of the blue</li>
-          <li>- ...attract new income streams</li>
-          <li>- ...get new romantic soul-mate relationships</li>
-          <li>- ...experience vibrant health and energy levels they never experienced before</li>
-        </ul>
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">People who have gotten a <i>Cosmic Life Path Reading...</i></p>
+            <ul class="cosmic-benefits article-copy ps-0" style="list-style-type: none;">
+              <li>- ...get promotions or pay rises out of the blue</li>
+              <li>- ...attract new income streams</li>
+              <li>- ...get new romantic soul-mate relationships</li>
+              <li>- ...experience vibrant health and energy levels they never experienced before</li>
+            </ul>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/sale-page/helps-what.png') }}" alt="Cosmic life path benefits" class="img-fluid cosmic-result-image">
+          </div>
+        </div>
+
         <p class="step-copy article-copy">Attract new income streams...new romantic soul-mate relationships...along with vibrant health and energy levels they never experienced before.</p>
         <p class="step-copy article-copy">The one-of-a-kind gifts and abilities you discover in yourself from a <strong><i>Cosmic Life Path Reading</i></strong> will allow you to finally see the kind of person you are meant to be with, {{ $name }}.</p>
         <p class="step-copy article-copy">You will finally stop wasting time on relationships that go nowhere.</p>
@@ -183,8 +192,7 @@
         <p class="step-copy article-copy">After you <strong>hit the add to cart button,</strong> you will be taken immediately to a page that looks like this.</p>
         <p class="step-copy article-copy">After you enter your details, you will be sent your reading within 12 hours.</p>
 
-
-        <section class="pricing-compare my-5" aria-label="Pricing options">
+        <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
 
           <div class="row g-4 align-items-stretch">
@@ -223,7 +231,7 @@
                   <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
                 </div>
 
-                <p class="pricing-group-title">Everything in Essential, PLUS:</p>
+                <p class="pricing-group-title" style="color:gold"><em>Everything in Standard Package, PLUS:</em></p>
                 <ul class="pricing-list">
                   <li>Personal Foreword and Insights By Celestra Vonn</li>
                   <li>Priority Email Support</li>
@@ -296,7 +304,7 @@
 
         <div class="article-inline-media my-4">
           <div class="article-inline-visual">
-            <img src="{{ asset('imgs/wrong-way.png') }}" alt="Bad idea" class="img-fluid">
+            <img src="{{ asset('imgs/sale-page/wrong-way.png') }}" alt="Bad idea" class="img-fluid">
           </div>
           <div class="article-inline-copy">
             <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
@@ -315,7 +323,7 @@
             <p class="step-copy article-copy">The financial breathing room you've been craving starts to feel real. Security. Flexibility. The ability to say yes to things that used to be out of reach.</p>
           </div>
           <div class="article-inline-visual order-1 order-md-2">
-            <img src="{{ asset('imgs/correct-way.png') }}" alt="Good idea" class="img-fluid">
+            <img src="{{ asset('imgs/sale-page/correct-way.png') }}" alt="Good idea" class="img-fluid">
             <!-- <img src="{{ asset('imgs/ebook/your-lunar-money.png') }}" alt="Your Lunar Money Path" class="" style="max-width: 200px;"> -->
           </div>
         </div>
@@ -373,7 +381,7 @@
                   <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
                 </div>
 
-                <p class="pricing-group-title">Everything in Essential, PLUS:</p>
+                <p class="pricing-group-title" style="color:gold"><em>Everything in Standard Package, PLUS:</em></p>
                 <ul class="pricing-list">
                   <li>Personal Foreword and Insights By Celestra Vonn</li>
                   <li>Priority Email Support</li>
@@ -432,6 +440,14 @@
               </div>
             </div>
           </div>
+        </div>
+
+
+        <div class="text-center my-5">
+          <a href="#section_pricing" class="btn hero-cta btn step-next-btn">
+            I Am Ready — Send My Full Report Now 🡪
+          </a>
+          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
         </div>
       </article>
     </div>

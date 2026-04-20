@@ -991,7 +991,7 @@ textarea:-webkit-autofill:focus {
 
 .article-inline-visual .cosmic-result-image {
   /* width: min(100%, 220px); */
-  max-height: 240px;
+  max-height: 276px;
   min-height: 0;
   object-fit: cover;
 }

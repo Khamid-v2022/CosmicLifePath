@@ -23,6 +23,11 @@ main {
 b, strong {
   font-weight: 700;
 }
+
+a {
+  /* text-decoration: none; */
+  color: rgba(154, 148, 128, 1);
+}
 .cosmic-body {
   background: var(--bg);
   color: var(--fg);
@@ -130,8 +135,8 @@ textarea:-webkit-autofill:focus {
 }
 
 .header-logo-img {
-  /* height: 100px; */
-  height: clamp(3rem, 5vw, 6.7rem);
+  /* height: 110px; */
+  height: clamp(4rem, 8vw, 6rem);
   width: auto;
   display: block;
 }
@@ -308,6 +313,7 @@ textarea:-webkit-autofill:focus {
   cursor: pointer;
   opacity: 0;
   animation: fadeUp 1s 1s forwards;
+  width: fit-content;
 }
 
 .hero-cta:hover,
@@ -630,7 +636,7 @@ textarea:-webkit-autofill:focus {
 
 .step-panel {
   max-width: 960px;
-  background: rgba(7, 9, 20, 0.72);
+  background: rgba(7, 9, 20, 0.32);
   border: 1px solid rgba(201, 168, 76, 0.14);
   padding: 2rem;
   backdrop-filter: blur(10px);
@@ -1036,7 +1042,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .cosmic-benefits li {
-  margin-bottom: 0.76rem;
+  margin-bottom: 6px;
   line-height: 1.8;
   font-size: 1.2rem;
 }

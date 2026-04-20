@@ -43,14 +43,14 @@
         <h2 class="article-subtitle mt-5">I sense a <strong>special positive energy</strong> in you, {{ $name }}....</h2>
 
         <div class="article-inline-media article-inline-media-left my-4 d-flex flex-column flex-md-row">
-          <div class="article-inline-visual order-2 order-md-1">
-            <img src="{{ asset('imgs/reading-page/kind-girl.jpg') }}" alt="Cosmic journey hero" class="img-fluid ">
-          </div>
-          <div class="article-inline-copy order-1 order-md-2">
+          <div class="article-inline-copy">
             <p class="step-copy article-copy">You have a good heart and relate to people in a warm way, and are trustworthy. You are loyal to your friends and family.</p>
             <p class="step-copy article-copy">You have worked hard, but you sometimes feel people don’t give you full credit for your abilities.</p>
             <p class="step-copy article-copy">You love unconditionally, but in the past, this love has unfortunately led certain people to take advantage of you, and you’ve been hurt in romantic relationships.</p>
             <p class="step-copy article-copy">You can be a sensitive soul deep down, even though people think you’re tougher than you really are on the outside sometimes.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/reading-page/kind-girl.jpg') }}" alt="Cosmic journey hero" class="img-fluid ">
           </div>
         </div>
 

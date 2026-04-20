@@ -214,7 +214,7 @@ class CosmicFlowController extends Controller
         ]);
     }
 
-    public function summary(Request $request): View
+    public function summary(Request $request): View|RedirectResponse
     {
         // Try to get data from form submission first, then fall back to session
         $birth = null;
@@ -267,7 +267,7 @@ class CosmicFlowController extends Controller
         ]);
     }
 
-    public function sales(Request $request)
+    public function sales(Request $request): View|RedirectResponse
     {
         // Try to get data from form submission first, then fall back to session
         $birth = null;
@@ -339,5 +339,31 @@ class CosmicFlowController extends Controller
             'aquarius' => ['label' => 'Aquarius', 'months' => [1 => range(20, 31), 2 => range(1, 18)]],
             'pisces' => ['label' => 'Pisces', 'months' => [2 => range(19, 29), 3 => range(1, 20)]],
         ];
+    }
+
+
+    public function privacyPolicy(): View
+    {
+        return view('privacy-policy');
+    }
+
+    public function termsService(): View
+    {
+        return view('terms-service');
+    }
+
+    public function disclaimer(): View
+    {
+        return view('disclaimer');
+    }
+
+    public function contactUs(): View
+    {
+        return view('contact-us');
+    }
+
+    public function aboutUs(): View
+    {
+        return view('about-us');
     }
 }

@@ -68,7 +68,9 @@
               <input type="hidden" name="contact_name" value="{{ $name }}">
               <input type="hidden" name="contact_email" value="">
             </form>
-            <a href="#" id="showReadingButton" class="hero-cta btn d-none">Show Me My Cosmic Life Path Reading</a>
+            <div class="text-center d-flex justify-content-center">
+              <a href="#" id="showReadingButton" class="hero-cta btn d-none d-flex align-items-center justify-content-center"><span class="d-flex">✨</span>Show Me My Cosmic Life Path Reading<span class="d-flex">✨</span></a>
+            </div>
           </div>
         </div>
 

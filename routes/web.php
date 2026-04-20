@@ -15,4 +15,10 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::post('/your-reading', 'summary');
     Route::get('/special-offer', 'sales')->name('sales.page');
     Route::post('/special-offer', 'sales');
+
+    Route::get('/privacy-policy', 'privacyPolicy')->name('privacy.policy');
+    Route::get('/terms-service', 'termsService')->name('terms.service');
+    Route::get('/disclaimer', 'disclaimer')->name('disclaimer');
+    Route::get('/contact-us', 'contactUs')->name('contact.us');
+    Route::get('/about-us', 'aboutUs')->name('about.us');
 });

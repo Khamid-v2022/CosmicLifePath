@@ -357,7 +357,7 @@
 
       dayHelp.textContent = message;
       dayHelp.classList.toggle('is-visible', Boolean(message));
-      daySelect.classList.toggle('is-invalid', Boolean(message));
+      // daySelect.classList.toggle('is-invalid', Boolean(message));
     };
 
     const resetDays = () => {
@@ -437,23 +437,39 @@
 
     if (stageNextButton) {
       stageNextButton.addEventListener('click', () => {
+        // Remove all error classes first
+        monthSelect.classList.remove('is-invalid');
+        daySelect.classList.remove('is-invalid');
+        yearSelect.classList.remove('is-invalid');
+        setHelp('');
+
+        // Priority: Month > Day > Year
         if (!monthSelect.value) {
-          setHelp('Please select your birth month first.');
-          daySelect.focus();
+          monthSelect.classList.add('is-invalid');
+          setHelp('Please select your birth month.');
+          monthSelect.focus();
           return;
         }
 
         if (!daySelect.value) {
+          daySelect.classList.add('is-invalid');
           setHelp('Please select your birth day.');
           daySelect.focus();
           return;
         }
 
         if (!yearSelect.value) {
+          yearSelect.classList.add('is-invalid');
           setHelp('Please select your birth year.');
           yearSelect.focus();
           return;
         }
+
+        // All valid, remove errors
+        monthSelect.classList.remove('is-invalid');
+        daySelect.classList.remove('is-invalid');
+        yearSelect.classList.remove('is-invalid');
+        setHelp('');
 
         safeStorage.set('cosmicLifePath.birthdate', JSON.stringify({
           sign: signInput?.value || '',

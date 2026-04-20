@@ -241,7 +241,7 @@
               </article>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="vip_option">
               <article class="pricing-card pricing-card-vip h-100">
                 <div class="pricing-badge">Most Popular - 84% Choose This</div>
                 <div>
@@ -288,7 +288,7 @@
         <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
         <p class="step-copy article-copy">The bills don't get lighter. The relationship doesn't get easier.</p>
 
-        <div class="article-inline-media my-4">
+        <div class="article-inline-media article-inline-media-left my-4">
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/sale-page/wrong-way.png') }}" alt="Bad idea" class="img-fluid">
           </div>
@@ -306,90 +306,25 @@
             <p class="step-copy article-copy">With clarity.</p>
             <p class="step-copy article-copy">A deep, personalised understanding of who you are, how you're wired, and what you've been working against without even knowing it.</p>
             <p class="step-copy article-copy">From that clarity, things begin to move. Money flows more freely — not by accident, but because you're finally playing to your strengths.</p>
-            <p class="step-copy article-copy">The financial breathing room you've been craving starts to feel real. Security. Flexibility. The ability to say yes to things that used to be out of reach.</p>
+            
           </div>
           <div class="article-inline-visual order-1 order-md-2">
-            <img src="{{ asset('imgs/sale-page/correct-way.png') }}" alt="Good idea" class="img-fluid">
+            <img src="{{ asset('imgs/sale-page/correct-way.jpg') }}" alt="Good idea" class="img-fluid">
           </div>
         </div>
-
+        <p class="step-copy article-copy">The financial breathing room you've been craving starts to feel real. Security. Flexibility. The ability to say yes to things that used to be out of reach.</p>
         <p class="step-copy article-copy">Your relationships deepen. Your energy lifts. Your health starts reflecting the life you're building rather than the stress you've been carrying.</p>
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
         <p class="step-copy article-copy">The fork is right in front of you, {{ $name }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
         <p class="step-copy article-copy mb-0"><strong>Choose your path below and claim your reading now.</strong></p>
   
-        <section class="pricing-compare my-5" aria-label="Pricing options">
-          <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
-
-          <div class="row g-4 align-items-stretch">
-            <div class="col-lg-6">
-              <article class="pricing-card pricing-card-standard h-100">
-                <div>
-                  <p class="pricing-tier">Standard Access</p>
-                  <p class="pricing-price">$14.97</p>
-                  <p class="pricing-subtitle">Your Core Reading</p>
-                </div>
-
-                <ul class="pricing-list">
-                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
-                  <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
-                  <li>The Cosmic Key To Your Personal Wealth</li>
-                  <li>Love Secrets &amp; Soulmate Blueprint</li>
-                  <li>Health Blueprint Written In Your Stars</li>
-                  <li>Life Purpose &amp; Divine Mission Revealed</li>
-                  <li>Deep Trauma Release Unique To Your Sign</li>
-                  <li>Instant Digital Delivery</li>
-                  <li>365-Day Money-Back Guarantee</li>
-                </ul>
-
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
-                  Gain Standard Access Now →
-                </a>
-              </article>
-            </div>
-
-            <div class="col-lg-6">
-              <article class="pricing-card pricing-card-vip h-100">
-                <div class="pricing-badge">Most Popular - 84% Choose This</div>
-                <div>
-                  <p class="pricing-tier">VIP Access</p>
-                  <p class="pricing-price">$47</p>
-                  <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
-                </div>
-
-                <p class="pricing-group-title pricing-group-title-plus"><em>Everything in Standard Package, PLUS:</em></p>
-                <ul class="pricing-list">
-                  <li>Personal Foreword and Insights By Celestra Vonn</li>
-                  <li>Priority Email Support</li>
-                  <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
-                </ul>
-
-                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth 428)</p>
-                <ul class="pricing-list pricing-list-bonus">
-                  <li>
-                    The Secret Language of Fame
-                    <span class="pricing-value">Value: $97 - FREE</span>
-                  </li>
-                  <li>
-                    Your Soul Urge Number Report
-                    <span class="pricing-value">Value: $67 - FREE</span>
-                  </li>
-                  <li>
-                    Your Lunar Money Path Report
-                    <span class="pricing-value">Value: $167 - FREE</span>
-                  </li>
-                </ul>
-
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
-                  Gain VIP Access Now →
-                </a>
-              </article>
-            </div>
-          </div>
-
+        <div class="text-center my-5">
+          <a href="#vip_option" class="btn hero-cta btn step-next-btn">
+            I Am Ready — Send My Full Report Now →
+          </a>
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
-        </section>
+        </div>
 
         <!-- testimonials Section -->
         <div class="social-proof-wrap mt-5 text-center">
@@ -418,25 +353,6 @@
             </div>
           </div>
         </div>
-
-        <div class="text-center my-5">
-          <a href="#section_pricing" class="btn hero-cta btn step-next-btn">
-            I Am Ready — Send My Full Report Now →
-          </a>
-          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
-        </div>
-
-        <div class="mt-5">
-          <h3 class="article-subtitle mt-4">Order Bump #1  —  Add for just $9.95</h3>
-          <p class="step-copy article-copy"><strong>Your Cosmic Lucky Dates: A 12-Month Celestial Calendar</strong></p>
-          <p class="step-copy article-copy">Discover the exact dates each month when your sign is cosmically aligned for love, money, career, and life decisions — so you always know the right moment to act.</p>
-
-          <h3 class="article-subtitle mt-4">Order Bump #2  —  Add for just $9.95</h3>
-          <p class="step-copy article-copy"><strong>Your Cosmic Power Space: Environments & Places Written In Your Stars</strong></p>
-          <p class="step-copy article-copy">Discover the cities, countries, and environments around the world cosmically aligned with your sign — and the exact changes you can make to your home and workspace right now to activate that same powerful energy wherever you are.</p>
-        </div>
-
-       
       </article>
     </div>
   </section>

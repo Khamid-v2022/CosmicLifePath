@@ -527,6 +527,17 @@ textarea:-webkit-autofill:focus {
   align-items: center;
   color: rgba(154, 148, 128, 1);
 }
+.footer-bank-text {
+    max-width: 600px;
+    margin: 0 auto 0.75rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 575.98px) {
+  .footer-bank-text {
+    font-size: 0.75rem;
+  }
+}
 .footer-tems a {
   text-decoration: none;
   color: rgba(154, 148, 128, 1);
@@ -1107,7 +1118,7 @@ textarea:-webkit-autofill:focus {
   flex-direction: column;
   gap: 0.8rem;
   height: 100%;
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem 1.5rem;
   background: rgba(9, 12, 24, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -1270,7 +1281,7 @@ textarea:-webkit-autofill:focus {
 
 @media (max-width: 575.98px) {
   .pricing-card {
-    padding: 1.1rem;
+    padding: 2rem 1.1rem 1.1rem;
   }
 
   .pricing-tier {
@@ -1486,10 +1497,6 @@ textarea:-webkit-autofill:focus {
   .hero-sub {
     letter-spacing: 0.08em;
     font-size: 1rem;
-  }
-
-  .footer-copy {
-    text-align: left;
   }
 
   .hero-eyebrow, .section-label, .section-desc, .step-copy {

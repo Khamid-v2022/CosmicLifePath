@@ -146,14 +146,14 @@
 @endsection
 
 @push('scripts')
-  <script>
-    window.COSMIC_FORM_RULE = @json($sign['months']);
-    window.COSMIC_FORM_STATE = {
-            month: @json($oldMonth),
-            day: @json($oldDay),
-            year: @json($oldYear),
-            stage: @json($initialStage),
-    };
+    <script>
+        window.COSMIC_FORM_RULE = @json($sign['months']);
+        window.COSMIC_FORM_STATE = {
+                month: @json($oldMonth),
+                day: @json($oldDay),
+                year: @json($oldYear),
+                stage: @json($initialStage),
+        };
 
         window.COSMIC_BIRTH_DETAILS_STATE = {
             hour: @json(old('hour')),

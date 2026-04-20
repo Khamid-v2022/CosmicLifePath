@@ -60,10 +60,6 @@
                 <p class="step-copy article-copy mb-5">
                     Welcome to The Cosmic Life Path - where the cosmos reveals, and you take the first step forward.
                 </p>
-
-                <small class="">
-                    &copy; 2025 TheCosmicLifePath.com | All Rights Reserved.
-                </small>
             </div>
         </div>
     </section>

@@ -103,11 +103,6 @@
                 <p class="step-copy article-copy mb-5">
                     TheCosmicLifePath.com reserves the right to update or modify this Disclaimer at any time without prior notice. Continued use of this website after changes are posted constitutes your acceptance of the updated Disclaimer. For questions, contact us at <a href="mailto:support@thecosmiclifepath.com" target="_blank">support@thecosmiclifepath.com</a>.
                 </p>
-
-                <small class=""><em>
-                    ClickBank is the retailer of products on this site. CLICKBANK(R) is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</em><br>
-                    &copy; 2026 TheCosmicLifePath.com | All Rights Reserved.
-                </small>
             </div>
         </div>
     </section>

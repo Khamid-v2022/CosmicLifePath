@@ -191,11 +191,6 @@
                     For any questions or concerns regarding your privacy, you may contact us at:<br>
                     <a href="mailto:support@thecosmiclifepath.com" target="_blank">support@thecosmiclifepath.com</a>
                 </p>
-                
-                <small class=""><em>
-                    ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</em><br>
-                    © 2025 TheCosmicLifePath.com | All Rights Reserved.
-                </small>
             </div>
         </div>
     </section>

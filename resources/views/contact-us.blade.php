@@ -51,10 +51,6 @@
                 <p class="step-copy article-copy mb-5">
                     TheCosmicLifePath.com is an online digital product business. We do not have a physical walk-in location. All support is handled via email. We appreciate your patience and look forward to connecting with you.
                 </p>
-
-                <small class="">
-                    &copy; 2025 TheCosmicLifePath.com | All Rights Reserved.
-                </small>
             </div>
         </div>
     </section>

@@ -58,13 +58,14 @@
         <h3 class="article-subtitle mt-0">Your Cosmic Personality Code:</h3>
         <p class="step-copy article-copy mb-0">This is who you are at the core of your being. The hidden parts of your personality that you are not aware of. You will see hidden gifts <strong>you alone possess,</strong> along with <strong>your distinctive blind spots</strong> that stop you from using them to attract more abundance.</p>
 
-        <h3 class="article-subtitle mt-0">Your Cosmic Potential Unleashed:</h3>
+       
         <div class="article-inline-media my-4">
           <div class="article-inline-copy">
+            <h3 class="article-subtitle mt-0" style="letter-spacing: -1px">Your Cosmic Potential Unleashed:</h3>
             <p class="step-copy article-copy mb-0">Here you will learn the fastest, easiest way to unleash <strong>your extraordinary full potential</strong> to achieve any goal you put your mind to. Most people are shocked when they realise how much potential they have.</p>
           </div>
           <div class="article-inline-visual">
-            <img src="{{ asset('imgs/sale-page/potential-unleashed.jpg') }}" alt="Your cosmic potential unleashed" class="img-fluid cosmic-result-image" style="max-height: 168px">
+            <img src="{{ asset('imgs/sale-page/potential-unleashed.jpg') }}" alt="Your cosmic potential unleashed" class="img-fluid cosmic-result-image">
           </div>
         </div>
 
@@ -175,22 +176,40 @@
         </div>
 
         <p class="step-copy article-copy">Private clients pay even more sometimes.</p>
-        <p class="step-copy article-copy">Many of these clients say they have spent ten times that amount, though.</p>
-        <p class="step-copy article-copy">Discovering the hidden parts of their personalities and their special gifts and talents opened up doors and opportunities they never imagined possible.</p>
+        <p class="step-copy article-copy">Many of these clients say they have spent ten times that amount, though. Discovering the hidden parts of their personalities and their special gifts and talents opened up doors and opportunities they never imagined possible.</p>
 
-        <h3 class="article-subtitle mt-4">If you act right now, you can get access to your Cosmic Life Path Reading for just $14.97</h3>
-        <p class="step-copy article-copy">That’s right, when you act today right now, you can get a <strong>personal <i>Cosmic Life Path Reading</i></strong> for just $14.97.</p>
-        <p class="step-copy article-copy">Why such a low, no-brainer investment?</p>
-        <p class="step-copy article-copy">That’s simple.</p>
-        <p class="step-copy article-copy">I want to make getting your <i>Cosmic Life Path Reading</i> a complete no-brainer.</p>
-        <p class="step-copy article-copy">I want your <i>Cosmic Life Path Reading</i> to be a doorway to a new you, where every aspect of your life improves.</p>
-        <p class="step-copy article-copy">...Where you can tap into new opportunities.</p>
-        <p class="step-copy article-copy">...See new income streams appear before your eyes that you never saw before.</p>
-        <p class="step-copy article-copy">...Become a better parent, provider, sibling, or partner.</p>
-        <p class="step-copy article-copy">All because you tapped into <strong>unique talents and gifts</strong> you never knew you possessed before that created an amazing new life for you and your loved ones.</p>
-        <p class="step-copy article-copy"><strong>Hit the add to cart button below</strong> right now and get instant access to your <i>Cosmic Life Path Reading</i>.</p>
-        <p class="step-copy article-copy">After you <strong>hit the add to cart button,</strong> you will be taken immediately to a page that looks like this.</p>
-        <p class="step-copy article-copy">After you enter your details, you will be sent your reading within 12 hours.</p>
+        <p class="step-copy article-copy"><strong>Today, for the first time, I am opening this to everyone — at a fraction of what my private clients have always paid.</strong></p>
+        <p class="step-copy article-copy">The investment is almost embarrassingly small for what you are about to receive.</p>
+        <p class="step-copy article-copy">I want your Cosmic Life Path Reading to be the doorway to a new you — where every aspect of your life finally begins to move in the direction it was always meant to go.</p>
+        <p class="step-copy article-copy">Where you tap into unique talents and gifts you never knew you possessed.<br>
+        Where new opportunities appear before your eyes that you could never see before.<br>
+        Where you become the parent, partner, and person you always knew you were capable of being.</p>
+        <p class="step-copy article-copy">And if for any reason — or no reason at all — you are not completely satisfied, simply contact us for a full and complete refund. No questions. No quibbling. You are fully protected.</p>
+
+        <h2 class="section-title step-title article-major-title mt-0 text-center">In The VIP Member’s Area, You Also Receive...</h2>
+        <p class="offer-value text-center">Three exclusive bonuses that deepen, extend, and bring your Cosmic Life Path Reading to life.</p>
+
+        <h3 class="article-subtitle mt-4">Bonus #1 — The Secret Language of Fame</h3>
+        <p class="offer-value">Value $97</p>
+        <p class="step-copy article-copy">What if the proof that your cosmic blueprint is real was hiding in plain sight — in the lives of the most celebrated people in the world?</p>
+        <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
+        <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
+
+        <h3 class="article-subtitle mt-4">Bonus #2 — Your Soul Urge Number Report</h3>
+        <p class="offer-value">Value $67</p>
+        <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
+        <p class="step-copy article-copy">Derived from your name using ancient numerology, this report uncovers the hidden desires and deepest motivations driving every major decision you have ever made — often without you realising it. Together with your reading, it completes the picture.</p>
+        <p class="step-copy article-copy"><strong>Together, your Cosmic Life Path Reading and your Soul Urge Number Report create a complete picture of who you truly are — one that no single system alone could reveal.</strong></p>
+
+        <h3 class="article-subtitle mt-4">Bonus #3 — Your Lunar Money Path Report</h3>
+        <p class="offer-value">Value $167</p>
+        <p class="step-copy article-copy">The moon governs the tides. It also governs your financial flow — if you know when to move with it.</p>
+        <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
+        <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
+
+        <hr>
+        <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE When You Choose The Complete Guide Today</h4>
+        <hr>
 
         <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
@@ -231,7 +250,7 @@
                   <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
                 </div>
 
-                <p class="pricing-group-title" style="color:gold"><em>Everything in Standard Package, PLUS:</em></p>
+                <p class="pricing-group-title pricing-group-title-plus"><em>Everything in Standard Package, PLUS:</em></p>
                 <ul class="pricing-list">
                   <li>Personal Foreword and Insights By Celestra Vonn</li>
                   <li>Priority Email Support</li>
@@ -263,40 +282,7 @@
 
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
         </section>
-
-        <!-- <p class="step-copy article-copy"><strong>Hit the add to cart button</strong> below and get instant access to your personalized <i>Cosmic Life Path</i> reading. {{ $name }}.</p> -->
-        <p class="step-copy article-copy">Use it to uncover unique gifts and talents you never knew you had.</p>
-        <p class="step-copy article-copy">Use the reading to see your real self, perhaps for the first time ever, the parts you have kept hidden that have the power to create an incredible life for yourself.</p>
-        <p class="step-copy article-copy">And if for any reason or no reason you are not happy, simply contact me for a full and complete refund.</p>
-        <p class="step-copy article-copy">No questions, no quibbling.</p>
-        <p class="step-copy article-copy">And there’s more...</p>
-
-
-        <h2 class="section-title step-title article-major-title mt-0">When You Choose The Complete Guide, You Also Receive...</h2>
-        <p class="offer-value">Three exclusive bonuses designed to deepen, extend, and bring your Cosmic Life Path Reading to life.</p>
-
-        <h3 class="article-subtitle mt-4">Bonus #1 — The Secret Language of Fame</h3>
-        <p class="offer-value">Value $97</p>
-        <p class="step-copy article-copy">What if the proof that your cosmic blueprint is real was hiding in plain sight — in the lives of the most celebrated people in the world?</p>
-        <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
-        <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
-
-        <h3 class="article-subtitle mt-4">Bonus #2 — Your Soul Urge Number Report</h3>
-        <p class="offer-value">Value $67</p>
-        <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
-        <p class="step-copy article-copy">Derived from your name using ancient numerology, this report uncovers the hidden desires and deepest motivations driving every major decision you have ever made — often without you realising it. Together with your reading, it completes the picture.</p>
-        <p class="step-copy article-copy"><strong>Together, your Cosmic Life Path Reading and your Soul Urge Number Report create a complete picture of who you truly are — one that no single system alone could reveal.</strong></p>
-
-        <h3 class="article-subtitle mt-4">Bonus #3 — Your Lunar Money Path Report</h3>
-        <p class="offer-value">Value $167</p>
-        <p class="step-copy article-copy">The moon governs the tides. It also governs your financial flow — if you know when to move with it.</p>
-        <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
-        <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
-
-        <hr>
-        <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE When You Choose The Complete Guide Today</h4>
-        <hr>
-
+        
         <h2 class="section-title step-title article-major-title mt-0">{{ $name }}, Right now, you're standing at a fork in the road…</h2>
         <p class="step-copy article-copy"><strong>The first path is the one you already know.</strong></p>
         <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
@@ -324,7 +310,6 @@
           </div>
           <div class="article-inline-visual order-1 order-md-2">
             <img src="{{ asset('imgs/sale-page/correct-way.png') }}" alt="Good idea" class="img-fluid">
-            <!-- <img src="{{ asset('imgs/ebook/your-lunar-money.png') }}" alt="Your Lunar Money Path" class="" style="max-width: 200px;"> -->
           </div>
         </div>
 
@@ -332,16 +317,8 @@
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
         <p class="step-copy article-copy">The fork is right in front of you, {{ $name }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
-        <p class="step-copy article-copy mb-0">Hit the add to cart button below right now and get instant access to your personal Cosmic Life Path Reading.</p>
+        <p class="step-copy article-copy mb-0"><strong>Choose your path below and claim your reading now.</strong></p>
   
-        <!-- <div class="offer-cta-block text-center my-5">
-          <div class="article-inline-visual">
-            <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
-          </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
-          <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
-          <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
-        </div> -->
         <section class="pricing-compare my-5" aria-label="Pricing options">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
 
@@ -381,7 +358,7 @@
                   <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
                 </div>
 
-                <p class="pricing-group-title" style="color:gold"><em>Everything in Standard Package, PLUS:</em></p>
+                <p class="pricing-group-title pricing-group-title-plus"><em>Everything in Standard Package, PLUS:</em></p>
                 <ul class="pricing-list">
                   <li>Personal Foreword and Insights By Celestra Vonn</li>
                   <li>Priority Email Support</li>
@@ -422,7 +399,7 @@
               <div class="proof-card h-100 text-center">
                 <img src="{{ asset('imgs/avatar/james.png') }}" alt="James R." class="testimonial-avatar">
                 <p class="proof-name mb-2">James R.<span class="d-block mt-2 testimonial-location">Madison, Wisconsin</span></p>
-                <p class="proof-quote">“I've always known there was more to me than what I was living. My Cosmic Life Path Reading described things about my personality and my blocks that I had never told anyone. Three months later, I changed careers and landed a role that finally feels like it was made for me. I genuinely believe this reading put me on the right path.”</p>
+                <p class="proof-quote">“I've always known there was more to me than what I was living. My Cosmic Life Path Reading described things about my personality and my blocks that I had never told anyone. Three months later I changed careers and landed a role that finally feels like it was made for me. I genuinely believe this reading put me on the right path.”</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -442,6 +419,15 @@
           </div>
         </div>
 
+        <div class="mt-5">
+          <h3 class="article-subtitle mt-4">Order Bump #1  —  Add for just $9.95</h3>
+          <p class="step-copy article-copy"><strong>Your Cosmic Lucky Dates: A 12-Month Celestial Calendar</strong></p>
+          <p class="step-copy article-copy">Discover the exact dates each month when your sign is cosmically aligned for love, money, career, and life decisions — so you always know the right moment to act.</p>
+
+          <h3 class="article-subtitle mt-4">Order Bump #2  —  Add for just $9.95</h3>
+          <p class="step-copy article-copy"><strong>Your Cosmic Power Space: Environments & Places Written In Your Stars</strong></p>
+          <p class="step-copy article-copy">Discover the cities, countries, and environments around the world cosmically aligned with your sign — and the exact changes you can make to your home and workspace right now to activate that same powerful energy wherever you are.</p>
+        </div>
 
         <div class="text-center my-5">
           <a href="#section_pricing" class="btn hero-cta btn step-next-btn">

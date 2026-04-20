@@ -325,10 +325,7 @@
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
         <p class="step-copy article-copy">The fork is right in front of you, {{ $name }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
         <p class="step-copy article-copy mb-0">Hit the add to cart button below right now and get instant access to your personal Cosmic Life Path Reading.</p>
-
-
-
-        
+  
         <!-- <div class="offer-cta-block text-center my-5">
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
@@ -409,31 +406,29 @@
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
         </section>
 
-
-
-
+        <!-- testimonials Section -->
         <div class="social-proof-wrap mt-5 text-center">
           <div class="trust-pill">Real client experiences</div>
           <div class="row g-4 mt-2">
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/james.png') }}" alt="James Smith" class="testimonial-avatar">
-                <p class="proof-name mb-2">James Smith <span class="d-block mt-2 testimonial-location">Madison, Wisconsin</span></p>
-                <p class="proof-quote">“I have a strong sense that positive changes are on the horizon for both my career and my relationships. Sending love and light to everyone.”</p>
+                <img src="{{ asset('imgs/avatar/james.png') }}" alt="James R." class="testimonial-avatar">
+                <p class="proof-name mb-2">James R.<span class="d-block mt-2 testimonial-location">Madison, Wisconsin</span></p>
+                <p class="proof-quote">“I've always known there was more to me than what I was living. My Cosmic Life Path Reading described things about my personality and my blocks that I had never told anyone. Three months later, I changed careers and landed a role that finally feels like it was made for me. I genuinely believe this reading put me on the right path.”</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/elzabeth.png') }}" alt="Elizabeth Garcia" class="testimonial-avatar">
-                <p class="proof-name mb-2">Elizabeth Garcia <span class="d-block mt-2 testimonial-location">Franklin, Tennessee</span></p>
-                <p class="proof-quote">“I really loved receiving my Cosmic Life Path Reading—it helped guide me through some difficult decisions during a challenging time in my life. Now I’m patiently waiting to see how everything unfolds.”</p>
+                <img src="{{ asset('imgs/avatar/elzabeth.png') }}" alt="Elizabeth G." class="testimonial-avatar">
+                <p class="proof-name mb-2">Elizabeth G. <span class="d-block mt-2 testimonial-location">Franklin, Tennessee</span></p>
+                <p class="proof-quote">“I was going through one of the hardest seasons of my life when I found this. The reading didn't just describe who I am — it helped me understand why I kept repeating the same patterns in my relationships and my finances. For the first time I felt like I actually had a map. I've recommended it to everyone I know.”</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/lauren.png') }}" alt="Lauren Martinez" class="testimonial-avatar">
-                <p class="proof-name mb-2">Lauren Martinez <span class="d-block mt-2 testimonial-location">Ashland, Oregon</span></p>
-                <p class="proof-quote">“I’ve had my cards read before, but nothing compares to the Cosmic Life Path Reading. She understood things about me that I never even shared. It honestly feels like a huge weight has been lifted, and I can finally breathe easier. I’ll definitely be coming back for more readings. Thank you, Celestra!”</p>
+                <img src="{{ asset('imgs/avatar/lauren.png') }}" alt="Lauren M." class="testimonial-avatar">
+                <p class="proof-name mb-2">Lauren M. <span class="d-block mt-2 testimonial-location">Ashland, Oregon</span></p>
+                <p class="proof-quote">“I've had my cards read before and always walked away feeling like it could apply to anyone. This was completely different. Celestra described things about my inner world that I had never shared with another soul. It felt like someone finally saw me — not the version I show the world, but the real me. I've read it four times now.”</p>
               </div>
             </div>
           </div>

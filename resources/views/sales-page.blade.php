@@ -184,14 +184,77 @@
         <p class="step-copy article-copy">After you enter your details, you will be sent your reading within 12 hours.</p>
 
 
-        <div class="offer-cta-block text-center my-5">
-          <div class="article-inline-visual">
-            <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
+        <section class="pricing-compare my-5" aria-label="Pricing options">
+          <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
+
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-6">
+              <article class="pricing-card pricing-card-standard h-100">
+                <div>
+                  <p class="pricing-tier">Standard Access</p>
+                  <p class="pricing-price">$14.97</p>
+                  <p class="pricing-subtitle">Your Core Reading</p>
+                </div>
+
+                <ul class="pricing-list">
+                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
+                  <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
+                  <li>The Cosmic Key To Your Personal Wealth</li>
+                  <li>Love Secrets &amp; Soulmate Blueprint</li>
+                  <li>Health Blueprint Written In Your Stars</li>
+                  <li>Life Purpose &amp; Divine Mission Revealed</li>
+                  <li>Deep Trauma Release Unique To Your Sign</li>
+                  <li>Instant Digital Delivery</li>
+                  <li>365-Day Money-Back Guarantee</li>
+                </ul>
+
+                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                  Gain Standard Access Now 🡪
+                </a>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="pricing-card pricing-card-vip h-100">
+                <div class="pricing-badge">Most Popular - 84% Choose This</div>
+                <div>
+                  <p class="pricing-tier">VIP Access</p>
+                  <p class="pricing-price">$47</p>
+                  <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
+                </div>
+
+                <p class="pricing-group-title">Everything in Essential, PLUS:</p>
+                <ul class="pricing-list">
+                  <li>Personal Foreword and Insights By Celestra Vonn</li>
+                  <li>Priority Email Support</li>
+                  <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
+                </ul>
+
+                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth 428)</p>
+                <ul class="pricing-list pricing-list-bonus">
+                  <li>
+                    The Secret Language of Fame
+                    <span class="pricing-value">Value: $97 - FREE</span>
+                  </li>
+                  <li>
+                    Your Soul Urge Number Report
+                    <span class="pricing-value">Value: $67 - FREE</span>
+                  </li>
+                  <li>
+                    Your Lunar Money Path Report
+                    <span class="pricing-value">Value: $167 - FREE</span>
+                  </li>
+                </ul>
+
+                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                  Gain VIP Access Now 🡪
+                </a>
+              </article>
+            </div>
           </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
-          <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
-          <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
-        </div>
+
+          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
+        </section>
 
         <!-- <p class="step-copy article-copy"><strong>Hit the add to cart button</strong> below and get instant access to your personalized <i>Cosmic Life Path</i> reading. {{ $name }}.</p> -->
         <p class="step-copy article-copy">Use it to uncover unique gifts and talents you never knew you had.</p>
@@ -201,77 +264,48 @@
         <p class="step-copy article-copy">And there’s more...</p>
 
 
-        <h2 class="section-title step-title article-major-title mt-0">Act Now and get these FAST-ACTION bonuses completely FREE</h2>
-        <hr>
-        <!-- <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
-          <img src="{{ asset('imgs/sale-page/bounses.jpg') }}" alt="Fast-action bonuses" class="img-fluid cosmic-result-image article-feature-image">
-        </div> -->
-        <h3 class="article-subtitle mt-4">Year of the Horse Prosperity Guide</h3>
+        <h2 class="section-title step-title article-major-title mt-0">When You Choose The Complete Guide, You Also Receive...</h2>
+        <p class="offer-value">Three exclusive bonuses designed to deepen, extend, and bring your Cosmic Life Path Reading to life.</p>
 
-        <div class="article-inline-media my-4">
-          <div class="article-inline-copy order-2 order-md-1">
-            <p class="offer-value">Normal value $47</p>
-            <p class="step-copy article-copy">2026 is the Chinese Astrology year of the horse. No matter what star sign you are, you can use the secrets in this report on The Year Of The Horse to prosper like never before in your life.</p>
-          </div>
-          <div class="article-inline-visual order-1 order-md-2">
-            <img src="{{ asset('imgs/ebook/horse-guide.png') }}" alt="Year of the Horse Prosperity Guide" class="" style="max-width: 200px;">
-          </div>
-        </div>
+        <h3 class="article-subtitle mt-4">Bonus #1 — The Secret Language of Fame</h3>
+        <p class="offer-value">Value $97</p>
+        <p class="step-copy article-copy">What if the proof that your cosmic blueprint is real was hiding in plain sight — in the lives of the most celebrated people in the world?</p>
+        <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
+        <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
 
+        <h3 class="article-subtitle mt-4">Bonus #2 — Your Soul Urge Number Report</h3>
+        <p class="offer-value">Value $67</p>
+        <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
+        <p class="step-copy article-copy">Derived from your name using ancient numerology, this report uncovers the hidden desires and deepest motivations driving every major decision you have ever made — often without you realising it. Together with your reading, it completes the picture.</p>
+        <p class="step-copy article-copy"><strong>Together, your Cosmic Life Path Reading and your Soul Urge Number Report create a complete picture of who you truly are — one that no single system alone could reveal.</strong></p>
 
-        <h3 class="article-subtitle mt-4">Your Soul-Urge Number</h3>
-        <div class="article-inline-media article-inline-media-left my-4">
-          <div class="article-inline-visual ">
-            <img src="{{ asset('imgs/ebook/your-soul-urge.png') }}" alt="Your Soul-Urge Number" class="" style="max-width: 200px;">
-          </div>
-          <div class="article-inline-copy order-2 order-md-1">
-            <p class="offer-value">Normal value $67</p>
-            <p class="step-copy article-copy">This report goes perfectly with a <i>Cosmic Life Path reading</i>.</p>
-            <p class="step-copy article-copy">Your <i>soul urge number</i> comes from numerology and is worked out from your date of birth and name.</p>
-            <p class="step-copy article-copy">The report will uncover your deepest desires and urges in this life and how to express them to maximise your happiness and health.</p>
-          </div>
-        </div>
-
-        <h3 class="article-subtitle mt-4">Your Lunar Money Path</h3>
-
-        <div class="article-inline-media my-4">
-          <div class="article-inline-copy order-2 order-md-1">
-            <p class="offer-value">Normal value $167</p>
-            <p class="step-copy article-copy">The moon has a powerful influence over who we are and what we can achieve in this life.</p>
-            <p class="step-copy article-copy">This report will help you to track the days in a lunar month when you are most likely to experience a financial windfall.</p>
-            <p class="step-copy article-copy">Whether you’re buying a raffle ticket or a scratch-off card, this lunar money map will be an invaluable guide.</p>
-          </div>
-          <div class="article-inline-visual order-1 order-md-2">
-            <img src="{{ asset('imgs/ebook/your-lunar-money.png') }}" alt="Your Lunar Money Path" class="" style="max-width: 200px;">
-          </div>
-        </div>
+        <h3 class="article-subtitle mt-4">Bonus #3 — Your Lunar Money Path Report</h3>
+        <p class="offer-value">Value $167</p>
+        <p class="step-copy article-copy">The moon governs the tides. It also governs your financial flow — if you know when to move with it.</p>
+        <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
+        <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
 
         <hr>
-        <p class="step-copy article-copy">These bonuses have a combined value of $181. They are yours here today for FREE.</p>
-        <p class="step-copy article-copy mb-0"><strong>Hit the add to cart button</strong> below right now and get instant access to your <i>Cosmic Life Path Reading</i>.</p>
-
-        <div class="offer-cta-block text-center my-5">
-          <div class="article-inline-visual">
-            <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
-          </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
-          <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
-          <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
-        </div>
-
+        <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE When You Choose The Complete Guide Today</h4>
+        <hr>
 
         <h2 class="section-title step-title article-major-title mt-0">{{ $name }}, Right now, you're standing at a fork in the road…</h2>
         <p class="step-copy article-copy"><strong>The first path is the one you already know.</strong></p>
-        <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
-          <img src="{{ asset('imgs/wrong-way.png') }}" alt="Bad idea" class="img-fluid cosmic-result-image article-feature-image">
-        </div>
         <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
         <p class="step-copy article-copy">The bills don't get lighter. The relationship doesn't get easier.</p>
-        <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
-        <p class="step-copy article-copy">A year from now, you'll be in the same spot, wondering why nothing ever seems to shift — not because you're not trying, but because you never had the right starting point.</p>
-        <p class="step-copy article-copy"><strong>The second path begins with your <i>Cosmic Life Path Reading</i>.</strong></p>
-        
 
+        <div class="article-inline-media my-4">
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/wrong-way.png') }}" alt="Bad idea" class="img-fluid">
+          </div>
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">The Sunday night dread doesn't go anywhere.</p>
+            <p class="step-copy article-copy">A year from now, you'll be in the same spot, wondering why nothing ever seems to shift — not because you're not trying, but because you never had the right starting point.</p>
+          </div>
+          
+        </div>
+        
+        <p class="step-copy article-copy"><strong>The second path begins with your <i>Cosmic Life Path Reading</i>.</strong></p>
          <div class="article-inline-media my-4">
           <div class="article-inline-copy order-2 order-md-1">
             <p class="step-copy article-copy">Not with promises.</p>
@@ -286,23 +320,97 @@
           </div>
         </div>
 
-
-
-       
         <p class="step-copy article-copy">Your relationships deepen. Your energy lifts. Your health starts reflecting the life you're building rather than the stress you've been carrying.</p>
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
         <p class="step-copy article-copy">The fork is right in front of you, {{ $name }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
         <p class="step-copy article-copy mb-0">Hit the add to cart button below right now and get instant access to your personal Cosmic Life Path Reading.</p>
 
-        <div class="offer-cta-block text-center my-5">
+
+
+        
+        <!-- <div class="offer-cta-block text-center my-5">
           <div class="article-inline-visual">
             <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
           </div>
           <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
           <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
           <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
-        </div>
+        </div> -->
+        <section class="pricing-compare my-5" aria-label="Pricing options">
+          <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>
+
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-6">
+              <article class="pricing-card pricing-card-standard h-100">
+                <div>
+                  <p class="pricing-tier">Standard Access</p>
+                  <p class="pricing-price">$14.97</p>
+                  <p class="pricing-subtitle">Your Core Reading</p>
+                </div>
+
+                <ul class="pricing-list">
+                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
+                  <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
+                  <li>The Cosmic Key To Your Personal Wealth</li>
+                  <li>Love Secrets &amp; Soulmate Blueprint</li>
+                  <li>Health Blueprint Written In Your Stars</li>
+                  <li>Life Purpose &amp; Divine Mission Revealed</li>
+                  <li>Deep Trauma Release Unique To Your Sign</li>
+                  <li>Instant Digital Delivery</li>
+                  <li>365-Day Money-Back Guarantee</li>
+                </ul>
+
+                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                  Gain Standard Access Now 🡪
+                </a>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="pricing-card pricing-card-vip h-100">
+                <div class="pricing-badge">Most Popular - 84% Choose This</div>
+                <div>
+                  <p class="pricing-tier">VIP Access</p>
+                  <p class="pricing-price">$47</p>
+                  <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
+                </div>
+
+                <p class="pricing-group-title">Everything in Essential, PLUS:</p>
+                <ul class="pricing-list">
+                  <li>Personal Foreword and Insights By Celestra Vonn</li>
+                  <li>Priority Email Support</li>
+                  <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
+                </ul>
+
+                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth 428)</p>
+                <ul class="pricing-list pricing-list-bonus">
+                  <li>
+                    The Secret Language of Fame
+                    <span class="pricing-value">Value: $97 - FREE</span>
+                  </li>
+                  <li>
+                    Your Soul Urge Number Report
+                    <span class="pricing-value">Value: $67 - FREE</span>
+                  </li>
+                  <li>
+                    Your Lunar Money Path Report
+                    <span class="pricing-value">Value: $167 - FREE</span>
+                  </li>
+                </ul>
+
+                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                  Gain VIP Access Now 🡪
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
+        </section>
+
+
+
 
         <div class="social-proof-wrap mt-5 text-center">
           <div class="trust-pill">Real client experiences</div>
@@ -329,15 +437,6 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="offer-cta-block text-center my-5">
-          <div class="article-inline-visual">
-            <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="3 Pack Bonus" class="my-4" style="max-height: 200px; max-width: 100%;">
-          </div>
-          <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="hero-cta btn step-next-btn">Order Now</a>
-          <p class="offer-price-line mt-3 mb-1"><span class="text-decoration-line-through">$557</span> only $14.97</p>
-          <p class="offer-guarantee mb-0">365-day money-back guarantee</p>
         </div>
       </article>
     </div>

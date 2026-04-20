@@ -236,7 +236,7 @@
                 </ul>
 
                 <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
-                  Gain Standard Access Now 🡪
+                  Gain Standard Access Now →
                 </a>
               </article>
             </div>
@@ -274,7 +274,7 @@
                 </ul>
 
                 <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
-                  Gain VIP Access Now 🡪
+                  Gain VIP Access Now →
                 </a>
               </article>
             </div>
@@ -344,7 +344,7 @@
                 </ul>
 
                 <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
-                  Gain Standard Access Now 🡪
+                  Gain Standard Access Now →
                 </a>
               </article>
             </div>
@@ -382,7 +382,7 @@
                 </ul>
 
                 <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
-                  Gain VIP Access Now 🡪
+                  Gain VIP Access Now →
                 </a>
               </article>
             </div>
@@ -431,7 +431,7 @@
 
         <div class="text-center my-5">
           <a href="#section_pricing" class="btn hero-cta btn step-next-btn">
-            I Am Ready — Send My Full Report Now 🡪
+            I Am Ready — Send My Full Report Now →
           </a>
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
         </div>

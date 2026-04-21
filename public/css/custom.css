@@ -1197,7 +1197,7 @@ textarea:-webkit-autofill:focus {
   box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.2), 0 14px 34px rgba(0, 0, 0, 0.3);
 }
 #vip_option {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 210px;
 }
 
 @media (max-width: 575.98px) {

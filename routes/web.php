@@ -21,4 +21,31 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/disclaimer', 'disclaimer')->name('disclaimer');
     Route::get('/contact-us', 'contactUs')->name('contact.us');
     Route::get('/about-us', 'aboutUs')->name('about.us');
+
+    // Download pages for each sign and access type
+    Route::get('/download/vip-aries', 'downloadVipAries')->name('download.vip.aries');
+    Route::get('/download/vip-taurus', 'downloadVipTaurus')->name('download.vip.taurus');
+    Route::get('/download/vip-gemini', 'downloadVipGemini')->name('download.vip.gemini');
+    Route::get('/download/vip-cancer', 'downloadVipCancer')->name('download.vip.cancer');
+    Route::get('/download/vip-leo', 'downloadVipLeo')->name('download.vip.leo');
+    Route::get('/download/vip-virgo', 'downloadVipVirgo')->name('download.vip.virgo');
+    Route::get('/download/vip-libra', 'downloadVipLibra')->name('download.vip.libra');
+    Route::get('/download/vip-scorpio', 'downloadVipScorpio')->name('download.vip.scorpio');
+    Route::get('/download/vip-sagittarius', 'downloadVipSagittarius')->name('download.vip.sagittarius');
+    Route::get('/download/vip-capricorn', 'downloadVipCapricorn')->name('download.vip.capricorn');
+    Route::get('/download/vip-aquarius', 'downloadVipAquarius')->name('download.vip.aquarius');
+    Route::get('/download/vip-pisces', 'downloadVipPisces')->name('download.vip.pisces');
+
+    Route::get('/download/standard-aries', 'downloadStandardAries')->name('download.standard.aries');
+    Route::get('/download/standard-taurus', 'downloadStandardTaurus')->name('download.standard.taurus');
+    Route::get('/download/standard-gemini', 'downloadStandardGemini')->name('download.standard.gemini');
+    Route::get('/download/standard-cancer', 'downloadStandardCancer')->name('download.standard.cancer');
+    Route::get('/download/standard-leo', 'downloadStandardLeo')->name('download.standard.leo');
+    Route::get('/download/standard-virgo', 'downloadStandardVirgo')->name('download.standard.virgo');
+    Route::get('/download/standard-libra', 'downloadStandardLibra')->name('download.standard.libra');
+    Route::get('/download/standard-scorpio', 'downloadStandardScorpio')->name('download.standard.scorpio');
+    Route::get('/download/standard-sagittarius', 'downloadStandardSagittarius')->name('download.standard.sagittarius');
+    Route::get('/download/standard-capricorn', 'downloadStandardCapricorn')->name('download.standard.capricorn');
+    Route::get('/download/standard-aquarius', 'downloadStandardAquarius')->name('download.standard.aquarius');
+    Route::get('/download/standard-pisces', 'downloadStandardPisces')->name('download.standard.pisces');
 });

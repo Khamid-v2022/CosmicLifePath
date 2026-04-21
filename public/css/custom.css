@@ -1579,3 +1579,31 @@ textarea:-webkit-autofill:focus {
     cursor: auto;
   }
 }
+
+
+/* Download pages */
+.download-page {
+  margin-top: 123px;
+}
+.billing-info {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: rgba(232, 204, 133, 0.85);
+    color: black;
+}
+@media (max-width: 575.98px) {
+  .download-page {
+    margin-top: 92px;
+  }
+  .billing-info {
+    font-size: 0.8rem;
+  }
+}
+.download-page .container {
+  max-width: 960px;
+  position: relative;
+  padding: 5rem 1rem 5rem;
+}

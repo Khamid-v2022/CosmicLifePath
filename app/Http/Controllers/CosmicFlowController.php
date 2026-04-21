@@ -6,8 +6,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
-class CosmicFlowController extends Controller
-{
+class CosmicFlowController extends Controller {
+
     public function landing(): View
     {
         return view('landing');
@@ -216,7 +216,6 @@ class CosmicFlowController extends Controller
 
     public function summary(Request $request): View|RedirectResponse
     {
-        // Try to get data from form submission first, then fall back to session
         $birth = null;
         $contact = null;
 
@@ -366,4 +365,128 @@ class CosmicFlowController extends Controller
     {
         return view('about-us');
     }
+
+
+    /**
+     * Download VIP Aries
+     * Route: /download/vip-aries
+     */
+    public function downloadVipAries(): View { return view('download.vip-aries'); }
+    /**
+     * Download VIP Taurus
+     * Route: /download/vip-taurus
+     */
+    public function downloadVipTaurus(): View { return view('download.vip-taurus'); }
+    /**
+     * Download VIP Gemini
+     * Route: /download/vip-gemini
+     */
+    public function downloadVipGemini(): View { return view('download.vip-gemini'); }
+    /**
+     * Download VIP Cancer
+     * Route: /download/vip-cancer
+     */
+    public function downloadVipCancer(): View { return view('download.vip-cancer'); }
+    /**
+     * Download VIP Leo
+     * Route: /download/vip-leo
+     */
+    public function downloadVipLeo(): View { return view('download.vip-leo'); }
+    /**
+     * Download VIP Virgo
+     * Route: /download/vip-virgo
+     */
+    public function downloadVipVirgo(): View { return view('download.vip-virgo'); }
+    /**
+     * Download VIP Libra
+     * Route: /download/vip-libra
+     */
+    public function downloadVipLibra(): View { return view('download.vip-libra'); }
+    /**
+     * Download VIP Scorpio
+     * Route: /download/vip-scorpio
+     */
+    public function downloadVipScorpio(): View { return view('download.vip-scorpio'); }
+    /**
+     * Download VIP Sagittarius
+     * Route: /download/vip-sagittarius
+     */
+    public function downloadVipSagittarius(): View { return view('download.vip-sagittarius'); }
+    /**
+     * Download VIP Capricorn
+     * Route: /download/vip-capricorn
+     */
+    public function downloadVipCapricorn(): View { return view('download.vip-capricorn'); }
+    /**
+     * Download VIP Aquarius
+     * Route: /download/vip-aquarius
+     */
+    public function downloadVipAquarius(): View { return view('download.vip-aquarius'); }
+    /**
+     * Download VIP Pisces
+     * Route: /download/vip-pisces
+     */
+    public function downloadVipPisces(): View { return view('download.vip-pisces'); }
+
+    /**
+     * Download Standard Aries
+     * Route: /download/standard-aries
+     */
+    public function downloadStandardAries(): View { return view('download.standard-aries'); }
+    /**
+     * Download Standard Taurus
+     * Route: /download/standard-taurus
+     */
+    public function downloadStandardTaurus(): View { return view('download.standard-taurus'); }
+    /**
+     * Download Standard Gemini
+     * Route: /download/standard-gemini
+     */
+    public function downloadStandardGemini(): View { return view('download.standard-gemini'); }
+    /**
+     * Download Standard Cancer
+     * Route: /download/standard-cancer
+     */
+    public function downloadStandardCancer(): View { return view('download.standard-cancer'); }
+    /**
+     * Download Standard Leo
+     * Route: /download/standard-leo
+     */
+    public function downloadStandardLeo(): View { return view('download.standard-leo'); }
+    /**
+     * Download Standard Virgo
+     * Route: /download/standard-virgo
+     */
+    public function downloadStandardVirgo(): View { return view('download.standard-virgo'); }
+    /**
+     * Download Standard Libra
+     * Route: /download/standard-libra
+     */
+    public function downloadStandardLibra(): View { return view('download.standard-libra'); }
+    /**
+     * Download Standard Scorpio
+     * Route: /download/standard-scorpio
+     */
+    public function downloadStandardScorpio(): View { return view('download.standard-scorpio'); }
+    /**
+     * Download Standard Sagittarius
+     * Route: /download/standard-sagittarius
+     */
+    public function downloadStandardSagittarius(): View { return view('download.standard-sagittarius'); }
+    /**
+     * Download Standard Capricorn
+     * Route: /download/standard-capricorn
+     */
+    public function downloadStandardCapricorn(): View { return view('download.standard-capricorn'); }
+    /**
+     * Download Standard Aquarius
+     * Route: /download/standard-aquarius
+     */
+    public function downloadStandardAquarius(): View { return view('download.standard-aquarius'); }
+    /**
+     * Download Standard Pisces
+     * Route: /download/standard-pisces
+     */
+    public function downloadStandardPisces(): View { return view('download.standard-pisces'); }
+
 }

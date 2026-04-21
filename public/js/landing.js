@@ -723,20 +723,20 @@
     { name: 'Aiden I.', country: 'Bristol', action: 'just unlocked their reading summary', minutesAgo: 16 },
     { name: 'Nora U.', country: 'Osaka', action: 'just unlocked their reading summary', minutesAgo: 13 },
     { name: 'Mia X.', country: 'Auckland', action: 'just unlocked their reading summary', minutesAgo: 10 },
-    { name: 'Charlotte E.', country: 'Tennessee', action: 'just purchased the full cosmic report', minutesAgo: 4 },
-    { name: 'Liam P.', country: 'Oregon', action: 'just purchased the full cosmic report', minutesAgo: 8 },
-    { name: 'Sophia M.', country: 'Sydney', action: 'just purchased the full cosmic report', minutesAgo: 3 },
-    { name: 'Elijah R.', country: 'Utah', action: 'just purchased the full cosmic report', minutesAgo: 6 },
-    { name: 'Amelia S.', country: 'Toronto', action: 'just purchased the full cosmic report', minutesAgo: 5 },
-    { name: 'Benjamin L.', country: 'Madrid', action: 'just purchased the full cosmic report', minutesAgo: 11 },
-    { name: 'Harper D.', country: 'Daejeon', action: 'just purchased the full cosmic report', minutesAgo: 7 },
-    { name: 'Logan C.', country: 'Austin', action: 'just purchased the full cosmic report', minutesAgo: 9 },
-    { name: 'Isla P.', country: 'Edinburgh', action: 'just purchased the full cosmic report', minutesAgo: 14 },
-    { name: 'Jack W.', country: 'Brisbane', action: 'just purchased the full cosmic report', minutesAgo: 6 },
-    { name: 'Scarlett H.', country: 'San Diego', action: 'just purchased the full cosmic report', minutesAgo: 12 },
-    { name: 'Evelyn B.', country: 'Paris', action: 'just purchased the full cosmic report', minutesAgo: 13 },
-    { name: 'Sebastian T.', country: 'Oslo', action: 'just purchased the full cosmic report', minutesAgo: 15 },
-    { name: 'Abigail N.', country: 'Cape Town', action: 'just purchased the full cosmic report', minutesAgo: 10 },
+    { name: 'Charlotte E.', country: 'Tennessee', action: 'has claimed their VIP access', minutesAgo: 4 },
+    { name: 'Liam P.', country: 'Oregon', action: 'has claimed their VIP access', minutesAgo: 8 },
+    { name: 'Sophia M.', country: 'Sydney', action: 'has claimed their VIP access', minutesAgo: 3 },
+    { name: 'Elijah R.', country: 'Utah', action: 'has claimed their VIP access', minutesAgo: 6 },
+    { name: 'Amelia S.', country: 'Toronto', action: 'has claimed their VIP access', minutesAgo: 5 },
+    { name: 'Benjamin L.', country: 'Madrid', action: 'has claimed their VIP access', minutesAgo: 11 },
+    { name: 'Harper D.', country: 'Daejeon', action: 'has claimed their VIP access', minutesAgo: 7 },
+    { name: 'Logan C.', country: 'Austin', action: 'has claimed their VIP access', minutesAgo: 9 },
+    { name: 'Isla P.', country: 'Edinburgh', action: 'has claimed their standard access', minutesAgo: 14 },
+    { name: 'Jack W.', country: 'Brisbane', action: 'has claimed their standard access', minutesAgo: 6 },
+    { name: 'Scarlett H.', country: 'San Diego', action: 'has claimed their standard access', minutesAgo: 12 },
+    { name: 'Evelyn B.', country: 'Paris', action: 'has claimed their standard access', minutesAgo: 13 },
+    { name: 'Sebastian T.', country: 'Oslo', action: 'has claimed their standard access', minutesAgo: 15 },
+    { name: 'Abigail N.', country: 'Cape Town', action: 'has claimed their standard access', minutesAgo: 10 },
   ];
 
   const socialProofState = {
@@ -749,7 +749,7 @@
 
   function getSocialProofPool(mode) {
     if (mode === 'purchase') {
-      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('purchased'));
+      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('claimed'));
     }
 
     if (mode === 'summary') {

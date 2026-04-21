@@ -1197,7 +1197,13 @@ textarea:-webkit-autofill:focus {
   box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.2), 0 14px 34px rgba(0, 0, 0, 0.3);
 }
 #vip_option {
-  scroll-margin-top: 92px;
+  scroll-margin-top: 140px;
+}
+
+@media (max-width: 575.98px) {
+ #vip_option {
+    scroll-margin-top: 92px;
+  }
 }
 .pricing-badge {
   position: absolute;

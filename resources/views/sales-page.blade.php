@@ -207,9 +207,14 @@
         <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
         <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
 
-        <hr class="mt-5">
-        <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE When You Choose The Complete Guide Today</h4>
-        <hr class="mb-5">
+        <!-- <hr class="mt-5">
+        <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE when You claim your VIP access Today</h4>
+        <hr class="mb-5"> -->
+        <div class="bonus-total-section">
+          <p class="label">✦ Total Bonus Value ✦</p>
+          <p class="value">$331</p>
+          <p class="free-text">Yours <strong>FREE</strong> When You Claim Your VIP Access Today</p>
+        </div>
 
         <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name }}</h2>

@@ -28,6 +28,10 @@ a {
   /* text-decoration: none; */
   color: rgba(154, 148, 128, 1);
 }
+.text-primary {
+  color: var(--gold)!important;
+}
+
 .cosmic-body {
   background: var(--bg);
   color: var(--fg);
@@ -1606,4 +1610,169 @@ textarea:-webkit-autofill:focus {
   max-width: 960px;
   position: relative;
   padding: 5rem 1rem 5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.download-header {
+    text-align: center;
+    margin-bottom: 2.2em;
+}
+.download-header h1 {
+    font-size: 2.1em;
+    margin-bottom: 0.5em;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 12px #1a1a2a;
+}
+.download-user-info {
+    color: #bdbdbd;
+    font-size: 1em;
+    margin-bottom: 0.2em;
+}
+.download-user-info span {
+    margin-right: 1.2em;
+}
+.download-main-sign-image-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5em;
+}
+.download-main-img-large {
+    width: 180px;
+    height: auto;
+}
+.download-section {
+    margin-bottom: 2.2em;
+}
+.download-desc {
+    font-size: 1.13em;
+    color: var(--gold);;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 500;
+}
+.download-instruction {
+    font-size: 1em;
+    color: #bdbdbd;
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+.download-thumbs {
+    display: flex;
+    justify-content: center;
+}
+.download-thumb-list {
+    display: flex;
+    gap: 2.2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumb-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.thumb-img {
+    margin-bottom: 0.7em;
+    transition: box-shadow 0.18s, border 0.18s, transform 0.18s;   
+    height: 145px;
+    width: auto;
+}
+.mainPdfLink:hover, .main-thumb:hover, .thumb-img:hover {
+  transform: scale(1.06);
+}
+
+.thumb-label {
+    font-size: 1.05em;
+    color: #ffe08a;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.2em;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 6px #181c2a;
+}
+@media (max-width: 700px) {
+    .download-main-sign-image-row {
+        margin-bottom: 1.2em;
+    }
+    .download-thumb-list {
+        gap: 1em;
+    }
+    .thumb-img, .main-thumb {
+        width: 70px;
+        height: 90px;
+    }
+}
+
+/* VIP Resource Summary (dark card) */
+.vip-resource-summary.dark-card {
+  background: var(--bg2);
+  border-radius: 14px;
+  box-shadow: 0 2px 18px 0 rgba(201,168,76,0.07);
+  border: 1.5px solid var(--line);
+  padding: 2.2em 1.5em 1.7em 1.5em;
+  margin: 2.2em 0 2.5em 0;
+  color: var(--fg);
+}
+.vip-resource-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45em;
+  color: var(--gold-light);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.1em;
+  letter-spacing: 0.02em;
+}
+.vip-resource-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+.vip-resource-list li {
+  font-size: 1.07em;
+  color: var(--fg);
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.vip-check {
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 0.5em;
+  font-size: 1.1em;
+}
+.vip-highlight {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+.vip-bonus-tag {
+  color: var(--gold-dim);
+  font-size: 0.97em;
+  margin-left: 0.2em;
+}
+.vip-resource-descs {
+  margin-top: 1.7em;
+}
+.vip-resource-desc {
+  border-top: 1px solid var(--line);
+  padding-top: 1.1em;
+  margin-bottom: 1.2em;
+}
+.vip-resource-desc-title {
+  font-weight: 700;
+  color: var(--gold-light);
+  font-size: 1.08em;
+  margin-bottom: 0.3em;
+}
+.vip-resource-desc-text {
+  color: var(--fg-dim);
+  font-size: 0.98em;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .vip-resource-summary.dark-card {
+    padding: 1.1em 0.5em 1.1em 0.5em;
+  }
 }

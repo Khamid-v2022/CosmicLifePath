@@ -7,11 +7,11 @@
         <div class="download-header">
             <h1>Your Cosmic Life Path Reading Is Ready!</h1>
             <p class="download-desc">Download all your resources below — your journey begins now.</p>
-            <div class="download-user-info">
+            <!-- <div class="download-user-info">
                 <span id="downloadSign" class="download-sign"></span>
                 <span id="downloadBirthdate" class="download-birth"></span>
                 <span id="downloadPlace" class="download-place"></span>
-            </div>
+            </div> -->
         </div>
         <div class="download-main-sign-image-row">
             <a href="#" download class="mainPdfLink thumb-link">
@@ -45,20 +45,15 @@
 <script>
     // Download page: show user info from localStorage & set images/pdf links
     (() => {
-        function getBirth() {
-            try {
-                return JSON.parse(window.localStorage.getItem('cosmicLifePath.birthdate') || '{}');
-            } catch { return {}; }
-        }
-        function getDetails() {
-            try {
-                return JSON.parse(window.localStorage.getItem('cosmicLifePath.birthDetails') || '{}');
-            } catch { return {}; }
-        }
         function getContact() {
             try {
                 return JSON.parse(window.localStorage.getItem('cosmicLifePath.contact') || '{}');
             } catch { return {}; }
+        }
+        // sign extract from the URL: get the value after the last '-' in the pathname
+        function getSignFromUrl() {
+            const m = window.location.pathname.match(/(?:vip|standard)-([a-z]+)/i);
+            return m ? m[1].toLowerCase() : '';
         }
         const signMap = {
             aries: 'Aries', taurus: 'Taurus', gemini: 'Gemini', cancer: 'Cancer', leo: 'Leo', virgo: 'Virgo',
@@ -67,31 +62,36 @@
         const signOrder = [
             'aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'
         ];
+        // 이름
+        const contact = getContact();
+        const name = contact.name || 'Guest';
+        const nameEl = document.getElementById('downloadName');
+        if (nameEl) nameEl.textContent = name;
+        // sign
+        let sign = getSignFromUrl();
+        let signDisplay = signMap[sign] || (sign ? sign.charAt(0).toUpperCase() + sign.slice(1) : '');
+        const signEl = document.getElementById('downloadSign');
+        if (signEl) signEl.textContent = signDisplay ? `Sign: ${signDisplay}` : '';
+        // 나머지 정보는 localStorage에서 시도하되, 없으면 비워둠
         function formatBirth(birth) {
-            if (!birth.month || !birth.day || !birth.year) return '';
+            if (!birth || !birth.month || !birth.day || !birth.year) return '';
             return `${String(birth.month).padStart(2,'0')} / ${String(birth.day).padStart(2,'0')} / ${String(birth.year).padStart(4,'0')}`;
         }
-        const birth = getBirth();
-        const details = getDetails();
-        const contact = getContact();
-        // Name
-        // (standard는 이름 노출 없음)
-        // Sign
-        let sign = birth.sign || details.sign || '';
-        let signDisplay = sign;
-        if (signMap[sign]) signDisplay = signMap[sign];
-        document.getElementById('downloadSign').textContent = signDisplay ? `Sign: ${signDisplay}` : '';
-        // Birthdate
+        let birth = {};
+        try { birth = JSON.parse(window.localStorage.getItem('cosmicLifePath.birthdate') || '{}'); } catch {}
         const birthdate = formatBirth(birth);
-        document.getElementById('downloadBirthdate').textContent = birthdate ? `Birthday: ${birthdate}` : '';
-        // Place
+        const birthEl = document.getElementById('downloadBirthdate');
+        if (birthEl) birthEl.textContent = birthdate ? `Birthday: ${birthdate}` : '';
+        let details = {};
+        try { details = JSON.parse(window.localStorage.getItem('cosmicLifePath.birthDetails') || '{}'); } catch {}
         let place = details.placeUnknown ? '' : (details.birthPlace || '');
-        document.getElementById('downloadPlace').textContent = place ? `Place: ${place}` : '';
+        const placeEl = document.getElementById('downloadPlace');
+        if (placeEl) placeEl.textContent = place ? `Place: ${place}` : '';
 
         // Set main product image and download links
         if (sign) {
-            const imgPath = `/imgs/ebook/horoscope/${sign.toLowerCase()}.png`;
-            const pdfPath = `/imgs/ebook/horoscope/${sign.toLowerCase()}.pdf`;
+            const imgPath = `/imgs/ebook/horoscope/${sign}.png`;
+            const pdfPath = `/imgs/ebook/horoscope/${sign}.pdf`;
             const mainImg = document.getElementById('mainProductImg');
             const mainThumbImg = document.getElementById('mainThumbImg');
             const elements = document.querySelectorAll('.mainPdfLink');
@@ -105,7 +105,7 @@
         // Special Access: 11 other signs
         const specialList = document.getElementById('specialZodiacList');
         if (specialList && sign) {
-            const mySign = sign.toLowerCase();
+            const mySign = sign;
             const html = signOrder.filter(s => s !== mySign).map(s => {
                 const img = `/imgs/ebook/horoscope/${s}.png`;
                 const pdf = `/imgs/ebook/horoscope/${s}.pdf`;

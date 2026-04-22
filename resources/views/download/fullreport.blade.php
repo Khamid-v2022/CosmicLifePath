@@ -1,5 +1,3 @@
-{{-- Full Report Purchase Page --}}
-
 @extends('layouts.app')
 @section('title', 'Purchase All 12 Cosmic Life Path Reports')
 
@@ -14,35 +12,37 @@
             <p class="download-desc">Unlock the complete collection of personalized reports for every zodiac sign.<br>Perfect for gifts, research, or your own cosmic exploration!</p>
         </div>
         <div class="fullreport-grid">
-            <!-- 12 sign images with download links -->
+            @php($signs = config('variables.signs'))
+            @foreach($signs as $key => $info)
+                <div class="special-zodiac-card" data-sign="{{ $key }}">
+                    <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
+                    <div class="thumb-label">{{ $info['name'] }}</div>
+                    <div class="special-zodiac-desc">{{ $info['description'] }}</div>
+                    <button class="btn special-zodiac-download" data-sign="{{ $key }}" data-pdf="/imgs/ebook/horoscope/{{ $key }}.pdf">Download Now</button>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
+    
 <script>
     (() => {
-        const signMap = {
-            aries: 'Aries', taurus: 'Taurus', gemini: 'Gemini', cancer: 'Cancer', leo: 'Leo', virgo: 'Virgo',
-            libra: 'Libra', scorpio: 'Scorpio', sagittarius: 'Sagittarius', capricorn: 'Capricorn', aquarius: 'Aquarius', pisces: 'Pisces'
-        };
-        const signOrder = [
-            'aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'
-        ];
         const grid = document.querySelector('.fullreport-grid');
         if (grid) {
-            grid.innerHTML = signOrder.map(sign => {
-                const img = `/imgs/ebook/horoscope/${sign}.png`;
-                const pdf = `/imgs/ebook/horoscope/${sign}.pdf`;
-                const label = signMap[sign] || sign.charAt(0).toUpperCase() + sign.slice(1);
-                return `<div class="fullreport-sign">
-                    <a href="${pdf}" download class="fullreport-sign-link">
-                        <img src="${img}" alt="${label}" class="fullreport-sign-img" />
-                        <div class="fullreport-sign-label">${label}</div>
-                    </a>
-                </div>`;
-            }).join('');
+            grid.addEventListener('click', function(e) {
+                const btn = e.target.closest('.special-zodiac-download');
+                if (btn) {
+                    const pdf = btn.getAttribute('data-pdf');
+                    if (pdf) {
+                        const a = document.createElement('a');
+                        a.href = pdf;
+                        a.download = '';
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    }
+                }
+            });
         }
     })();
 </script>
-@endsection
-
-

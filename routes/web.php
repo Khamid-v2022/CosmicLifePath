@@ -48,4 +48,6 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/download/standard-capricorn', 'downloadStandardCapricorn')->name('download.standard.capricorn');
     Route::get('/download/standard-aquarius', 'downloadStandardAquarius')->name('download.standard.aquarius');
     Route::get('/download/standard-pisces', 'downloadStandardPisces')->name('download.standard.pisces');
+
+    Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
 });

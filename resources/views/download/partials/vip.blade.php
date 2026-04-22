@@ -50,6 +50,8 @@
             </div>
         </section>
 
+
+
         <div class="download-section download-instructions">
             <p class="download-instruction">Click each image below to download your PDF file.<br>We have also emailed you a copy of this page so you always have access.</p>
         </div>
@@ -80,6 +82,16 @@
             <div class="special-access-desc text-center">You can also download the Cosmic Life Path reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
             <div class="special-zodiac-list" id="specialZodiacList"></div>
         </section>
+        
+        <div class="special-access-fullpack">
+            <div class="special-access-fullpack-desc">Or you can choose to purchase the complete 12 full reports below</div>
+            <div class="special-access-fullpack-img-wrap">
+                <img src="/imgs/ebook/3pack.png" alt="All 12 Reports" class="special-access-fullpack-img" />
+            </div>
+            <div class="mt-5">
+                <a href="{{ route('download.fullreport') }}" class="btn hero-cta">Purchase All 12 Reports</a>
+            </div>
+        </div>
     </div>
 </div>
 

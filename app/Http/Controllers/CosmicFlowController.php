@@ -489,4 +489,10 @@ class CosmicFlowController extends Controller {
      */
     public function downloadStandardPisces(): View { return view('download.standard-pisces'); }
 
+
+    /**
+     * Download Full Report (All 12 Signs)
+     * Route: /download/fullreport
+     */
+    public function downloadFullReport(): View { return view('download.fullreport'); }
 }

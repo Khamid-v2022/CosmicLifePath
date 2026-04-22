@@ -32,6 +32,13 @@
                 </div>
             </div>
         </section>
+
+        <!-- Special Access Unlocked Section -->
+        <section class="special-access-section dark-card">
+            <h1 class="special-access-title text-center">Special Access Unlocked!</h1>
+            <div class="special-access-desc text-center">You can also download the Cosmic Life Path reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
+            <div class="special-zodiac-list" id="specialZodiacList"></div>
+        </section>
     </div>
 </div>
 
@@ -57,6 +64,9 @@
             aries: 'Aries', taurus: 'Taurus', gemini: 'Gemini', cancer: 'Cancer', leo: 'Leo', virgo: 'Virgo',
             libra: 'Libra', scorpio: 'Scorpio', sagittarius: 'Sagittarius', capricorn: 'Capricorn', aquarius: 'Aquarius', pisces: 'Pisces'
         };
+        const signOrder = [
+            'aries','taurus','gemini','cancer','leo','virgo','libra','scorpio','sagittarius','capricorn','aquarius','pisces'
+        ];
         function formatBirth(birth) {
             if (!birth.month || !birth.day || !birth.year) return '';
             return `${String(birth.month).padStart(2,'0')} / ${String(birth.day).padStart(2,'0')} / ${String(birth.year).padStart(4,'0')}`;
@@ -90,6 +100,22 @@
             elements.forEach(el => {
                 el.href = pdfPath;
             });
+        }
+
+        // Special Access: 11 other signs
+        const specialList = document.getElementById('specialZodiacList');
+        if (specialList && sign) {
+            const mySign = sign.toLowerCase();
+            const html = signOrder.filter(s => s !== mySign).map(s => {
+                const img = `/imgs/ebook/horoscope/${s}.png`;
+                const pdf = `/imgs/ebook/horoscope/${s}.pdf`;
+                const label = signMap[s] || s.charAt(0).toUpperCase() + s.slice(1);
+                return `<a href="${pdf}" download class="special-zodiac-thumb thumb-link" title="Download ${label} Report">
+                    <img src="${img}" alt="${label}" class="thumb-img special-thumb" />
+                    <div class="thumb-label">${label}</div>
+                </a>`;
+            }).join('');
+            specialList.innerHTML = html;
         }
     })();
 </script>

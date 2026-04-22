@@ -5,7 +5,7 @@
     </div>
     <div class="container">
         <div class="download-header">
-            <h1>Congratulations in unlocking <br>your Cosmic Life Path Full Report, <span id="downloadName"></span>!</h1>
+            <h1>Congratulations, <br>You’ve unlocked your <strong class="text-primary">Cosmic Life Path Full</strong> Report!</h1>
             <p class="download-desc">Download your resources below.</p>
         </div>
         <div class="download-main-sign-image-row">
@@ -14,7 +14,7 @@
             </a>
         </div>
 
-        <!-- <section class="download-resource-summary dark-card">
+        <section class="download-resource-summary dark-card">
             <h2 class="download-resource-title">Your Download Includes</h2>
             <ul class="download-resource-list">
                 <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
@@ -26,7 +26,7 @@
                     <div class="download-resource-desc-text">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
@@ -39,7 +39,7 @@
                         <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
                         <div class="special-zodiac-desc">{{ $info['description'] }}</div>
-                        <button class="btn special-zodiac-download" data-sign="{{ $key }}" data-pdf="/imgs/ebook/horoscope/{{ $key }}.pdf">Download Now</button>
+                        <a class="btn special-zodiac-download" href="{{ url('/download/standard-' . $key) }}">Order Now</a>
                     </div>
                 @endforeach
             </div>
@@ -104,20 +104,7 @@
             if (myCard) myCard.style.display = 'none';
         }
         if (specialList) {
-            specialList.addEventListener('click', function(e) {
-                const btn = e.target.closest('.special-zodiac-download');
-                if (btn) {
-                    const pdf = btn.getAttribute('data-pdf');
-                    if (pdf) {
-                        const a = document.createElement('a');
-                        a.href = pdf;
-                        a.download = '';
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                    }
-                }
-            });
+            // No download logic needed for Order Now links
         }
     })();
 </script>

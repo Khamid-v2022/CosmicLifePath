@@ -9,13 +9,21 @@
             <h1>Welcome to <strong class="text-primary">VIP Access</strong>, <span id="downloadName"></span>!</h1>
             <p class="download-desc">Your complete Cosmic Life Path Full Report for <strong>{{ $sign }}</strong> is ready.<br>Download your resources below.</p>
         </div>
-        <div class="download-main-sign-image-row">
-            <a href="#" download class="mainPdfLink thumb-link">
-                <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
-            </a>
+        <div>
+            <div class="download-main-sign-image-row">
+                <a href="#" download class="mainPdfLink thumb-link">
+                    <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
+                </a>
+            </div>
+            <!-- @php($signs = config('variables.signs'))
+            @if(isset($signs[$sign]))
+                <p class="text-center text-primary report-description">{{ $signs[$sign]['description'] }}</p>
+            @else
+                <p class="text-center text-primary report-description"></p>
+            @endif -->
         </div>
 
-        <!-- <section class="download-resource-summary dark-card">
+        <section class="download-resource-summary dark-card">
             <h2 class="download-resource-title">Your Complete VIP Resources</h2>
             <ul class="download-resource-list">
                 <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
@@ -44,10 +52,10 @@
                     <div class="download-resource-desc-text">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
-        <!-- <div class="download-section download-instructions">
+        <div class="download-section download-instructions">
             <p class="download-instruction">Click each image below to download your PDF file.<br>We have also emailed you a copy of this page so you always have access.</p>
         </div>
         <div class="download-section download-thumbs">
@@ -69,7 +77,7 @@
                     <div class="thumb-label">Bonus #3</div>
                 </a>
             </div>
-        </div> -->
+        </div>
 
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
@@ -82,7 +90,7 @@
                         <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
                         <div class="special-zodiac-desc">{{ $info['description'] }}</div>
-                        <button class="btn special-zodiac-download" data-sign="{{ $key }}" data-pdf="/imgs/ebook/horoscope/{{ $key }}.pdf">Download Now</button>
+                        <a class="btn special-zodiac-download" href="{{ url('/download/vip-' . $key) }}">Order Now</a>
                     </div>
                 @endforeach
             </div>
@@ -148,20 +156,7 @@
             if (myCard) myCard.style.display = 'none';
         }
         if (specialList) {
-            specialList.addEventListener('click', function(e) {
-                const btn = e.target.closest('.special-zodiac-download');
-                if (btn) {
-                    const pdf = btn.getAttribute('data-pdf');
-                    if (pdf) {
-                        const a = document.createElement('a');
-                        a.href = pdf;
-                        a.download = '';
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                    }
-                }
-            });
+            // No download logic needed for Order Now links
         }
     })();
 </script>

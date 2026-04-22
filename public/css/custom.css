@@ -1681,6 +1681,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 0.5em;
     letter-spacing: -1px;
     text-shadow: 0 2px 12px #1a1a2a;
+    line-height: 1.15em;
 }
 .download-user-info {
     color: #bdbdbd;
@@ -1742,6 +1743,9 @@ textarea:-webkit-autofill:focus {
     transition: box-shadow 0.18s, border 0.18s, transform 0.18s;   
     height: 145px;
     width: auto;
+}
+.mainPdfLink img {
+  transition: transform 0.25s;
 }
 .mainPdfLink:hover img, .main-thumb:hover, .thumb-img:hover {
   transform: scale(1.06);
@@ -1936,7 +1940,6 @@ textarea:-webkit-autofill:focus {
 .special-access-fullpack-desc {
     color: var(--gold-light);
     font-size: 1.13em;
-    margin-top: 5em;
     margin-bottom: 2em;
     letter-spacing: 0.01em;
 }

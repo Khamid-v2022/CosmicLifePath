@@ -19,33 +19,33 @@
             </a>
         </div>
 
-        <section class="vip-resource-summary dark-card">
-            <h2 class="vip-resource-title">Your Complete VIP Resources</h2>
-            <ul class="vip-resource-list">
-                <li><span class="vip-check">✓</span> Your Cosmic Life Path Reading — <b>30+ Page Personalised PDF</b></li>
-                <li><span class="vip-check">✓</span> Personal Foreword & Insights By Celestra Vonn — <span class="vip-highlight">included in your reading</span></li>
-                <li><span class="vip-check">✓</span> The Secret Language of Fame <span class="vip-bonus-tag">(Bonus #1)</span></li>
-                <li><span class="vip-check">✓</span> Your Soul Urge Number Report <span class="vip-bonus-tag">(Bonus #2)</span></li>
-                <li><span class="vip-check">✓</span> Your Lunar Money Path Report <span class="vip-bonus-tag">(Bonus #3)</span></li>
-                <li><span class="vip-check">✓</span> Priority Email Support — <span class="vip-highlight">responses within 24 hours</span></li>
-                <li><span class="vip-check">✓</span> First Access to new readings and updates</li>
+        <section class="download-resource-summary dark-card">
+            <h2 class="download-resource-title">Your Complete VIP Resources</h2>
+            <ul class="download-resource-list">
+                <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
+                <li><span class="download-check">✓</span> Personal Foreword & Insights By Celestra Vonn — <span class="download-highlight">included in your reading</span></li>
+                <li><span class="download-check">✓</span> The Secret Language of Fame <span class="download-highlight">(Bonus #1)</span></li>
+                <li><span class="download-check">✓</span> Your Soul Urge Number Report <span class="download-highlight">(Bonus #2)</span></li>
+                <li><span class="download-check">✓</span> Your Lunar Money Path Report <span class="download-highlight">(Bonus #3)</span></li>
+                <li><span class="download-check">✓</span> Priority Email Support — <span class="download-highlight">responses within 24 hours</span></li>
+                <li><span class="download-check">✓</span> First Access to new readings and updates</li>
             </ul>
-            <div class="vip-resource-descs">
-                <div class="vip-resource-desc">
-                    <div class="vip-resource-desc-title">Your Cosmic Life Path Reading</div>
-                    <div class="vip-resource-desc-text">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
+            <div class="download-resource-descs">
+                <div class="download-resource-desc">
+                    <div class="download-resource-desc-title">Your Cosmic Life Path Reading</div>
+                    <div class="download-resource-desc-text">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
                 </div>
-                <div class="vip-resource-desc">
-                    <div class="vip-resource-desc-title">Bonus #1 — The Secret Language of Fame</div>
-                    <div class="vip-resource-desc-text">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
+                <div class="download-resource-desc">
+                    <div class="download-resource-desc-title">Bonus #1 — The Secret Language of Fame</div>
+                    <div class="download-resource-desc-text">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
                 </div>
-                <div class="vip-resource-desc">
-                    <div class="vip-resource-desc-title">Bonus #2 — Your Soul Urge Number Report</div>
-                    <div class="vip-resource-desc-text">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.</div>
+                <div class="download-resource-desc">
+                    <div class="download-resource-desc-title">Bonus #2 — Your Soul Urge Number Report</div>
+                    <div class="download-resource-desc-text">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.</div>
                 </div>
-                <div class="vip-resource-desc">
-                    <div class="vip-resource-desc-title">Bonus #3 — Your Lunar Money Path Report</div>
-                    <div class="vip-resource-desc-text">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
+                <div class="download-resource-desc">
+                    <div class="download-resource-desc-title">Bonus #3 — Your Lunar Money Path Report</div>
+                    <div class="download-resource-desc-text">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                 </div>
             </div>
         </section>

@@ -1680,7 +1680,7 @@ textarea:-webkit-autofill:focus {
     height: 145px;
     width: auto;
 }
-.mainPdfLink:hover, .main-thumb:hover, .thumb-img:hover {
+.mainPdfLink:hover img, .main-thumb:hover, .thumb-img:hover {
   transform: scale(1.06);
 }
 
@@ -1706,8 +1706,8 @@ textarea:-webkit-autofill:focus {
     }
 }
 
-/* VIP Resource Summary (dark card) */
-.vip-resource-summary.dark-card {
+/* Resource Summary (dark card) */
+.download-resource-summary.dark-card {
   background: var(--bg2);
   border-radius: 14px;
   box-shadow: 0 2px 18px 0 rgba(201,168,76,0.07);
@@ -1716,7 +1716,7 @@ textarea:-webkit-autofill:focus {
   margin: 2.2em 0 2.5em 0;
   color: var(--fg);
 }
-.vip-resource-title {
+.download-resource-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.45em;
   color: var(--gold-light);
@@ -1725,54 +1725,54 @@ textarea:-webkit-autofill:focus {
   margin-bottom: 1.1em;
   letter-spacing: 0.02em;
 }
-.vip-resource-list {
+.download-resource-list {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5em;
 }
-.vip-resource-list li {
+.download-resource-list li {
   font-size: 1.07em;
-  color: var(--fg);
+  color: var(--gold);
   margin-bottom: 0.5em;
   display: flex;
   align-items: center;
 }
-.vip-check {
+.download-check {
   color: var(--gold);
   font-weight: bold;
   margin-right: 0.5em;
   font-size: 1.1em;
 }
-.vip-highlight {
+.download-highlight {
   color: var(--gold-light);
-  font-weight: 600;
+  margin-left: 0.2em;
 }
-.vip-bonus-tag {
+.download-bonus-tag {
   color: var(--gold-dim);
   font-size: 0.97em;
   margin-left: 0.2em;
 }
-.vip-resource-descs {
+.download-resource-descs {
   margin-top: 1.7em;
 }
-.vip-resource-desc {
+.download-resource-desc {
   border-top: 1px solid var(--line);
   padding-top: 1.1em;
   margin-bottom: 1.2em;
 }
-.vip-resource-desc-title {
+.download-resource-desc-title {
   font-weight: 700;
   color: var(--gold-light);
   font-size: 1.08em;
   margin-bottom: 0.3em;
 }
-.vip-resource-desc-text {
+.download-resource-desc-text {
   color: var(--fg-dim);
   font-size: 0.98em;
   line-height: 1.7;
 }
 @media (max-width: 700px) {
-  .vip-resource-summary.dark-card {
+  .download-resource-summary.dark-card {
     padding: 1.1em 0.5em 1.1em 0.5em;
   }
 }

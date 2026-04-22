@@ -1681,7 +1681,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 0.5em;
     letter-spacing: -1px;
     text-shadow: 0 2px 12px #1a1a2a;
-    line-height: 1.15em;
+    line-height: 1.4em;
 }
 .download-user-info {
     color: #bdbdbd;
@@ -1801,7 +1801,7 @@ textarea:-webkit-autofill:focus {
   font-size: 1.07em;
   color: var(--gold);
   margin-bottom: 0.5em;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 .download-check {
@@ -1835,7 +1835,7 @@ textarea:-webkit-autofill:focus {
 }
 .download-resource-desc-text {
   color: var(--fg-dim);
-  font-size: 0.98em;
+  font-size: 1.2em;
   line-height: 1.7;
 }
 @media (max-width: 700px) {

@@ -11,16 +11,13 @@
         </div>
         <div>
             <div class="download-main-sign-image-row">
-                <a href="#" download class="mainPdfLink thumb-link">
-                    <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
-                </a>
+                <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
             </div>
-            <!-- @php($signs = config('variables.signs'))
-            @if(isset($signs[$sign]))
-                <p class="text-center text-primary report-description">{{ $signs[$sign]['description'] }}</p>
-            @else
-                <p class="text-center text-primary report-description"></p>
-            @endif -->
+            <div class="download-section download-instructions text-center my-5">
+                <h3 class="text-primary">Your Cosmic Life Path Reading</h3>
+                <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
+                <a class="btn hero-cta mainPdfLink" href="#" download>Download My Reading</a>
+            </div>
         </div>
 
         <section class="download-resource-summary dark-card">
@@ -35,10 +32,7 @@
                 <li><span class="download-check">✓</span> First Access to new readings and updates</li>
             </ul>
             <div class="download-resource-descs">
-                <div class="download-resource-desc">
-                    <div class="download-resource-desc-title">Your Cosmic Life Path Reading</div>
-                    <div class="download-resource-desc-text">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
-                </div>
+                
                 <div class="download-resource-desc">
                     <div class="download-resource-desc-title">Bonus #1 — The Secret Language of Fame</div>
                     <div class="download-resource-desc-text">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>

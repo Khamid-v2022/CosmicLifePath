@@ -8,11 +8,18 @@
             <h1>Congratulations, <br>You’ve unlocked your <strong class="text-primary">Cosmic Life Path Full</strong> Report!</h1>
             <p class="download-desc">Download your resources below.</p>
         </div>
-        <div class="download-main-sign-image-row">
-            <a href="#" download class="mainPdfLink thumb-link">
+
+        <div>
+            <div class="download-main-sign-image-row">
                 <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
-            </a>
+            </div> 
+            <div class="download-section download-instructions text-center my-5">
+                <h3 class="text-primary">Your Cosmic Life Path Reading</h3>
+                <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
+                <a class="btn hero-cta mainPdfLink" href="#" download>Download My Reading</a>
+            </div>
         </div>
+
 
         <section class="download-resource-summary dark-card">
             <h2 class="download-resource-title">Your Download Includes</h2>
@@ -20,12 +27,6 @@
                 <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
                 <li><span class="download-check">✓</span> Instant access in PDF format</li>
             </ul>
-            <div class="download-resource-descs">
-                <div class="download-resource-desc">
-                    <div class="download-resource-desc-title">Your Cosmic Life Path Reading</div>
-                    <div class="download-resource-desc-text">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
-                </div>
-            </div>
         </section>
 
         <!-- Special Access Unlocked Section -->

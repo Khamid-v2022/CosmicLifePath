@@ -22,9 +22,9 @@
 
        <div class="divider">
             <div class="divider-line"></div>
-            <div class="divider-gem"></div>
+            <span class="divider-glyph">✦</span>
             <div class="divider-line"></div>
-            <div class="divider-gem"></div>
+            <span class="divider-glyph">✦</span>
             <div class="divider-line"></div>
         </div>
 

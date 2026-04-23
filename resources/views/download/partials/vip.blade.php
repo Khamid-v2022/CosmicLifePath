@@ -7,20 +7,18 @@
         
         <div class="download-header">
             <h1>Welcome to <strong class="text-primary">VIP Access</strong>, <span id="downloadName"></span>!</h1>
-            <p class="download-desc">Your complete Cosmic Life Path Full Report for <strong>{{ $sign }}</strong> is ready.<br>Download your resources below.</p>
+            <p class="download-desc">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
         </div>
         <div>
             <div class="download-main-sign-image-row">
                 <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
             </div>
             <div class="download-section download-instructions text-center my-5">
-                <h3 class="text-primary"><strong>{{ $sign }}</strong> Cosmic Life Path Full Report</h3>
-                <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
-                <a class="btn hero-cta mainPdfLink" href="#" download>Download My Reading</a>
+                <a class="btn hero-cta mainPdfLink" href="#" download>Download The Full Bundle Now </a>
             </div>
         </div>
 
-        <section class="download-resource-summary dark-card">
+        <!-- <section class="download-resource-summary dark-card">
             <h2 class="download-resource-title">Your Complete VIP Resources</h2>
             <ul class="download-resource-list">
                 <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
@@ -46,14 +44,14 @@
                     <div class="download-resource-desc-text">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <div class="download-section download-instructions">
-            <p class="download-instruction">Click each image below to download your PDF file.<br>We have also emailed you a copy of this page so you always have access.</p>
+            <p class="download-instruction">Click each image below to download your PDF file if you faced issues in using the link given above.</p>
         </div>
         <div class="download-section download-thumbs">
-            <div class="download-thumb-list">
+            <!-- <div class="download-thumb-list">
                 <a href="#" download class="mainPdfLink thumb-link">
                     <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img main-thumb" />
                     <div class="thumb-label">My Reading</div>
@@ -70,6 +68,40 @@
                     <img src="/imgs/ebook/bonuse/bonus3.png" alt="Bonus 3" class="thumb-img" />
                     <div class="thumb-label">Bonus #3</div>
                 </a>
+            </div> -->
+            <div class="row gx-5 gy-4">
+                <div class="col-md-6">
+                    <div class="each-reading-card">
+                        <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img" />
+                        <div class="thumb-label">Your Cosmic Life Path Reading</div>
+                        <div class="special-zodiac-desc">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
+                        <a class="btn btn-primary mainPdfLink" href="#">Download Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="each-reading-card">
+                        <img src="{{ asset('imgs/ebook/bonuse/bonus1.png') }}" alt="Bonus 1" class="thumb-img" />
+                        <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
+                        <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
+                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="each-reading-card">
+                        <img src="{{ asset('imgs/ebook/bonuse/bonus2.png') }}" alt="Bonus 2" class="thumb-img" />
+                        <div class="thumb-label">Bonus #2 — Your Soul Urge Number Report</div>
+                        <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.</div>
+                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="each-reading-card">
+                        <img src="{{ asset('imgs/ebook/bonuse/bonus3.png') }}" alt="Bonus 3" class="thumb-img" />
+                        <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
+                        <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
+                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -90,7 +122,7 @@
             </div>
         </section>
 
-        <div class="special-access-fullpack">
+        <!-- <div class="special-access-fullpack">
             <div class="special-access-fullpack-desc">You can also obtain the full set of 12 full reports below at a special discount too!</div>
             <div class="special-access-fullpack-img-wrap">
                 <img src="/imgs/ebook/3pack.png" alt="All 12 Reports" class="special-access-fullpack-img" />
@@ -98,7 +130,7 @@
             <div class="mt-5">
                 <a href="{{ route('download.fullreport') }}" class="btn hero-cta">Purchase All 12 Reports</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

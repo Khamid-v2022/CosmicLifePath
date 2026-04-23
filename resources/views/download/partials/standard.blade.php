@@ -5,29 +5,32 @@
     </div>
     <div class="container">
         <div class="download-header">
-            <h1>Congratulations, <br>You’ve unlocked your <strong class="text-primary">Cosmic Life Path Full</strong> Report!</h1>
+            <h1>Congratulations!</h1> 
+            <h1>You’ve unlocked your <strong class="text-primary">Cosmic Life Path </strong>Full Report!</h1>
             <p class="download-desc">Download your resources below.</p>
-        </div>
 
-        <div>
-            <div class="download-main-sign-image-row">
-                <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
-            </div> 
-            <div class="download-section download-instructions text-center my-5">
-                <h3 class="text-primary"><strong>{{ $sign }}</strong> Cosmic Life Path Reading</h3>
-                <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
-                <a class="btn hero-cta mainPdfLink" href="#" download>Download My Reading</a>
+            <div>
+                <div class="download-main-sign-image-row">
+                    <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
+                </div> 
+                <div class="download-section download-instructions text-center my-5">
+                    <!-- <h3 class="text-primary"><strong>{{ $sign }}</strong> Cosmic Life Path Reading</h3> -->
+                    <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
+                    <a class="btn hero-cta mainPdfLink" href="#" download>Download Now</a>
+                </div>
             </div>
         </div>
 
+       
 
-        <section class="download-resource-summary dark-card">
+
+        <!-- <section class="download-resource-summary dark-card">
             <h2 class="download-resource-title">Your Download Includes</h2>
             <ul class="download-resource-list">
                 <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
                 <li><span class="download-check">✓</span> Instant access in PDF format</li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
@@ -46,7 +49,7 @@
             </div>
         </section>
 
-        <div class="special-access-fullpack">
+        <!-- <div class="special-access-fullpack">
             <div class="special-access-fullpack-desc">You can also obtain the full set of 12 full reports below at a special discount too!</div>
             <div class="special-access-fullpack-img-wrap">
                 <img src="/imgs/ebook/3pack.png" alt="All 12 Reports" class="special-access-fullpack-img" />
@@ -54,7 +57,7 @@
             <div class="mt-5">
                 <a href="{{ route('download.fullreport') }}" class="btn hero-cta">Purchase All 12 Reports</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

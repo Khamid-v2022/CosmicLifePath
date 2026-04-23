@@ -5,8 +5,8 @@
     </div>
     <div class="container">
         <div class="text-center mb-5">
-            <h1 class="special-access-title">Congratulations!</h1> 
-            <h1>You’ve unlocked your <strong class="text-primary">Cosmic Life Path </strong>Full Report!</h1>
+            <h1 class="special-access-title">✦ Congratulations ✦</h1> 
+            <h1 class="download-title">You’ve unlocked your <br><strong class="accent">Cosmic Life Path</strong> Full Report!</h1>
             <p class="download-desc text-primary mb-4">Download your resources below.</p>
 
             <div>
@@ -20,7 +20,13 @@
             </div>
         </div>
 
-       
+       <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+            <div class="divider-gem"></div>
+            <div class="divider-line"></div>
+        </div>
 
 
         <!-- <section class="download-resource-summary dark-card">
@@ -33,7 +39,7 @@
 
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
-            <h1 class="special-access-title text-center">Special Access Unlocked!</h1>
+            <h1 class="section-title text-center">Special Access Unlocked!</h1>
             <div class="special-access-desc text-center">You can also purchase the Cosmic Life Path full reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
             <div class="special-zodiac-list" id="specialZodiacList">
                 @php($signs = config('variables.signs'))

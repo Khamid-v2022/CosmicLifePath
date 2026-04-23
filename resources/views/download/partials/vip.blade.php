@@ -7,7 +7,7 @@
         
         <div class="download-header">
             <h1>Welcome to <strong class="text-primary">VIP Access</strong>, <span id="downloadName"></span>!</h1>
-            <p class="download-desc">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
+            <p class="download-desc text-primary mb-4">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
         </div>
         <div>
             <div class="download-main-sign-image-row">

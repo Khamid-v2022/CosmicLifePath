@@ -7,7 +7,7 @@
         <div class="download-header">
             <h1>Congratulations!</h1> 
             <h1>You’ve unlocked your <strong class="text-primary">Cosmic Life Path </strong>Full Report!</h1>
-            <p class="download-desc">Download your resources below.</p>
+            <p class="download-desc text-primary mb-4">Download your resources below.</p>
 
             <div>
                 <div class="download-main-sign-image-row">

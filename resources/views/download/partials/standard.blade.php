@@ -6,7 +6,7 @@
     <div class="container">
         <div class="text-center mb-5">
             <h1 class="special-access-title">✦ Congratulations ✦</h1> 
-            <h1 class="download-title">You’ve unlocked your <br><strong class="accent">Cosmic Life Path</strong> Full Report!</h1>
+            <h1 class="download-title">You’ve unlocked your <br><strong class="accent">Cosmic Life Path</strong> <strong>Full Report!</strong></h1>
             <p class="download-desc text-primary mb-4">Download your resources below.</p>
 
             <div>

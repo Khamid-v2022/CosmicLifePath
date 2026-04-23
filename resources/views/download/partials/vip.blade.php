@@ -6,7 +6,7 @@
     <div class="container">
         
         <div class="text-center mb-5">
-            <h1 class="download-title">Welcome to <strong class="accent">VIP Access</strong>, <span id="downloadName"></span>!</h1>
+            <h1 class="download-title">Welcome to <big><strong class="accent">VIP Access</strong></big>, <span id="downloadName"></span>!</h1>
             <p class="download-desc text-primary mb-4">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
         </div>
         <div>

@@ -59,7 +59,7 @@
                             <div class="thumb-label">Your Cosmic Life Path Reading</div>
                             <div class="special-zodiac-desc">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
                         </div>
-                        <a class="btn btn-primary mainPdfLink mx-auto" href="#">Download Now</a>
+                        <a class="btn btn-lg btn-primary mainPdfLink mx-auto" href="#">Download Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -69,7 +69,7 @@
                             <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
                             <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
                         </div>
-                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -80,7 +80,7 @@
                             <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.
                             </div>
                         </div>
-                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
                     </div>
                     
                 </div>
@@ -91,15 +91,23 @@
                             <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
                             <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                         </div>
-                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-glyph">✦</span>
+            <div class="divider-line"></div>
+            <span class="divider-glyph">✦</span>
+            <div class="divider-line"></div>
+        </div>
+        
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
-            <h1 class="special-access-title text-center">Special Access Unlocked!</h1>
+            <h1 class="section-title text-center">Special Access Unlocked!</h1>
             <div class="special-access-desc text-center">You can also purchase the Cosmic Life Path full reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
             <div class="special-zodiac-list" id="specialZodiacList">
                 @php($signs = config('variables.signs'))

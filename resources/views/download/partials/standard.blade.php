@@ -14,8 +14,7 @@
                     <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
                 </div> 
                 <div class="download-section download-instructions text-center my-5">
-                    <!-- <h3 class="text-primary"><strong>{{ $sign }}</strong> Cosmic Life Path Reading</h3> -->
-                    <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
+                    <div class="download-instruction mb-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
                     <a class="btn hero-cta mainPdfLink" href="#" download>Download Now</a>
                 </div>
             </div>

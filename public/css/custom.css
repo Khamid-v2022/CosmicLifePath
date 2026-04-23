@@ -1641,7 +1641,7 @@ textarea:-webkit-autofill:focus {
     margin-right: auto;
 }
 .download-header h1 {
-    font-family: Cinzel, serif;
+    /* font-family: Cinzel, serif; */
     font-size: 2.1em;
     margin-bottom: 0.5em;
     text-shadow: 0 2px 12px #1a1a2a;

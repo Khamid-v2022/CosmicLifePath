@@ -5,8 +5,8 @@
     </div>
     <div class="container">
         
-        <div class="download-header">
-            <h1>Welcome to <strong class="text-primary">VIP Access</strong>, <span id="downloadName"></span>!</h1>
+        <div class="text-center mb-5">
+            <h1 class="special-access-title">Welcome to <strong class="text-white">VIP Access</strong>, <span id="downloadName"></span>!</h1>
             <p class="download-desc text-primary mb-4">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
         </div>
         <div>
@@ -51,55 +51,47 @@
             <p class="download-instruction">Click each image below to download your PDF file if you faced issues in using the link given above.</p>
         </div>
         <div class="download-section download-thumbs">
-            <!-- <div class="download-thumb-list">
-                <a href="#" download class="mainPdfLink thumb-link">
-                    <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img main-thumb" />
-                    <div class="thumb-label">My Reading</div>
-                </a>
-                <a href="/imgs/ebook/bonuse/bonus1.pdf" download class="thumb-link">
-                    <img src="/imgs/ebook/bonuse/bonus1.png" alt="Bonus 1" class="thumb-img" />
-                    <div class="thumb-label">Bonus #1</div>
-                </a>
-                <a href="/imgs/ebook/bonuse/bonus2.pdf" download class="thumb-link">
-                    <img src="/imgs/ebook/bonuse/bonus2.png" alt="Bonus 2" class="thumb-img" />
-                    <div class="thumb-label">Bonus #2</div>
-                </a>
-                <a href="/imgs/ebook/bonuse/bonus3.pdf" download class="thumb-link">
-                    <img src="/imgs/ebook/bonuse/bonus3.png" alt="Bonus 3" class="thumb-img" />
-                    <div class="thumb-label">Bonus #3</div>
-                </a>
-            </div> -->
-            <div class="row gx-5 gy-4">
-                <div class="col-md-6">
-                    <div class="each-reading-card">
-                        <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img" />
-                        <div class="thumb-label">Your Cosmic Life Path Reading</div>
-                        <div class="special-zodiac-desc">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
-                        <a class="btn btn-primary mainPdfLink" href="#">Download Now</a>
+            <div class="row gy-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="each-reading-card d-flex flex-column justify-content-between">
+                        <div>
+                            <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img" />
+                            <div class="thumb-label">Your Cosmic Life Path Reading</div>
+                            <div class="special-zodiac-desc">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
+                        </div>
+                        <a class="btn btn-primary mainPdfLink mx-auto" href="#">Download Now</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="each-reading-card">
-                        <img src="{{ asset('imgs/ebook/bonuse/bonus1.png') }}" alt="Bonus 1" class="thumb-img" />
-                        <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
-                        <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
-                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
+                <div class="col-md-3 col-sm-6">
+                    <div class="each-reading-card d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus1.png') }}" alt="Bonus 1" class="thumb-img" />
+                            <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
+                            <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
+                        </div>
+                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="each-reading-card">
-                        <img src="{{ asset('imgs/ebook/bonuse/bonus2.png') }}" alt="Bonus 2" class="thumb-img" />
-                        <div class="thumb-label">Bonus #2 — Your Soul Urge Number Report</div>
-                        <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.</div>
-                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
+                <div class="col-md-3 col-sm-6">
+                    <div class="each-reading-card d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus2.png') }}" alt="Bonus 2" class="thumb-img" />
+                            <div class="thumb-label">Bonus #2 — Your Soul Urge Number Report</div>
+                            <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.
+                            </div>
+                        </div>
+                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
                     </div>
+                    
                 </div>
-                <div class="col-md-6">
-                    <div class="each-reading-card">
-                        <img src="{{ asset('imgs/ebook/bonuse/bonus3.png') }}" alt="Bonus 3" class="thumb-img" />
-                        <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
-                        <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
-                        <a class="btn btn-primary" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
+                <div class="col-md-3 col-sm-6">
+                    <div class="each-reading-card d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus3.png') }}" alt="Bonus 3" class="thumb-img" />
+                            <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
+                            <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
+                        </div>
+                        <a class="btn btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
                     </div>
                 </div>
             </div>

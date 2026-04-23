@@ -4,8 +4,8 @@
         <p class="mb-0">Billing Information: You will see a charge from "ClickBank" or "CLKBANK.COM" on your statement.</p>
     </div>
     <div class="container">
-        <div class="download-header">
-            <h1>Congratulations!</h1> 
+        <div class="text-center mb-5">
+            <h1 class="special-access-title">Congratulations!</h1> 
             <h1>You’ve unlocked your <strong class="text-primary">Cosmic Life Path </strong>Full Report!</h1>
             <p class="download-desc text-primary mb-4">Download your resources below.</p>
 

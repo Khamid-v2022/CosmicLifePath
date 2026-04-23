@@ -26,10 +26,10 @@
   min-height: 2.2em;
 }
 .special-zodiac-download {
+  font-size: 0.8rem !important;
   margin-top: auto;
   width: 100%;
   font-size: 0.98em;
-  padding: 0.7em 0.5em;
   border-radius: 7px;
   background: var(--gold);
   color: #181c2a;
@@ -1756,7 +1756,7 @@ textarea:-webkit-autofill:focus {
     color: #ffe08a;
     font-weight: 400;
     text-align: center;
-    margin-top: 0.2em;
+    margin: 0.2em 0.5em 1em;
     letter-spacing: 0.5px;
     text-shadow: 0 1px 6px #181c2a;
 }
@@ -1835,7 +1835,7 @@ textarea:-webkit-autofill:focus {
 }
 .download-resource-desc-text {
   color: var(--fg-dim);
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.7;
 }
 @media (max-width: 700px) {

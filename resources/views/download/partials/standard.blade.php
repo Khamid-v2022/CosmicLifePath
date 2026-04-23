@@ -14,7 +14,7 @@
                 <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
             </div> 
             <div class="download-section download-instructions text-center my-5">
-                <h3 class="text-primary">Your Cosmic Life Path Reading</h3>
+                <h3 class="text-primary"><strong>{{ $sign }}</strong> Cosmic Life Path Reading</h3>
                 <div class="download-resource-desc-text my-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
                 <a class="btn hero-cta mainPdfLink" href="#" download>Download My Reading</a>
             </div>
@@ -39,7 +39,7 @@
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
                         <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
-                        <div class="special-zodiac-desc">{{ $info['description'] }}</div>
+                        <!-- <div class="special-zodiac-desc">{{ $info['description'] }}</div> -->
                         <a class="btn special-zodiac-download" href="{{ url('/download/standard-' . $key) }}">Order Now</a>
                     </div>
                 @endforeach

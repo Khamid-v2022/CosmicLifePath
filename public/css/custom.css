@@ -1945,7 +1945,7 @@ textarea:-webkit-autofill:focus {
 }
 .special-thumb {
     width: auto;
-    height: 124px;
+    height: 164px;
     object-fit: contain;
     border-radius: 10px;
     margin-bottom: 0.5em;

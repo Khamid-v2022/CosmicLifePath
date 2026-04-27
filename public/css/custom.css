@@ -1666,7 +1666,7 @@ textarea:-webkit-autofill:focus {
     margin-top: 92px;
   }
   .billing-info {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .download-page .container {

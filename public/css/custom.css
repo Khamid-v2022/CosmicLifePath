@@ -159,7 +159,7 @@ textarea:-webkit-autofill:focus {
 
 .header-logo-img {
   /* height: 110px; */
-  height: clamp(4rem, 8vw, 6rem);
+  height: clamp(4rem, 8vw, 5rem);
   width: auto;
   display: block;
 }
@@ -436,14 +436,18 @@ textarea:-webkit-autofill:focus {
 
 .zodiac-card {
   position: relative;
+  max-width: 184px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(201, 168, 76, 0.08);
   color: var(--fg);
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
   transition: background 0.35s, border-color 0.35s, transform 0.35s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.2rem;
 }
 
 .zodiac-card::before {
@@ -501,7 +505,7 @@ textarea:-webkit-autofill:focus {
 .zodiac-icon {
   width: 80px;
   height: 80px;
-  margin: 0 auto 1.35rem;
+  margin: 0 auto 1rem;
   position: relative;
   transition: filter 0.4s, transform 0.4s;
 }

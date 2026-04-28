@@ -1775,7 +1775,9 @@ textarea:-webkit-autofill:focus {
 .mainPdfLink img {
   transition: transform 0.25s;
 }
-.mainPdfLink:hover img, .main-thumb:hover, .thumb-img:hover {
+.mainPdfLink:hover img, .main-thumb:hover 
+/* .thumb-img:hover  */
+{
   transform: scale(1.06);
 }
 

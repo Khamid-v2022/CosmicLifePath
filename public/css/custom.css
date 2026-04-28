@@ -525,7 +525,7 @@ textarea:-webkit-autofill:focus {
 .zodiac-dates {
   font-size: 0.8rem;
   letter-spacing: 0.25em;
-  color: var(--gold-dim);
+  color: var(--gold);
   
   font-weight: 400;
   text-transform: uppercase;

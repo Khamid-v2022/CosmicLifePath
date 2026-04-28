@@ -1782,6 +1782,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .thumb-label {
+  display: none;
   font-family: 'Cinzel', serif;
   font-size: 13px;
   font-weight: 500;

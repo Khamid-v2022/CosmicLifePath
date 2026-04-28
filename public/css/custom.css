@@ -389,6 +389,13 @@ textarea:-webkit-autofill:focus {
   z-index: 1;
   padding-top: 7rem;
   padding-bottom: 10rem;
+  scroll-margin-top: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .zodiac-section {
+    scroll-margin-top: 0px;
+  }
 }
 
 .section-label {

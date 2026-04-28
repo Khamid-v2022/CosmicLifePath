@@ -1632,7 +1632,7 @@ textarea:-webkit-autofill:focus {
 
 /* Download pages */
 .download-page {
-  margin-top: 124px;
+  margin-top: 108px;
 }
  .billing-info {
   position: relative;
@@ -2346,5 +2346,126 @@ textarea:-webkit-autofill:focus {
 
   .product-description {
     font-size: 0.93rem;
+  }
+}
+
+.help-section {
+  margin-top: 2.3em;
+  margin-bottom: 1em;
+  border-radius: 14px;
+  border: 1px solid rgba(201, 168, 76, 0.18);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(232, 204, 133, 0.12), transparent 44%),
+    radial-gradient(circle at 95% 100%, rgba(201, 153, 58, 0.11), transparent 42%),
+    linear-gradient(168deg, rgba(8, 12, 22, 0.97) 0%, rgba(6, 9, 18, 0.99) 100%);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.36);
+  overflow: hidden;
+}
+
+.help-inner {
+  padding: clamp(1.1rem, 2.2vw, 2rem);
+}
+
+.help-block {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.help-kicker {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.98rem, 2.1vw, 1.45rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f4e3a8;
+  margin-bottom: 0.95rem;
+}
+
+.help-copy {
+  color: #c7c0ab;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  margin-bottom: 0.8rem;
+}
+
+.help-list {
+  list-style: none;
+  margin: 0 0 0.95rem;
+  padding: 0;
+}
+
+.help-list li {
+  position: relative;
+  color: #ddd5bc;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 1.15rem;
+  margin-bottom: 0.38rem;
+}
+
+.help-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 0.03rem;
+  color: rgba(232, 204, 133, 0.9);
+  font-size: 0.68rem;
+}
+
+.help-list a {
+  color: #f0d88a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 204, 133, 0.38);
+}
+
+.help-list a:hover,
+.help-list a:focus {
+  color: #fff1c4;
+  border-bottom-color: rgba(255, 237, 181, 0.8);
+}
+
+.help-label {
+  color: #f5e5ad;
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+.help-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1.45rem auto;
+  color: rgba(232, 204, 133, 0.82);
+}
+
+.help-divider::before,
+.help-divider::after {
+  content: '';
+  display: block;
+  width: min(33vw, 280px);
+  border-top: 1px solid rgba(201, 168, 76, 0.26);
+}
+
+.help-divider span {
+  font-size: 0.82rem;
+}
+
+.help-checklist li {
+  margin-bottom: 0.48rem;
+}
+
+@media (max-width: 575.98px) {
+  .help-kicker {
+    letter-spacing: 0.08em;
+  }
+
+  .help-copy {
+    font-size: 0.95rem;
+  }
+
+  .help-list li {
+    font-size: 0.93rem;
+    padding-left: 1rem;
   }
 }

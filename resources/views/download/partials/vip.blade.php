@@ -177,6 +177,34 @@
                 </article>
             </div>
         </div>
+
+        <section class="help-section dark-card" aria-label="Customer support information">
+            <div class="help-inner">
+                <div class="help-block">
+                    <p class="help-kicker">Need Help? We&apos;re Here for You</p>
+                    <p class="help-copy">If you have questions about your program, your downloads, or how best to use your Cosmic Life Path Full Report, feel free to reach out anytime. Our team responds personally to every email.</p>
+                    <ul class="help-list">
+                        <li><span class="help-label">Email</span> <a href="mailto:support@thecosmiclifepath.com">support@thecosmiclifepath.com</a></li>
+                        <li><span class="help-label">Response Time</span> Within 24-48 hours</li>
+                    </ul>
+                    <p class="help-copy">We are a small, dedicated support team with real people and thoughtful replies.</p>
+                    <p class="help-copy mb-0">Every message is read by someone who genuinely cares about your success.</p>
+                </div>
+
+                <div class="help-divider" aria-hidden="true"><span>✦</span></div>
+
+                <div class="help-block">
+                    <p class="help-kicker">Stay Connected</p>
+                    <p class="help-copy">Important updates, login links, and bonus resources will be sent to your inbox.</p>
+                    <p class="help-copy">To make sure you receive everything without interruption:</p>
+                    <ul class="help-list help-checklist mb-0">
+                        <li>Add <a href="mailto:support@thecosmiclifepath.com">support@thecosmiclifepath.com</a> to your address book</li>
+                        <li>Check your spam or junk folder if something seems missing</li>
+                        <li>Move our emails to your primary tab (Gmail users)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 

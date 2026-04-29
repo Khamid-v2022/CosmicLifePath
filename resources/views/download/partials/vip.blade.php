@@ -6,7 +6,7 @@
     <div class="container">
         
         <div class="text-center mb-5">
-            <h1 class="download-title">Welcome to <big><strong class="accent">VIP Access</strong></big>, <span id="downloadName"></span>!</h1>
+            <h1 class="download-title">Welcome to <big><strong class="accent">VIP Access</strong></big>!</h1>
             <p class="download-desc text-primary mb-4">Your complete Cosmic Life Path Full Report and its Bonuses are ready.<br>Download your resources below.</p>
         </div>
         <div>
@@ -47,10 +47,11 @@
         </section> -->
 
 
-        <div class="download-section download-instructions">
-            <p class="download-instruction">Click each image below to download your PDF file if you faced issues in using the link given above.</p>
+       <div class="download-section download-instructions">
+            <p class="download-instruction mw-100">Click each image below to download your PDF file if you faced issues in using the link given above.</p>
         </div>
         <div class="download-section download-thumbs">
+            
             <div class="row gy-4">
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
@@ -211,23 +212,12 @@
 <script>
     // Download page: show user info from localStorage & set images/pdf links
     (() => {
-        function getContact() {
-            try {
-                return JSON.parse(window.localStorage.getItem('cosmicLifePath.contact') || '{}');
-            } catch { return {}; }
-        }
         // sign extract from the URL: get the value after the last '-' in the pathname
         function getSignFromUrl() {
             const m = window.location.pathname.match(/(?:vip|standard)-([a-z]+)/i);
             return m ? m[1].toLowerCase() : '';
         }
         // All sign data is now rendered by Blade using config('variables.signs').
-
-        // name
-        const contact = getContact();
-        const name = contact.name || 'Guest';
-        const nameEl = document.getElementById('downloadName');
-        if (nameEl) nameEl.textContent = name;
 
         // sign
         let sign = getSignFromUrl();

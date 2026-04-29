@@ -143,22 +143,11 @@
 <script>
     // Download page: show user info from localStorage & set images/pdf links
     (() => {
-        function getContact() {
-            try {
-                return JSON.parse(window.localStorage.getItem('cosmicLifePath.contact') || '{}');
-            } catch { return {}; }
-        }
         // sign extract from the URL: get the value after the last '-' in the pathname
         function getSignFromUrl() {
             const m = window.location.pathname.match(/(?:vip|standard)-([a-z]+)/i);
             return m ? m[1].toLowerCase() : '';
         }
-        // All sign data is now rendered by Blade using config('variables.signs').
-        // Name
-        const contact = getContact();
-        const name = contact.name || 'Guest';
-        const nameEl = document.getElementById('downloadName');
-        if (nameEl) nameEl.textContent = name;
 
         // sign
         let sign = getSignFromUrl();

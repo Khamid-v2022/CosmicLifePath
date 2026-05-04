@@ -11,7 +11,7 @@
         </div>
         <div>
             <div class="download-main-sign-image-row">
-                <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" />
+                <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" id="vip_bundle_img"/>
             </div>
             <div class="download-section download-instructions text-center my-5">
                 <a class="btn hero-cta mainPdfLink" href="#" download>Download The Full Bundle Now </a>
@@ -123,16 +123,6 @@
             </div>
         </section>
 
-        <!-- <div class="special-access-fullpack">
-            <div class="special-access-fullpack-desc">You can also obtain the full set of 12 full reports below at a special discount too!</div>
-            <div class="special-access-fullpack-img-wrap">
-                <img src="/imgs/ebook/3pack.png" alt="All 12 Reports" class="special-access-fullpack-img" />
-            </div>
-            <div class="mt-5">
-                <a href="{{ route('download.fullreport') }}" class="btn hero-cta">Purchase All 12 Reports</a>
-            </div>
-        </div> -->
-
         <div class="products dark-card">
             <div class="products-header text-center">
                 <p class="products-eyebrow">Curated Wealth Collection</p>
@@ -221,19 +211,23 @@
 
         // sign
         let sign = getSignFromUrl();
-        const signEl = document.getElementById('downloadSign');
-        if (signEl && sign) signEl.textContent = `Sign: ${sign.charAt(0).toUpperCase() + sign.slice(1)}`;
-       
+        // const signEl = document.getElementById('downloadSign');
+        // if (signEl && sign) signEl.textContent = `Sign: ${sign.charAt(0).toUpperCase() + sign.slice(1)}`;
+        const vipBundleImg = document.getElementById('vip_bundle_img');
+
 
         // Set main product image and download links
         if (sign) {
             const imgPath = `/imgs/ebook/horoscope/${sign}.png`;
+            const bundleImgPath = `/imgs/ebook/horoscope/${sign}-bundle.png`;
             const pdfPath = `/imgs/ebook/horoscope/${sign}.pdf`;
             const mainImg = document.getElementById('mainProductImg');
             const mainThumbImg = document.getElementById('mainThumbImg');
             const elements = document.querySelectorAll('.mainPdfLink');
             if (mainImg) mainImg.src = imgPath;
             if (mainThumbImg) mainThumbImg.src = imgPath;
+
+            if (vipBundleImg) vipBundleImg.src = bundleImgPath;
             elements.forEach(el => {
                 el.href = pdfPath;
             });

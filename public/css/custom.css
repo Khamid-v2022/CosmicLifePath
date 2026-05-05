@@ -1723,7 +1723,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 2.5em;
 }
 .download-main-img-large {
-    width: 180px;
+    width: 210px;
     height: auto;
     filter:
     drop-shadow(0 0 4px  rgba(212, 168, 67, 1))
@@ -1971,7 +1971,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 0.7em;
 }
 .special-thumb {
-    width: 80%;
+    width: 90%;
     height: auto;
     object-fit: contain;
     border-radius: 10px;

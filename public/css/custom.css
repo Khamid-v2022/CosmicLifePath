@@ -795,7 +795,6 @@ textarea:-webkit-autofill:focus {
 
 .birth-check .form-check-label {
   color: var(--fg-dim);
-  font-size: 0.84rem;
 }
 
 .place-note {
@@ -1958,7 +1957,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 0.7em;
 }
 .special-thumb {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -1982,10 +1981,6 @@ textarea:-webkit-autofill:focus {
 @media (max-width: 700px) {
     .special-zodiac-list {
         gap: 0.7em 0.7em;
-    }
-    .special-thumb {
-        width: auto;
-        height: 96px;
     }
 }
 .special-access-fullpack {
@@ -2135,13 +2130,7 @@ textarea:-webkit-autofill:focus {
 
 .special-zodiac-card:hover {
     transform: translateY(-6px) !important;
-}
-
-
-.special-zodiac-card:hover {
     border-color: rgba(201, 153, 58, 0.45);
-    transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(201, 153, 58, 0.1);
 }
 
 .zodiac-card:hover::before, .zodiac-card:hover::after {
@@ -2334,10 +2323,6 @@ textarea:-webkit-autofill:focus {
   .products {
     margin-top: 2.4em;
     padding: 1rem;
-  }
-
-  .product-image {
-    height: 190px;
   }
 
   .product-name {

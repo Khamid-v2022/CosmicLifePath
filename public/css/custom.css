@@ -1974,8 +1974,8 @@ textarea:-webkit-autofill:focus {
     width: 90%;
     height: auto;
     object-fit: contain;
-    border-radius: 10px;
-    margin-bottom: 0.5em;
+    /* border-radius: 10px; */
+    margin-bottom: 1rem;
     transition: box-shadow 0.18s, border 0.18s, transform 0.18s;
 }
 .special-zodiac-thumb:hover .special-thumb {

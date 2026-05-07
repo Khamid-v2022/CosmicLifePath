@@ -45,7 +45,7 @@
                 @php($signs = config('variables.signs'))
                 @foreach($signs as $key => $info)
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
-                        <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
+                        <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
                         <!-- <div class="special-zodiac-desc">{{ $info['description'] }}</div> -->
                         <a class="btn special-zodiac-download" href="{{ url('/download/standard-' . $key) }}">Order Now</a>

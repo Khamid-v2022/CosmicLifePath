@@ -66,7 +66,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
                         <div>
-                            <img src="{{ asset('imgs/ebook/bonuse/bonus1.png') }}" alt="Bonus 1" class="thumb-img" />
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus1.jpg') }}" alt="Bonus 1" class="thumb-img" />
                             <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
                             <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
                         </div>
@@ -76,7 +76,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
                         <div>
-                            <img src="{{ asset('imgs/ebook/bonuse/bonus2.png') }}" alt="Bonus 2" class="thumb-img" />
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus2.jpg') }}" alt="Bonus 2" class="thumb-img" />
                             <div class="thumb-label">Bonus #2 — Your Soul Urge Number Report</div>
                             <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.
                             </div>
@@ -88,7 +88,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
                         <div>
-                            <img src="{{ asset('imgs/ebook/bonuse/bonus3.png') }}" alt="Bonus 3" class="thumb-img" />
+                            <img src="{{ asset('imgs/ebook/bonuse/bonus3.jpg') }}" alt="Bonus 3" class="thumb-img" />
                             <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
                             <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                         </div>
@@ -114,7 +114,7 @@
                 @php($signs = config('variables.signs'))
                 @foreach($signs as $key => $info)
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
-                        <img src="/imgs/ebook/horoscope/{{ $key }}.png" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
+                        <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
                         <!-- <div class="special-zodiac-desc">{{ $info['description'] }}</div> -->
                         <a class="btn special-zodiac-download" href="{{ url('/download/vip-' . $key) }}">Order Now</a>
@@ -219,13 +219,16 @@
         // Set main product image and download links
         if (sign) {
             const imgPath = `/imgs/ebook/horoscope/${sign}.png`;
+            const mainImgPath = `/imgs/ebook/horoscope/2d/${sign}.jpg`;
             const bundleImgPath = `/imgs/ebook/horoscope/${sign}-bundle.png`;
             const pdfPath = `/imgs/ebook/horoscope/${sign}.pdf`;
+
             const mainImg = document.getElementById('mainProductImg');
             const mainThumbImg = document.getElementById('mainThumbImg');
+
             const elements = document.querySelectorAll('.mainPdfLink');
             if (mainImg) mainImg.src = imgPath;
-            if (mainThumbImg) mainThumbImg.src = imgPath;
+            if (mainThumbImg) mainThumbImg.src = mainImgPath;
 
             if (vipBundleImg) vipBundleImg.src = bundleImgPath;
             elements.forEach(el => {

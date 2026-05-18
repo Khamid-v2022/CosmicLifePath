@@ -567,4 +567,101 @@ class CosmicFlowController extends Controller {
      * Route: /download/fullreport
      */
     public function downloadFullReport(): View { return view('download.fullreport'); }
+
+    /**
+     * Download Upsell1 Aries
+     * Route: /upsell1-aries
+     */
+    public function upsell1Aries(): View { 
+        $sign = config('variables.signs.aries');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Taurus
+     * Route: /upsell1-taurus
+     */
+    public function upsell1Taurus(): View { 
+        $sign = config('variables.signs.taurus');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Gemini
+     * Route: /upsell1-gemini
+     */
+    public function upsell1Gemini(): View { 
+        $sign = config('variables.signs.gemini');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Cancer
+     * Route: /upsell1-cancer
+     */
+    public function upsell1Cancer(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Leo
+     * Route: /upsell1-leo
+     */
+    public function upsell1Leo(): View { 
+        $sign = config('variables.signs.leo');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Virgo
+     * Route: /upsell1-virgo
+     */
+    public function upsell1Virgo(): View { 
+        $sign = config('variables.signs.virgo');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Libra
+     * Route: /upsell1-libra
+     */
+    public function upsell1Libra(): View { 
+        $sign = config('variables.signs.libra');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Scorpio
+     * Route: /upsell1-scorpio
+     */
+    public function upsell1Scorpio(): View { 
+        $sign = config('variables.signs.scorpio');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Sagittarius
+     * Route: /upsell1-sagittarius
+     */
+    public function upsell1Sagittarius(): View { 
+        $sign = config('variables.signs.sagittarius');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Capricorn
+     * Route: /upsell1-capricorn
+     */
+    public function upsell1Capricorn(): View { 
+        $sign = config('variables.signs.capricorn');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Aquarius
+     * Route: /upsell1-aquarius
+     */
+    public function upsell1Aquarius(): View { 
+        $sign = config('variables.signs.aquarius');
+        return view('upsell.upsell1', compact('sign')); 
+    }
+    /**
+     * Download Upsell1 Pisces
+     * Route: /upsell1-pisces
+     */
+    public function upsell1Pisces(): View { 
+        $sign = config('variables.signs.pisces');
+        return view('upsell.upsell1', compact('sign')); 
+    }
 }

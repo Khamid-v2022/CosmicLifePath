@@ -2003,8 +2003,8 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 1.7em;
 }
 .special-access-fullpack-img {
-    width: 650px;
-    max-width: 90vw;
+    max-width: 550px;
+    width: 90%;
 }
 
 
@@ -2459,4 +2459,15 @@ textarea:-webkit-autofill:focus {
     font-size: 0.93rem;
     padding-left: 1rem;
   }
+}
+
+
+/* UPsell page */
+
+.drop-cap {
+  font-size: 4.5em;
+  float: left;
+  line-height: 0.1;
+  margin-right: 2px;
+  font-family: serif;
 }

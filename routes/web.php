@@ -49,5 +49,23 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/download/standard-aquarius', 'downloadStandardAquarius')->name('download.standard.aquarius');
     Route::get('/download/standard-pisces', 'downloadStandardPisces')->name('download.standard.pisces');
 
+    // Upsell1 pages for each sign
+    Route::get('/upsell1-aries', 'upsell1Aries')->name('upsell1.aries');
+    Route::get('/upsell1-taurus', 'upsell1Taurus')->name('upsell1.taurus');
+    Route::get('/upsell1-gemini', 'upsell1Gemini')->name('upsell1.gemini');
+    Route::get('/upsell1-cancer', 'upsell1Cancer')->name('upsell1.cancer');
+    Route::get('/upsell1-leo', 'upsell1Leo')->name('upsell1.leo');
+    Route::get('/upsell1-virgo', 'upsell1Virgo')->name('upsell1.virgo');
+    Route::get('/upsell1-libra', 'upsell1Libra')->name('upsell1.libra');
+    Route::get('/upsell1-scorpio', 'upsell1Scorpio')->name('upsell1.scorpio');
+    Route::get('/upsell1-sagittarius', 'upsell1Sagittarius')->name('upsell1.sagittarius');
+    Route::get('/upsell1-capricorn', 'upsell1Capricorn')->name('upsell1.capricorn');
+    Route::get('/upsell1-aquarius', 'upsell1Aquarius')->name('upsell1.aquarius');
+    Route::get('/upsell1-pisces', 'upsell1Pisces')->name('upsell1.pisces');
+
+
+
+
+
     Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
 });

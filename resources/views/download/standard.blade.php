@@ -1,3 +1,6 @@
+@extends('layouts.app')
+@section('content')
+
 {{-- Standard Access Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
@@ -11,11 +14,11 @@
 
             <div>
                 <div class="download-main-sign-image-row">
-                    <img id="mainProductImg" src="" alt="Horoscope Main Product" class="download-main-img-large" />
+                    <img id="mainProductImg" src="{{ asset('/imgs/ebook/horoscope/' . strtolower($sign['name']) . '.png') }}" alt="Horoscope Main Product" class="download-main-img-large" />
                 </div> 
                 <div class="download-section download-instructions text-center my-5">
                     <div class="download-instruction mb-4">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release.</div>
-                    <a class="btn hero-cta mainPdfLink" href="#" download>Download Now</a>
+                    <a class="btn hero-cta mainPdfLink" href="{{$sign['pdf']}}" download target="_blank">Download Now</a>
                 </div>
             </div>
         </div>
@@ -29,14 +32,6 @@
         </div>
 
 
-        <!-- <section class="download-resource-summary dark-card">
-            <h2 class="download-resource-title">Your Download Includes</h2>
-            <ul class="download-resource-list">
-                <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
-                <li><span class="download-check">✓</span> Instant access in PDF format</li>
-            </ul>
-        </section> -->
-
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
             <h1 class="section-title text-center">Special Access Unlocked!</h1>
@@ -44,25 +39,17 @@
             <div class="special-zodiac-list" id="specialZodiacList">
                 @php($signs = config('variables.signs'))
                 @foreach($signs as $key => $info)
+                    @if($info['name'] === $sign['name'])
+                        @continue
+                    @endif
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
                         <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
-                        <!-- <div class="special-zodiac-desc">{{ $info['description'] }}</div> -->
                         <a class="btn special-zodiac-download" href="{{ url('/download/standard-' . $key) }}">Order Now</a>
                     </div>
                 @endforeach
             </div>
         </section>
-
-        <!-- <div class="special-access-fullpack">
-            <div class="special-access-fullpack-desc">You can also obtain the full set of 12 full reports below at a special discount too!</div>
-            <div class="special-access-fullpack-img-wrap">
-                <img src="/imgs/ebook/3pack.png" alt="All 12 Reports" class="special-access-fullpack-img" />
-            </div>
-            <div class="mt-5">
-                <a href="{{ route('download.fullreport') }}" class="btn hero-cta">Purchase All 12 Reports</a>
-            </div>
-        </div> -->
 
         <div class="products dark-card">
             <div class="products-header text-center">
@@ -140,43 +127,4 @@
     </div>
 </div>
 
-<script>
-    // Download page: show user info from localStorage & set images/pdf links
-    (() => {
-        // sign extract from the URL: get the value after the last '-' in the pathname
-        function getSignFromUrl() {
-            const m = window.location.pathname.match(/(?:vip|standard)-([a-z]+)/i);
-            return m ? m[1].toLowerCase() : '';
-        }
-
-        // sign
-        let sign = getSignFromUrl();
-        const signEl = document.getElementById('downloadSign');
-        if (signEl && sign) signEl.textContent = `Sign: ${sign.charAt(0).toUpperCase() + sign.slice(1)}`;
-       
-
-        // Set main product image and download links
-        if (sign) {
-            const imgPath = `/imgs/ebook/horoscope/${sign}.png`;
-            const pdfPath = `/imgs/ebook/horoscope/${sign}.pdf`;
-            const mainImg = document.getElementById('mainProductImg');
-            const mainThumbImg = document.getElementById('mainThumbImg');
-            const elements = document.querySelectorAll('.mainPdfLink');
-            if (mainImg) mainImg.src = imgPath;
-            if (mainThumbImg) mainThumbImg.src = imgPath;
-            elements.forEach(el => {
-                el.href = pdfPath;
-            });
-        }
-
-        // Special Access: all signs, hide current sign via CSS
-        const specialList = document.getElementById('specialZodiacList');
-        if (specialList && sign) {
-            const myCard = specialList.querySelector(`.special-zodiac-card[data-sign="${sign}"]`);
-            if (myCard) myCard.style.display = 'none';
-        }
-        if (specialList) {
-            // No download logic needed for Order Now links
-        }
-    })();
-</script>
+@endsection

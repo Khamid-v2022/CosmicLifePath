@@ -1796,14 +1796,6 @@ textarea:-webkit-autofill:focus {
   height: 180px;
   width: auto;
 }
-.mainPdfLink img {
-  transition: transform 0.25s;
-}
-.mainPdfLink:hover img, .main-thumb:hover 
-/* .thumb-img:hover  */
-{
-  transform: scale(1.06);
-}
 
 .thumb-label {
   display: none;

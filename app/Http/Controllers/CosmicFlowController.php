@@ -371,123 +371,195 @@ class CosmicFlowController extends Controller {
      * Download VIP Aries
      * Route: /download/vip-aries
      */
-    public function downloadVipAries(): View { return view('download.vip-aries'); }
+    public function downloadVipAries(): View { 
+        $sign = config('variables.signs.aries');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Taurus
      * Route: /download/vip-taurus
      */
-    public function downloadVipTaurus(): View { return view('download.vip-taurus'); }
+    public function downloadVipTaurus(): View { 
+        $sign = config('variables.signs.taurus');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Gemini
      * Route: /download/vip-gemini
      */
-    public function downloadVipGemini(): View { return view('download.vip-gemini'); }
+    public function downloadVipGemini(): View { 
+        $sign = config('variables.signs.gemini');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Cancer
      * Route: /download/vip-cancer
      */
-    public function downloadVipCancer(): View { return view('download.vip-cancer'); }
+    public function downloadVipCancer(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Leo
      * Route: /download/vip-leo
      */
-    public function downloadVipLeo(): View { return view('download.vip-leo'); }
+    public function downloadVipLeo(): View { 
+        $sign = config('variables.signs.leo');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Virgo
      * Route: /download/vip-virgo
      */
-    public function downloadVipVirgo(): View { return view('download.vip-virgo'); }
+    public function downloadVipVirgo(): View { 
+        $sign = config('variables.signs.virgo');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Libra
      * Route: /download/vip-libra
      */
-    public function downloadVipLibra(): View { return view('download.vip-libra'); }
+    public function downloadVipLibra(): View { 
+        $sign = config('variables.signs.libra');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Scorpio
      * Route: /download/vip-scorpio
      */
-    public function downloadVipScorpio(): View { return view('download.vip-scorpio'); }
+    public function downloadVipScorpio(): View { 
+        $sign = config('variables.signs.scorpio');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Sagittarius
      * Route: /download/vip-sagittarius
      */
-    public function downloadVipSagittarius(): View { return view('download.vip-sagittarius'); }
+    public function downloadVipSagittarius(): View { 
+        $sign = config('variables.signs.sagittarius');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Capricorn
      * Route: /download/vip-capricorn
      */
-    public function downloadVipCapricorn(): View { return view('download.vip-capricorn'); }
+    public function downloadVipCapricorn(): View { 
+        $sign = config('variables.signs.capricorn');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Aquarius
      * Route: /download/vip-aquarius
      */
-    public function downloadVipAquarius(): View { return view('download.vip-aquarius'); }
+    public function downloadVipAquarius(): View { 
+        $sign = config('variables.signs.aquarius');
+        return view('download.vip', compact('sign')); 
+    }
     /**
      * Download VIP Pisces
      * Route: /download/vip-pisces
      */
-    public function downloadVipPisces(): View { return view('download.vip-pisces'); }
+    public function downloadVipPisces(): View { 
+        $sign = config('variables.signs.pisces');
+        return view('download.vip', compact('sign')); 
+    }
 
     /**
      * Download Standard Aries
      * Route: /download/standard-aries
      */
-    public function downloadStandardAries(): View { return view('download.standard-aries'); }
+    public function downloadStandardAries(): View { 
+        $sign = config('variables.signs.aries');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Taurus
      * Route: /download/standard-taurus
      */
-    public function downloadStandardTaurus(): View { return view('download.standard-taurus'); }
+    public function downloadStandardTaurus(): View { 
+        $sign = config('variables.signs.taurus');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Gemini
      * Route: /download/standard-gemini
      */
-    public function downloadStandardGemini(): View { return view('download.standard-gemini'); }
+    public function downloadStandardGemini(): View { 
+        $sign = config('variables.signs.gemini');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Cancer
      * Route: /download/standard-cancer
      */
-    public function downloadStandardCancer(): View { return view('download.standard-cancer'); }
+    public function downloadStandardCancer(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Leo
      * Route: /download/standard-leo
      */
-    public function downloadStandardLeo(): View { return view('download.standard-leo'); }
+    public function downloadStandardLeo(): View { 
+        $sign = config('variables.signs.leo');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Virgo
      * Route: /download/standard-virgo
      */
-    public function downloadStandardVirgo(): View { return view('download.standard-virgo'); }
+    public function downloadStandardVirgo(): View { 
+        $sign = config('variables.signs.virgo');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Libra
      * Route: /download/standard-libra
      */
-    public function downloadStandardLibra(): View { return view('download.standard-libra'); }
+    public function downloadStandardLibra(): View { 
+        $sign = config('variables.signs.libra');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Scorpio
      * Route: /download/standard-scorpio
      */
-    public function downloadStandardScorpio(): View { return view('download.standard-scorpio'); }
+    public function downloadStandardScorpio(): View { 
+        $sign = config('variables.signs.scorpio');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Sagittarius
      * Route: /download/standard-sagittarius
      */
-    public function downloadStandardSagittarius(): View { return view('download.standard-sagittarius'); }
+    public function downloadStandardSagittarius(): View { 
+        $sign = config('variables.signs.sagittarius');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Capricorn
      * Route: /download/standard-capricorn
      */
-    public function downloadStandardCapricorn(): View { return view('download.standard-capricorn'); }
+    public function downloadStandardCapricorn(): View { 
+        $sign = config('variables.signs.capricorn');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Aquarius
      * Route: /download/standard-aquarius
      */
-    public function downloadStandardAquarius(): View { return view('download.standard-aquarius'); }
+    public function downloadStandardAquarius(): View { 
+        $sign = config('variables.signs.aquarius');
+        return view('download.standard', compact('sign')); 
+    }
     /**
      * Download Standard Pisces
      * Route: /download/standard-pisces
      */
-    public function downloadStandardPisces(): View { return view('download.standard-pisces'); }
+    public function downloadStandardPisces(): View { 
+        $sign = config('variables.signs.pisces');
+        return view('download.standard', compact('sign')); 
+    }
 
 
     /**

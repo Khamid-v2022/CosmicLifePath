@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 {{-- VIP Access Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
@@ -11,40 +13,12 @@
         </div>
         <div>
             <div class="download-main-sign-image-row">
-                <img src="{{ asset('imgs/ebook/3pack.png') }}" alt="Bundle image" class="special-access-fullpack-img" id="vip_bundle_img"/>
+                <img src="{{ asset('imgs/ebook/horoscope/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Bundle image" class="special-access-fullpack-img" id="vip_bundle_img"/>
             </div>
             <div class="download-section download-instructions text-center my-5">
-                <a class="btn hero-cta mainPdfLink" href="#" download>Download The Full Bundle Now </a>
+                <a class="btn hero-cta" href="{{$sign['bundle_pdf']}}" download>Download The Full Bundle Now </a>
             </div>
         </div>
-
-        <!-- <section class="download-resource-summary dark-card">
-            <h2 class="download-resource-title">Your Complete VIP Resources</h2>
-            <ul class="download-resource-list">
-                <li><span class="download-check">✓</span> Your Cosmic Life Path Reading — <span class="download-highlight">30+ Page Personalised PDF</span></li>
-                <li><span class="download-check">✓</span> Personal Foreword & Insights By Celestra Vonn — <span class="download-highlight">included in your reading</span></li>
-                <li><span class="download-check">✓</span> The Secret Language of Fame <span class="download-highlight">(Bonus #1)</span></li>
-                <li><span class="download-check">✓</span> Your Soul Urge Number Report <span class="download-highlight">(Bonus #2)</span></li>
-                <li><span class="download-check">✓</span> Your Lunar Money Path Report <span class="download-highlight">(Bonus #3)</span></li>
-                <li><span class="download-check">✓</span> Priority Email Support — <span class="download-highlight">responses within 24 hours</span></li>
-                <li><span class="download-check">✓</span> First Access to new readings and updates</li>
-            </ul>
-            <div class="download-resource-descs">
-                
-                <div class="download-resource-desc">
-                    <div class="download-resource-desc-title">Bonus #1 — The Secret Language of Fame</div>
-                    <div class="download-resource-desc-text">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
-                </div>
-                <div class="download-resource-desc">
-                    <div class="download-resource-desc-title">Bonus #2 — Your Soul Urge Number Report</div>
-                    <div class="download-resource-desc-text">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.</div>
-                </div>
-                <div class="download-resource-desc">
-                    <div class="download-resource-desc-title">Bonus #3 — Your Lunar Money Path Report</div>
-                    <div class="download-resource-desc-text">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
-                </div>
-            </div>
-        </section> -->
 
 
        <div class="download-section download-instructions">
@@ -56,11 +30,11 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
                         <div>
-                            <img id="mainThumbImg" src="" alt="Download My Reading" class="thumb-img" />
+                            <img id="mainThumbImg" src="{{ asset('/imgs/ebook/horoscope/2d/' . strtolower($sign['name']) . '.jpg') }}" alt="Download My Reading" class="thumb-img" />
                             <div class="thumb-label">Your Cosmic Life Path Reading</div>
                             <div class="special-zodiac-desc">Your complete personalised reading — cosmic personality, wealth key, health blueprint, love secrets, life purpose, and trauma release. Includes your personal foreword from Celestra Vonn.</div>
                         </div>
-                        <a class="btn btn-lg btn-primary mainPdfLink mx-auto" href="#">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" href="{{$sign['pdf']}}" download target="_blank">Download Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -70,7 +44,7 @@
                             <div class="thumb-label">Bonus #1 - The Secret Language of Fame</div>
                             <div class="special-zodiac-desc">Discover how the world's most iconic and celebrated people unknowingly followed the exact same cosmic blueprint written in your stars.</div>
                         </div>
-                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus1.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bonuses/bns_ref_F7kQ2mX9Lp4Rv8Na.pdf" target="_blank">Download Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -81,7 +55,7 @@
                             <div class="special-zodiac-desc">Uncover the hidden desires and deepest motivations that have been quietly driving every major decision of your life.
                             </div>
                         </div>
-                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus2.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bonuses/bns_ng_H5qV7mL1Yp4Rw8Kd.pdf" target="_blank">Download Now</a>
                     </div>
                     
                 </div>
@@ -92,7 +66,7 @@
                             <div class="thumb-label">Bonus #3 — Your Lunar Money Path Report</div>
                             <div class="special-zodiac-desc">Discover the exact lunar windows each month when your sign is most cosmically aligned with financial opportunity.</div>
                         </div>
-                        <a class="btn btn-lg btn-primary mx-auto" download href="/imgs/ebook/bonuse/bonus3.pdf">Download Now</a>
+                        <a class="btn btn-lg btn-primary mx-auto" download href="https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bonuses/bns_wg_K3mL8xP2Qa7Tv9Rx.pdf" target="_blank">Download Now</a>
                     </div>
                 </div>
             </div>
@@ -113,6 +87,9 @@
             <div class="special-zodiac-list" id="specialZodiacList">
                 @php($signs = config('variables.signs'))
                 @foreach($signs as $key => $info)
+                    @if($info['name'] === $sign['name'])
+                        @continue
+                    @endif
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
                         <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
@@ -198,52 +175,4 @@
         </section>
     </div>
 </div>
-
-<script>
-    // Download page: show user info from localStorage & set images/pdf links
-    (() => {
-        // sign extract from the URL: get the value after the last '-' in the pathname
-        function getSignFromUrl() {
-            const m = window.location.pathname.match(/(?:vip|standard)-([a-z]+)/i);
-            return m ? m[1].toLowerCase() : '';
-        }
-        // All sign data is now rendered by Blade using config('variables.signs').
-
-        // sign
-        let sign = getSignFromUrl();
-        // const signEl = document.getElementById('downloadSign');
-        // if (signEl && sign) signEl.textContent = `Sign: ${sign.charAt(0).toUpperCase() + sign.slice(1)}`;
-        const vipBundleImg = document.getElementById('vip_bundle_img');
-
-
-        // Set main product image and download links
-        if (sign) {
-            const imgPath = `/imgs/ebook/horoscope/${sign}.png`;
-            const mainImgPath = `/imgs/ebook/horoscope/2d/${sign}.jpg`;
-            const bundleImgPath = `/imgs/ebook/horoscope/${sign}-bundle.png`;
-            const pdfPath = `/imgs/ebook/horoscope/${sign}.pdf`;
-
-            const mainImg = document.getElementById('mainProductImg');
-            const mainThumbImg = document.getElementById('mainThumbImg');
-
-            const elements = document.querySelectorAll('.mainPdfLink');
-            if (mainImg) mainImg.src = imgPath;
-            if (mainThumbImg) mainThumbImg.src = mainImgPath;
-
-            if (vipBundleImg) vipBundleImg.src = bundleImgPath;
-            elements.forEach(el => {
-                el.href = pdfPath;
-            });
-        }
-
-        // Special Access: all signs, hide current sign via CSS
-        const specialList = document.getElementById('specialZodiacList');
-        if (specialList && sign) {
-            const myCard = specialList.querySelector(`.special-zodiac-card[data-sign="${sign}"]`);
-            if (myCard) myCard.style.display = 'none';
-        }
-        if (specialList) {
-            // No download logic needed for Order Now links
-        }
-    })();
-</script>
+@endsection

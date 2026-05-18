@@ -18,7 +18,7 @@
                     <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                     <div class="thumb-label">{{ $info['name'] }}</div>
                     <!-- <div class="special-zodiac-desc">{{ $info['description'] }}</div> -->
-                    <button class="btn special-zodiac-download" data-sign="{{ $key }}" data-pdf="/imgs/ebook/horoscope/{{ $key }}.pdf">Download Now</button>
+                    <a class="btn special-zodiac-download" href="{{$info['pdf']}}" target="_blank">Download Now</a>
                 </div>
             @endforeach
         </div>

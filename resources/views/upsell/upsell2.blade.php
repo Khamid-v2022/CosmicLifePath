@@ -185,7 +185,7 @@
           </div>
         </div>
 
-        <p class="step-copy article-copy"><strong>Hit the instant access button below now</strong> and add the personalized Cosmic Love Path Reading to your order today.</p>
+        <p class="step-copy article-copy mt-5"><strong>Hit the instant access button below now</strong> and add the personalized Cosmic Love Path Reading to your order today.</p>
 
         <div class="text-center mt-5 mb-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>

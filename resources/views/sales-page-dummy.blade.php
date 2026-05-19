@@ -147,7 +147,7 @@
                   <li>365-Day Money-Back Guarantee</li>
                 </ul>
 
-                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer47&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
                   Gain Standard Access Now →
                 </a>
               </article>
@@ -182,7 +182,7 @@
                   </li>
                 </ul>
 
-                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer47&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
                   Gain VIP Access Now →
                 </a>
               </article>

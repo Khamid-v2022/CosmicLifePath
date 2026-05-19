@@ -309,7 +309,7 @@ class CosmicFlowController extends Controller {
 
         abort_unless(is_array($signInfo), 404);
 
-        return view('sales-page-dummy', [
+        return view('sales-page', [
             'name' => $contact['name'],
             'email' => $contact['email'],
             'sign' => $birth['sign'],
@@ -318,6 +318,12 @@ class CosmicFlowController extends Controller {
             'birth' => $birth,
             'contact' => $contact,
         ]);
+    }
+
+    public function sales_dummy(Request $request): View|RedirectResponse
+    {
+        // Try to get data from form submission first, then fall back to session
+        return view('sales-page-dummy');
     }
 
     private function findSignOrFail(string $slug): array

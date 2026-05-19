@@ -13,7 +13,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::post('/generating-reading', 'loading');
     Route::get('/your-reading', 'summary')->name('reading.summary');
     Route::post('/your-reading', 'summary');
-    Route::get('/special-offer', 'sales')->name('sales.page');
+    Route::get('/special-offer', 'sales_dummy')->name('sales.page');
     Route::post('/special-offer', 'sales');
 
     Route::get('/privacy-policy', 'privacyPolicy')->name('privacy.policy');

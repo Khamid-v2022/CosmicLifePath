@@ -98,6 +98,11 @@
                     </div>
                 @endforeach
             </div>
+            <div class="mt-4" data-sign="{{ $key }}" style="max-width: 600px; margin: 0 auto;">
+                <img src="/imgs/ebook/horoscope/12reports-bundle.png" alt="12 Reports Bundle" class="thumb-img special-thumb" />
+                <div class="thumb-label">12 Reports Bundle</div>
+                <a class="btn special-zodiac-download" href="{{ url('/download/fullreport') }}">Full Package - Order Now</a>
+            </div>
         </section>
 
         <div class="products dark-card">

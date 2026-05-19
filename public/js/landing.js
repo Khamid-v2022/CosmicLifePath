@@ -697,46 +697,88 @@
   }
 
   const SOCIAL_PROOF_ITEMS = [
-    { name: 'Barbara K.', country: 'Georgia', action: 'just started their free reading', minutesAgo: 3 },
-    { name: 'Ava M.', country: 'Texas', action: 'just started their free reading', minutesAgo: 2 },
-    { name: 'Daniel H.', country: 'Florida', action: 'just started their free reading', minutesAgo: 5 },
-    { name: 'Sofia L.', country: 'California', action: 'just started their free reading', minutesAgo: 4 },
-    { name: 'Lucas B.', country: 'Ontario', action: 'just started their free reading', minutesAgo: 7 },
-    { name: 'Mina P.', country: 'Seoul', action: 'just started their free reading', minutesAgo: 1 },
-    { name: 'Emma R.', country: 'New York', action: 'just started their free reading', minutesAgo: 8 },
-    { name: 'Noah S.', country: 'Arizona', action: 'just started their free reading', minutesAgo: 6 },
-    { name: 'Chloe T.', country: 'Melbourne', action: 'just started their free reading', minutesAgo: 9 },
-    { name: 'Liam C.', country: 'Dublin', action: 'just started their free reading', minutesAgo: 5 },
-    { name: 'Grace W.', country: 'Colorado', action: 'just started their free reading', minutesAgo: 11 },
-    { name: 'Hana J.', country: 'Busan', action: 'just started their free reading', minutesAgo: 12 },
-    { name: 'Mason D.', country: 'Nevada', action: 'just started their free reading', minutesAgo: 10 },
-    { name: 'Aria N.', country: 'London', action: 'just started their free reading', minutesAgo: 4 },
-    { name: 'Ethan V.', country: 'Berlin', action: 'just started their free reading', minutesAgo: 14 },
-    { name: 'Zoe Q.', country: 'Auckland', action: 'just started their free reading', minutesAgo: 3 },
-    { name: 'Olivia Y.', country: 'Vancouver', action: 'just unlocked their reading summary', minutesAgo: 6 },
-    { name: 'James G.', country: 'Wisconsin', action: 'just unlocked their reading summary', minutesAgo: 9 },
-    { name: 'Ella F.', country: 'Manchester', action: 'just unlocked their reading summary', minutesAgo: 12 },
-    { name: 'Henry A.', country: 'Montreal', action: 'just unlocked their reading summary', minutesAgo: 7 },
-    { name: 'Yuna K.', country: 'Tokyo', action: 'just unlocked their reading summary', minutesAgo: 15 },
-    { name: 'Mila O.', country: 'Perth', action: 'just unlocked their reading summary', minutesAgo: 18 },
-    { name: 'Leo Z.', country: 'Chicago', action: 'just unlocked their reading summary', minutesAgo: 11 },
-    { name: 'Aiden I.', country: 'Bristol', action: 'just unlocked their reading summary', minutesAgo: 16 },
-    { name: 'Nora U.', country: 'Osaka', action: 'just unlocked their reading summary', minutesAgo: 13 },
-    { name: 'Mia X.', country: 'Auckland', action: 'just unlocked their reading summary', minutesAgo: 10 },
-    { name: 'Charlotte E.', country: 'Tennessee', action: 'has claimed their VIP access', minutesAgo: 4 },
-    { name: 'Liam P.', country: 'Oregon', action: 'has claimed their VIP access', minutesAgo: 8 },
-    { name: 'Sophia M.', country: 'Sydney', action: 'has claimed their VIP access', minutesAgo: 3 },
-    { name: 'Elijah R.', country: 'Utah', action: 'has claimed their VIP access', minutesAgo: 6 },
-    { name: 'Amelia S.', country: 'Toronto', action: 'has claimed their VIP access', minutesAgo: 5 },
-    { name: 'Benjamin L.', country: 'Madrid', action: 'has claimed their VIP access', minutesAgo: 11 },
-    { name: 'Harper D.', country: 'Daejeon', action: 'has claimed their VIP access', minutesAgo: 7 },
-    { name: 'Logan C.', country: 'Austin', action: 'has claimed their VIP access', minutesAgo: 9 },
-    { name: 'Isla P.', country: 'Edinburgh', action: 'has claimed their standard access', minutesAgo: 14 },
-    { name: 'Jack W.', country: 'Brisbane', action: 'has claimed their standard access', minutesAgo: 6 },
-    { name: 'Scarlett H.', country: 'San Diego', action: 'has claimed their standard access', minutesAgo: 12 },
-    { name: 'Evelyn B.', country: 'Paris', action: 'has claimed their standard access', minutesAgo: 13 },
-    { name: 'Sebastian T.', country: 'Oslo', action: 'has claimed their standard access', minutesAgo: 15 },
-    { name: 'Abigail N.', country: 'Cape Town', action: 'has claimed their standard access', minutesAgo: 10 },
+    // Quiz Mode - Free Reading
+    { name: 'Barbara K.', country: 'Georgia', mode: 'quiz', action: 'just started their free reading', minutesAgo: 3 },
+    { name: 'Ava M.', country: 'Texas', mode: 'quiz', action: 'just started their free reading', minutesAgo: 2 },
+    { name: 'Daniel H.', country: 'Florida', mode: 'quiz', action: 'just started their free reading', minutesAgo: 5 },
+    { name: 'Sofia L.', country: 'California', mode: 'quiz', action: 'just started their free reading', minutesAgo: 4 },
+    { name: 'Lucas B.', country: 'Ontario', mode: 'quiz', action: 'just started their free reading', minutesAgo: 7 },
+    { name: 'Mina P.', country: 'Seoul', mode: 'quiz', action: 'just started their free reading', minutesAgo: 1 },
+    { name: 'Emma R.', country: 'New York', mode: 'quiz', action: 'just started their free reading', minutesAgo: 8 },
+    { name: 'Noah S.', country: 'Arizona', mode: 'quiz', action: 'just started their free reading', minutesAgo: 6 },
+    { name: 'Chloe T.', country: 'Melbourne', mode: 'quiz', action: 'just started their free reading', minutesAgo: 9 },
+    { name: 'Liam C.', country: 'Dublin', mode: 'quiz', action: 'just started their free reading', minutesAgo: 5 },
+    { name: 'Grace W.', country: 'Colorado', mode: 'quiz', action: 'just started their free reading', minutesAgo: 11 },
+    { name: 'Hana J.', country: 'Busan', mode: 'quiz', action: 'just started their free reading', minutesAgo: 12 },
+    { name: 'Mason D.', country: 'Nevada', mode: 'quiz', action: 'just started their free reading', minutesAgo: 10 },
+    { name: 'Aria N.', country: 'London', mode: 'quiz', action: 'just started their free reading', minutesAgo: 4 },
+    { name: 'Ethan V.', country: 'Berlin', mode: 'quiz', action: 'just started their free reading', minutesAgo: 14 },
+    { name: 'Zoe Q.', country: 'Auckland', mode: 'quiz', action: 'just started their free reading', minutesAgo: 3 },
+    // Summary Mode - Reading Summary
+    { name: 'Olivia Y.', country: 'Vancouver', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 6 },
+    { name: 'James G.', country: 'Wisconsin', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 9 },
+    { name: 'Ella F.', country: 'Manchester', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 12 },
+    { name: 'Henry A.', country: 'Montreal', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 7 },
+    { name: 'Yuna K.', country: 'Tokyo', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 15 },
+    { name: 'Mila O.', country: 'Perth', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 18 },
+    { name: 'Leo Z.', country: 'Chicago', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 11 },
+    { name: 'Aiden I.', country: 'Bristol', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 16 },
+    { name: 'Nora U.', country: 'Osaka', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 13 },
+    { name: 'Mia X.', country: 'Auckland', mode: 'summary', action: 'just unlocked their reading summary', minutesAgo: 10 },
+    // Purchase Mode - VIP/Standard Access
+    { name: 'Charlotte E.', country: 'Tennessee', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 4 },
+    { name: 'Liam P.', country: 'Oregon', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 8 },
+    { name: 'Sophia M.', country: 'Sydney', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 3 },
+    { name: 'Elijah R.', country: 'Utah', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 6 },
+    { name: 'Amelia S.', country: 'Toronto', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 5 },
+    { name: 'Benjamin L.', country: 'Madrid', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 11 },
+    { name: 'Harper D.', country: 'Daejeon', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 7 },
+    { name: 'Logan C.', country: 'Austin', mode: 'purchase', action: 'has claimed their VIP access', minutesAgo: 9 },
+    { name: 'Isla P.', country: 'Edinburgh', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 14 },
+    { name: 'Jack W.', country: 'Brisbane', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 6 },
+    { name: 'Scarlett H.', country: 'San Diego', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 12 },
+    { name: 'Evelyn B.', country: 'Paris', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 13 },
+    { name: 'Sebastian T.', country: 'Oslo', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 15 },
+    { name: 'Abigail N.', country: 'Cape Town', mode: 'purchase', action: 'has claimed their standard access', minutesAgo: 10 },
+    // Upsell1 Mode - Wealth Path Report
+    { name: 'Victoria R.', country: 'Boston', mode: 'upsell1', action: 'just purchased their Aries Wealth Path Report', minutesAgo: 2 },
+    { name: 'Marcus J.', country: 'Denver', mode: 'upsell1', action: 'just purchased their Taurus Wealth Path Report', minutesAgo: 4 },
+    { name: 'Isabella T.', country: 'Miami', mode: 'upsell1', action: 'just purchased their Gemini Wealth Path Report', minutesAgo: 3 },
+    { name: 'Xavier K.', country: 'Seattle', mode: 'upsell1', action: 'just purchased their Cancer Wealth Path Report', minutesAgo: 5 },
+    { name: 'Natasha L.', country: 'Moscow', mode: 'upsell1', action: 'just purchased their Leo Wealth Path Report', minutesAgo: 1 },
+    { name: 'Adrian S.', country: 'Barcelona', mode: 'upsell1', action: 'just purchased their Virgo Wealth Path Report', minutesAgo: 6 },
+    { name: 'Cassandra M.', country: 'Dubai', mode: 'upsell1', action: 'just purchased their Aquarius Wealth Path Report', minutesAgo: 7 },
+    { name: 'Diego P.', country: 'Mexico City', mode: 'upsell1', action: 'just purchased their Pisces Wealth Path Report', minutesAgo: 4 },
+    { name: 'Elena V.', country: 'Rome', mode: 'upsell1', action: 'just purchased their Capricorn Wealth Path Report', minutesAgo: 8 },
+    { name: 'Falcon W.', country: 'Bangkok', mode: 'upsell1', action: 'just purchased their Sagittarius Wealth Path Report', minutesAgo: 2 },
+    { name: 'Gabriella N.', country: 'Prague', mode: 'upsell1', action: 'just purchased their Aquarius Wealth Path Report', minutesAgo: 9 },
+    { name: 'Harrison D.', country: 'Amsterdam', mode: 'upsell1', action: 'just purchased their Pisces Wealth Path Report', minutesAgo: 3 },
+    // Upsell2 Mode - Love Path Report
+    { name: 'Isabella F.', country: 'Paris', mode: 'upsell2', action: 'just purchased their Aries Love Path Report', minutesAgo: 2 },
+    { name: 'Julian M.', country: 'Milan', mode: 'upsell2', action: 'just purchased their Taurus Love Path Report', minutesAgo: 5 },
+    { name: 'Katerina B.', country: 'Athens', mode: 'upsell2', action: 'just purchased their Gemini Love Path Report', minutesAgo: 3 },
+    { name: 'Leonardo R.', country: 'Venice', mode: 'upsell2', action: 'just purchased their Cancer Love Path Report', minutesAgo: 4 },
+    { name: 'Margot H.', country: 'Lyon', mode: 'upsell2', action: 'just purchased their Leo Love Path Report', minutesAgo: 1 },
+    { name: 'Nicolas T.', country: 'Lisbon', mode: 'upsell2', action: 'just purchased their Virgo Love Path Report', minutesAgo: 6 },
+    { name: 'Ophelia S.', country: 'Vienna', mode: 'upsell2', action: 'just purchased their Libra Love Path Report', minutesAgo: 7 },
+    { name: 'Philippe C.', country: 'Geneva', mode: 'upsell2', action: 'just purchased their Scorpio Love Path Report', minutesAgo: 4 },
+    { name: 'Rosalind K.', country: 'Zurich', mode: 'upsell2', action: 'just purchased their Sagittarius Love Path Report', minutesAgo: 8 },
+    { name: 'Sebastian P.', country: 'Hamburg', mode: 'upsell2', action: 'just purchased their Capricorn Love Path Report', minutesAgo: 2 },
+    { name: 'Theodora W.', country: 'Stockholm', mode: 'upsell2', action: 'just purchased their Aquarius Love Path Report', minutesAgo: 9 },
+    { name: 'Ursula G.', country: 'Copenhagen', mode: 'upsell2', action: 'just purchased their Pisces Love Path Report', minutesAgo: 3 },
+    // Upsell3 Mode - Cosmic Energy Path Reading
+    { name: 'Vincent A.', country: 'Helsinki', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 2 },
+    { name: 'Wyatt J.', country: 'Warsaw', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 4 },
+    { name: 'Xander L.', country: 'Budapest', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 3 },
+    { name: 'Yasmin E.', country: 'Belgrade', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 5 },
+    { name: 'Zachary M.', country: 'Sofia', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 1 },
+    { name: 'Aurora K.', country: 'Bucharest', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 6 },
+    { name: 'Bailey R.', country: 'Kiev', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 7 },
+    { name: 'Callum S.', country: 'Istanbul', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 4 },
+    { name: 'Delilah N.', country: 'Cairo', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 8 },
+    { name: 'Emmett V.', country: 'Lagos', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 2 },
+    { name: 'Fiona D.', country: 'Nairobi', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 9 },
+    { name: 'Gregory Z.', country: 'Johannesburg', mode: 'upsell3', action: 'just purchased their Cosmic Energy Path Reading', minutesAgo: 3 },
   ];
 
   const socialProofState = {
@@ -748,19 +790,11 @@
   };
 
   function getSocialProofPool(mode) {
-    if (mode === 'purchase') {
-      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('claimed'));
+    if (mode === 'all') {
+      return SOCIAL_PROOF_ITEMS;
     }
 
-    if (mode === 'summary') {
-      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('unlocked'));
-    }
-
-    if (mode === 'quiz') {
-      return SOCIAL_PROOF_ITEMS.filter((item) => item.action.includes('started'));
-    }
-
-    return SOCIAL_PROOF_ITEMS;
+    return SOCIAL_PROOF_ITEMS.filter((item) => item.mode === mode);
   }
 
   function pickRandomSocialProof(pool) {

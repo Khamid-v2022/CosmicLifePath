@@ -8,12 +8,9 @@
       <article class="cosmic-article mx-auto">
         <!-- Hero Section -->
         <h1 class="text-center download-title">Hey, the first part of your <strong class="accent">Cosmic Life Path Reading</strong> is here…</h1>
-        <div class="download-main-sign-image-row mt-5">
-            <img src="{{ asset('imgs/ebook/upsell1/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Wealth Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
-        </div>
 
         <!-- Welcome Section -->
-        <p class="step-copy article-copy"><span class="drop-cap">W</span>elcome to the start of your <em>Cosmic Life Path Reading</em>.</p>
+        <p class="step-copy article-copy mt-5"><span class="drop-cap">W</span>elcome to the start of your <em>Cosmic Life Path Reading</em>.</p>
         <p class="step-copy article-copy"><em>It's</em> <strong>Celestra Vonn</strong> here again.</p>
         <p class="step-copy article-copy">First of all, let me say congratulations.</p>
         <p class="step-copy article-copy">You did the smart thing by accessing your reading today.</p>
@@ -97,6 +94,12 @@
 
         <!-- Wealth Path Reading Benefits -->
         <h2 class="article-subtitle mt-5"><strong>When you clear your <em>low money frequency</em> with a personalized <em><u>Cosmic Wealth Path Reading</u></em>, money will never be an object for you ever again…</strong></h2>
+        <div class="download-main-sign-image-row mt-5">
+            <img src="{{ asset('imgs/ebook/upsell1/' . strtolower($sign['name']) . '.png') }}" alt="Cosmic Wealth Path - {{ $sign['name'] }}" class="download-main-img-large">
+        </div> 
+
+
+
         <p class="step-copy article-copy">You will walk into restaurants and never even think about the bill or the price.</p>
         <p class="step-copy article-copy">You will buy what you want and never even check the price tag.</p>
         <p class="step-copy article-copy">You won't have to deny your spouse, children, or family anything ever again because a lack of money is a problem for you.</p>       
@@ -144,7 +147,7 @@
         <p class="step-copy article-copy">That's right, just <strong>$67</strong>.</p>
 
         <div class="bonus-total-section">
-          <p class="label">✦ Total Bonus Value ✦</p>
+          <p class="label">✦ Total Value ✦</p>
           <p class="value">$67</p>
         </div>
 
@@ -158,11 +161,12 @@
         <p class="step-copy article-copy"><strong>Hit the button below right now</strong> and add your <em>Cosmic Wealth Path Reading</em> to your life today.</p>
 
         <!-- CTA Button -->
-        <div class="text-center mt-5 mb-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Wealth Path Reading Now →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I'll continue leaving my financial future to chance.</p>
 
-        <p class="step-copy article-copy"><strong>You will receive your reading in the next 24 hours.</strong></p>
+        <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
         <!-- Bonuses Section -->
         <h2 class="article-subtitle mt-5"><strong>But wait, there's more…</strong></h2>
         <div class="download-main-sign-image-row mt-5">
@@ -218,9 +222,10 @@
         <div class="download-main-sign-image-row mt-5">
             <img src="{{ asset('imgs/ebook/upsell1/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Wealth Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
-        <div class="text-center mt-5 mb-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Claim Your Cosmic Wealth Path Reading Now →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I'll continue leaving my financial future to chance.</p>
 
         <p class="step-copy article-copy"><strong>Remember, this is a one-time offer</strong></p>
         <p class="step-copy article-copy">You will not have this opportunity again.</p>
@@ -231,25 +236,19 @@
           <div class="row g-4 mt-2">
             <div class="col-md-6">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/james.png') }}" alt="David Miller" class="testimonial-avatar">
+                <img src="{{ asset('imgs/avatar/david.jpg') }}" alt="David Miller" class="testimonial-avatar">
                 <p class="proof-name mb-2">David Miller<span class="d-block mt-2 testimonial-location">Chicago</span></p>
                 <p class="proof-quote">“I used to feel like I was somehow cursed with bad luck when it came to money. Now I know that the only reason I felt like that was that I did not know how to access my <strong>Cosmic Wealth Path Reading,</strong> which opened the door to me becoming aware of all my hidden gifts and talents for attracting wealth and opportunity.”</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/elzabeth.png') }}" alt="Karen McCarthy" class="testimonial-avatar">
+                <img src="{{ asset('imgs/avatar/karen.jpg') }}" alt="Karen McCarthy" class="testimonial-avatar">
                 <p class="proof-name mb-2">Karen McCarthy <span class="d-block mt-2 testimonial-location">San Francisco</span></p>
                 <p class="proof-quote">“The <em>Cosmic Wealth Path Reading</em> from <em>Celestra Vonn</em> was more powerful than I ever imagined possible. I cried tears of joy when I read it because…I realized for the first time ever what was holding me back from having financial abundance. I got a pay rise just 6 days after reading my report. It changes your energy and confidence with money.”</p>
               </div>
             </div>
           </div>
-        </div>
-
-
-        <!-- Final Action -->
-        <div class="text-center mt-5 mb-5">
-          <a href="#" class="hero-cta btn step-next-btn">Unlock Your Wealth Potential Today →</a>
         </div>
 
       </article>
@@ -261,7 +260,7 @@
   <script>
     window.COSMIC_SOCIAL_PROOF = {
       enabled: true,
-      mode: 'purchase',
+      mode: 'upsell1',
       visibleMs: 5000,
       minDelayMs: 5000,
       maxDelayMs: 30000,

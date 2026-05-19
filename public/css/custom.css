@@ -45,6 +45,9 @@ a {
 .text-primary {
   color: var(--gold)!important;
 }
+.text-light {
+  color: var(--gold-light)!important;
+}
 .btn {
   font-size: 1rem;
 }

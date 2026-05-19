@@ -6,9 +6,7 @@
   <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
-
-        <h1 class="text-center download-title">Hi there.</h1>
-
+        <h3 class="article-subtitle text-white">Hey there, <strong class="accent text-light">Celestra Vonn</strong> here again.</h3>
         <p class="step-copy article-copy"><strong>Celestra Vonn</strong> here again,</p>
         <p class="step-copy article-copy"><strong>Congratulations on getting your <em>Cosmic Love Path Reading</em>.</strong></p>
         <p class="step-copy article-copy">You have my greatest respect for coming this far.</p>
@@ -38,6 +36,10 @@
         <p class="step-copy article-copy">For this reason, I want to give you one final reading here today.</p>
 
         <h2 class="article-subtitle mt-5">Your personalized <strong>Cosmic Energy Path</strong>Reading.</h2>
+        <div class="download-main-sign-image-row mt-5">
+          <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
+        </div>
+
 
         <p class="step-copy article-copy">This reading is tailored to you and to you alone.</p>
         <p class="step-copy article-copy">It’s based on the position of the planets at the time of your birth according to my <strong><em>Cosmic Mandala Astrological Charts</em></strong>, and the information you find inside will help you maximize your health and vitality in this incarnation.</p>
@@ -93,9 +95,10 @@
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
         </div>
-        <div class="text-center my-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Cosmic Energy Path Reading ($47) →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</p>
 
      
 
@@ -103,3 +106,14 @@
     </div>
   </section>
 @endsection
+@push('scripts')
+  <script>
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'upsell3',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
+    };
+  </script>
+@endpush

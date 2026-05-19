@@ -6,8 +6,7 @@
   <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
-        <h1 class="text-center download-title">Hey there</h1>
-        <p class="step-copy article-copy"><b>Celestra Vonn</b> here again.</p>
+        <h3 class="article-subtitle text-white">Hey there, <strong class="accent text-light">Celestra Vonn</strong> here again.</h3>
         <p class="step-copy article-copy">Just dropping in to say a big congratulations.</p>
         <p class="step-copy article-copy">Well done on getting your <em>Cosmic Wealth Path Reading</em>. </p>
         <p class="step-copy article-copy">You made a wise decision.</p>
@@ -55,6 +54,10 @@
 
         <!-- <h2 class="article-subtitle mt-5"><strong>Personalized Cosmic Love Path Reading</strong></h2> -->
         <p class="step-copy article-copy">That’s why I’m so excited to give you a personalized <strong><em>Cosmic Love Path Reading</em></strong>.</p>
+        <div class="download-main-sign-image-row mt-5">
+          <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="download-main-img-large">
+        </div>
+
         <p class="step-copy article-copy">A <em>Cosmic Love Path Reading</em> will help you develop healthy relationships and connections with others in your life.</p>
         <p class="step-copy article-copy">When you access this <strong>Cosmic Love Path Reading</strong>, you will see for the first time exactly what your particular planets in your particular <strong>Cosmic Mandala Astrology</strong> chart have in store for you.</p>
         <p class="step-copy article-copy">You will see for the first time why certain relationships have not worked out.</p>
@@ -89,9 +92,11 @@
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="download-main-img-large">
         </div>
-        <div class="text-center my-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Your Personalized Cosmic Love Path Reading ($47) →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
+
         <p class="step-copy article-copy">That’s a fraction of its true value.</p>
         <p class="step-copy article-copy">You will receive your personalized reading in the next 24 hours… and your love life and relationships will never be the same again.</p>
 
@@ -121,7 +126,7 @@
 
         <p class="step-copy article-copy">Normally, these bonuses would have a combined value of <strong>$497</strong>.</p>
         <p class="step-copy article-copy">Plus the <em>Cosmic Love Path Reading</em> at <strong>$600</strong> — Means I’m giving you <strong>$1,097</strong> of total value here.</p>
-        <p class="step-copy article-copy">However, you can access the <em>Cosmic Love Path Reading</em> and all bonuses here today for just <strong>$47</strong>.</p>
+        <p class="step-copy article-copy">However, you can access the <em>Cosmic Love Path Reading</em> and all bonuses here today for just</p>
 
         <div class="bonus-total-section">
           <p class="label">✦ Total Pack Value ✦</p>
@@ -136,11 +141,12 @@
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
-        <div class="text-center mt-5 mb-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
 
-        <p class="step-copy article-copy"><strong>You will receive your reading in the next 24 hours.</strong></p>
+        <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
 
         <p class="step-copy article-copy">And rest assured…</p>
         <p class="step-copy article-copy">You are protected by my <strong>Iron-Clad 365-day guarantee</strong>.</p>
@@ -153,9 +159,10 @@
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
-        <div class="text-center mt-5 mb-5">
+        <div class="text-center mt-5">
           <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
+        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
 
         <!-- testimonials Section -->
         <div class="social-proof-wrap mt-5 text-center">
@@ -163,21 +170,21 @@
           <div class="row g-4 mt-2">
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/james.png') }}" alt="Isabella Davis" class="testimonial-avatar">
+                <img src="{{ asset('imgs/avatar/isabella.jpg') }}" alt="Isabella Davis" class="testimonial-avatar">
                 <p class="proof-name mb-2">Isabella Davis<span class="d-block mt-2 testimonial-location">Phoenix, Arizona</span></p>
                 <p class="proof-quote">“I feel I saw stuff in my <em><strong>Cosmic Love Path Report</strong></em> that no one picked up on before. There is now a new love in my life. It’s no coincidence.”</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/elzabeth.png') }}" alt="Amelia Moore" class="testimonial-avatar">
+                <img src="{{ asset('imgs/avatar/amelia.jpg') }}" alt="Amelia Moore" class="testimonial-avatar">
                 <p class="proof-name mb-2">Amelia Moore <span class="d-block mt-2 testimonial-location">Dallas, Texas</span></p>
                 <p class="proof-quote">“I’m way more positive that good things are headed my way in my love life. What’s happened in the report so far has already started to occur.”</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="proof-card h-100 text-center">
-                <img src="{{ asset('imgs/avatar/james.png') }}" alt="Diane Holloway" class="testimonial-avatar">
+                <img src="{{ asset('imgs/avatar/diane.jpg') }}" alt="Diane Holloway" class="testimonial-avatar">
                 <p class="proof-name mb-2">Diane Holloway<span class="d-block mt-2 testimonial-location">Portland, Maine</span></p>
                 <p class="proof-quote">“Celestra gave me clarity I couldn't find anywhere else. Her insights into my love life were uncanny. I finally feel like I'm moving in the right direction.”</p>
               </div>
@@ -185,13 +192,19 @@
           </div>
         </div>
 
-        <p class="step-copy article-copy mt-5"><strong>Hit the instant access button below now</strong> and add the personalized Cosmic Love Path Reading to your order today.</p>
-
-        <div class="text-center mt-5 mb-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
-        </div>
-
       </article>
     </div>
   </section>
 @endsection
+
+@push('scripts')
+  <script>
+    window.COSMIC_SOCIAL_PROOF = {
+      enabled: true,
+      mode: 'upsell2',
+      visibleMs: 5000,
+      minDelayMs: 5000,
+      maxDelayMs: 30000,
+    };
+  </script>
+@endpush

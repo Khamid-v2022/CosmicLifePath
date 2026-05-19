@@ -1436,7 +1436,6 @@ textarea:-webkit-autofill:focus {
 
 .reading-stage {
   opacity: 0;
-  transform: translateY(32px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 

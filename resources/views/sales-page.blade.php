@@ -189,23 +189,51 @@
         <h2 class="section-title step-title article-major-title mt-0 text-center">In The VIP Member’s Area, You Also Receive...</h2>
         <p class="offer-value text-center">Three exclusive bonuses that deepen, extend, and bring your Cosmic Life Path Reading to life.</p>
 
+
         <h3 class="article-subtitle mt-4">Bonus #1 — The Secret Language of Fame</h3>
         <p class="offer-value">Value $97</p>
-        <p class="step-copy article-copy">What if the proof that your cosmic blueprint is real was hiding in plain sight — in the lives of the most celebrated people in the world?</p>
-        <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
-        <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">
+            <p class="step-copy article-copy">What if the proof that your cosmic blueprint is real was hiding in plain sight — in the lives of the most celebrated people in the world?</p>
+            <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus2.jpg') }}" alt="The Secret Language of Fame" class="download-main-img-large">
+          </div>
+        </div>
+         <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
+
 
         <h3 class="article-subtitle mt-4">Bonus #2 — Your Soul Urge Number Report</h3>
         <p class="offer-value">Value $67</p>
-        <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
-        <p class="step-copy article-copy">Derived from your name using ancient numerology, this report uncovers the hidden desires and deepest motivations driving every major decision you have ever made — often without you realising it. Together with your reading, it completes the picture.</p>
+
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus3.jpg') }}" alt="Your Lunar Money Path Report" class="download-main-img-large">
+          </div>
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
+            <p class="step-copy article-copy">Derived from your name using ancient numerology, this report uncovers the hidden desires and deepest motivations driving every major decision you have ever made — often without you realising it. Together with your reading, it completes the picture.</p>
+          </div>
+        </div>
         <p class="step-copy article-copy"><strong>Together, your Cosmic Life Path Reading and your Soul Urge Number Report create a complete picture of who you truly are — one that no single system alone could reveal.</strong></p>
+
 
         <h3 class="article-subtitle mt-4">Bonus #3 — Your Lunar Money Path Report</h3>
         <p class="offer-value">Value $167</p>
-        <p class="step-copy article-copy">The moon governs the tides. It also governs your financial flow — if you know when to move with it.</p>
-        <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">
+            <p class="step-copy article-copy">The moon governs the tides. It also governs your financial flow — if you know when to move with it.</p>
+            <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus1.jpg') }}" alt="Your Lunar Money Path Report" class="download-main-img-large">
+          </div>
+        </div>
         <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
+
 
         <!-- <hr class="mt-5">
         <h4 class="text-center">Total Bonus Value: $331  <br>  Yours FREE when You claim your VIP access Today</h4>

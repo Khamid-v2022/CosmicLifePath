@@ -303,7 +303,7 @@ class CosmicFlowController extends Controller {
             return redirect()->route('landing');
         }
 
-        return view('sales-page', [
+        return view('sales-page-dummy', [
             'name' => $contact['name'],
             'email' => $contact['email'],
             'sign' => $birth['sign'],

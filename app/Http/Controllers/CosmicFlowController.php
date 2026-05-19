@@ -271,6 +271,7 @@ class CosmicFlowController extends Controller {
         // Try to get data from form submission first, then fall back to session
         $birth = null;
         $contact = null;
+        $sign_info = null;
 
         if ($request->has('birth_sign_slug')) {
             $birth = [
@@ -303,10 +304,16 @@ class CosmicFlowController extends Controller {
             return redirect()->route('landing');
         }
 
+        $signSlug = $birth['sign_slug'] ?? ($birth['sign']['slug'] ?? null);
+        $signInfo = $signSlug ? config("variables.signs.$signSlug") : null;
+
+        abort_unless(is_array($signInfo), 404);
+
         return view('sales-page-dummy', [
             'name' => $contact['name'],
             'email' => $contact['email'],
             'sign' => $birth['sign'],
+            'sign_info' => $signInfo,
             'formattedDate' => $birth['formatted_date'],
             'birth' => $birth,
             'contact' => $contact,
@@ -315,31 +322,12 @@ class CosmicFlowController extends Controller {
 
     private function findSignOrFail(string $slug): array
     {
-        $signs = $this->signs();
+        $signInfo = config("variables.signs.$slug");
 
-        abort_unless(isset($signs[$slug]), 404);
+        abort_unless(is_array($signInfo), 404);
 
-        return $signs[$slug] + ['slug' => $slug];
+        return $signInfo + ['slug' => $slug];
     }
-
-    private function signs(): array
-    {
-        return [
-            'aries' => ['label' => 'Aries', 'months' => [3 => range(21, 31), 4 => range(1, 19)]],
-            'taurus' => ['label' => 'Taurus', 'months' => [4 => range(20, 30), 5 => range(1, 20)]],
-            'gemini' => ['label' => 'Gemini', 'months' => [5 => range(21, 31), 6 => range(1, 20)]],
-            'cancer' => ['label' => 'Cancer', 'months' => [6 => range(21, 30), 7 => range(1, 22)]],
-            'leo' => ['label' => 'Leo', 'months' => [7 => range(23, 31), 8 => range(1, 22)]],
-            'virgo' => ['label' => 'Virgo', 'months' => [8 => range(22, 31), 9 => range(1, 22)]],
-            'libra' => ['label' => 'Libra', 'months' => [9 => range(23, 30), 10 => range(1, 22)]],
-            'scorpio' => ['label' => 'Scorpio', 'months' => [10 => range(23, 31), 11 => range(1, 21)]],
-            'sagittarius' => ['label' => 'Sagittarius', 'months' => [11 => range(22, 30), 12 => range(1, 21)]],
-            'capricorn' => ['label' => 'Capricorn', 'months' => [12 => range(22, 31), 1 => range(1, 19)]],
-            'aquarius' => ['label' => 'Aquarius', 'months' => [1 => range(20, 31), 2 => range(1, 18)]],
-            'pisces' => ['label' => 'Pisces', 'months' => [2 => range(19, 29), 3 => range(1, 20)]],
-        ];
-    }
-
 
     public function privacyPolicy(): View
     {

@@ -5,13 +5,12 @@
 @section('content')
   @php
     $today = now()->format('F j, Y');
-    $checkoutUrl = 'https://www.google.com';
   @endphp
 
   <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
-        <!-- <p class="section-label text-center">Special Offer</p> -->
+
         <h1 class="section-title step-title text-center mb-4">The Cosmos Has Guided You Here Today On {{ $today }}, {{ $name }}...<br> Now Is The Time To Begin Your Magical Journey As You Follow Your <i>Cosmic Life Path</i></h1>
 
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
@@ -27,7 +26,7 @@
 
         <h2 class="section-title step-title article-major-title mt-5" style="text-transform: capitalize;"><strong >{{$birth['sign_slug']}} Cosmic Life Path Reading Full Report</strong></h2>
 
-
+      
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
           <img src="{{ asset('imgs/ebook/horoscope/' . $birth['sign_slug'] . '.png') }}" alt="{{ $sign['label'] ?? 'Cosmic life path' }}" class="" style="max-width: 230px;">
         </div>
@@ -83,7 +82,6 @@
 
 
         <h3 class="article-subtitle mt-4">Bonus #1 — The Secret Language of Fame</h3>
-        <p class="offer-value">Value $97</p>
 
         <div class="article-inline-media my-4">
           <div class="article-inline-copy order-2 order-lg-1">
@@ -98,7 +96,6 @@
 
 
         <h3 class="article-subtitle mt-4">Bonus #2 — Your Soul Urge Number Report</h3>
-        <p class="offer-value">Value $67</p>
 
         <div class="article-inline-media article-inline-media-left my-4">
           <div class="article-inline-visual">
@@ -113,7 +110,6 @@
 
 
         <h3 class="article-subtitle mt-4">Bonus #3 — Your Lunar Money Path Report</h3>
-        <p class="offer-value">Value $167</p>
 
         <div class="article-inline-media my-4">
           <div class="article-inline-copy order-2 order-lg-1">
@@ -150,7 +146,7 @@
                   <li>365-Day Money-Back Guarantee</li>
                 </ul>
 
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                <a href="{{ $sign_info['standard_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
                   Gain Standard Access Now →
                 </a>
               </article>
@@ -172,7 +168,7 @@
                   <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
                 </ul>
 
-                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth 428)</p>
+                <p class="pricing-group-title">+ 3 Exclusive Bonuses</p>
                 <ul class="pricing-list pricing-list-bonus">
                   <li>
                     The Secret Language of Fame
@@ -185,7 +181,7 @@
                   </li>
                 </ul>
 
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                <a href="{{ $sign_info['vip_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
                   Gain VIP Access Now →
                 </a>
               </article>

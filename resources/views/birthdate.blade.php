@@ -33,7 +33,7 @@
             <div id="birthStageDate" class="birth-stage @if($initialStage === 'date') is-active @else d-none @endif">
                 <h2 class="section-title">Step #2:<em> Enter Your Date of Birth</em></h2>
 
-                <p class="step-copy mb-0">You selected <strong>{{ $sign['label'] }}</strong>.</p>
+                <p class="step-copy mb-0">You selected <strong>{{ $sign['name'] }}</strong>.</p>
                 <p class="step-copy">Now enter your birth date to continue your cosmic path.</p>
 
                 @if ($errors->has('day') || $errors->has('month') || $errors->has('year'))
@@ -76,7 +76,7 @@
             <div id="birthStageDetails" class="birth-stage @if($initialStage === 'details') is-active @else d-none @endif">
                 <h2 class="section-title">Step #3:<em> Enter Your Time & Place of Birth</em></h2>
 
-                <p class="step-copy mb-0">You selected <strong>{{ $sign['label'] }}</strong>.</p>
+                <p class="step-copy mb-0">You selected <strong>{{ $sign['name'] }}</strong>.</p>
                 <p class="step-copy">Your birth date is <strong id="stage2BirthDateDisplay">{{ $formattedDate }}</strong>.</p>
 
                 <form method="POST" action="{{ route('birth.details.submit') }}" id="birthDetailsForm" class="birth-form mt-4">

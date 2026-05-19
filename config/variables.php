@@ -4,99 +4,135 @@ return [
     'signs' => [
         'aries' => [
             'name' => 'Aries',
+            'months' => [3 => range(21, 31), 4 => range(1, 19)],
             'description' => 'Bold, ambitious, and a natural leader.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Aries_CLP_K3mL9xP2Qa8Tv7Rx.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Aries_CLP_K3mL9xP2Qa7Tv8Rx.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/aries',
-            'standard_url' => 'https://thecosmiclifepath.com/download/aries'
+            'standard_url' => 'https://thecosmiclifepath.com/download/aries',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries47&template=BCoFTclp&cbfid=63364&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries15&template=BCoFTclp&cbfid=63364&vtid=cta1'
         ],
         'taurus' => [
             'name' => 'Taurus',
+            'months' => [4 => range(20, 30), 5 => range(1, 20)],
             'description' => 'Grounded, reliable, and values comfort.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Taurus_CLP_M4vX8qL1Rp6Dc2Yw.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Taurus_CLP_M4vX8qL1Rp6Dc2Yw.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/taurus',
-            'standard_url' => 'https://thecosmiclifepath.com/download/taurus'
+            'standard_url' => 'https://thecosmiclifepath.com/download/taurus',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus47&template=BCoFTclp&cbfid=63372&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus15&template=BCoFTclp&cbfid=63372&vtid=cta1'
         ],
         'gemini' => [
             'name' => 'Gemini',
+            'months' => [5 => range(21, 31), 6 => range(1, 20)],
             'description' => 'Curious, adaptable, and a great communicator.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Gemini_CLP_Z4kP3wN7Tx2Bm9Ls.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Gemini_CLP_Z4kP3wN7Tx2Bm9Ls.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/gemini',
-            'standard_url' => 'https://thecosmiclifepath.com/download/gemini'
+            'standard_url' => 'https://thecosmiclifepath.com/download/gemini',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini47&template=BCoFTclp&cbfid=63366&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini15&template=BCoFTclp&cbfid=63366&vtid=cta1'
         ],
         'cancer' => [
             'name' => 'Cancer',
+            'months' => [6 => range(21, 30), 7 => range(1, 22)],
             'description' => 'Intuitive, caring, and deeply loyal.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Cancer_CLP_H5qV8mL1Yp7Rw4Kd.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Cancer_CLP_H5qV8mL1Yp4Rw7Kd.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer47&template=BCoFTclp&cbfid=63362&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1'
         ],
         'leo' => [
             'name' => 'Leo',
+            'months' => [7 => range(23, 31), 8 => range(1, 22)],
             'description' => 'Confident, creative, and loves the spotlight.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Leo_CLP_X6nK2pQ9Lm4Tr8Vq.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Leo_CLP_X6nK2pQ9Lm4Tr8Vq.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo47&template=BCoFTclp&cbfid=63367&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo15&template=BCoFTclp&cbfid=63367&vtid=cta1'
         ],
         'virgo' => [
             'name' => 'Virgo',
+            'months' => [8 => range(22, 31), 9 => range(1, 22)],
             'description' => 'Analytical, practical, and detail-oriented.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Virgo_CLP_P8wR3xM6Qa1Jt9Xn.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Virgo_CLP_P8wR3xM6Qa1Jt9Xn.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo47&template=BCoFTclp&cbfid=63373&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo15&template=BCoFTclp&cbfid=63373&vtid=cta1'
         ],
         'libra' => [
             'name' => 'Libra',
+            'months' => [9 => range(23, 30), 10 => range(1, 22)],
             'description' => 'Diplomatic, fair-minded, and social.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Libra_CLP_T5mZ9qK2Xp7Nw4Rc.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Libra_CLP_T5mZ9qK2Xp7Nw4Rc.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra47&template=BCoFTclp&cbfid=63368&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra15&template=BCoFTclp&cbfid=63368&vtid=cta1'
         ],
         'scorpio' => [
             'name' => 'Scorpio',
+            'months' => [10 => range(23, 31), 11 => range(1, 21)],
             'description' => 'Passionate, resourceful, and determined.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Scorpio_CLP_R1xV7pL4Km9Qz5Tf.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Scorpio_CLP_R1xV7pL4Km9Qz5Tf.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio47&template=BCoFTclp&cbfid=63371&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio15&template=BCoFTclp&cbfid=63371&vtid=cta1'
         ],
         'sagittarius' => [
             'name' => 'Sagittarius',
+            'months' => [11 => range(22, 30), 12 => range(1, 21)],
             'description' => 'Adventurous, optimistic, and philosophical.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Sagittarius_CLP_N3qP8mX5Lv2Kh7Qd.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Sagittarius_CLP_N3qP8mX5Lv2Kh7Qd.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit47&template=BCoFTclp&cbfid=63370&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit15&template=BCoFTclp&cbfid=63370&vtid=cta1'
         ],
         'capricorn' => [
             'name' => 'Capricorn',
+            'months' => [12 => range(22, 31), 1 => range(1, 19)],
             'description' => 'Disciplined, ambitious, and responsible.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Capricorn_CLP_Y2kM7xQ9Rp4Tn8Vz.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Capricorn_CLP_Y2kM7xQ9Rp4Tn8Vz.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri47&template=BCoFTclp&cbfid=63365&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri15&template=BCoFTclp&cbfid=63365&vtid=cta1'
         ],
         'aquarius' => [
             'name' => 'Aquarius',
+            'months' => [1 => range(20, 31), 2 => range(1, 18)],
             'description' => 'Innovative, independent, and humanitarian.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Aquarius_CLP_F8kQ2mX7Lp9Rv3Na.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Aquarius_CLP_F9kQ2mX7Lp4Rv8Na.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua47&template=BCoFTclp&cbfid=63363&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua15&template=BCoFTclp&cbfid=63363&vtid=cta1'
         ],
         'pisces' => [
             'name' => 'Pisces',
+            'months' => [2 => range(19, 29), 3 => range(1, 20)],
             'description' => 'Empathetic, artistic, and deeply intuitive.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Pisces_CLP_K9xT3mP7Qv1Ls6Mh.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Pisces_CLP_K9xT3mP7Qv1Ls6Mh.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
-            'standard_url' => 'https://thecosmiclifepath.com/download/cancer'
+            'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
+            'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces47&template=BCoFTclp&cbfid=63369&vtid=cta1',
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces15&template=BCoFTclp&cbfid=63369&vtid=cta1'
         ],
     ],
 ];

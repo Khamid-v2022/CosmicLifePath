@@ -5,7 +5,6 @@
 @section('content')
   @php
     $today = now()->format('F j, Y');
-    $checkoutUrl = 'https://www.google.com';
   @endphp
 
   <section class="small-gap-start step-section container">
@@ -268,7 +267,7 @@
                   <li>365-Day Money-Back Guarantee</li>
                 </ul>
 
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                <a href="{{ $sign_info['standard_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
                   Gain Standard Access Now →
                 </a>
               </article>
@@ -306,7 +305,7 @@
                   </li>
                 </ul>
 
-                <a href="{{ $checkoutUrl }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                <a href="{{ $sign_info['vip_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
                   Gain VIP Access Now →
                 </a>
               </article>

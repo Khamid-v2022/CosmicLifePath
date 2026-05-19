@@ -293,14 +293,26 @@
                 <ul class="pricing-list pricing-list-bonus">
                   <li>
                     The Secret Language of Fame
+                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="35" height="19" rx="4" fill="#e2c97e22" stroke="#e2c97e" stroke-width="1"/>
+                      <text x="18" y="14" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e2c97e" font-family="sans-serif" letter-spacing="1">VIP</text>
+                    </svg>
                     <span class="pricing-value">Value: $97 - FREE</span>
                   </li>
                   <li>
                     Your Soul Urge Number Report
+                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="35" height="19" rx="4" fill="#e2c97e22" stroke="#e2c97e" stroke-width="1"/>
+                      <text x="18" y="14" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e2c97e" font-family="sans-serif" letter-spacing="1">VIP</text>
+                    </svg>
                     <span class="pricing-value">Value: $67 - FREE</span>
                   </li>
                   <li>
                     Your Lunar Money Path Report
+                    <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="35" height="19" rx="4" fill="#e2c97e22" stroke="#e2c97e" stroke-width="1"/>
+                      <text x="18" y="14" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e2c97e" font-family="sans-serif" letter-spacing="1">VIP</text>
+                    </svg>
                     <span class="pricing-value">Value: $167 - FREE</span>
                   </li>
                 </ul>

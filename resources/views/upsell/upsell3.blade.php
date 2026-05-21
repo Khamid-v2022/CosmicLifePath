@@ -12,10 +12,19 @@
         <p class="step-copy article-copy">You have my greatest respect for coming this far.</p>
         <p class="step-copy article-copy">Not many people have taken the journey you have here today.</p>
         <p class="step-copy article-copy">I just have one more short message you need to hear.</p>
-        <p class="step-copy article-copy">This message will help you thrive on your <strong>Cosmic Life Path</strong>.</p>
-        <p class="step-copy article-copy">And it has never been more important that you hear this message than right now.</p>
-        <p class="step-copy article-copy">Whether you know it or not yet… something incredible just happened when you decided to explore your <strong><em>Cosmic Life Path</em></strong> today.</p>
-        <p class="step-copy article-copy">You just aligned your body, mind, and spirit with the Cosmic Path that was laid out for you to maximize your potential in this incarnation.</p>
+
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up3-sec1.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">This message will help you thrive on your <strong>Cosmic Life Path</strong>.</p>
+            <p class="step-copy article-copy">And it has never been more important that you hear this message than right now.</p>
+            <p class="step-copy article-copy">Whether you know it or not yet… something incredible just happened when you decided to explore your <strong><em>Cosmic Life Path</em></strong> today.</p>
+            <p class="step-copy article-copy">You just aligned your body, mind, and spirit with the Cosmic Path that was laid out for you to maximize your potential in this incarnation.</p>
+          </div>
+        </div>
+
         <p class="step-copy article-copy">This is an incredibly positive decision, and life can only get better for you from now on.</p>
         <p class="step-copy article-copy">Your life will transform from here on out.</p>
         <p class="step-copy article-copy">As you discover more and more hidden talents and potential you have… your life will get more and more busy.</p>
@@ -24,10 +33,20 @@
         <p class="step-copy article-copy">The only issue is, I want you to have the <strong>health and vitality</strong> to enjoy this new <strong>Cosmic Life Path</strong> you are on to the max.</p>
         <p class="step-copy article-copy">I sense from your reading so far that you are generally in good health and will live a long time…</p>
         <p class="step-copy article-copy">The only concern, as I see it, is that, according to the positioning of the planets on the day of your birth, using my <strong><em>Cosmic Mandala Charts</em></strong>…</p>
-        <p class="step-copy article-copy">Your particular health and constitution can be taxed heavily at times of change like this.</p>
-        <p class="step-copy article-copy">And this decision to follow your <strong><em>Cosmic Life Path</em></strong> is the biggest decision or change you will ever experience.</p>
-        <p class="step-copy article-copy">As you align with your hidden gifts and talents of your <em>Cosmic Life Path</em>, you will have more people and opportunities coming into your life than ever before.</p>
-        <p class="step-copy article-copy">…More new events and experiences will happen.</p>
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+            <p class="step-copy article-copy">Your particular health and constitution can be taxed heavily at times of change like this.</p>
+            <p class="step-copy article-copy">And this decision to follow your <strong><em>Cosmic Life Path</em></strong> is the biggest decision or change you will ever experience.</p>
+            <p class="step-copy article-copy">As you align with your hidden gifts and talents of your <em>Cosmic Life Path</em>, you will have more people and opportunities coming into your life than ever before.</p>
+            <p class="step-copy article-copy">…More new events and experiences will happen.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up3-sec2.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
+        
+        
         <p class="step-copy article-copy">It’s a time of massive change.</p>
         <p class="step-copy article-copy">A new time of life that demands new levels of health and energy to experience and enjoy it fully.</p>
         <p class="step-copy article-copy">The new journey on your <strong><em>Cosmic Life Path</em></strong> is going to be incredible.</p>

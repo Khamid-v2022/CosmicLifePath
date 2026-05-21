@@ -3,7 +3,7 @@
 {{-- VIP Access Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
-        <p class="mb-0">Billing Information: You will see a charge from "ClickBank" or "CLKBANK.COM" on your statement.</p>
+        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*clifepath.</p>
     </div>
     <div class="container">
         
@@ -24,8 +24,8 @@
        <div class="download-section download-instructions">
             <p class="download-instruction mw-100">Click each image below to download your PDF file if you faced issues in using the link given above.</p>
         </div>
-        <div class="download-section download-thumbs">
-            
+
+        <div class="download-section download-thumbs"> 
             <div class="row gy-4">
                 <div class="col-md-3 col-sm-6">
                     <div class="each-reading-card d-flex flex-column justify-content-between">
@@ -177,6 +177,10 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="disclaimer-section text-center mt-5">
+            ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
         </section>
     </div>
 </div>

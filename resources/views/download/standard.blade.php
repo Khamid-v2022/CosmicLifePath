@@ -4,7 +4,7 @@
 {{-- Standard Access Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
-        <p class="mb-0">Billing Information: You will see a charge from "ClickBank" or "CLKBANK.COM" on your statement.</p>
+        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*clifepath.</p>
     </div>
     <div class="container">
         <div class="text-center mb-5">
@@ -104,7 +104,7 @@
             </div>
         </div>
 
-         <section class="help-section dark-card" aria-label="Customer support information">
+        <section class="help-section dark-card" aria-label="Customer support information">
             <div class="help-inner">
                 <div class="help-block">
                     <p class="help-kicker">Need Help? We&apos;re Here for You</p>
@@ -130,6 +130,10 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="disclaimer-section text-center mt-5">
+            ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
         </section>
     </div>
 </div>

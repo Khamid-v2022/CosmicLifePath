@@ -4,7 +4,7 @@
 @section('content')
 <div class="download-page vip">
     <div class="billing-info">
-        <p class="mb-0">Billing Information: You will see a charge from <strong>Cosmic Life Path</strong> on your statement.</p>
+        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*clifepath.</p>
     </div>
     <div class="container">
         <div class="download-header">
@@ -22,6 +22,10 @@
                 </div>
             @endforeach
         </div>
+
+        <section class="disclaimer-section text-center mt-5">
+            ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
+        </section>
     </div>
 </div>
     

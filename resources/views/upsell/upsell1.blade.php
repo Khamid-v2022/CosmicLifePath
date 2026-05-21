@@ -24,10 +24,18 @@
         <p class="step-copy article-copy">All that changes today, though.</p>
         <p class="step-copy article-copy">With what you're about to discover in this reading…..</p>
         <p class="step-copy article-copy">You will finally be following the unique <em>Cosmic Life Path</em> laid out for you at the time of your birth.</p>
-        <p class="step-copy article-copy">You are about to blast through any limitations you have and finally live the dream life you were meant to follow.</p>
 
-        <p class="step-copy article-copy"><strong>The kind of life you've always sensed was meant for you, full of purpose, rich with meaning, ignited by passion, that life begins now.</strong></p>
-        <p class="step-copy article-copy">Your untapped potential will finally be unleashed, and the universe will be on your side for a change.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+           
+            <p class="step-copy article-copy">You are about to blast through any limitations you have and finally live the dream life you were meant to follow.</p>
+            <p class="step-copy article-copy"><strong>The kind of life you've always sensed was meant for you, full of purpose, rich with meaning, ignited by passion, that life begins now.</strong></p>
+            <p class="step-copy article-copy">Your untapped potential will finally be unleashed, and the universe will be on your side for a change.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/upsell/up1-sec2.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
 
         <p class="step-copy article-copy">What seemed out of reach before will finally come into your reality.</p>
         <p class="step-copy article-copy">You won't feel stuck, stagnant, or invisible anymore.</p>
@@ -36,17 +44,33 @@
         <!-- Transformation Section -->
         <h2 class="article-subtitle mt-5"><strong>From now on, you'll stop fighting against yourself.</strong></h2>
         <p class="step-copy article-copy">Your talents, your traits, even the quirks you once saw as flaws…they will become your strengths.</p>
-        <p class="step-copy article-copy">Every action you take from this point forward is aligned with who you truly are, and that alignment creates change that is massive, dramatic, and unstoppable. Because for the first time, you are doing exactly what you were made for.</p>
-        <p class="step-copy article-copy">Small, deliberate shifts, made with intention, will be all it takes to finally bring the dreams you've carried for so long out of your imagination into your reality.</p>
+
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up1-sec1.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">Every action you take from this point forward is aligned with who you truly are, and that alignment creates change that is massive, dramatic, and unstoppable. Because for the first time, you are doing exactly what you were made for.</p>
+            <p class="step-copy article-copy">Small, deliberate shifts, made with intention, will be all it takes to finally bring the dreams you've carried for so long out of your imagination into your reality.</p>
+          </div>
+        </div>
 
         <!-- Unfair Advantage Section -->
         <h2 class="article-subtitle mt-5"><strong>You'll finally see what your unique unfair advantage is in life.</strong></h2>
         <p class="step-copy article-copy">You will discover what makes you stand out from others.</p>
         <p class="step-copy article-copy">People will start to respond to you in a more positive manner as they will be picking up on the frequency of your vibration increasing.</p>
         <p class="step-copy article-copy">You will find your positive relationships growing in number, perhaps for the first time in your life.</p>
-        <p class="step-copy article-copy">Others will see you in a different light, and you may even find people coming to you for advice and direction on their own lives.</p>
-        <p class="step-copy article-copy">You will become more and more aware of your unique intelligence and the special way in which you see the world.</p>
-        <p class="step-copy article-copy">Learning new things will become easier than you imagined possible.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">Others will see you in a different light, and you may even find people coming to you for advice and direction on their own lives.</p>
+            <p class="step-copy article-copy">You will become more and more aware of your unique intelligence and the special way in which you see the world.</p>
+            <p class="step-copy article-copy">Learning new things will become easier than you imagined possible.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/upsell/up1-sec4.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
+       
         <p class="step-copy article-copy">A newfound confidence will rise up in you, and you will realize that you deserve the best in life.</p>
         <p class="step-copy article-copy">This is vital for your successful life journey, as these positive changes on the inside will reflect on the outside in time.</p>
 
@@ -55,23 +79,28 @@
         <p class="step-copy article-copy"><strong>I see substantial amounts of money coming your way in the near future…</strong></p>
         <p class="step-copy article-copy">The only problem is…</p>
         <p class="step-copy article-copy"><strong>I sense a low vibration in your <em>Money Frequency</em> that is actively repelling financial abundance right now…</strong></p>
-
-       
         <p class="step-copy article-copy">This low vibration in your financial energy field is something I need to make you aware of, as it can easily repel financial abundance now and in the future.</p>
         <p class="step-copy article-copy">That means money that is due to come into your life never arrives.</p>
   
 
         <!-- Money Frequency Signs -->
         <p class="step-copy article-copy">There are certain signs of this financial abundance or <em>‘money frequency’</em> being low or out of balance in your life that you might be aware of right now.</p>
-
-        <p class="step-copy article-copy">Ask yourself the following:</p>
-        <ul class="step-copy article-copy" style="list-style-position: inside;">
-          <li>Do you have money worries?</li>
-          <li>Do you worry about not having enough money in the future for you or your family?</li>
-        </ul>
-        <p class="step-copy article-copy">These are just some of the signs of having <em>low money vibration</em>.</p>
-        <p class="step-copy article-copy">These are just the tip of the iceberg, though.</p>
-        <p class="step-copy article-copy">I sense this low frequency has been hampering your <em>Cosmic Life Path</em> up until now.</p>
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up1-sec3.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">Ask yourself the following:</p>
+            <ul class="step-copy article-copy" style="list-style-position: inside;">
+              <li>Do you have money worries?</li>
+              <li>Do you worry about not having enough money in the future for you or your family?</li>
+            </ul>
+            <p class="step-copy article-copy">These are just some of the signs of having <em>low money vibration</em>.</p>
+            <p class="step-copy article-copy">These are just the tip of the iceberg, though.</p>
+            <p class="step-copy article-copy">I sense this low frequency has been hampering your <em>Cosmic Life Path</em> up until now.</p>
+          </div>
+        </div>
+       
         <p class="step-copy article-copy">It's one of the reasons you are not able to do the things you want, like taking the time off you want or traveling to all the places you would like to go.</p>
         <p class="step-copy article-copy">An abundance of money is a big part of what we need to truly live the kind of life we desire.</p>
 
@@ -82,14 +111,25 @@
         <p class="step-copy article-copy">The opportunities you should be attracting are being repelled.</p>
         <p class="step-copy article-copy"><strong>The good news is that when your <em>‘money frequency’</em> is clear, opportunities will flow to you with ease for a change.</strong></p>
         <p class="step-copy article-copy">Life and circumstances will work in your favor without you having to try so hard.</p>
-        <p class="step-copy article-copy">Life and circumstances will work in your favor without you having to try so hard.</p>
+
+
+
+
 
         <!-- Dream Life -->
         <h2 class="article-subtitle mt-5"><strong>You will finally be able to afford things that you’ve been putting off for years, sometimes.</strong></h2>
-        <p class="step-copy article-copy">You will finally be able to spend money on what you like, a home refurb or a brand new home.</p>
-        <p class="step-copy article-copy">Or a gleaming new car.</p>
-        <p class="step-copy article-copy">Or take that vacation you always wanted. Perhaps to somewhere exotic, like the snow-white sands of the Maldives.</p>
-        <p class="step-copy article-copy">You won't have to worry about money anymore, as there will always be money flowing into your account.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">You will finally be able to spend money on what you like, a home refurb or a brand new home.</p>
+            <p class="step-copy article-copy">Or a gleaming new car.</p>
+            <p class="step-copy article-copy">Or take that vacation you always wanted. Perhaps to somewhere exotic, like the snow-white sands of the Maldives.</p>
+            <p class="step-copy article-copy">You won't have to worry about money anymore, as there will always be money flowing into your account.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/upsell/up1-sec5.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
+        
 
 
         <!-- Wealth Path Reading Benefits -->

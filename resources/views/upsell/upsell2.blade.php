@@ -9,12 +9,20 @@
         <h3 class="article-subtitle text-white">Hey there, <strong class="accent text-light">Celestra Vonn</strong> here again.</h3>
         <p class="step-copy article-copy">Just dropping in to say a big congratulations.</p>
         <p class="step-copy article-copy">Well done on getting your <em>Cosmic Wealth Path Reading</em>. </p>
-        <p class="step-copy article-copy">You made a wise decision.</p>
-        <p class="step-copy article-copy">Rest assured.</p>
-        <p class="step-copy article-copy">You’re in the right place.</p> 
-        <p class="step-copy article-copy"><strong>Do not exit this page, though, as it may affect your order.</strong></p>
 
-        <p class="step-copy article-copy">I’ve just got one very short message for you here today.</p> 
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up2-sec1.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            
+            <p class="step-copy article-copy">You made a wise decision. Rest assured.</p>
+            <p class="step-copy article-copy">You’re in the right place.</p> 
+            <p class="step-copy article-copy"><strong>Do not exit this page, though, as it may affect your order.</strong></p>
+            <p class="step-copy article-copy">I’ve just got one very short message for you here today.</p> 
+          </div>
+        </div>
+        
         <p class="step-copy article-copy">It’s vital that you hear this before going any further.</p>
         <p class="step-copy article-copy">You are about to harness the true power of your <em>Cosmic Wealth Path</em> when it comes to living a life of abundance.</p>
         <p class="step-copy article-copy">As you follow your <em>Cosmic Wealth Path</em> now, there will no longer be anything blocking financial abundance from flowing into your life.</p>
@@ -23,33 +31,55 @@
         <p class="step-copy article-copy">And your future is now more secure than ever with your <em>Cosmic Wealth Path Reading</em>.</p>
         <p class="step-copy article-copy">You can say goodbye to money worries.</p>
         <p class="step-copy article-copy">Never have to say no to your family ever again because money is an issue.</p>
-        <p class="step-copy article-copy">Never having to fret about bills ever again is incredible.</p>
 
-        <!-- <h2 class="article-subtitle mt-5"><strong>Love & Relationship Insights</strong></h2> -->
-        <p class="step-copy article-copy">I can see from your reading now that you are a very loving person…</p>
-        <p class="step-copy article-copy">I can see that you give your love and time freely…</p>
 
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+            <p class="step-copy article-copy">Never having to fret about bills ever again is incredible.</p>
+            <p class="step-copy article-copy">I can see from your reading now that you are a very loving person…</p>
+            <p class="step-copy article-copy">I can see that you give your love and time freely…</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up2-sec2.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
 
         <h2 class="article-subtitle mt-5"><strong>The only problem I see is that on your particular Cosmic Life Path…</strong></h2>
         <p class="step-copy article-copy"><strong>this love does not always get returned.</strong></p>
-
-
         <p class="step-copy article-copy">From my study of <em><strong>Cosmic Mandala Astrology</strong></em>, I know that the planets have a massive influence on how relationships work out, and I can see you have had your fair share of trouble in romantic relationships over the years when the love you gave was not returned to you as you would have liked.</p>
-        <p class="step-copy article-copy">This is a super important area to address in your life because…</p>
-        <p class="step-copy article-copy">Quality connections and relationships are the lifeblood of our joy and happiness.</p>
 
-        <p class="step-copy article-copy">That’s why a recent study by Harvard said...</p>
-        <p class="step-copy article-copy"><em>Close relationships—more than money or fame—are what keep people happy throughout their lives.</em></p>
-        <p class="step-copy article-copy">You can see how damaging this loneliness can be in the wealthy and famous all the time.</p>
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up2-sec3.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">This is a super important area to address in your life because…</p>
+            <p class="step-copy article-copy">Quality connections and relationships are the lifeblood of our joy and happiness.</p>
+            <p class="step-copy article-copy">That’s why a recent study by Harvard said...</p>
+            <p class="step-copy article-copy"><em>Close relationships—more than money or fame—are what keep people happy throughout their lives.</em></p>
+            <p class="step-copy article-copy">You can see how damaging this loneliness can be in the wealthy and famous all the time.</p>
+          </div>
+        </div>
+       
         <p class="step-copy article-copy">Many of them are on their <strong><em>Cosmic Life Path</em></strong> and fulfilling their special destiny… but there are hidden celestial planetary forces causing many of them to be isolated and out of alignment with healthy relationships.</p>
         <p class="step-copy article-copy">The news is filled with stories of how they end up in rehab or with different addictions when trying to cope with the emotional pain they are in.</p>
 
         <p class="step-copy article-copy">Remember Robin Williams, who died in 2014?</p>
         <p class="step-copy article-copy">He had more money than he could ever spend.<br>He was in the perfect career for him.<br>Won an Oscar.<br>He was very attuned to his Cosmic Life Path.<br>And yet, he died sad and alone.<br>He was very much someone who was aware of their natural gifts and talents and used them to maximize their success and wealth, but underneath it all… he could not develop healthy close relationships.</p>
         <p class="step-copy article-copy">I know from my knowledge of <strong>Cosmic Mandala Astrology</strong> how the planets can deeply influence the love and connection we experience in our lives.</p>
-        <p class="step-copy article-copy">Today, I want to show you how to harness that astrological power to help attract the incredible love and connection you always deserved.</p>
-        <p class="step-copy article-copy">This will help you to at last find the intimacy and spiritual connection you are looking for.</p>
-        <p class="step-copy article-copy">You will see what the planets in your cosmic life path have in store for you when it comes to manifesting love and a deep connection with that special other.</p>
+
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+             <p class="step-copy article-copy">Today, I want to show you how to harness that astrological power to help attract the incredible love and connection you always deserved.</p>
+            <p class="step-copy article-copy">This will help you to at last find the intimacy and spiritual connection you are looking for.</p>
+            <p class="step-copy article-copy">You will see what the planets in your cosmic life path have in store for you when it comes to manifesting love and a deep connection with that special other.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up2-sec4.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
+
         <p class="step-copy article-copy">And you will find your romantic relationships becoming easier than ever before.</p>
 
         <!-- <h2 class="article-subtitle mt-5"><strong>Personalized Cosmic Love Path Reading</strong></h2> -->
@@ -71,10 +101,21 @@
           <li>Your complete <em>Cosmic Love Path Archetype</em> based on your date of birth according to <strong>Cosmic Mandala Astrology</strong>.</li>
           <li>How to harness your particular gifts and talents to attract love almost effortlessly.</li>
           <li>What <strong>Cosmic Mandala Astrology</strong> says about the perfect match for you and the best places to find them.</li>
-          <li>How to break negative planetary patterns that are unconsciously blocking love and connection in your life.</li>
-          <li>7 secrets you can implement today to develop healthy, love-centered relationships for your particular <em>Cosmic Love Path</em>.</li>
-          <li>How to become a magnet for love and connection by harnessing the gifts of your particular <em>Cosmic Love Path</em>.</li>
         </ul>
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up2-sec5.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <ul class="step-copy article-copy" style="list-style-position: inside;">
+              
+              <li>How to break negative planetary patterns that are unconsciously blocking love and connection in your life.</li>
+              <li>7 secrets you can implement today to develop healthy, love-centered relationships for your particular <em>Cosmic Love Path</em>.</li>
+              <li>How to become a magnet for love and connection by harnessing the gifts of your particular <em>Cosmic Love Path</em>.</li>
+            </ul>
+          </div>
+        </div>
+        
 
         <p class="step-copy article-copy">This reading reveals all the secrets you and you alone can use to attract the love and connection you always dreamed of based on your particular <strong><em>Cosmic Love Path</em></strong>.</p>
         <p class="step-copy article-copy">When I work with clients and do <em>Cosmic Love Path Readings</em> for them, I normally charge $600, and for many of them, that’s a fraction of its real value.</p>

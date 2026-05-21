@@ -112,10 +112,6 @@
         <p class="step-copy article-copy"><strong>The good news is that when your <em>‘money frequency’</em> is clear, opportunities will flow to you with ease for a change.</strong></p>
         <p class="step-copy article-copy">Life and circumstances will work in your favor without you having to try so hard.</p>
 
-
-
-
-
         <!-- Dream Life -->
         <h2 class="article-subtitle mt-5"><strong>You will finally be able to afford things that you’ve been putting off for years, sometimes.</strong></h2>
         <div class="article-inline-media my-4">
@@ -130,16 +126,11 @@
           </div>
         </div>
         
-
-
         <!-- Wealth Path Reading Benefits -->
         <h2 class="article-subtitle mt-5"><strong>When you clear your <em>low money frequency</em> with a personalized <em><u>Cosmic Wealth Path Reading</u></em>, money will never be an object for you ever again…</strong></h2>
         <div class="download-main-sign-image-row mt-5">
             <img src="{{ asset('imgs/ebook/upsell1/' . strtolower($sign['name']) . '.png') }}" alt="Cosmic Wealth Path - {{ $sign['name'] }}" class="download-main-img-large">
         </div> 
-
-
-
         <p class="step-copy article-copy">You will walk into restaurants and never even think about the bill or the price.</p>
         <p class="step-copy article-copy">You will buy what you want and never even check the price tag.</p>
         <p class="step-copy article-copy">You won't have to deny your spouse, children, or family anything ever again because a lack of money is a problem for you.</p>       

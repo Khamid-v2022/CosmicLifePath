@@ -19,7 +19,7 @@
         <p class="step-copy article-copy">After all, what’s the point in aligning with all your new gifts and talents and experiencing an amazing new life, and not having the health and energy to enjoy it?</p>
         <p class="step-copy article-copy">For this reason, I want to give you one final reading here today.</p>
 
-        <h2 class="article-subtitle mt-5">Your personalized <strong>Cosmic Energy Path</strong>Reading.</h2>
+        <h2 class="article-subtitle mt-5">Your personalized <strong>Cosmic Energy Path</strong> Reading.</h2>
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
         </div>

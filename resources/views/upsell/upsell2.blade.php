@@ -45,7 +45,7 @@
         </div>
 
         <h2 class="article-subtitle mt-5"><strong>The only problem I see is that on your particular Cosmic Life Path…</strong></h2>
-        <p class="step-copy article-copy"><strong>this love does not always get returned.</strong></p>
+        <p class="step-copy article-copy"><strong>...this love does not always get returned.</strong></p>
         <p class="step-copy article-copy">From my study of <em><strong>Cosmic Mandala Astrology</strong></em>, I know that the planets have a massive influence on how relationships work out, and I can see you have had your fair share of trouble in romantic relationships over the years when the love you gave was not returned to you as you would have liked.</p>
 
         <div class="article-inline-media article-inline-media-left my-4">
@@ -64,9 +64,20 @@
         <p class="step-copy article-copy">Many of them are on their <strong><em>Cosmic Life Path</em></strong> and fulfilling their special destiny… but there are hidden celestial planetary forces causing many of them to be isolated and out of alignment with healthy relationships.</p>
         <p class="step-copy article-copy">The news is filled with stories of how they end up in rehab or with different addictions when trying to cope with the emotional pain they are in.</p>
 
-        <p class="step-copy article-copy">Remember Robin Williams, who died in 2014?</p>
-        <p class="step-copy article-copy">He had more money than he could ever spend.<br>He was in the perfect career for him.<br>Won an Oscar.<br>He was very attuned to his Cosmic Life Path.<br>And yet, he died sad and alone.<br>He was very much someone who was aware of their natural gifts and talents and used them to maximize their success and wealth, but underneath it all… he could not develop healthy close relationships.</p>
+        
+
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+            <p class="step-copy article-copy">Remember Robin Williams, who died in 2014?</p>
+            <p class="step-copy article-copy">He had more money than he could ever spend.<br>He was in the perfect career for him.<br>Won an Oscar.<br>He was very attuned to his Cosmic Life Path.<br>And yet, he died sad and alone.<br>He was very much someone who was aware of their natural gifts and talents and used them to maximize their success and wealth, but underneath it all… he could not develop healthy close relationships.</p>
+            
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up2-robin.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
         <p class="step-copy article-copy">I know from my knowledge of <strong>Cosmic Mandala Astrology</strong> how the planets can deeply influence the love and connection we experience in our lives.</p>
+
 
 
         <div class="article-inline-media my-4">
@@ -96,26 +107,26 @@
         <p class="step-copy article-copy">I can see clearly from what you have shared so far that you are a wonderful soul who deserves so much love and connection, and I want to give you the power to open the door to that connection today.</p>
 
         <h3 class="article-subtitle mt-4">Inside your personalized <strong>Cosmic Love Path Reading</strong>, you will get a window into the future to see what the planets have in store for your love life.</h3>
+
+        <div class="article-inline-visual my-4">
+          <img src="{{ asset('imgs/upsell/up2-sec5.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+        </div>
+        
         <p class="step-copy article-copy">Here’s just some of what you will discover inside this very special reading:</p>
         <ul class="step-copy article-copy" style="list-style-position: inside;">
           <li>Your complete <em>Cosmic Love Path Archetype</em> based on your date of birth according to <strong>Cosmic Mandala Astrology</strong>.</li>
           <li>How to harness your particular gifts and talents to attract love almost effortlessly.</li>
-          <li>What <strong>Cosmic Mandala Astrology</strong> says about the perfect match for you and the best places to find them.</li>
+          <li>What <strong>Cosmic Mandala Astrology</strong> says about the perfect match for you and the best places to find them.</li>  
+          <li>How to break negative planetary patterns that are unconsciously blocking love and connection in your life.</li>
+          <li>7 secrets you can implement today to develop healthy, love-centered relationships for your particular <em>Cosmic Love Path</em>.</li>
+          <li>How to become a magnet for love and connection by harnessing the gifts of your particular <em>Cosmic Love Path</em>.</li>
         </ul>
-        <div class="article-inline-media article-inline-media-left my-4">
-          <div class="article-inline-visual order-2 order-lg-1">
-            <img src="{{ asset('imgs/upsell/up2-sec5.png') }}" alt="Cosmic life path benefits" class="img-fluid">
-          </div>
-          <div class="article-inline-copy order-1 order-lg-2">
-            <ul class="step-copy article-copy" style="list-style-position: inside;">
-              
-              <li>How to break negative planetary patterns that are unconsciously blocking love and connection in your life.</li>
-              <li>7 secrets you can implement today to develop healthy, love-centered relationships for your particular <em>Cosmic Love Path</em>.</li>
-              <li>How to become a magnet for love and connection by harnessing the gifts of your particular <em>Cosmic Love Path</em>.</li>
-            </ul>
-          </div>
+          
+        <div class="divider container-fluid">
+          <div class="divider-line"></div>
+          <span class="divider-glyph">✦</span>
+          <div class="divider-line"></div>
         </div>
-        
 
         <p class="step-copy article-copy">This reading reveals all the secrets you and you alone can use to attract the love and connection you always dreamed of based on your particular <strong><em>Cosmic Love Path</em></strong>.</p>
         <p class="step-copy article-copy">When I work with clients and do <em>Cosmic Love Path Readings</em> for them, I normally charge $600, and for many of them, that’s a fraction of its real value.</p>
@@ -137,7 +148,7 @@
           <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Personalized Cosmic Love Path Reading ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
         </div>
 
         <p class="step-copy article-copy">That’s a fraction of its true value.</p>
@@ -169,7 +180,7 @@
 
         <p class="step-copy article-copy">Normally, these bonuses would have a combined value of <strong>$497</strong>.</p>
         <p class="step-copy article-copy">Plus the <em>Cosmic Love Path Reading</em> at <strong>$600</strong> — Means I’m giving you <strong>$1,097</strong> of total value here.</p>
-        <p class="step-copy article-copy">However, you can access the <em>Cosmic Love Path Reading</em> and all bonuses here today for just</p>
+        <p class="step-copy article-copy">However, you can access the <em>Cosmic Love Path Reading</em> and all bonuses here today for just…</p>
 
         <div class="bonus-total-section">
           <p class="label">✦ Total Pack Value ✦</p>
@@ -188,14 +199,24 @@
           <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
         </div>
 
         <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
+        
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between my-4 gap-3">
+          <div class="">
+            <p class="step-copy article-copy">And rest assured…</p>
+            <p class="step-copy article-copy mb-0">You are protected by my <strong>Iron-Clad 365-day guarantee</strong>.</p>
+          </div>
+          <div class="">
+              <img src="{{ asset('imgs/upsell/365-guarantee.png') }}" alt="" class="" style="max-height: 80px; object-fit: contain;">
+          </div>
+        </div>
 
-        <p class="step-copy article-copy">And rest assured…</p>
-        <p class="step-copy article-copy">You are protected by my <strong>Iron-Clad 365-day guarantee</strong>.</p>
         <p class="step-copy article-copy">Access the reading and bonuses today.</p>
+
+
         <p class="step-copy article-copy">Use them to attract the love you deserve.</p>
         <p class="step-copy article-copy">And if for any reason or no reason you are not happy… simply email me at the personal email address I will provide to you, and you will be given a full refund immediately.</p>
         <p class="step-copy article-copy">Remember, though, this is a one-time offer you will not see again.</p>
@@ -208,7 +229,7 @@
           <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
         </div>
 
         <!-- testimonials Section -->

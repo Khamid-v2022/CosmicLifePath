@@ -97,7 +97,9 @@
                     </div>
                 @endforeach
             </div>
-            <div class="mt-4" data-sign="{{ $key }}" style="max-width: 600px; margin: 0 auto;">
+
+            <div class="special-access-desc text-center mt-5">Missing just ONE hidden insight could change everything…<br>Grab the  <span class="special-access-em">FULL Horoscope Bundle</span> now for only $97 and save 40% today.</div>
+            <div class="mt-2" data-sign="{{ $key }}" style="max-width: 600px; margin: 0 auto;">
                 <img src="/imgs/ebook/horoscope/12reports-bundle.png" alt="12 Reports Bundle" class="thumb-img special-thumb" />
                 <div class="thumb-label">12 Reports Bundle</div>
                 <a class="btn special-zodiac-download" href="https://clifepath.pay.clickbank.net/?cbitems=fe-bundle97&template=BCoFTclp&vtid=fullreportdl">Full Package - Order Now</a>

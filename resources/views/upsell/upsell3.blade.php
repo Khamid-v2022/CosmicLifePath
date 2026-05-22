@@ -54,7 +54,7 @@
         <p class="step-copy article-copy">After all, what’s the point in aligning with all your new gifts and talents and experiencing an amazing new life, and not having the health and energy to enjoy it?</p>
         <p class="step-copy article-copy">For this reason, I want to give you one final reading here today.</p>
 
-        <h2 class="article-subtitle mt-5">Your personalized <strong>Cosmic Energy Path</strong>Reading.</h2>
+        <h2 class="article-subtitle mt-5">Your personalized <strong>Cosmic Energy Path</strong> Reading.</h2>
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
         </div>
@@ -87,6 +87,15 @@
         <hr>
         <h3 class="article-subtitle mt-5">And finally, you will get your Vital Spark Activation</h3>
         <p class="step-copy article-copy">This will show you how to jumpstart your health and energy levels almost immediately, anytime you like.</p>
+
+
+        <div class="divider container-fluid">
+          <div class="divider-line"></div>
+          <span class="divider-glyph">✦</span>
+          <div class="divider-line"></div>
+        </div>
+
+
         <p class="step-copy article-copy">Implementing just some of the key elements in this personalized <strong><em>Cosmic Energy Path Reading</em></strong> will boost your energy and health to levels you never thought possible.</p>
         <p class="step-copy article-copy">You will certainly feel more energized than you have in years.</p>
         <p class="step-copy article-copy">Your frequency or vibration will skyrocket, and you will be able to fully embrace your new <strong><em>Cosmic Life Path</em></strong>.</p>
@@ -98,9 +107,18 @@
         <div class="download-main-sign-image-row mt-5">
           <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
         </div>
+
         <p class="step-copy article-copy">That’s all.</p>
-        <p class="step-copy article-copy">Nothing more.</p>
-        <p class="step-copy article-copy">And of course, you are backed here by my 365-day guarantee.</p>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+          <div class="">
+            <p class="step-copy article-copy">Nothing more.</p>
+            <p class="step-copy article-copy">And of course, you are backed here by my 365-day guarantee.</p>
+          </div>
+          <div class="mb-4">
+              <img src="{{ asset('imgs/upsell/365-guarantee.png') }}" alt="" class="" style="max-height: 80px; object-fit: contain;">
+          </div>
+        </div>
+
         <p class="step-copy article-copy">You will receive access to your <strong><em>Cosmic Energy Path Reading</em></strong> in <strong>the next 24 hours</strong>.</p>
 
         <p class="step-copy article-copy">Use the reading to feel more empowered and energized than ever before.</p>
@@ -118,7 +136,7 @@
           <a href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=a" class="hero-cta btn step-next-btn">Get Cosmic Energy Path Reading ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
+          <a class="text-decoration-none text-danger" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
         </div>
 
      

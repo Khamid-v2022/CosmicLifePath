@@ -175,7 +175,6 @@
         <p class="step-copy article-copy">So your <em>Cosmic Wealth Path Report</em> is not going to be $650.</p>
         <p class="step-copy article-copy">Not even half of that, or half of that again.</p>
         <p class="step-copy article-copy"><strong>You can access your <em>Cosmic Wealth Path Reading</em> right now for only $67.</strong></p>
-        <p class="step-copy article-copy">That's right, just <strong>$67</strong>.</p>
 
         <div class="bonus-total-section">
           <p class="label">✦ Total Value ✦</p>
@@ -196,7 +195,7 @@
           <a href="{{ $sign['upsell1_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Wealth Path Reading Now →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
         </div>
 
         <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
@@ -231,10 +230,23 @@
             </div>
         </div>
 
+        <div class="divider container-fluid">
+          <div class="divider-line"></div>
+          <span class="divider-glyph">✦</span>
+          <div class="divider-line"></div>
+        </div>
 
         <!-- Guarantee Section -->
-        <p class="step-copy article-copy mb-0">And don't worry, you are backed by a</p>
-        <h3 class="article-subtitle mt-0"><strong>One year iron-clad 365-day guarantee</strong></h3>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between my-4 gap-3">
+          <div class="">
+            <p class="step-copy article-copy mb-0">And don't worry, you are backed by a</p>
+            <h3 class="article-subtitle mt-0"><strong>One year iron-clad 365-day guarantee</strong></h3>
+          </div>
+          <div class="">
+              <img src="{{ asset('imgs/upsell/365-guarantee.png') }}" alt="" class="" style="max-height: 80px; object-fit: contain;">
+          </div>
+        </div>
+
         <p class="step-copy article-copy"><strong>Here's how it works.</strong></p>
         <p class="step-copy article-copy">Get access to your <em>Cosmic Wealth Path Reading</em> today and all your bonuses by clicking the button below.</p>
         <p class="step-copy article-copy">See for the first time ever the Wealth Attraction talents and skills you possess that are unique to you and only you.</p>
@@ -259,7 +271,7 @@
           <a href="{{ $sign['upsell1_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Claim Your Cosmic Wealth Path Reading Now →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
         </div>
         
         <p class="step-copy article-copy"><strong>Remember, this is a one-time offer</strong></p>

@@ -3,21 +3,6 @@
 @section('title', 'Cosmic Life Path Reading')
 
 @php
-  $signs = [
-    ['name' => 'Aries', 'dates' => 'Mar 21 - Apr 19', 'element' => 'Fire · Cardinal', 'roman' => 'I', 'glyph' => '♈', 'desc' => 'The first sign of the zodiac, Aries embodies the primordial spark of creation. You are courageous and instinctual, driven to begin what others hesitate to start.'],
-    ['name' => 'Taurus', 'dates' => 'Apr 20 - May 20', 'element' => 'Earth · Fixed', 'roman' => 'II', 'glyph' => '♉', 'desc' => 'Taurus transforms the material world into sanctuary. Patient and grounded, your path is cultivation, beauty, and steady growth.'],
-    ['name' => 'Gemini', 'dates' => 'May 21 - Jun 20', 'element' => 'Air · Mutable', 'roman' => 'III', 'glyph' => '♊', 'desc' => 'Gemini is the cosmic connector. Curious and sharp, your life path unfolds through conversation, ideas, and meaningful exchange.'],
-    ['name' => 'Cancer', 'dates' => 'Jun 21 - Jul 22', 'element' => 'Water · Cardinal', 'roman' => 'IV', 'glyph' => '♋', 'desc' => 'Cancer protects what is sacred. Guided by intuition and emotional intelligence, your strength is deep care and resilient tenderness.'],
-    ['name' => 'Leo', 'dates' => 'Jul 23 - Aug 22', 'element' => 'Fire · Fixed', 'roman' => 'V', 'glyph' => '♌', 'desc' => 'Leo radiates creative fire. Your soul path invites bold self-expression, generous leadership, and heart-centered courage.'],
-    ['name' => 'Virgo', 'dates' => 'Aug 23 - Sep 22', 'element' => 'Earth · Mutable', 'roman' => 'VI', 'glyph' => '♍', 'desc' => 'Virgo sees detail as devotion. Your path is refinement, service, and turning complexity into clarity.'],
-    ['name' => 'Libra', 'dates' => 'Sep 23 - Oct 22', 'element' => 'Air · Cardinal', 'roman' => 'VII', 'glyph' => '♎', 'desc' => 'Libra pursues harmony with precision. You are drawn to balance, fairness, and relational wisdom.'],
-    ['name' => 'Scorpio', 'dates' => 'Oct 23 - Nov 21', 'element' => 'Water · Fixed', 'roman' => 'VIII', 'glyph' => '♏', 'desc' => 'Scorpio is transformation incarnate. Your path moves through depth, truth, and powerful renewal.'],
-    ['name' => 'Sagittarius', 'dates' => 'Nov 22 - Dec 21', 'element' => 'Fire · Mutable', 'roman' => 'IX', 'glyph' => '♐', 'desc' => 'Sagittarius seeks meaning beyond boundaries. Your life path is exploration, philosophy, and expansion.'],
-    ['name' => 'Capricorn', 'dates' => 'Dec 22 - Jan 19', 'element' => 'Earth · Cardinal', 'roman' => 'X', 'glyph' => '♑', 'desc' => 'Capricorn builds what lasts. Your path is discipline, mastery, and purpose shaped over time.'],
-    ['name' => 'Aquarius', 'dates' => 'Jan 20 - Feb 18', 'element' => 'Air · Fixed', 'roman' => 'XI', 'glyph' => '♒', 'desc' => 'Aquarius carries the future signal. Your path is innovation, community, and visionary thinking.'],
-    ['name' => 'Pisces', 'dates' => 'Feb 19 - Mar 20', 'element' => 'Water · Mutable', 'roman' => 'XII', 'glyph' => '♓', 'desc' => 'Pisces dissolves the boundary between self and cosmos. Your path is compassion, imagination, and spiritual flow.'],
-  ];
-
   $signSvgs = [
     'Aries' => <<<'SVG'
     <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +250,6 @@
     </svg>
     SVG,
   ];
-
 @endphp
 
 @section('content')
@@ -295,14 +279,13 @@
     
 
     <div class="row g-2 zodiac-grid">
+      @php($signs = config('variables.signs'))
       @foreach ($signs as $sign)
         <div class="col-6 col-md-4 col-xl-3">
           <a href="{{ route('birthdate', ['sign' => strtolower($sign['name'])]) }}" class="zodiac-card js-open-sign w-100 d-block text-decoration-none" data-sign-slug="{{ strtolower($sign['name']) }}">
-            <!-- <span class="bg-num">{{ $sign['roman'] }}</span> -->
             <div class="zodiac-icon" aria-hidden="true">{!! $signSvgs[$sign['name']] !!}</div>
             <p class="zodiac-dates">{{ $sign['dates'] }}</p>
             <h3 class="zodiac-name">{{ $sign['name'] }}</h3>
-            <!-- <p class="zodiac-element">{{ $sign['element'] }}</p> -->
           </a>
         </div>
       @endforeach

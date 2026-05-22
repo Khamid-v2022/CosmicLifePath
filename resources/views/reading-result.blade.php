@@ -98,7 +98,7 @@
         <p class="step-copy article-copy"><strong>Click the button below now</strong> to experience a <strong>true personalised Cosmic Life Path Reading.</strong></p>
 
         <div class="text-center mt-5">
-          <form id="salesPageForm" method="POST" action="{{ route('sales.page') }}" style="display: inline;">
+          <form id="salesPageForm" method="POST" action="{{ route('sales.page', ['sign' => strtolower($birth['sign_slug'])]) }}" style="display: inline;">
             @csrf
             <!-- Hidden fields to persist birth data -->
             <input type="hidden" name="birth_sign_slug" value="{{ $birth['sign_slug'] }}">

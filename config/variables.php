@@ -4,6 +4,7 @@ return [
     'signs' => [
         'aries' => [
             'name' => 'Aries',
+            'dates' => 'Mar 21 - Apr 19',
             'months' => [3 => range(21, 31), 4 => range(1, 19)],
             'description' => 'Bold, ambitious, and a natural leader.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Aries_CLP_K3mL9xP2Qa8Tv7Rx.pdf',
@@ -17,6 +18,7 @@ return [
         'taurus' => [
             'name' => 'Taurus',
             'months' => [4 => range(20, 30), 5 => range(1, 20)],
+            'dates' => 'Apr 20 - May 20',
             'description' => 'Grounded, reliable, and values comfort.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Taurus_CLP_M4vX8qL1Rp6Dc2Yw.pdf',
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Taurus_CLP_M4vX8qL1Rp6Dc2Yw.zip',
@@ -29,6 +31,7 @@ return [
         ],
         'gemini' => [
             'name' => 'Gemini',
+            'dates' => 'May 21 - Jun 20',
             'months' => [5 => range(21, 31), 6 => range(1, 20)],
             'description' => 'Curious, adaptable, and a great communicator.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Gemini_CLP_Z4kP3wN7Tx2Bm9Ls.pdf',
@@ -41,6 +44,7 @@ return [
         ],
         'cancer' => [
             'name' => 'Cancer',
+            'dates' => 'Jun 21 - Jul 22',
             'months' => [6 => range(21, 30), 7 => range(1, 22)],
             'description' => 'Intuitive, caring, and deeply loyal.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Cancer_CLP_H5qV8mL1Yp7Rw4Kd.pdf',
@@ -53,6 +57,7 @@ return [
         ],
         'leo' => [
             'name' => 'Leo',
+            'dates' => 'Jul 23 - Aug 22',
             'months' => [7 => range(23, 31), 8 => range(1, 22)],
             'description' => 'Confident, creative, and loves the spotlight.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Leo_CLP_X6nK2pQ9Lm4Tr8Vq.pdf',
@@ -65,6 +70,7 @@ return [
         ],
         'virgo' => [
             'name' => 'Virgo',
+            'dates' => 'Aug 23 - Sep 22',
             'months' => [8 => range(22, 31), 9 => range(1, 22)],
             'description' => 'Analytical, practical, and detail-oriented.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Virgo_CLP_P8wR3xM6Qa1Jt9Xn.pdf',
@@ -77,6 +83,7 @@ return [
         ],
         'libra' => [
             'name' => 'Libra',
+            'dates' => 'Sep 23 - Oct 22',
             'months' => [9 => range(23, 30), 10 => range(1, 22)],
             'description' => 'Diplomatic, fair-minded, and social.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Libra_CLP_T5mZ9qK2Xp7Nw4Rc.pdf',
@@ -89,6 +96,7 @@ return [
         ],
         'scorpio' => [
             'name' => 'Scorpio',
+            'dates' => 'Oct 23 - Nov 21',
             'months' => [10 => range(23, 31), 11 => range(1, 21)],
             'description' => 'Passionate, resourceful, and determined.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Scorpio_CLP_R1xV7pL4Km9Qz5Tf.pdf',
@@ -101,6 +109,7 @@ return [
         ],
         'sagittarius' => [
             'name' => 'Sagittarius',
+            'dates' => 'Nov 22 - Dec 21',
             'months' => [11 => range(22, 30), 12 => range(1, 21)],
             'description' => 'Adventurous, optimistic, and philosophical.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Sagittarius_CLP_N3qP8mX5Lv2Kh7Qd.pdf',
@@ -113,6 +122,7 @@ return [
         ],
         'capricorn' => [
             'name' => 'Capricorn',
+            'dates' => 'Dec 22 - Jan 19',
             'months' => [12 => range(22, 31), 1 => range(1, 19)],
             'description' => 'Disciplined, ambitious, and responsible.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Capricorn_CLP_Y2kM7xQ9Rp4Tn8Vz.pdf',
@@ -125,6 +135,7 @@ return [
         ],
         'aquarius' => [
             'name' => 'Aquarius',
+            'dates' => 'Jan 20 - Feb 18',
             'months' => [1 => range(20, 31), 2 => range(1, 18)],
             'description' => 'Innovative, independent, and humanitarian.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Aquarius_CLP_F8kQ2mX7Lp9Rv3Na.pdf',
@@ -137,6 +148,7 @@ return [
         ],
         'pisces' => [
             'name' => 'Pisces',
+            'dates' => 'Feb 19 - Mar 20',
             'months' => [2 => range(19, 29), 3 => range(1, 20)],
             'description' => 'Empathetic, artistic, and deeply intuitive.',
             'pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/rpt_Pisces_CLP_K9xT3mP7Qv1Ls6Mh.pdf',

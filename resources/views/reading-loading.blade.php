@@ -50,7 +50,7 @@
           <!-- <p class="loading-subtext mt-3">Watch this before viewing your results — and discover how Celestra can help you.</p> -->
 
           <div class="text-center mt-4">
-            <form id="summaryForm" method="POST" action="{{ route('reading.summary') }}" style="display: none;">
+            <form id="summaryForm" method="POST" action="{{ route('reading.summary', ['sign' => strtolower($birth['sign_slug'])]) }}" style="display: none;">
               @csrf
               <!-- Hidden fields to persist birth data -->
               <input type="hidden" name="birth_sign_slug" value="{{ $birth['sign_slug'] }}">
@@ -117,12 +117,12 @@
       if (showReadingButton) {
         window.setTimeout(function () {
           showReadingButton.classList.remove('d-none');
-        }, 90000);
+        }, 900);
       }
 
-      window.setTimeout(function () {
-        redirectToResults();
-      }, 300000);
+      // window.setTimeout(function () {
+      //   redirectToResults();
+      // }, 300000);
     }
 
     window.setTimeout(function () {

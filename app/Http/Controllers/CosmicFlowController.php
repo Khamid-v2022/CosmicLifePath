@@ -41,7 +41,6 @@ class CosmicFlowController extends Controller {
         $day = (int) $validated['day'];
         $year = (int) $validated['year'];
 
-        // abort_unless(in_array($day, $sign['months'][$month] ?? [], true), 404);
         if (!in_array($day, $sign['months'][$month] ?? [], true)) {
             return redirect()->route('landing');
         }
@@ -78,7 +77,7 @@ class CosmicFlowController extends Controller {
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
 
-        return redirect()->route('reading.contact');
+        return redirect()->route('reading.contact', $sign['slug']);
     }
 
     public function contact(Request $request): View|RedirectResponse
@@ -157,11 +156,11 @@ class CosmicFlowController extends Controller {
         // Store in session
         $request->session()->put('cosmic.reading.contact', $contact);
         $request->session()->put('cosmic.reading.birth', $birth);
-
-        return redirect()->route('reading.loading');
+        
+        return redirect()->route('reading.loading', $birth['sign_slug']);
     }
 
-    public function loading(Request $request): View|RedirectResponse
+    public function readingRoading(Request $request): View|RedirectResponse
     {
         // Try to get data from form submission first, then fall back to session
         $birth = null;

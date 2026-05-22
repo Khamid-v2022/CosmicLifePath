@@ -13,7 +13,12 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/path-unfolding/{sign}', 'readingRoading')->name('reading.loading');
     Route::post('/preview-reveal/{sign}', 'summary')->name('reading.summary');
     Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
-    Route::get('/special-offer', 'sales_dummy')->name('sales.page');
+
+
+    // Need to remove this route after approved
+    Route::get('/special-offer', 'sales_dummy');
+
+
 
     Route::get('/privacy-policy', 'privacyPolicy')->name('privacy.policy');
     Route::get('/terms-service', 'termsService')->name('terms.service');

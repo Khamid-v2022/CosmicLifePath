@@ -593,6 +593,11 @@ class CosmicFlowController extends Controller {
         $sign = config('variables.signs.cancer');
         return view('upsell.upsell1', compact('sign')); 
     }
+
+    public function upsell1CancerDummy(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('upsell.upsell1-dummy', compact('sign')); 
+    }
     /**
      * Download Upsell1 Leo
      * Route: /upsell1-leo
@@ -691,6 +696,11 @@ class CosmicFlowController extends Controller {
         $sign = config('variables.signs.cancer');
         return view('upsell.upsell2', compact('sign')); 
     }
+
+    public function upsell2CancerDummy(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('upsell.upsell2-dummy', compact('sign')); 
+    }
     /**
      * Download Upsell2 Leo
      * Route: /upsell2-leo
@@ -761,5 +771,9 @@ class CosmicFlowController extends Controller {
      */
     public function upsell3(): View {
         return view('upsell.upsell3');
+    }
+
+    public function upsell3Dummy(): View {
+        return view('upsell.upsell3-dummy');
     }
 }

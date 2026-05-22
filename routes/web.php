@@ -17,6 +17,9 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
 
     // Need to remove this route after approved
     Route::get('/special-offer', 'sales_dummy');
+    Route::get('/upsell1', 'upsell1CancerDummy');
+    Route::get('/upsell2', 'upsell2CancerDummy');
+    Route::get('/upsell3', 'upsell3Dummy');
 
 
 
@@ -27,7 +30,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/about-us', 'aboutUs')->name('about.us');
 
     // Download pages for each sign and access type
-    Route::get('/fedl-f9QxP2Lm7Rv', 'downloadVipAries')->name('download.vip.aries');
+    Route::get('/download/vip-aries', 'downloadVipAries')->name('download.vip.aries');
     Route::get('/download/vip-taurus', 'downloadVipTaurus')->name('download.vip.taurus');
     Route::get('/download/vip-gemini', 'downloadVipGemini')->name('download.vip.gemini');
     Route::get('/download/vip-cancer', 'downloadVipCancer')->name('download.vip.cancer');

@@ -193,9 +193,11 @@
 
         <!-- CTA Button -->
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Wealth Path Reading Now →</a>
+          <a href="{{ $sign['upsell1_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Wealth Path Reading Now →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I'll continue leaving my financial future to chance.</p>
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
+        </div>
 
         <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
         <!-- Bonuses Section -->
@@ -254,10 +256,12 @@
             <img src="{{ asset('imgs/ebook/upsell1/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Wealth Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Claim Your Cosmic Wealth Path Reading Now →</a>
+          <a href="{{ $sign['upsell1_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Claim Your Cosmic Wealth Path Reading Now →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I'll continue leaving my financial future to chance.</p>
-
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
+        </div>
+        
         <p class="step-copy article-copy"><strong>Remember, this is a one-time offer</strong></p>
         <p class="step-copy article-copy">You will not have this opportunity again.</p>
 

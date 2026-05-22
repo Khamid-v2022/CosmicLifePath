@@ -134,9 +134,11 @@
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="download-main-img-large">
         </div>
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Your Personalized Cosmic Love Path Reading ($47) →</a>
+          <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Personalized Cosmic Love Path Reading ($47) →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+        </div>
 
         <p class="step-copy article-copy">That’s a fraction of its true value.</p>
         <p class="step-copy article-copy">You will receive your personalized reading in the next 24 hours… and your love life and relationships will never be the same again.</p>
@@ -183,9 +185,11 @@
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
+          <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+        </div>
 
         <p class="step-copy article-copy"><em>You will receive your reading in the next 24 hours.</em></p>
 
@@ -201,9 +205,11 @@
           <img src="{{ asset('imgs/ebook/upsell2/' . strtolower($sign['name']) . '-bundle.png') }}" alt="Cosmic Love Path - {{ $sign['name'] }}" class="special-access-fullpack-img">
         </div>
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
+          <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</p>
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+        </div>
 
         <!-- testimonials Section -->
         <div class="social-proof-wrap mt-5 text-center">

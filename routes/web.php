@@ -12,7 +12,8 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::post('/final-alignment', 'storeContact')->name('reading.contact.submit');
     Route::get('/path-unfolding/{sign}', 'readingRoading')->name('reading.loading');
     Route::post('/preview-reveal/{sign}', 'summary')->name('reading.summary');
-    Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
+    // Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
+    Route::post('/private-offer/{sign}', 'sales_dummy')->name('sales.page');
 
     Route::get('/privacy-policy', 'privacyPolicy')->name('privacy.policy');
     Route::get('/terms-service', 'termsService')->name('terms.service');
@@ -21,7 +22,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/about-us', 'aboutUs')->name('about.us');
 
     // Download pages for each sign and access type
-    Route::get('/download/vip-aries', 'downloadVipAries')->name('download.vip.aries');
+    Route::get('/fedl-f9QxP2Lm7Rv', 'downloadVipAries')->name('download.vip.aries');
     Route::get('/download/vip-taurus', 'downloadVipTaurus')->name('download.vip.taurus');
     Route::get('/download/vip-gemini', 'downloadVipGemini')->name('download.vip.gemini');
     Route::get('/download/vip-cancer', 'downloadVipCancer')->name('download.vip.cancer');
@@ -76,6 +77,6 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/upsell2-pisces', 'upsell2Pisces')->name('upsell2.pisces');
 
 
-    Route::get('/upsell3', 'upsell3')->name('upsell3');
+    Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
     Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
 });

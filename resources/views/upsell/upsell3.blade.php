@@ -115,9 +115,11 @@
           <img src="{{ asset('imgs/ebook/upsell3/upsell-3.png') }}" alt="Cosmic Energy Path" class="download-main-img-large">
         </div>
         <div class="text-center mt-5">
-          <a href="#" class="hero-cta btn step-next-btn">Get Cosmic Energy Path Reading ($47) →</a>
+          <a href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=a" class="hero-cta btn step-next-btn">Get Cosmic Energy Path Reading ($47) →</a>
         </div>
-        <p class="text-center mt-3 mb-5">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</p>
+        <div class="text-center mt-3 mb-5">
+          <a class="text-decoration-none text-semiwhite" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
+        </div>
 
      
 

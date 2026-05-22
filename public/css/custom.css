@@ -48,6 +48,9 @@ a {
 .text-light {
   color: var(--gold-light)!important;
 }
+.text-semiwhite {
+  color: var(--fg)!important;
+}
 .btn {
   font-size: 1rem;
 }

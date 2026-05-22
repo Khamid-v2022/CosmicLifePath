@@ -11,7 +11,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/aries',
             'standard_url' => 'https://thecosmiclifepath.com/download/aries',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries47&template=BCoFTclp&cbfid=63364&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries15&template=BCoFTclp&cbfid=63364&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries15&template=BCoFTclp&cbfid=63364&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aries15&template=BCoFTclp&cbfid=63364&vtid=ariesdl'
         ],
         'taurus' => [
             'name' => 'Taurus',
@@ -21,8 +22,10 @@ return [
             'bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/main/bundle/bnd_Taurus_CLP_M4vX8qL1Rp6Dc2Yw.zip',
             'vip_url' => 'https://thecosmiclifepath.com/download/taurus',
             'standard_url' => 'https://thecosmiclifepath.com/download/taurus',
+
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus47&template=BCoFTclp&cbfid=63372&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus15&template=BCoFTclp&cbfid=63372&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus15&template=BCoFTclp&cbfid=63372&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-taurus15&template=BCoFTclp&cbfid=63372&vtid=taurusdl'
         ],
         'gemini' => [
             'name' => 'Gemini',
@@ -33,7 +36,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/gemini',
             'standard_url' => 'https://thecosmiclifepath.com/download/gemini',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini47&template=BCoFTclp&cbfid=63366&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini15&template=BCoFTclp&cbfid=63366&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini15&template=BCoFTclp&cbfid=63366&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-gemini15&template=BCoFTclp&cbfid=63366&vtid=geminidl'
         ],
         'cancer' => [
             'name' => 'Cancer',
@@ -44,7 +48,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer47&template=BCoFTclp&cbfid=63362&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cancerdl'
         ],
         'leo' => [
             'name' => 'Leo',
@@ -55,7 +60,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo47&template=BCoFTclp&cbfid=63367&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo15&template=BCoFTclp&cbfid=63367&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo15&template=BCoFTclp&cbfid=63367&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-leo15&template=BCoFTclp&cbfid=63367&vtid=leodl'
         ],
         'virgo' => [
             'name' => 'Virgo',
@@ -66,7 +72,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo47&template=BCoFTclp&cbfid=63373&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo15&template=BCoFTclp&cbfid=63373&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo15&template=BCoFTclp&cbfid=63373&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-virgo15&template=BCoFTclp&cbfid=63373&vtid=virgodl'
         ],
         'libra' => [
             'name' => 'Libra',
@@ -77,7 +84,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra47&template=BCoFTclp&cbfid=63368&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra15&template=BCoFTclp&cbfid=63368&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra15&template=BCoFTclp&cbfid=63368&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-libra15&template=BCoFTclp&cbfid=63368&vtid=libradl'
         ],
         'scorpio' => [
             'name' => 'Scorpio',
@@ -88,7 +96,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio47&template=BCoFTclp&cbfid=63371&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio15&template=BCoFTclp&cbfid=63371&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio15&template=BCoFTclp&cbfid=63371&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-scorpio15&template=BCoFTclp&cbfid=63371&vtid=scorpiodl'
         ],
         'sagittarius' => [
             'name' => 'Sagittarius',
@@ -99,7 +108,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit47&template=BCoFTclp&cbfid=63370&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit15&template=BCoFTclp&cbfid=63370&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit15&template=BCoFTclp&cbfid=63370&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-sagit15&template=BCoFTclp&cbfid=63370&vtid=sagittariusdl'
         ],
         'capricorn' => [
             'name' => 'Capricorn',
@@ -110,7 +120,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri47&template=BCoFTclp&cbfid=63365&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri15&template=BCoFTclp&cbfid=63365&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri15&template=BCoFTclp&cbfid=63365&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-capri15&template=BCoFTclp&cbfid=63365&vtid=capricorndl'
         ],
         'aquarius' => [
             'name' => 'Aquarius',
@@ -121,7 +132,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua47&template=BCoFTclp&cbfid=63363&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua15&template=BCoFTclp&cbfid=63363&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua15&template=BCoFTclp&cbfid=63363&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-aqua15&template=BCoFTclp&cbfid=63363&vtid=aquariusdl'
         ],
         'pisces' => [
             'name' => 'Pisces',
@@ -132,7 +144,8 @@ return [
             'vip_url' => 'https://thecosmiclifepath.com/download/cancer',
             'standard_url' => 'https://thecosmiclifepath.com/download/cancer',
             'vip_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces47&template=BCoFTclp&cbfid=63369&vtid=cta1',
-            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces15&template=BCoFTclp&cbfid=63369&vtid=cta1'
+            'standard_purchase_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces15&template=BCoFTclp&cbfid=63369&vtid=cta1',
+            'special_offer_url' => 'https://clifepath.pay.clickbank.net/?cbitems=fe-pisces15&template=BCoFTclp&cbfid=63369&vtid=piscesdl'
         ],
     ],
 ];

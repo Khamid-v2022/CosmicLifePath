@@ -31,7 +31,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
 
     // Download pages for each sign and access type
     Route::get('/vdl-F8qXp2Rv7Lm4Ka', 'downloadVIP')->defaults('sign', 'aries')->name('download.vip.aries');
-    Route::get('/dl-C3mLp9Qa2Rv8Nx', 'downloadVIP')->defaults('sign', 'taurus')->name('download.vip.taurus');
+    Route::get('/vdl-C3mLp9Qa2Rv8Nx', 'downloadVIP')->defaults('sign', 'taurus')->name('download.vip.taurus');
     Route::get('/vdl-B7xQa4Lm9Rv2Kp', 'downloadVIP')->defaults('sign', 'gemini')->name('download.vip.gemini');
     Route::get('/vdl-D2vNx8Lp3Qa7Rm', 'downloadVIP')->defaults('sign', 'cancer')->name('download.vip.cancer');
     Route::get('/vdl-J9mRv1Qa7Lp4Xk', 'downloadVIP')->defaults('sign', 'leo')->name('download.vip.leo');

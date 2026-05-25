@@ -442,7 +442,7 @@ class CosmicFlowController extends Controller {
         return view('download.upsell2', compact('sign'));
     }
 
-    public function upsell1Dummy(): View { 
+    public function upsell1Dummy(Request $request): View { 
         $signSlug = $request->route('sign');
         $sign = config("variables.signs.$signSlug");
 
@@ -450,7 +450,7 @@ class CosmicFlowController extends Controller {
         return view('upsell.upsell1-dummy', compact('sign')); 
     }
 
-    public function upsell2Dummy(): View { 
+    public function upsell2Dummy(Request $request): View { 
         $signSlug = $request->route('sign');
         $sign = config("variables.signs.$signSlug");
 

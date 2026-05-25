@@ -45,7 +45,7 @@
           <a href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=a" class="hero-cta btn step-next-btn">Get Cosmic Energy Path Reading ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
+          <a class="text-decoration-none text-danger" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
         </div>
 
      

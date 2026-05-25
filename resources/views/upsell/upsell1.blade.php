@@ -27,7 +27,6 @@
 
         <div class="article-inline-media my-4">
           <div class="article-inline-copy">
-           
             <p class="step-copy article-copy">You are about to blast through any limitations you have and finally live the dream life you were meant to follow.</p>
             <p class="step-copy article-copy"><strong>The kind of life you've always sensed was meant for you, full of purpose, rich with meaning, ignited by passion, that life begins now.</strong></p>
             <p class="step-copy article-copy">Your untapped potential will finally be unleashed, and the universe will be on your side for a change.</p>

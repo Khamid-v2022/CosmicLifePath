@@ -37,7 +37,7 @@
           <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Personalized Cosmic Love Path Reading ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
         </div>
 
         <p class="step-copy article-copy">That’s a fraction of its true value.</p>
@@ -76,7 +76,7 @@
           <a href="{{ $sign['upsell2_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Get Your Cosmic Love Path Reading Now ($47) →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell2_decline_cta_url'] }}">No thanks, Celestra. I’ll continue hoping the right person somehow finds me.</a>
         </div>
 
       </article>

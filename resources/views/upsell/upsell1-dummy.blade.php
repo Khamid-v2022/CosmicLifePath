@@ -62,9 +62,6 @@
         <p class="step-copy article-copy">Watch money and opportunities for more wealth come flooding into your life like never before.</p>
         <p class="step-copy article-copy">And if for any reason you are not happy anytime in the next 365 days, send me a quick email for a full and complete refund.</p>
 
-
-
-
         <!-- Final CTA -->
         <p class="step-copy article-copy"><strong><em>Click the button below right now</em></strong> to claim your <em>Cosmic Wealth Path Reading.</em></a>
 
@@ -75,7 +72,7 @@
           <a href="{{ $sign['upsell1_accept_cta_url'] }}" class="hero-cta btn step-next-btn">Claim Your Cosmic Wealth Path Reading Now →</a>
         </div>
         <div class="text-center mt-3 mb-5">
-          <a class="text-decoration-none text-semiwhite" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
+          <a class="text-decoration-none text-danger" href="{{ $sign['upsell1_decline_cta_url'] }}">No thanks, Celestra. I'll continue leaving my financial future to chance.</a>
         </div>
         
         <p class="step-copy article-copy"><strong>Remember, this is a one-time offer</strong></p>

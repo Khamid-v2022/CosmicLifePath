@@ -22,9 +22,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Aries_WB_Q3mL9xP2Ka8Rv7T.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Aries_Q7mL9xP2Ka8N.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Aries_CLV_P3xL9mQ2Ka8Tv7Rw.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Aries_CLV_P3xL9mQ2Ka8Tv7Rw.pdf',
         ],
         'taurus' => [
             'name' => 'Taurus',
@@ -47,9 +46,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Taurus_WB_M4vX8qL1Rp6Dc2Y.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Taurus_M4vX8qL1Rp6D.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Taurus_CLV_M4vX8qL1Rp6Dc2Yw.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Taurus_CLV_M4vX8qL1Rp6Dc2Yw.pdf',
         ],
         'gemini' => [
             'name' => 'Gemini',
@@ -71,9 +69,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Gemini_WB_Z4kP3wN7Tx2Bm9L.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Gemini_Z9kP3wN7Tx2B.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Gemini_CLV_Z5kP3wN7Tx2Bm9Ls.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Gemini_CLV_Z5kP3wN7Tx2Bm9Ls.pdf',
         ],
         'cancer' => [
             'name' => 'Cancer',
@@ -95,9 +92,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Cancer_WB_H5qV8mL1Yp7Rx3K.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Cancer_H2qV8mL5Yp1R.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Cancer_CLV_H6qV8mL1Yp4Rx7Kd.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Cancer_CLV_H6qV8mL1Yp4Rx7Kd.pdf',
         ],
         'leo' => [
             'name' => 'Leo',
@@ -119,9 +115,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Leo_WB_X6nK2pQ9Lm4Tr8V.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Leo_X6nK2pQ9Lm4T.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Leo_CLV_X4nK2pQ9Lm6Tr8Vq.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Leo_CLV_X4nK2pQ9Lm6Tr8Vq.pdf',
         ],
         'virgo' => [
             'name' => 'Virgo',
@@ -143,9 +138,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Virgo_WB_P8wR3xM6Qa1Jt9X.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Virgo_P8wR3xM6Qa1J.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Virgo_CLV_P8wR3xM6Qa1Jt9Xn.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Virgo_CLV_P8wR3xM6Qa1Jt9Xn.pdf',
         ],
         'libra' => [
             'name' => 'Libra',
@@ -167,9 +161,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Libra_WB_T5mZ9qK2Xp7Nw4R.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Libra_T5mZ9qK2Xp7N.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Libra_CLV_T7mZ9qK2Xp5Nw4Rc.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Libra_CLV_T7mZ9qK2Xp5Nw4Rc.pdf',
         ],
         'scorpio' => [
             'name' => 'Scorpio',
@@ -191,9 +184,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Scorpio_WB_R1xV7pL4Km9Qz5T.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Scorpio_R1xV7pL4Km9Q.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Scorpio_CLV_R1xV7pL4Km9Qz5Tf.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Scorpio_CLV_R1xV7pL4Km9Qz5Tf.pdf',
         ],
         'sagittarius' => [
             'name' => 'Sagittarius',
@@ -215,9 +207,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Sagittarius_WB_N3qP8mX5Lv2Kh7Q.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Sagittarius_N3qP8mX5Lv2K.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Sagittarius_CLV_N3qP8mX5Lv2Kh7Qd.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Sagittarius_CLV_N3qP8mX5Lv2Kh7Qd.pdf',
         ],
         'capricorn' => [
             'name' => 'Capricorn',
@@ -239,9 +230,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Capricorn_WB_Y2kM7xQ9Rp4Tv8N.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Capricorn_Y7kM1xQ9Rp4T.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Capricorn_CLV_Y2kM7xQ9Rp4Tn8Vz.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Capricorn_CLV_Y2kM7xQ9Rp4Tn8Vz.pdf',
         ],
         'aquarius' => [
             'name' => 'Aquarius',
@@ -265,9 +255,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Aquarius_WB_L8qX2mP7Rv4Ka9N.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Aquarius_L4pN8qX2Km6R.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Aquarius_CLV_J8mQ2Lp7Rv4Ka9Nx.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Aquarius_CLV_J8mQ2Lp7Rv4Ka9Nx.pdf',
         ],
         'pisces' => [
             'name' => 'Pisces',
@@ -289,9 +278,8 @@ return [
 
             'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Pisces_WB_K9xT3mP7Qv1Ls6M.zip',
             'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Pisces_K9xT3mP7Qv1L.pdf',
-            'upsell2_bundle_pdf' => '',
-            'upsell2_pdf' => '',
-            'upsell3_pdf' => '',
+            'upsell2_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/Bundle/bnd_Pisces_CLV_K9xT3mP7Qv1Ls6Mh.zip',
+            'upsell2_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-love-path/rpt_Pisces_CLV_K9xT3mP7Qv1Ls6Mh.pdf',
         ],
     ],
 ];

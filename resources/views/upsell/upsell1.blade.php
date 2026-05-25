@@ -144,19 +144,40 @@
 
         <!-- Being Prepared -->
         <h2 class="article-subtitle mt-5"><strong>At the moment, your <em>Cosmic Wealth Path Reading</em> is being prepared.</strong></h2>
-        <p class="step-copy article-copy">I can tell you without doubt that this will be the biggest financial breakthrough of your life.</p>
-        <p class="step-copy article-copy">You will at last be lining up with the wealth and abundance the universe wants to send you, and there will be nothing blocking you from receiving it.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">I can tell you without doubt that this will be the biggest financial breakthrough of your life.</p>
+            <p class="step-copy article-copy">You will at last be lining up with the wealth and abundance the universe wants to send you, and there will be nothing blocking you from receiving it.</p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/upsell/up1-sec6.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
 
         <h2 class="article-subtitle mt-5"><strong>You're going to know how to remove your biggest unconscious block to your financial abundance today.</strong></h2>
-        <p class="step-copy article-copy">You will see clearly, perhaps for the first time, the hidden talents you have always possessed that are unique to you and only you…</p>
-        <p class="step-copy article-copy">And exactly how to use those talents to attract wealth and abundance.</p>
-        <p class="step-copy article-copy">Awareness of these talents will be like having a superpower to create or manifest wealth on command whenever you want.</p>
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up1-sec7.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">You will see clearly, perhaps for the first time, the hidden talents you have always possessed that are unique to you and only you…</p>
+            <p class="step-copy article-copy">And exactly how to use those talents to attract wealth and abundance.</p>
+          </div>
+        </div>
+         <p class="step-copy article-copy">Awareness of these talents will be like having a superpower to create or manifest wealth on command whenever you want.</p>
 
         <!-- Money Magnet -->
         <h2 class="article-subtitle mt-5"><strong>You will notice yourself attracting money like a magnet attracts steel.</strong></h2>
-        <p class="step-copy article-copy">Almost effortlessly.</p>
-        <p class="step-copy article-copy">So you can say goodbye to your money worries for good and never have to deny your family anything ever again.</p>
-        <p class="step-copy article-copy"><strong>Clients of mine have used their <em>Cosmic Wealth Path Reading</em> to come back from the brink of bankruptcy and even crippling credit card debt over the years.</strong></p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy">
+            <p class="step-copy article-copy">Almost effortlessly.</p>
+            <p class="step-copy article-copy">So you can say goodbye to your money worries for good and never have to deny your family anything ever again.</p>
+            <p class="step-copy article-copy"><strong>Clients of mine have used their <em>Cosmic Wealth Path Reading</em> to come back from the brink of bankruptcy and even crippling credit card debt over the years.</strong></p>
+          </div>
+          <div class="article-inline-visual">
+            <img src="{{ asset('imgs/upsell/up1-sec8.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
         <p class="step-copy article-copy">Some have even gone on to turn their lives around from always worrying about bills to manifesting the perfect businesses for them that brought joy and fulfillment, as well as financial abundance.</p>
         <p class="step-copy article-copy">I can't wait for you to see all the special wealth attraction gifts you possess.</p>
 
@@ -164,9 +185,16 @@
         <h2 class="article-subtitle mt-5"><strong>My clients usually pay $650 for their <em>Cosmic Wealth Path Reading…</em></strong></h2>
         <p class="step-copy article-copy">For them, that price is an absolute no-brainer.</p>
         <p class="step-copy article-copy">Many have reported seeing levels of wealth and abundance in their lives that they never thought possible.</p>
-        <p class="step-copy article-copy">That's because your <em>Cosmic Wealth Path Reading</em> opens the door to a new, wealthy personality you never knew existed before.</p>
-        <p class="step-copy article-copy">I can see your unique, wealthy personality right now.</p>
-        <p class="step-copy article-copy">I can't wait for you to see it.</p>
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up1-sec9.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <p class="step-copy article-copy">That's because your <em>Cosmic Wealth Path Reading</em> opens the door to a new, wealthy personality you never knew existed before.</p>
+            <p class="step-copy article-copy">I can see your unique, wealthy personality right now.</p>
+            <p class="step-copy article-copy">I can't wait for you to see it.</p>
+          </div>
+        </div>
 
         <!-- Special Offer -->
         <p class="step-copy article-copy">I also know that $650 might be a bit of a stretch right now, as I know there's a financial block in your energy system.</p>

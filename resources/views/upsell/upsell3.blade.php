@@ -74,20 +74,42 @@
         <hr>
 
         <h3 class="article-subtitle mt-5">You will also get your <em>Planetary Flow Channels</em></h3>
-        <p class="step-copy article-copy">These are the pathways through which your energy moves best.</p>
-        <p class="step-copy article-copy">Blockages here can cause fatigue, procrastination, or burnout.</p>
-        <p class="step-copy article-copy">I’ll show you how your particular <em>Cosmic Life Path</em> type can clear these blockages.</p>
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+            <p class="step-copy article-copy">These are the pathways through which your energy moves best.</p>
+            <p class="step-copy article-copy">Blockages here can cause fatigue, procrastination, or burnout.</p>
+            <p class="step-copy article-copy">I’ll show you how your particular <em>Cosmic Life Path</em> type can clear these blockages.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up3-sec3.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
 
         <hr>
 
-        <h3 class="article-subtitle mt-5">You will also get your…<br> Cosmic Sleep Activation Guide.</h3>
-        <p class="step-copy article-copy">There is nothing more important than sleep when it comes to our health and wellness. </p>
-        <p class="step-copy article-copy">This guide will show you how to activate deep rejuvenating sleep almost instantly. </p>
+        
+        <div class="article-inline-media article-inline-media-left my-4">
+          <div class="article-inline-visual order-2 order-lg-1">
+            <img src="{{ asset('imgs/upsell/up3-sec4.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+          <div class="article-inline-copy order-1 order-lg-2">
+            <h3 class="article-subtitle">You will also get your…<br> Cosmic Sleep Activation Guide.</h3>
+            <p class="step-copy article-copy">There is nothing more important than sleep when it comes to our health and wellness. </p>
+            <p class="step-copy article-copy">This guide will show you how to activate deep rejuvenating sleep almost instantly. </p>
+          </div>
+        </div>
 
         <hr>
-        <h3 class="article-subtitle mt-5">And finally, you will get your Vital Spark Activation</h3>
-        <p class="step-copy article-copy">This will show you how to jumpstart your health and energy levels almost immediately, anytime you like.</p>
-
+        
+        <div class="article-inline-media my-4">
+          <div class="article-inline-copy order-2 order-lg-1">            
+            <h3 class="article-subtitle">And finally, you will get your Vital Spark Activation</h3>
+            <p class="step-copy article-copy">This will show you how to jumpstart your health and energy levels almost immediately, anytime you like.</p>
+          </div>
+          <div class="article-inline-visual order-1 order-lg-2">
+            <img src="{{ asset('imgs/upsell/up3-sec5.png') }}" alt="Cosmic life path benefits" class="img-fluid">
+          </div>
+        </div>
 
         <div class="divider container-fluid">
           <div class="divider-line"></div>
@@ -138,9 +160,6 @@
         <div class="text-center mt-3 mb-5">
           <a class="text-decoration-none text-danger" href="https://clifepath.pay.clickbank.net/?cbitems=oto3-47&cbur=d">No thanks, Celestra. I’m okay to feel drained while stepping into my new life.</a>
         </div>
-
-     
-
       </article>
     </div>
   </section>

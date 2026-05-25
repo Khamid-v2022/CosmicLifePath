@@ -446,6 +446,16 @@ class CosmicFlowController extends Controller {
         return view('download.upsell2', compact('sign'));
     }
 
+    public function upsell1CancerDummy(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('upsell.upsell1-dummy', compact('sign')); 
+    }
+
+    public function upsell2CancerDummy(): View { 
+        $sign = config('variables.signs.cancer');
+        return view('upsell.upsell2-dummy', compact('sign')); 
+    }
+
      /**
      * Download Upsell3 (single page)
      */

@@ -19,6 +19,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-aries67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-aries47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-aries47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Aries_WB_Q3mL9xP2Ka8Rv7T.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Aries_Q7mL9xP2Ka8N.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'taurus' => [
             'name' => 'Taurus',
@@ -38,6 +44,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-taurus67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-taurus47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-taurus47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Taurus_WB_M4vX8qL1Rp6Dc2Y.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Taurus_M4vX8qL1Rp6D.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'gemini' => [
             'name' => 'Gemini',
@@ -56,6 +68,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-gemini67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-gemini47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-gemini47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Gemini_WB_Z4kP3wN7Tx2Bm9L.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Gemini_Z9kP3wN7Tx2B.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'cancer' => [
             'name' => 'Cancer',
@@ -74,6 +92,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-cancer67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-cancer47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-cancer47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Cancer_WB_H5qV8mL1Yp7Rx3K.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Cancer_H2qV8mL5Yp1R.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'leo' => [
             'name' => 'Leo',
@@ -92,6 +116,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-leo67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-leo47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-leo47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Leo_WB_X6nK2pQ9Lm4Tr8V.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Leo_X6nK2pQ9Lm4T.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'virgo' => [
             'name' => 'Virgo',
@@ -110,6 +140,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-virgo67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-virgo47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-virgo47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Virgo_WB_P8wR3xM6Qa1Jt9X.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Virgo_P8wR3xM6Qa1J.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'libra' => [
             'name' => 'Libra',
@@ -128,6 +164,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-libra67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-libra47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-libra47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Libra_WB_T5mZ9qK2Xp7Nw4R.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Libra_T5mZ9qK2Xp7N.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'scorpio' => [
             'name' => 'Scorpio',
@@ -146,6 +188,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-scorpio67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-scorpio47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-scorpio47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Scorpio_WB_R1xV7pL4Km9Qz5T.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Scorpio_R1xV7pL4Km9Q.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'sagittarius' => [
             'name' => 'Sagittarius',
@@ -164,6 +212,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-sagit67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-sagit47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-sagit47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Sagittarius_WB_N3qP8mX5Lv2Kh7Q.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Sagittarius_N3qP8mX5Lv2K.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'capricorn' => [
             'name' => 'Capricorn',
@@ -182,6 +236,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-capri67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-capri47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-capri47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Capricorn_WB_Y2kM7xQ9Rp4Tv8N.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Capricorn_Y7kM1xQ9Rp4T.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'aquarius' => [
             'name' => 'Aquarius',
@@ -202,6 +262,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-aqua67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-aqua47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-aqua47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Aquarius_WB_L8qX2mP7Rv4Ka9N.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Aquarius_L4pN8qX2Km6R.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
         'pisces' => [
             'name' => 'Pisces',
@@ -220,6 +286,12 @@ return [
             'upsell1_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto1-pisces67&cbur=d',
             'upsell2_accept_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-pisces47&cbur=a',
             'upsell2_decline_cta_url' => 'https://clifepath.pay.clickbank.net/?cbitems=oto2-pisces47&cbur=d',
+
+            'upsell1_bundle_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/Bundle/bnd_Pisces_WB_K9xT3mP7Qv1Ls6M.zip',
+            'upsell1_pdf' => 'https://cosmic-life-path.nyc3.digitaloceanspaces.com/cosmic-wealth-path/rpt_Pisces_K9xT3mP7Qv1L.pdf',
+            'upsell2_bundle_pdf' => '',
+            'upsell2_pdf' => '',
+            'upsell3_pdf' => '',
         ],
     ],
 ];

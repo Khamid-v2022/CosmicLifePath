@@ -364,194 +364,26 @@ class CosmicFlowController extends Controller {
      * Download VIP Aries
      * Route: /download/vip-aries
      */
-    public function downloadVipAries(): View { 
-        $sign = config('variables.signs.aries');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Taurus
-     * Route: /download/vip-taurus
-     */
-    public function downloadVipTaurus(): View { 
-        $sign = config('variables.signs.taurus');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Gemini
-     * Route: /download/vip-gemini
-     */
-    public function downloadVipGemini(): View { 
-        $sign = config('variables.signs.gemini');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Cancer
-     * Route: /download/vip-cancer
-     */
-    public function downloadVipCancer(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Leo
-     * Route: /download/vip-leo
-     */
-    public function downloadVipLeo(): View { 
-        $sign = config('variables.signs.leo');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Virgo
-     * Route: /download/vip-virgo
-     */
-    public function downloadVipVirgo(): View { 
-        $sign = config('variables.signs.virgo');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Libra
-     * Route: /download/vip-libra
-     */
-    public function downloadVipLibra(): View { 
-        $sign = config('variables.signs.libra');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Scorpio
-     * Route: /download/vip-scorpio
-     */
-    public function downloadVipScorpio(): View { 
-        $sign = config('variables.signs.scorpio');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Sagittarius
-     * Route: /download/vip-sagittarius
-     */
-    public function downloadVipSagittarius(): View { 
-        $sign = config('variables.signs.sagittarius');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Capricorn
-     * Route: /download/vip-capricorn
-     */
-    public function downloadVipCapricorn(): View { 
-        $sign = config('variables.signs.capricorn');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Aquarius
-     * Route: /download/vip-aquarius
-     */
-    public function downloadVipAquarius(): View { 
-        $sign = config('variables.signs.aquarius');
-        return view('download.vip', compact('sign')); 
-    }
-    /**
-     * Download VIP Pisces
-     * Route: /download/vip-pisces
-     */
-    public function downloadVipPisces(): View { 
-        $sign = config('variables.signs.pisces');
-        return view('download.vip', compact('sign')); 
+    public function downloadVIP(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('download.vip', compact('sign'));
     }
 
     /**
      * Download Standard Aries
      * Route: /download/standard-aries
      */
-    public function downloadStandardAries(): View { 
-        $sign = config('variables.signs.aries');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Taurus
-     * Route: /download/standard-taurus
-     */
-    public function downloadStandardTaurus(): View { 
-        $sign = config('variables.signs.taurus');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Gemini
-     * Route: /download/standard-gemini
-     */
-    public function downloadStandardGemini(): View { 
-        $sign = config('variables.signs.gemini');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Cancer
-     * Route: /download/standard-cancer
-     */
-    public function downloadStandardCancer(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Leo
-     * Route: /download/standard-leo
-     */
-    public function downloadStandardLeo(): View { 
-        $sign = config('variables.signs.leo');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Virgo
-     * Route: /download/standard-virgo
-     */
-    public function downloadStandardVirgo(): View { 
-        $sign = config('variables.signs.virgo');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Libra
-     * Route: /download/standard-libra
-     */
-    public function downloadStandardLibra(): View { 
-        $sign = config('variables.signs.libra');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Scorpio
-     * Route: /download/standard-scorpio
-     */
-    public function downloadStandardScorpio(): View { 
-        $sign = config('variables.signs.scorpio');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Sagittarius
-     * Route: /download/standard-sagittarius
-     */
-    public function downloadStandardSagittarius(): View { 
-        $sign = config('variables.signs.sagittarius');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Capricorn
-     * Route: /download/standard-capricorn
-     */
-    public function downloadStandardCapricorn(): View { 
-        $sign = config('variables.signs.capricorn');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Aquarius
-     * Route: /download/standard-aquarius
-     */
-    public function downloadStandardAquarius(): View { 
-        $sign = config('variables.signs.aquarius');
-        return view('download.standard', compact('sign')); 
-    }
-    /**
-     * Download Standard Pisces
-     * Route: /download/standard-pisces
-     */
-    public function downloadStandardPisces(): View { 
-        $sign = config('variables.signs.pisces');
-        return view('download.standard', compact('sign')); 
+    public function downloadStandard(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('download.standard', compact('sign'));
     }
 
 
@@ -561,210 +393,26 @@ class CosmicFlowController extends Controller {
      */
     public function downloadFullReport(): View { return view('download.fullreport'); }
 
-    /**
-     * Download Upsell1 Aries
-     * Route: /upsell1-aries
-     */
-    public function upsell1Aries(): View { 
-        $sign = config('variables.signs.aries');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Taurus
-     * Route: /upsell1-taurus
-     */
-    public function upsell1Taurus(): View { 
-        $sign = config('variables.signs.taurus');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Gemini
-     * Route: /upsell1-gemini
-     */
-    public function upsell1Gemini(): View { 
-        $sign = config('variables.signs.gemini');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Cancer
-     * Route: /upsell1-cancer
-     */
-    public function upsell1Cancer(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('upsell.upsell1', compact('sign')); 
+    // Upsell1 page
+    public function upsell1(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('upsell.upsell1', compact('sign'));
     }
 
-    public function upsell1CancerDummy(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('upsell.upsell1-dummy', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Leo
-     * Route: /upsell1-leo
-     */
-    public function upsell1Leo(): View { 
-        $sign = config('variables.signs.leo');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Virgo
-     * Route: /upsell1-virgo
-     */
-    public function upsell1Virgo(): View { 
-        $sign = config('variables.signs.virgo');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Libra
-     * Route: /upsell1-libra
-     */
-    public function upsell1Libra(): View { 
-        $sign = config('variables.signs.libra');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Scorpio
-     * Route: /upsell1-scorpio
-     */
-    public function upsell1Scorpio(): View { 
-        $sign = config('variables.signs.scorpio');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Sagittarius
-     * Route: /upsell1-sagittarius
-     */
-    public function upsell1Sagittarius(): View { 
-        $sign = config('variables.signs.sagittarius');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Capricorn
-     * Route: /upsell1-capricorn
-     */
-    public function upsell1Capricorn(): View { 
-        $sign = config('variables.signs.capricorn');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Aquarius
-     * Route: /upsell1-aquarius
-     */
-    public function upsell1Aquarius(): View { 
-        $sign = config('variables.signs.aquarius');
-        return view('upsell.upsell1', compact('sign')); 
-    }
-    /**
-     * Download Upsell1 Pisces
-     * Route: /upsell1-pisces
-     */
-    public function upsell1Pisces(): View { 
-        $sign = config('variables.signs.pisces');
-        return view('upsell.upsell1', compact('sign')); 
+    // Upsell2 page
+    public function upsell2(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('upsell.upsell2', compact('sign'));
     }
 
-    
-    /**
-     * Download Upsell2 Aries
-     * Route: /upsell2-aries
-     */
-    public function upsell2Aries(): View { 
-        $sign = config('variables.signs.aries');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Taurus
-     * Route: /upsell2-taurus
-     */
-    public function upsell2Taurus(): View { 
-        $sign = config('variables.signs.taurus');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Gemini
-     * Route: /upsell2-gemini
-     */
-    public function upsell2Gemini(): View { 
-        $sign = config('variables.signs.gemini');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Cancer
-     * Route: /upsell2-cancer
-     */
-    public function upsell2Cancer(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-
-    public function upsell2CancerDummy(): View { 
-        $sign = config('variables.signs.cancer');
-        return view('upsell.upsell2-dummy', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Leo
-     * Route: /upsell2-leo
-     */
-    public function upsell2Leo(): View { 
-        $sign = config('variables.signs.leo');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Virgo
-     * Route: /upsell2-virgo
-     */
-    public function upsell2Virgo(): View { 
-        $sign = config('variables.signs.virgo');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Libra
-     * Route: /upsell2-libra
-     */
-    public function upsell2Libra(): View { 
-        $sign = config('variables.signs.libra');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Scorpio
-     * Route: /upsell2-scorpio
-     */
-    public function upsell2Scorpio(): View { 
-        $sign = config('variables.signs.scorpio');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Sagittarius
-     * Route: /upsell2-sagittarius
-     */
-    public function upsell2Sagittarius(): View { 
-        $sign = config('variables.signs.sagittarius');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Capricorn
-     * Route: /upsell2-capricorn
-     */
-    public function upsell2Capricorn(): View { 
-        $sign = config('variables.signs.capricorn');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Aquarius
-     * Route: /upsell2-aquarius
-     */
-    public function upsell2Aquarius(): View { 
-        $sign = config('variables.signs.aquarius');
-        return view('upsell.upsell2', compact('sign')); 
-    }
-    /**
-     * Download Upsell2 Pisces
-     * Route: /upsell2-pisces
-     */
-    public function upsell2Pisces(): View { 
-        $sign = config('variables.signs.pisces');
-        return view('upsell.upsell2', compact('sign')); 
-    }
     /**
      * Upsell3 (single page)
      * Route: /upsell3
@@ -775,5 +423,33 @@ class CosmicFlowController extends Controller {
 
     public function upsell3Dummy(): View {
         return view('upsell.upsell3-dummy');
+    }
+
+     /**
+     * Download Upsell1
+     */
+    public function downloadUpsell1(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('download.upsell1', compact('sign'));
+    }
+
+    public function downloadUpsell2(Request $request): View {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('download.upsell2', compact('sign'));
+    }
+
+     /**
+     * Download Upsell3 (single page)
+     */
+    public function downloadUpsell3(): View {
+        return view('download.upsell3');
     }
 }

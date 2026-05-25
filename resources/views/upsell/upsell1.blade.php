@@ -169,7 +169,6 @@
         <p class="step-copy article-copy">I can't wait for you to see it.</p>
 
         <!-- Special Offer -->
-
         <p class="step-copy article-copy">I also know that $650 might be a bit of a stretch right now, as I know there's a financial block in your energy system.</p>
         <p class="step-copy article-copy">I also appreciate you coming this far with me today.</p>
         <p class="step-copy article-copy">So your <em>Cosmic Wealth Path Report</em> is not going to be $650.</p>

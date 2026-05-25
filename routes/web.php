@@ -30,61 +30,93 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/about-us', 'aboutUs')->name('about.us');
 
     // Download pages for each sign and access type
-    Route::get('/download/vip-aries', 'downloadVipAries')->name('download.vip.aries');
-    Route::get('/download/vip-taurus', 'downloadVipTaurus')->name('download.vip.taurus');
-    Route::get('/download/vip-gemini', 'downloadVipGemini')->name('download.vip.gemini');
-    Route::get('/download/vip-cancer', 'downloadVipCancer')->name('download.vip.cancer');
-    Route::get('/download/vip-leo', 'downloadVipLeo')->name('download.vip.leo');
-    Route::get('/download/vip-virgo', 'downloadVipVirgo')->name('download.vip.virgo');
-    Route::get('/download/vip-libra', 'downloadVipLibra')->name('download.vip.libra');
-    Route::get('/download/vip-scorpio', 'downloadVipScorpio')->name('download.vip.scorpio');
-    Route::get('/download/vip-sagittarius', 'downloadVipSagittarius')->name('download.vip.sagittarius');
-    Route::get('/download/vip-capricorn', 'downloadVipCapricorn')->name('download.vip.capricorn');
-    Route::get('/download/vip-aquarius', 'downloadVipAquarius')->name('download.vip.aquarius');
-    Route::get('/download/vip-pisces', 'downloadVipPisces')->name('download.vip.pisces');
+    Route::get('/download/vip-aries', 'downloadVIP')->defaults('sign', 'aries')->name('download.vip.aries');
+    Route::get('/download/vip-taurus', 'downloadVIP')->defaults('sign', 'taurus')->name('download.vip.taurus');
+    Route::get('/download/vip-gemini', 'downloadVIP')->defaults('sign', 'gemini')->name('download.vip.gemini');
+    Route::get('/download/vip-cancer', 'downloadVIP')->defaults('sign', 'cancer')->name('download.vip.cancer');
+    Route::get('/download/vip-leo', 'downloadVIP')->defaults('sign', 'leo')->name('download.vip.leo');
+    Route::get('/download/vip-virgo', 'downloadVIP')->defaults('sign', 'virgo')->name('download.vip.virgo');
+    Route::get('/download/vip-libra', 'downloadVIP')->defaults('sign', 'libra')->name('download.vip.libra');
+    Route::get('/download/vip-scorpio', 'downloadVIP')->defaults('sign', 'scorpio')->name('download.vip.scorpio');
+    Route::get('/download/vip-sagittarius', 'downloadVIP')->defaults('sign', 'sagittarius')->name('download.vip.sagittarius');
+    Route::get('/download/vip-capricorn', 'downloadVIP')->defaults('sign', 'capricorn')->name('download.vip.capricorn');
+    Route::get('/download/vip-aquarius', 'downloadVIP')->defaults('sign', 'aquarius')->name('download.vip.aquarius');
+    Route::get('/download/vip-pisces', 'downloadVIP')->defaults('sign', 'pisces')->name('download.vip.pisces');
 
-    Route::get('/download/standard-aries', 'downloadStandardAries')->name('download.standard.aries');
-    Route::get('/download/standard-taurus', 'downloadStandardTaurus')->name('download.standard.taurus');
-    Route::get('/download/standard-gemini', 'downloadStandardGemini')->name('download.standard.gemini');
-    Route::get('/download/standard-cancer', 'downloadStandardCancer')->name('download.standard.cancer');
-    Route::get('/download/standard-leo', 'downloadStandardLeo')->name('download.standard.leo');
-    Route::get('/download/standard-virgo', 'downloadStandardVirgo')->name('download.standard.virgo');
-    Route::get('/download/standard-libra', 'downloadStandardLibra')->name('download.standard.libra');
-    Route::get('/download/standard-scorpio', 'downloadStandardScorpio')->name('download.standard.scorpio');
-    Route::get('/download/standard-sagittarius', 'downloadStandardSagittarius')->name('download.standard.sagittarius');
-    Route::get('/download/standard-capricorn', 'downloadStandardCapricorn')->name('download.standard.capricorn');
-    Route::get('/download/standard-aquarius', 'downloadStandardAquarius')->name('download.standard.aquarius');
-    Route::get('/download/standard-pisces', 'downloadStandardPisces')->name('download.standard.pisces');
+    Route::get('/download/standard-aries', 'downloadStandard')->defaults('sign', 'aries')->name('download.standard.aries');
+    Route::get('/download/standard-taurus', 'downloadStandard')->defaults('sign', 'taurus')->name('download.standard.taurus');
+    Route::get('/download/standard-gemini', 'downloadStandard')->defaults('sign', 'gemini')->name('download.standard.gemini');
+    Route::get('/download/standard-cancer', 'downloadStandard')->defaults('sign', 'cancer')->name('download.standard.cancer');
+    Route::get('/download/standard-leo', 'downloadStandard')->defaults('sign', 'leo')->name('download.standard.leo');
+    Route::get('/download/standard-virgo', 'downloadStandard')->defaults('sign', 'virgo')->name('download.standard.virgo');
+    Route::get('/download/standard-libra', 'downloadStandard')->defaults('sign', 'libra')->name('download.standard.libra');
+    Route::get('/download/standard-scorpio', 'downloadStandard')->defaults('sign', 'scorpio')->name('download.standard.scorpio');
+    Route::get('/download/standard-sagittarius', 'downloadStandard')->defaults('sign', 'sagittarius')->name('download.standard.sagittarius');
+    Route::get('/download/standard-capricorn', 'downloadStandard')->defaults('sign', 'capricorn')->name('download.standard.capricorn');
+    Route::get('/download/standard-aquarius', 'downloadStandard')->defaults('sign', 'aquarius')->name('download.standard.aquarius');
+    Route::get('/download/standard-pisces', 'downloadStandard')->defaults('sign', 'pisces')->name('download.standard.pisces');
+    
+    Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
 
     // Upsell1 pages for each sign
-    Route::get('/upsell1-aries', 'upsell1Aries')->name('upsell1.aries');
-    Route::get('/upsell1-taurus', 'upsell1Taurus')->name('upsell1.taurus');
-    Route::get('/upsell1-gemini', 'upsell1Gemini')->name('upsell1.gemini');
-    Route::get('/upsell1-cancer', 'upsell1Cancer')->name('upsell1.cancer');
-    Route::get('/upsell1-leo', 'upsell1Leo')->name('upsell1.leo');
-    Route::get('/upsell1-virgo', 'upsell1Virgo')->name('upsell1.virgo');
-    Route::get('/upsell1-libra', 'upsell1Libra')->name('upsell1.libra');
-    Route::get('/upsell1-scorpio', 'upsell1Scorpio')->name('upsell1.scorpio');
-    Route::get('/upsell1-sagittarius', 'upsell1Sagittarius')->name('upsell1.sagittarius');
-    Route::get('/upsell1-capricorn', 'upsell1Capricorn')->name('upsell1.capricorn');
-    Route::get('/upsell1-aquarius', 'upsell1Aquarius')->name('upsell1.aquarius');
-    Route::get('/upsell1-pisces', 'upsell1Pisces')->name('upsell1.pisces');
+    Route::get('/upsell1-aries', 'upsell1')->defaults('sign', 'aries')->name('upsell1.aries');
+    Route::get('/upsell1-taurus', 'upsell1')->defaults('sign', 'taurus')->name('upsell1.taurus');
+    Route::get('/upsell1-gemini', 'upsell1')->defaults('sign', 'gemini')->name('upsell1.gemini');
+    Route::get('/upsell1-cancer', 'upsell1')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    Route::get('/upsell1-leo', 'upsell1')->defaults('sign', 'leo')->name('upsell1.leo');
+    Route::get('/upsell1-virgo', 'upsell1')->defaults('sign', 'virgo')->name('upsell1.virgo');
+    Route::get('/upsell1-libra', 'upsell1')->defaults('sign', 'libra')->name('upsell1.libra');
+    Route::get('/upsell1-scorpio', 'upsell1')->defaults('sign', 'scorpio')->name('upsell1.scorpio');
+    Route::get('/upsell1-sagittarius', 'upsell1')->defaults('sign', 'sagittarius')->name('upsell1.sagittarius');
+    Route::get('/upsell1-capricorn', 'upsell1')->defaults('sign', 'capricorn')->name('upsell1.capricorn');
+    Route::get('/upsell1-aquarius', 'upsell1')->defaults('sign', 'aquarius')->name('upsell1.aquarius');
+    Route::get('/upsell1-pisces', 'upsell1')->defaults('sign', 'pisces')->name('upsell1.pisces');
 
     // Upsell2 pages for each sign
-    Route::get('/upsell2-aries', 'upsell2Aries')->name('upsell2.aries');
-    Route::get('/upsell2-taurus', 'upsell2Taurus')->name('upsell2.taurus');
-    Route::get('/upsell2-gemini', 'upsell2Gemini')->name('upsell2.gemini');
-    Route::get('/upsell2-cancer', 'upsell2Cancer')->name('upsell2.cancer');
-    Route::get('/upsell2-leo', 'upsell2Leo')->name('upsell2.leo');
-    Route::get('/upsell2-virgo', 'upsell2Virgo')->name('upsell2.virgo');
-    Route::get('/upsell2-libra', 'upsell2Libra')->name('upsell2.libra');
-    Route::get('/upsell2-scorpio', 'upsell2Scorpio')->name('upsell2.scorpio');
-    Route::get('/upsell2-sagittarius', 'upsell2Sagittarius')->name('upsell2.sagittarius');
-    Route::get('/upsell2-capricorn', 'upsell2Capricorn')->name('upsell2.capricorn');
-    Route::get('/upsell2-aquarius', 'upsell2Aquarius')->name('upsell2.aquarius');
-    Route::get('/upsell2-pisces', 'upsell2Pisces')->name('upsell2.pisces');
-
+    Route::get('/upsell2-aries', 'upsell2')->defaults('sign', 'aries')->name('upsell2.aries');
+    Route::get('/upsell2-taurus', 'upsell2')->defaults('sign', 'taurus')->name('upsell2.taurus');
+    Route::get('/upsell2-gemini', 'upsell2')->defaults('sign', 'gemini')->name('upsell2.gemini');
+    Route::get('/upsell2-cancer', 'upsell2')->defaults('sign', 'cancer')->name('upsell2.cancer');
+    Route::get('/upsell2-leo', 'upsell2')->defaults('sign', 'leo')->name('upsell2.leo');
+    Route::get('/upsell2-virgo', 'upsell2')->defaults('sign', 'virgo')->name('upsell2.virgo');
+    Route::get('/upsell2-libra', 'upsell2')->defaults('sign', 'libra')->name('upsell2.libra');
+    Route::get('/upsell2-scorpio', 'upsell2')->defaults('sign', 'scorpio')->name('upsell2.scorpio');
+    Route::get('/upsell2-sagittarius', 'upsell2')->defaults('sign', 'sagittarius')->name('upsell2.sagittarius');
+    Route::get('/upsell2-capricorn', 'upsell2')->defaults('sign', 'capricorn')->name('upsell2.capricorn');
+    Route::get('/upsell2-aquarius', 'upsell2')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
+    Route::get('/upsell2-pisces', 'upsell2')->defaults('sign', 'pisces')->name('upsell2.pisces');
 
     Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
-    Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
+
+    // Upsell1 download pages for each sign
+    Route::get('/wdl-Q8mX2pRv7Ka9Ln', 'downloadUpsell1')->defaults('sign', 'aries')->name('download.upsell1.aries');
+    Route::get('/wdl-M4qLp8Nx2Ra7Kv', 'downloadUpsell1')->defaults('sign', 'taurus')->name('download.upsell1.taurus');
+    Route::get('/wdl-Z7pQx3Lm9Rv2Ka', 'downloadUpsell1')->defaults('sign', 'gemini')->name('download.upsell1.gemini');
+    Route::get('/wdl-H2vNx8Qa4Lp7Rm', 'downloadUpsell1')->defaults('sign', 'cancer')->name('download.upsell1.cancer');
+    Route::get('/wdl-X9mRv2Lp7Ka3Qn', 'downloadUpsell1')->defaults('sign', 'leo')->name('download.upsell1.leo');
+    Route::get('/wdl-P5qNx7Lm1Rv8Ka', 'downloadUpsell1')->defaults('sign', 'virgo')->name('download.upsell1.virgo');
+    Route::get('/wdl-T8xQa2Lp9Rm4Kv', 'downloadUpsell1')->defaults('sign', 'libra')->name('download.upsell1.libra');
+    Route::get('/wdl-R3mLp7Nx8Qa2Kv', 'downloadUpsell1')->defaults('sign', 'scorpio')->name('download.upsell1.scorpio');
+    Route::get('/wdl-N6qRv1Lp8Ka4Xm', 'downloadUpsell1')->defaults('sign', 'sagittarius')->name('download.upsell1.sagittarius');
+    Route::get('/wdl-Y2xLm9Qa7Rv3Kp', 'downloadUpsell1')->defaults('sign', 'capricorn')->name('download.upsell1.capricorn');
+    Route::get('/wdl-L7pNx4Rv8Qa2Km', 'downloadUpsell1')->defaults('sign', 'aquarius')->name('download.upsell1.aquarius');
+    Route::get('/wdl-K9mQa3Lp7Rv1Xn', 'downloadUpsell1')->defaults('sign', 'pisces')->name('download.upsell1.pisces');
+
+
+    // Upsell2 download pages for each sign
+    Route::get('/ldl-F8qXp2Rv7Lm4Ka', 'downloadUpsell2')->defaults('sign', 'aries')->name('download.upsell2.aries');
+    Route::get('/ldl-C3mLp9Qa2Rv8Nx', 'downloadUpsell2')->defaults('sign', 'taurus')->name('download.upsell2.taurus');
+    Route::get('/ldl-B7xQa4Lm9Rv2Kp', 'downloadUpsell2')->defaults('sign', 'gemini')->name('download.upsell2.gemini');
+    Route::get('/ldl-D2vNx8Lp3Qa7Rm', 'downloadUpsell2')->defaults('sign', 'cancer')->name('download.upsell2.cancer');
+    Route::get('/ldl-J9mRv1Qa7Lp4Xk', 'downloadUpsell2')->defaults('sign', 'leo')->name('download.upsell2.leo');
+    Route::get('/ldl-U5qNx7Lm2Rv8Ka', 'downloadUpsell2')->defaults('sign', 'virgo')->name('download.upsell2.virgo');
+    Route::get('/ldl-W8xQa3Lp9Rm2Kv', 'downloadUpsell2')->defaults('sign', 'libra')->name('download.upsell2.libra');
+    Route::get('/ldl-S4mLp7Nx8Qa1Rv', 'downloadUpsell2')->defaults('sign', 'scorpio')->name('download.upsell2.scorpio');
+    Route::get('/ldl-E6qRv2Lp8Ka4Xm', 'downloadUpsell2')->defaults('sign', 'sagittarius')->name('download.upsell2.sagittarius');
+    Route::get('/ldl-G2xLm9Qa7Rv5Kp', 'downloadUpsell2')->defaults('sign', 'capricorn')->name('download.upsell2.capricorn');
+    Route::get('/ldl-I7pNx4Rv8Qa3Km', 'downloadUpsell2')->defaults('sign', 'aquarius')->name('download.upsell2.aquarius');
+    Route::get('/ldl-O9mQa2Lp7Rv1Xn', 'downloadUpsell2')->defaults('sign', 'pisces')->name('download.upsell2.pisces');
+
+    // Upsell3 download page
+    Route::get('/edl-V8qXp3Lm7Rv2Ka', 'downloadUpsell3')->name('download.upsell3');
 });

@@ -421,10 +421,6 @@ class CosmicFlowController extends Controller {
         return view('upsell.upsell3');
     }
 
-    public function upsell3Dummy(): View {
-        return view('upsell.upsell3-dummy');
-    }
-
      /**
      * Download Upsell1
      */
@@ -446,14 +442,24 @@ class CosmicFlowController extends Controller {
         return view('download.upsell2', compact('sign'));
     }
 
-    public function upsell1CancerDummy(): View { 
-        $sign = config('variables.signs.cancer');
+    public function upsell1Dummy(): View { 
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
         return view('upsell.upsell1-dummy', compact('sign')); 
     }
 
-    public function upsell2CancerDummy(): View { 
-        $sign = config('variables.signs.cancer');
+    public function upsell2Dummy(): View { 
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
         return view('upsell.upsell2-dummy', compact('sign')); 
+    }
+
+     public function upsell3Dummy(): View {
+        return view('upsell.upsell3-dummy');
     }
 
      /**

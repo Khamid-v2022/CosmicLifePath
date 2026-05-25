@@ -62,7 +62,10 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1')->defaults('sign', 'aries')->name('upsell1.aries');
     Route::get('/u1-M3qLp9Nx2Ra7Kv', 'upsell1')->defaults('sign', 'taurus')->name('upsell1.taurus');
     Route::get('/u1-Z8pQx4Lm7Rv2Ka', 'upsell1')->defaults('sign', 'gemini')->name('upsell1.gemini');
-    Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    
+    // Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1CancerDummy')->defaults('sign', 'cancer')->name('upsell1.cancer');
+
     Route::get('/u1-X9mRv3Lp7Ka2Qn', 'upsell1')->defaults('sign', 'leo')->name('upsell1.leo');
     Route::get('/u1-P5qNx8Lm1Rv7Ka', 'upsell1')->defaults('sign', 'virgo')->name('upsell1.virgo');
     Route::get('/u1-T7xQa2Lp9Rm4Kv', 'upsell1')->defaults('sign', 'libra')->name('upsell1.libra');
@@ -76,7 +79,10 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/u2-F7qXp2Rv8Lm4Ka', 'upsell2')->defaults('sign', 'aries')->name('upsell2.aries');
     Route::get('/u2-C3mLp8Qa2Rv9Nx', 'upsell2')->defaults('sign', 'taurus')->name('upsell2.taurus');
     Route::get('/u2-B8xQa4Lm9Rv2Kp', 'upsell2')->defaults('sign', 'gemini')->name('upsell2.gemini');
-    Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2')->defaults('sign', 'cancer')->name('upsell2.cancer');
+
+    // Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2')->defaults('sign', 'cancer')->name('upsell2.cancer');
+    Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2CancerDummy')->defaults('sign', 'cancer')->name('upsell2.cancer');
+
     Route::get('/u2-J9mRv1Qa8Lp4Xk', 'upsell2')->defaults('sign', 'leo')->name('upsell2.leo');
     Route::get('/u2-U5qNx7Lm3Rv8Ka', 'upsell2')->defaults('sign', 'virgo')->name('upsell2.virgo');
     Route::get('/u2-W7xQa3Lp9Rm2Kv', 'upsell2')->defaults('sign', 'libra')->name('upsell2.libra');
@@ -86,7 +92,8 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/u2-I7pNx4Rv9Qa3Km', 'upsell2')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
     Route::get('/u2-O9mQa2Lp8Rv1Xn', 'upsell2')->defaults('sign', 'pisces')->name('upsell2.pisces');
 
-    Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
+    // Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
+    Route::get('/u3-P7xRv2Mq8Ld', 'upsell3Dummy')->name('upsell3');
 
     // Upsell1 download pages for each sign
     Route::get('/wdl-Q8mX2pRv7Ka9Ln', 'downloadUpsell1')->defaults('sign', 'aries')->name('download.upsell1.aries');

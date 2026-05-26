@@ -14,12 +14,15 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     
     Route::get('/preview-reveal/{sign}', 'summary')->name('reading.summary');
     Route::post('/preview-reveal/{sign}', 'summary')->name('reading.summary');
-    Route::get('/private-offer/{sign}', 'sales')->name('sales.page');
-    Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
+
+    // recover when approved
+    // Route::get('/private-offer/{sign}', 'sales')->name('sales.page');
+    // Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
 
 
     // Need to remove this route after approved
-    Route::get('/special-offer', 'sales_dummy');
+    Route::get('/private-offer/{sign}', 'sales_dummy');
+    Route::post('/private-offer/{sign}', 'sales_dummy')->name('sales.page');
 
 
 

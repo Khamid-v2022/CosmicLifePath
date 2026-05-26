@@ -25,11 +25,11 @@
         <p class="step-copy article-copy">It’s vital right now that you discover and follow your <strong>distinct <i>Cosmic Life Path</i></strong> so you can play your part in the transition we are currently going through on Earth.</p>
 
 
-        <h2 class="section-title step-title article-major-title mt-5" style="text-transform: capitalize;"><strong >Cancer Cosmic Life Path Reading Full Report</strong></h2>
+        <h2 class="section-title step-title article-major-title mt-5" style="text-transform: capitalize;"><strong >{{$sign['name']}} Cosmic Life Path Reading Full Report</strong></h2>
 
       
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
-          <img src="{{ asset('imgs/ebook/horoscope/cancer.png') }}" alt="Cancer Cosmic Life Path" class="" style="max-width: 230px;">
+          <img src="{{ asset('imgs/ebook/horoscope/' . strtolower($sign['name']) . '.png') }}" alt="{{ $sign['name'] }} Cosmic Life Path" class="" style="max-width: 230px;">
         </div>
 
 
@@ -147,7 +147,7 @@
                   <li>365-Day Money-Back Guarantee</li>
                 </ul>
 
-                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer47&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                <a href="{{$sign['standard_purchase_url']}}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
                   Gain Standard Access Now →
                 </a>
               </article>
@@ -194,7 +194,7 @@
                   </li>
                 </ul>
 
-                <a href="https://clifepath.pay.clickbank.net/?cbitems=fe-cancer15&template=BCoFTclp&cbfid=63362&vtid=cta1" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                <a href="{{$sign['vip_purchase_url']}}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
                   Gain VIP Access Now →
                 </a>
               </article>

@@ -319,11 +319,15 @@ class CosmicFlowController extends Controller {
         ]);
     }
 
-    public function sales_dummy(Request $request): View|RedirectResponse
-    {
-        // Try to get data from form submission first, then fall back to session
-        return view('sales-page-dummy');
+    public function sales_dummy(Request $request): View|RedirectResponse {
+        $signSlug = $request->route('sign');
+        $sign = config("variables.signs.$signSlug");
+
+        abort_unless(is_array($sign), 404);
+
+        return view('sales-page-dummy', compact('sign'));
     }
+
 
     private function findSignOrFail(string $slug): array
     {

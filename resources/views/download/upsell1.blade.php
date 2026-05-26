@@ -3,7 +3,7 @@
 {{-- Upsell1 Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
-        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*cwealthpath</p>
+        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*<strong>cwealthpath</strong></p>
     </div>
     <div class="container">
         

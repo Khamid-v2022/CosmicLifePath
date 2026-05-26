@@ -4,7 +4,7 @@
 {{-- Standard Access Download Page --}}
 <div class="download-page vip">
     <div class="billing-info">
-        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*cpath* KIV</p>
+        <p class="mb-0">Your credit card statement will show a charge from CLKBANK*cenergypath</p>
     </div>
     <div class="container">
         <div class="text-center mb-5">

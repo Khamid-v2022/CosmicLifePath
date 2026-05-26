@@ -11,7 +11,10 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/final-alignment/{sign}', 'contact')->name('reading.contact');
     Route::post('/final-alignment', 'storeContact')->name('reading.contact.submit');
     Route::get('/path-unfolding/{sign}', 'readingRoading')->name('reading.loading');
+    
+    Route::get('/preview-reveal/{sign}', 'summary')->name('reading.summary');
     Route::post('/preview-reveal/{sign}', 'summary')->name('reading.summary');
+    Route::get('/private-offer/{sign}', 'sales')->name('sales.page');
     Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
 
 

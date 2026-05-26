@@ -6,7 +6,7 @@
   <section class="small-gap-start step-section container">
     
     <div id="loadingStage" class="reading-stage reading-stage-active text-center">
-      <h2 class="section-title step-title mb-3">Please Don't Close This Page, {{ $name }}...</h2>
+      <h2 class="section-title step-title mb-3">Please Don't Close This Page, {{ $name ?? 'there' }}...</h2>
       <p class="step-copy mb-0">Your Cosmic Life Path Reading Is Being Generated Right Now.</p>
 
       <div class="spinner-image-wrap my-4">
@@ -19,7 +19,7 @@
     <div id="videoStage" class="step-panel reading-stage video-stage-panel mx-auto text-center loading-panel" aria-hidden="true">
       <div class="">
         <div class="result-intro-copy">
-          <h2 class="mb-2 section-title">Your reading is almost ready, {{ $name }}...</h2>
+          <h2 class="mb-2 section-title">Your reading is almost ready, {{ $name ?? 'there' }}...</h2>
           <p class="step-copy mb-0">What she's uncovered about you is extraordinary — knowing who she is will make every word of it more powerful.</p>
         </div>
 
@@ -65,8 +65,8 @@
               <input type="hidden" name="birth_place" value="{{ $birth['birth_place'] }}">
               <input type="hidden" name="birth_place_unknown" value="{{ $birth['place_unknown'] ? '1' : '0' }}">
               <!-- Hidden fields to persist contact data -->
-              <input type="hidden" name="contact_name" value="{{ $name }}">
-              <input type="hidden" name="contact_email" value="">
+              <input type="hidden" name="contact_name" value="{{ $name ?? null }}">
+              <input type="hidden" name="ext" value="{{ $ext }}">
             </form>
             <div class="text-center d-flex justify-content-center">
               <a href="#" id="showReadingButton" class="hero-cta btn d-none d-flex align-items-center justify-content-center"><span class="d-flex">✨</span>Show Me My Cosmic Life Path Reading<span class="d-flex">✨</span></a>

@@ -282,7 +282,7 @@
       @php($signs = config('variables.signs'))
       @foreach ($signs as $sign)
         <div class="col-6 col-md-4 col-xl-3">
-          <a href="{{ route('birthdate', ['sign' => strtolower($sign['name'])]) }}" class="zodiac-card js-open-sign w-100 d-block text-decoration-none" data-sign-slug="{{ strtolower($sign['name']) }}">
+          <a href="{{ route('birthdate', ['sign' => strtolower($sign['name'])]) }}{{ $ext ? '?ext=' . $ext : '' }}" class="zodiac-card js-open-sign w-100 d-block text-decoration-none" data-sign-slug="{{ strtolower($sign['name']) }}">
             <div class="zodiac-icon" aria-hidden="true">{!! $signSvgs[$sign['name']] !!}</div>
             <p class="zodiac-dates">{{ $sign['dates'] }}</p>
             <h3 class="zodiac-name">{{ $sign['name'] }}</h3>

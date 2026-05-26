@@ -8,14 +8,19 @@ use Illuminate\View\View;
 
 class CosmicFlowController extends Controller {
 
-    public function landing(): View
+    public function landing(Request $request): View
     {
-        return view('landing');
+        $ext = $request->query('ext');
+        return view('landing',  [
+            'ext' => $ext
+        ]);
     }
 
-    public function birthdate(string $sign)
+    public function birthdatePage(Request $request, string $sign)
     {
+        $ext = $request->query('ext');
         return view('birthdate', [
+            'ext' => $ext,
             'signSlug' => $sign,
             'sign' => $this->findSignOrFail($sign),
         ]);
@@ -34,6 +39,7 @@ class CosmicFlowController extends Controller {
             'birth_place' => ['nullable', 'string', 'max:255'],
             'time_unknown' => ['nullable', 'boolean'],
             'place_unknown' => ['nullable', 'boolean'],
+            'ext' => ['nullable', 'string'],
         ]);
 
         $sign = $this->findSignOrFail($validated['sign']);
@@ -76,6 +82,10 @@ class CosmicFlowController extends Controller {
 
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
+
+        if($validated['ext']) {
+            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
+        }
 
         return redirect()->route('reading.contact', $sign['slug']);
     }
@@ -162,6 +172,8 @@ class CosmicFlowController extends Controller {
 
     public function readingRoading(Request $request): View|RedirectResponse
     {
+        $ext = $request->query('ext');    
+        
         // Try to get data from form submission first, then fall back to session
         $birth = null;
         $contact = null;
@@ -193,12 +205,16 @@ class CosmicFlowController extends Controller {
         }
 
         // abort_unless(is_array($birth) && is_array($contact), 404);
-        if (!is_array($birth) || !is_array($contact)) {
+        if (!is_array($birth)) {
             return redirect()->route('landing');
+        } 
+
+        if (!$ext && !is_array($contact)) {
+            return redirect()->route('reading.contact', $birth['sign_slug']);
         }
 
         return view('reading-loading', [
-            'name' => $contact['name'],
+            'name' => $contact['name'] ?? null,
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
             'formattedTime' => $birth['time_unknown']
@@ -209,12 +225,14 @@ class CosmicFlowController extends Controller {
                 : $birth['birth_place'],
             'videoUrl' => config('services.cosmic.video_url'),
             'birth' => $birth,
-            'contact' => $contact,
+            'ext' => $ext,
         ]);
     }
 
     public function summary(Request $request): View|RedirectResponse
     {
+        $ext = $request->query('ext'); 
+
         $birth = null;
         $contact = null;
 
@@ -238,6 +256,8 @@ class CosmicFlowController extends Controller {
                 'name' => $request->input('contact_name'),
                 'email' => $request->input('contact_email'),
             ];
+
+            $ext = $request->input('ext'); 
         } else {
             // Fall back to session
             $birth = $request->session()->get('cosmic.reading.birth');
@@ -245,13 +265,16 @@ class CosmicFlowController extends Controller {
         }
 
         // abort_unless(is_array($birth) && is_array($contact), 404);
-        if (!is_array($birth) || !is_array($contact)) {
+        if (!is_array($birth)) {
             return redirect()->route('landing');
         }
 
+        if(!$ext && !is_array($contact)) {
+            return redirect()->route('reading.contact', $birth['sign_slug']);
+        }
+
         return view('reading-result', [
-            'name' => $contact['name'],
-            'email' => $contact['email'],
+            'name' => $contact ? $contact['name'] ?? null : null,
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
             'formattedTime' => $birth['time_unknown']
@@ -261,7 +284,7 @@ class CosmicFlowController extends Controller {
                 ? 'Place not provided'
                 : $birth['birth_place'],
             'birth' => $birth,
-            'contact' => $contact,
+            'ext' => $ext,
         ]);
     }
 
@@ -298,8 +321,7 @@ class CosmicFlowController extends Controller {
             $contact = $request->session()->get('cosmic.reading.contact');
         }
 
-        // abort_unless(is_array($birth) && is_array($contact), 404);
-        if (!is_array($birth) || !is_array($contact)) {
+        if (!is_array($birth)) {
             return redirect()->route('landing');
         }
 
@@ -309,13 +331,10 @@ class CosmicFlowController extends Controller {
         abort_unless(is_array($signInfo), 404);
 
         return view('sales-page', [
-            'name' => $contact['name'],
-            'email' => $contact['email'],
+            'name' => $contact ? $contact['name'] ?? null : null,
             'sign' => $birth['sign'],
             'sign_info' => $signInfo,
-            'formattedDate' => $birth['formatted_date'],
             'birth' => $birth,
-            'contact' => $contact,
         ]);
     }
 

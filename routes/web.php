@@ -5,14 +5,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/', 'landing')->name('landing');
-    Route::get('/birth-alignment/{sign}', 'birthdate')->name('birthdate');
+    Route::get('/birth-alignment/{sign}', 'birthdatePage')->name('birthdate');
     Route::post('/birth-alignment', 'storeBirthDetails')->name('birth.details.submit');
 
     Route::get('/final-alignment/{sign}', 'contact')->name('reading.contact');
     Route::post('/final-alignment', 'storeContact')->name('reading.contact.submit');
     Route::get('/path-unfolding/{sign}', 'readingRoading')->name('reading.loading');
     
-    Route::get('/preview-reveal/{sign}', 'summary')->name('reading.summary');
+    Route::get('/preview-reveal/{sign}', 'summary');
     Route::post('/preview-reveal/{sign}', 'summary')->name('reading.summary');
 
     // recover when approved

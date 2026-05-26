@@ -85,6 +85,7 @@
                     <input type="hidden" name="month" id="hiddenBirthMonth" value="{{ $oldMonth }}">
                     <input type="hidden" name="day" id="hiddenBirthDay" value="{{ $oldDay }}">
                     <input type="hidden" name="year" id="hiddenBirthYear" value="{{ $oldYear }}">
+                    <input type="hidden" name="ext" id="hiddenExt" value="{{ $ext }}">
 
                     <div class="row g-4 align-items-start birth-grid">
                         <div class="col-lg-6">

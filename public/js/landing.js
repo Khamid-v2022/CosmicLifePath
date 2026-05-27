@@ -16,6 +16,20 @@
     },
   };
 
+  const progressBar = document.getElementById('cosmicFlowProgressBar');
+  const setFlowProgress = (value) => {
+    if (!progressBar) {
+      return;
+    }
+
+    const normalized = Math.max(0, Math.min(100, Number(value) || 0));
+    progressBar.style.width = `${normalized}%`;
+  };
+
+  if (progressBar) {
+    setFlowProgress(window.COSMIC_FLOW_PROGRESS_INITIAL || 0);
+  }
+
   const canvas = document.getElementById('starCanvas');
   if (canvas) {
     const ctx = canvas.getContext('2d');
@@ -311,6 +325,7 @@
         return;
       }
 
+      setFlowProgress(50);
       syncBirthDateToDetailsForm();
 
       if (!animated) {
@@ -495,6 +510,8 @@
 
     if (savedState.stage === 'details') {
       activateDetailsStage(false);
+    } else {
+      setFlowProgress(25);
     }
   }
 
@@ -693,7 +710,27 @@
 
     nameInput.addEventListener('input', storeContactDraft);
     emailInput.addEventListener('input', storeContactDraft);
-    contactDetailsForm.addEventListener('submit', storeContactDraft);
+    let isSubmittingWithProgress = false;
+
+    contactDetailsForm.addEventListener('submit', (event) => {
+      storeContactDraft();
+
+      if (isSubmittingWithProgress) {
+        return;
+      }
+
+      if (!contactDetailsForm.checkValidity()) {
+        return;
+      }
+
+      event.preventDefault();
+      isSubmittingWithProgress = true;
+      setFlowProgress(100);
+
+      window.setTimeout(() => {
+        contactDetailsForm.submit();
+      }, 320);
+    });
   }
 
   const SOCIAL_PROOF_ITEMS = [

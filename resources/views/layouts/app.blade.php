@@ -23,6 +23,22 @@
     @include('layouts.partials.header')
   @endunless
 
+  @php($flowProgress = trim($__env->yieldContent('flowProgress')))
+  @if($flowProgress !== '')
+    <div class="cosmic-flow-progress" aria-hidden="true">
+      <div class="cosmic-flow-progress__track">
+        <div
+          id="cosmicFlowProgressBar"
+          class="cosmic-flow-progress__fill"
+          style="width: {{ (float) $flowProgress }}%"
+        ></div>
+      </div>
+    </div>
+    <script>
+      window.COSMIC_FLOW_PROGRESS_INITIAL = {{ (float) $flowProgress }};
+    </script>
+  @endif
+
   <main>
     @yield('content')
   </main>

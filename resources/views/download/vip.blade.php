@@ -111,35 +111,35 @@
             <div class="special-access-desc text-center mb-0">Your Cosmic Life Path Reading is your foundation — But your full destiny spans <span class="special-access-em">wealth, love, and energy</span> too. If any of the readings below aren't yet part of your collection, make sure you don't leave without them.</div>
             
             <div class="row">
-                <div class="col-md-4 mt-4">
+                <div class="col-md-4 mt-5">
                     <div class="h-100 d-flex flex-column justify-content-between">
                         <div class="text-center">
                             <!-- <h4 class="text-light text-center">Cosmic Life Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel1-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="mb-0 text-center">Uncover the Exact Wealth Blueprint Hidden in Your Birth Chart</p>
-                            <p class="special-zodiac-desc text-start">Reveals the financial identity unique to your sign, the hidden pattern that's been silently blocking abundance, and a personalised 30-day activation plan aligned to your planetary timing.</p>
+                            <p class="special-zodiac-desc text-light text-start">Reveals the financial identity unique to your sign, the hidden pattern that's been silently blocking abundance, and a personalised 30-day activation plan aligned to your planetary timing.</p>
                         </div>
                         <a class="btn special-zodiac-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4">
+                <div class="col-md-4 mt-5">
                     <div class="h-100 d-flex flex-column justify-content-between">
                         <div class="text-center">
                             <!-- <h4 class="text-light text-center">Cosmic Love Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel2-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="text-center mb-0">Finally Understand Why Your Love Life Unfolds the Way It Does</p>
-                            <p class="special-zodiac-desc text-start">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
+                            <p class="special-zodiac-desc text-light text-start">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
                         </div>
                         <a class="btn special-zodiac-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4">
+                <div class="col-md-4 mt-5">
                     <div class="h-100 d-flex flex-column justify-content-between">
                         <div class="text-center">
                             <!-- <h4 class="text-light text-center">Cosmic Energy Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel3-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
-                            <p class="special-zodiac-desc text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
+                            <p class="special-zodiac-desc text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                         </div>
                         <a class="btn special-zodiac-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>

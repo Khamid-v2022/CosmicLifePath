@@ -2153,6 +2153,7 @@ textarea:-webkit-autofill:focus {
   text-align: center;
   padding: 0.4em 0.5em 0.5em 0.5em;
   min-height: 2.2em;
+  font-size: 18px;
 }
 .special-zodiac-download {
   display: block;

@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('title', 'Final Step - Contact Details')
-@section('flowProgress', '75')
-
 @section('content')
   <section class="step-section container">
     <!-- <div class="billing-info">

@@ -178,7 +178,7 @@ textarea:-webkit-autofill:focus {
         rgba(201, 168, 76, 0.85),
         rgba(255, 232, 160, 0.95)
     ); */
-    background: linear-gradient(90deg, rgb(103 83 28 / 85%), rgba(255, 232, 160, 0.95));
+    background: linear-gradient(90deg, rgb(163 144 90 / 85%), rgba(255, 232, 160, 0.95));
 
     transition: width 500ms cubic-bezier(0.22, 1, 0.36, 1);
 }

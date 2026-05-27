@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Your Cosmic Love Path Reading - ' . $sign['name'])
-
+@section('flowProgress', '90')
 @section('content')
   <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">

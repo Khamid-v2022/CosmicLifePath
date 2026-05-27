@@ -16,20 +16,6 @@
     },
   };
 
-  const progressBar = document.getElementById('cosmicFlowProgressBar');
-  const setFlowProgress = (value) => {
-    if (!progressBar) {
-      return;
-    }
-
-    const normalized = Math.max(0, Math.min(100, Number(value) || 0));
-    progressBar.style.width = `${normalized}%`;
-  };
-
-  if (progressBar) {
-    setFlowProgress(window.COSMIC_FLOW_PROGRESS_INITIAL || 0);
-  }
-
   const canvas = document.getElementById('starCanvas');
   if (canvas) {
     const ctx = canvas.getContext('2d');
@@ -325,11 +311,6 @@
         return;
       }
 
-      if(document.getElementById("hiddenExt").value === "no") {
-        setFlowProgress(67);
-      } else {
-        setFlowProgress(50);
-      }
       syncBirthDateToDetailsForm();
 
       if (!animated) {
@@ -515,12 +496,7 @@
     if (savedState.stage === 'details') {
       activateDetailsStage(false);
     } else {
-      if(document.getElementById("hiddenExt").value === "no") {
-        setFlowProgress(33);
-      } else {
-        setFlowProgress(25);
-      }
-      
+
     }
   }
 
@@ -680,12 +656,6 @@
       }
 
       storeDraft();
-
-      if(document.getElementById("hiddenExt").value === "no") {
-        setFlowProgress(100);
-      } else {
-        setFlowProgress(75);
-      }
     });
 
     toggleTimeControls();
@@ -740,8 +710,6 @@
 
       event.preventDefault();
       isSubmittingWithProgress = true;
-      setFlowProgress(100);
-
       window.setTimeout(() => {
         contactDetailsForm.submit();
       }, 320);

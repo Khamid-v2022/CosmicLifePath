@@ -63,62 +63,64 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
 
     // Upsell1 pages for each sign
-    // Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1')->defaults('sign', 'aries')->name('upsell1.aries');
-    // Route::get('/u1-M3qLp9Nx2Ra7Kv', 'upsell1')->defaults('sign', 'taurus')->name('upsell1.taurus');
-    // Route::get('/u1-Z8pQx4Lm7Rv2Ka', 'upsell1')->defaults('sign', 'gemini')->name('upsell1.gemini');
-    // Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1')->defaults('sign', 'cancer')->name('upsell1.cancer');
-    // Route::get('/u1-X9mRv3Lp7Ka2Qn', 'upsell1')->defaults('sign', 'leo')->name('upsell1.leo');
-    // Route::get('/u1-P5qNx8Lm1Rv7Ka', 'upsell1')->defaults('sign', 'virgo')->name('upsell1.virgo');
-    // Route::get('/u1-T7xQa2Lp9Rm4Kv', 'upsell1')->defaults('sign', 'libra')->name('upsell1.libra');
-    // Route::get('/u1-R4mLp8Nx7Qa2Kv', 'upsell1')->defaults('sign', 'scorpio')->name('upsell1.scorpio');
-    // Route::get('/u1-N6qRv2Lp8Ka5Xm', 'upsell1')->defaults('sign', 'sagittarius')->name('upsell1.sagittarius');
-    // Route::get('/u1-Y3xLm9Qa7Rv4Kp', 'upsell1')->defaults('sign', 'capricorn')->name('upsell1.capricorn');
-    // Route::get('/u1-L8pNx4Rv7Qa2Km', 'upsell1')->defaults('sign', 'aquarius')->name('upsell1.aquarius');
-    // Route::get('/u1-K9mQa3Lp8Rv1Xn', 'upsell1')->defaults('sign', 'pisces')->name('upsell1.pisces');
+    Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1')->defaults('sign', 'aries')->name('upsell1.aries');
+    Route::get('/u1-M3qLp9Nx2Ra7Kv', 'upsell1')->defaults('sign', 'taurus')->name('upsell1.taurus');
+    Route::get('/u1-Z8pQx4Lm7Rv2Ka', 'upsell1')->defaults('sign', 'gemini')->name('upsell1.gemini');
+    Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    Route::get('/u1-X9mRv3Lp7Ka2Qn', 'upsell1')->defaults('sign', 'leo')->name('upsell1.leo');
+    Route::get('/u1-P5qNx8Lm1Rv7Ka', 'upsell1')->defaults('sign', 'virgo')->name('upsell1.virgo');
+    Route::get('/u1-T7xQa2Lp9Rm4Kv', 'upsell1')->defaults('sign', 'libra')->name('upsell1.libra');
+    Route::get('/u1-R4mLp8Nx7Qa2Kv', 'upsell1')->defaults('sign', 'scorpio')->name('upsell1.scorpio');
+    Route::get('/u1-N6qRv2Lp8Ka5Xm', 'upsell1')->defaults('sign', 'sagittarius')->name('upsell1.sagittarius');
+    Route::get('/u1-Y3xLm9Qa7Rv4Kp', 'upsell1')->defaults('sign', 'capricorn')->name('upsell1.capricorn');
+    Route::get('/u1-L8pNx4Rv7Qa2Km', 'upsell1')->defaults('sign', 'aquarius')->name('upsell1.aquarius');
+    Route::get('/u1-K9mQa3Lp8Rv1Xn', 'upsell1')->defaults('sign', 'pisces')->name('upsell1.pisces');
 
-    Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1Dummy')->defaults('sign', 'cancer')->name('upsell1.cancer');
-    Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1Dummy')->defaults('sign', 'aries')->name('upsell1.aries');
-    Route::get('/u1-M3qLp9Nx2Ra7Kv', 'upsell1Dummy')->defaults('sign', 'taurus')->name('upsell1.taurus');
-    Route::get('/u1-Z8pQx4Lm7Rv2Ka', 'upsell1Dummy')->defaults('sign', 'gemini')->name('upsell1.gemini');
-    Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1Dummy')->defaults('sign', 'cancer')->name('upsell1.cancer');
-    Route::get('/u1-X9mRv3Lp7Ka2Qn', 'upsell1Dummy')->defaults('sign', 'leo')->name('upsell1.leo');
-    Route::get('/u1-P5qNx8Lm1Rv7Ka', 'upsell1Dummy')->defaults('sign', 'virgo')->name('upsell1.virgo');
-    Route::get('/u1-T7xQa2Lp9Rm4Kv', 'upsell1Dummy')->defaults('sign', 'libra')->name('upsell1.libra');
-    Route::get('/u1-R4mLp8Nx7Qa2Kv', 'upsell1Dummy')->defaults('sign', 'scorpio')->name('upsell1.scorpio');
-    Route::get('/u1-N6qRv2Lp8Ka5Xm', 'upsell1Dummy')->defaults('sign', 'sagittarius')->name('upsell1.sagittarius');
-    Route::get('/u1-Y3xLm9Qa7Rv4Kp', 'upsell1Dummy')->defaults('sign', 'capricorn')->name('upsell1.capricorn');
-    Route::get('/u1-L8pNx4Rv7Qa2Km', 'upsell1Dummy')->defaults('sign', 'aquarius')->name('upsell1.aquarius');
-    Route::get('/u1-K9mQa3Lp8Rv1Xn', 'upsell1Dummy')->defaults('sign', 'pisces')->name('upsell1.pisces');
+    // Upsell1 Dummy pages
+    // Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1Dummy')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    // Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1Dummy')->defaults('sign', 'aries')->name('upsell1.aries');
+    // Route::get('/u1-M3qLp9Nx2Ra7Kv', 'upsell1Dummy')->defaults('sign', 'taurus')->name('upsell1.taurus');
+    // Route::get('/u1-Z8pQx4Lm7Rv2Ka', 'upsell1Dummy')->defaults('sign', 'gemini')->name('upsell1.gemini');
+    // Route::get('/u1-H2vNx7Qa5Lp8Rm', 'upsell1Dummy')->defaults('sign', 'cancer')->name('upsell1.cancer');
+    // Route::get('/u1-X9mRv3Lp7Ka2Qn', 'upsell1Dummy')->defaults('sign', 'leo')->name('upsell1.leo');
+    // Route::get('/u1-P5qNx8Lm1Rv7Ka', 'upsell1Dummy')->defaults('sign', 'virgo')->name('upsell1.virgo');
+    // Route::get('/u1-T7xQa2Lp9Rm4Kv', 'upsell1Dummy')->defaults('sign', 'libra')->name('upsell1.libra');
+    // Route::get('/u1-R4mLp8Nx7Qa2Kv', 'upsell1Dummy')->defaults('sign', 'scorpio')->name('upsell1.scorpio');
+    // Route::get('/u1-N6qRv2Lp8Ka5Xm', 'upsell1Dummy')->defaults('sign', 'sagittarius')->name('upsell1.sagittarius');
+    // Route::get('/u1-Y3xLm9Qa7Rv4Kp', 'upsell1Dummy')->defaults('sign', 'capricorn')->name('upsell1.capricorn');
+    // Route::get('/u1-L8pNx4Rv7Qa2Km', 'upsell1Dummy')->defaults('sign', 'aquarius')->name('upsell1.aquarius');
+    // Route::get('/u1-K9mQa3Lp8Rv1Xn', 'upsell1Dummy')->defaults('sign', 'pisces')->name('upsell1.pisces');
 
     // Upsell2 pages for each sign
-    // Route::get('/u2-F7qXp2Rv8Lm4Ka', 'upsell2')->defaults('sign', 'aries')->name('upsell2.aries');
-    // Route::get('/u2-C3mLp8Qa2Rv9Nx', 'upsell2')->defaults('sign', 'taurus')->name('upsell2.taurus');
-    // Route::get('/u2-B8xQa4Lm9Rv2Kp', 'upsell2')->defaults('sign', 'gemini')->name('upsell2.gemini');
-    // Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2')->defaults('sign', 'cancer')->name('upsell2.cancer');
-    // Route::get('/u2-J9mRv1Qa8Lp4Xk', 'upsell2')->defaults('sign', 'leo')->name('upsell2.leo');
-    // Route::get('/u2-U5qNx7Lm3Rv8Ka', 'upsell2')->defaults('sign', 'virgo')->name('upsell2.virgo');
-    // Route::get('/u2-W7xQa3Lp9Rm2Kv', 'upsell2')->defaults('sign', 'libra')->name('upsell2.libra');
-    // Route::get('/u2-S4mLp8Nx7Qa1Rv', 'upsell2')->defaults('sign', 'scorpio')->name('upsell2.scorpio');
-    // Route::get('/u2-E6qRv2Lp9Ka4Xm', 'upsell2')->defaults('sign', 'sagittarius')->name('upsell2.sagittarius');
-    // Route::get('/u2-G2xLm8Qa7Rv5Kp', 'upsell2')->defaults('sign', 'capricorn')->name('upsell2.capricorn');
-    // Route::get('/u2-I7pNx4Rv9Qa3Km', 'upsell2')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
-    // Route::get('/u2-O9mQa2Lp8Rv1Xn', 'upsell2')->defaults('sign', 'pisces')->name('upsell2.pisces');
+    Route::get('/u2-F7qXp2Rv8Lm4Ka', 'upsell2')->defaults('sign', 'aries')->name('upsell2.aries');
+    Route::get('/u2-C3mLp8Qa2Rv9Nx', 'upsell2')->defaults('sign', 'taurus')->name('upsell2.taurus');
+    Route::get('/u2-B8xQa4Lm9Rv2Kp', 'upsell2')->defaults('sign', 'gemini')->name('upsell2.gemini');
+    Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2')->defaults('sign', 'cancer')->name('upsell2.cancer');
+    Route::get('/u2-J9mRv1Qa8Lp4Xk', 'upsell2')->defaults('sign', 'leo')->name('upsell2.leo');
+    Route::get('/u2-U5qNx7Lm3Rv8Ka', 'upsell2')->defaults('sign', 'virgo')->name('upsell2.virgo');
+    Route::get('/u2-W7xQa3Lp9Rm2Kv', 'upsell2')->defaults('sign', 'libra')->name('upsell2.libra');
+    Route::get('/u2-S4mLp8Nx7Qa1Rv', 'upsell2')->defaults('sign', 'scorpio')->name('upsell2.scorpio');
+    Route::get('/u2-E6qRv2Lp9Ka4Xm', 'upsell2')->defaults('sign', 'sagittarius')->name('upsell2.sagittarius');
+    Route::get('/u2-G2xLm8Qa7Rv5Kp', 'upsell2')->defaults('sign', 'capricorn')->name('upsell2.capricorn');
+    Route::get('/u2-I7pNx4Rv9Qa3Km', 'upsell2')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
+    Route::get('/u2-O9mQa2Lp8Rv1Xn', 'upsell2')->defaults('sign', 'pisces')->name('upsell2.pisces');
 
-    Route::get('/u2-F7qXp2Rv8Lm4Ka', 'upsell2Dummy')->defaults('sign', 'aries')->name('upsell2.aries');
-    Route::get('/u2-C3mLp8Qa2Rv9Nx', 'upsell2Dummy')->defaults('sign', 'taurus')->name('upsell2.taurus');
-    Route::get('/u2-B8xQa4Lm9Rv2Kp', 'upsell2Dummy')->defaults('sign', 'gemini')->name('upsell2.gemini');
-    Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2Dummy')->defaults('sign', 'cancer')->name('upsell2.cancer');
-    Route::get('/u2-J9mRv1Qa8Lp4Xk', 'upsell2Dummy')->defaults('sign', 'leo')->name('upsell2.leo');
-    Route::get('/u2-U5qNx7Lm3Rv8Ka', 'upsell2Dummy')->defaults('sign', 'virgo')->name('upsell2.virgo');
-    Route::get('/u2-W7xQa3Lp9Rm2Kv', 'upsell2Dummy')->defaults('sign', 'libra')->name('upsell2.libra');
-    Route::get('/u2-S4mLp8Nx7Qa1Rv', 'upsell2Dummy')->defaults('sign', 'scorpio')->name('upsell2.scorpio');
-    Route::get('/u2-E6qRv2Lp9Ka4Xm', 'upsell2Dummy')->defaults('sign', 'sagittarius')->name('upsell2.sagittarius');
-    Route::get('/u2-G2xLm8Qa7Rv5Kp', 'upsell2Dummy')->defaults('sign', 'capricorn')->name('upsell2.capricorn');
-    Route::get('/u2-I7pNx4Rv9Qa3Km', 'upsell2Dummy')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
-    Route::get('/u2-O9mQa2Lp8Rv1Xn', 'upsell2Dummy')->defaults('sign', 'pisces')->name('upsell2.pisces');
+    // Upsell2 Dummy pages
+    // Route::get('/u2-F7qXp2Rv8Lm4Ka', 'upsell2Dummy')->defaults('sign', 'aries')->name('upsell2.aries');
+    // Route::get('/u2-C3mLp8Qa2Rv9Nx', 'upsell2Dummy')->defaults('sign', 'taurus')->name('upsell2.taurus');
+    // Route::get('/u2-B8xQa4Lm9Rv2Kp', 'upsell2Dummy')->defaults('sign', 'gemini')->name('upsell2.gemini');
+    // Route::get('/u2-D2vNx7Lp3Qa8Rm', 'upsell2Dummy')->defaults('sign', 'cancer')->name('upsell2.cancer');
+    // Route::get('/u2-J9mRv1Qa8Lp4Xk', 'upsell2Dummy')->defaults('sign', 'leo')->name('upsell2.leo');
+    // Route::get('/u2-U5qNx7Lm3Rv8Ka', 'upsell2Dummy')->defaults('sign', 'virgo')->name('upsell2.virgo');
+    // Route::get('/u2-W7xQa3Lp9Rm2Kv', 'upsell2Dummy')->defaults('sign', 'libra')->name('upsell2.libra');
+    // Route::get('/u2-S4mLp8Nx7Qa1Rv', 'upsell2Dummy')->defaults('sign', 'scorpio')->name('upsell2.scorpio');
+    // Route::get('/u2-E6qRv2Lp9Ka4Xm', 'upsell2Dummy')->defaults('sign', 'sagittarius')->name('upsell2.sagittarius');
+    // Route::get('/u2-G2xLm8Qa7Rv5Kp', 'upsell2Dummy')->defaults('sign', 'capricorn')->name('upsell2.capricorn');
+    // Route::get('/u2-I7pNx4Rv9Qa3Km', 'upsell2Dummy')->defaults('sign', 'aquarius')->name('upsell2.aquarius');
+    // Route::get('/u2-O9mQa2Lp8Rv1Xn', 'upsell2Dummy')->defaults('sign', 'pisces')->name('upsell2.pisces');
 
-    // Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
-    Route::get('/u3-P7xRv2Mq8Ld', 'upsell3Dummy')->name('upsell3');
+    Route::get('/u3-P7xRv2Mq8Ld', 'upsell3')->name('upsell3');
+    // Route::get('/u3-P7xRv2Mq8Ld', 'upsell3Dummy')->name('upsell3');
 
     // Upsell1 download pages for each sign
     Route::get('/wdl-Q8mX2pRv7Ka9Ln', 'downloadUpsell1')->defaults('sign', 'aries')->name('download.upsell1.aries');

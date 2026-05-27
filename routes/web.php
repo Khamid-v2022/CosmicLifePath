@@ -32,7 +32,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/contact-us', 'contactUs')->name('contact.us');
     Route::get('/about-us', 'aboutUs')->name('about.us');
 
-    // Download pages for each sign and access type
+    // VIP Download pages for each sign and access type
     Route::get('/vdl-F8qXp2Rv7Lm4Ka', 'downloadVIP')->defaults('sign', 'aries')->name('download.vip.aries');
     Route::get('/vdl-C3mLp9Qa2Rv8Nx', 'downloadVIP')->defaults('sign', 'taurus')->name('download.vip.taurus');
     Route::get('/vdl-B7xQa4Lm9Rv2Kp', 'downloadVIP')->defaults('sign', 'gemini')->name('download.vip.gemini');
@@ -46,6 +46,7 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/vdl-I7pNx4Rv8Qa3Km', 'downloadVIP')->defaults('sign', 'aquarius')->name('download.vip.aquarius');
     Route::get('/vdl-O9mQa2Lp7Rv1Xn', 'downloadVIP')->defaults('sign', 'pisces')->name('download.vip.pisces');
 
+    // Standard Download pages for each sign and access type
     Route::get('/sdl-Q8mX2pRv7Ka9Ln', 'downloadStandard')->defaults('sign', 'aries')->name('download.standard.aries');
     Route::get('/sdl-M4qLp8Nx2Ra7Kv', 'downloadStandard')->defaults('sign', 'taurus')->name('download.standard.taurus');
     Route::get('/sdl-Z7pQx3Lm9Rv2Ka', 'downloadStandard')->defaults('sign', 'gemini')->name('download.standard.gemini');

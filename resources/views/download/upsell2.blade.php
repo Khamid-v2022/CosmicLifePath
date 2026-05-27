@@ -61,6 +61,26 @@
             </div>
         </div>
 
+
+        <section class="pt-4">
+            <h1 class="section-title text-center"><em>One Reading Opens the Door.</em></h1>
+            <div class="special-access-desc text-center mb-0">Your Cosmic Life Path Reading is your foundation — But your full destiny spans <span class="special-access-em">wealth, love, and energy</span> too. If any of the readings below aren't yet part of your collection, make sure you don't leave without them.</div>
+            
+            <div class="mx-auto" style="max-width: 500px;">
+                <div class="h-100 d-flex flex-column justify-content-between mt-4">
+                    <div class="text-center">
+                        <!-- <h4 class="text-light text-center">Cosmic Energy Path Reading</h4> -->
+                        <img src="{{ asset('imgs/upsell/upsel3-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
+                        <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
+                        <p class="special-zodiac-desc text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
+                    </div>
+                    <a class="btn special-zodiac-download" href="#">Get Instant Access</a>
+                </div>
+            </div>
+        </section>
+
+
+
         <div class="products dark-card">
             <div class="products-header text-center">
                 <p class="products-eyebrow">Curated Wealth Collection</p>

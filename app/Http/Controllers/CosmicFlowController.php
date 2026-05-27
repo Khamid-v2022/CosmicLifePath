@@ -481,7 +481,7 @@ class CosmicFlowController extends Controller {
         return view('upsell.upsell2-dummy', compact('sign')); 
     }
 
-     public function upsell3Dummy(): View {
+    public function upsell3Dummy(): View {
         return view('upsell.upsell3-dummy');
     }
 

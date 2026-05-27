@@ -1757,7 +1757,7 @@ textarea:-webkit-autofill:focus {
     margin-top: 8px;
     padding: 1rem
   }
-  .step-section.with-top-message .step-panel .section-title {
+  .step-section .step-panel .section-title {
     font-size: 1.7rem;
   }
 }

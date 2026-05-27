@@ -2181,6 +2181,8 @@ textarea:-webkit-autofill:focus {
 }
 
 .special-instant-download {
+ -webkit-appearance: none;       /* ✦ Safari default style remove */
+  appearance: none;
   display: block;
   border-radius: 0px;
   width: 100%;
@@ -2198,6 +2200,8 @@ textarea:-webkit-autofill:focus {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 12px rgba(201, 153, 58, 0.1);
+  -webkit-transform: translateZ(0);  /* ✦ iOS GPU layer force active */
+  transform: translateZ(0);
 }
 
 /* shimmer light */
@@ -2214,7 +2218,9 @@ textarea:-webkit-autofill:focus {
     rgba(201, 153, 58, 0.18),
     transparent
   );
+  -webkit-animation: shimmer-gold 2.4s infinite;  /* ✦ webkit */
   animation: shimmer-gold 2.4s infinite;
+  pointer-events: none;   /* ✦ Touch event block */
 }
 
 /* when hover make strong glow */
@@ -2222,6 +2228,11 @@ textarea:-webkit-autofill:focus {
   border-color: rgba(201, 153, 58, 0.9);
   box-shadow: 0 0 28px rgba(201, 153, 58, 0.25);
   color: #fff;
+}
+
+@-webkit-keyframes shimmer-gold {   /* ✦ webkit  */
+  0%   { left: -60%; }
+  100% { left: 140%; }
 }
 
 @keyframes shimmer-gold {

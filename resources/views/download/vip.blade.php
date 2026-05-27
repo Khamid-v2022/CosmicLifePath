@@ -117,7 +117,7 @@
                             <!-- <h4 class="text-light text-center">Cosmic Life Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel1-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="mb-0 text-center">Uncover the Exact Wealth Blueprint Hidden in Your Birth Chart</p>
-                            <p class="special-zodiac-desc text-light text-start">Reveals the financial identity unique to your sign, the hidden pattern that's been silently blocking abundance, and a personalised 30-day activation plan aligned to your planetary timing.</p>
+                            <p class="special-zodiac-desc mb-0 text-light text-start">Reveals the financial identity unique to your sign, the hidden pattern that's been silently blocking abundance, and a personalised 30-day activation plan aligned to your planetary timing.</p>
                         </div>
                         <a class="btn special-instant-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>
@@ -128,7 +128,7 @@
                             <!-- <h4 class="text-light text-center">Cosmic Love Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel2-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="text-center mb-0">Finally Understand Why Your Love Life Unfolds the Way It Does</p>
-                            <p class="special-zodiac-desc text-light text-start">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
+                            <p class="special-zodiac-desc mb-0 text-light text-start">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
                         </div>
                         <a class="btn special-instant-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>
@@ -139,7 +139,7 @@
                             <!-- <h4 class="text-light text-center">Cosmic Energy Path Reading</h4> -->
                             <img src="{{ asset('imgs/upsell/upsel3-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                             <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
-                            <p class="special-zodiac-desc text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
+                            <p class="special-zodiac-desc mb-0 text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                         </div>
                         <a class="btn special-instant-download" href="{{ $info['special_offer_url'] }}">Get Instant Access</a>
                     </div>

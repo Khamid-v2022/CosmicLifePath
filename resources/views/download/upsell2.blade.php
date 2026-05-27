@@ -72,7 +72,7 @@
                         <!-- <h4 class="text-light text-center">Cosmic Energy Path Reading</h4> -->
                         <img src="{{ asset('imgs/upsell/upsel3-map.png') }}" alt="Map 1" class="thumb-img special-thumb" />
                         <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
-                        <p class="special-zodiac-desc mb-0 text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
+                        <p class="special-zodiac-desc mb-0 text-light">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                     </div>
                     <a class="btn special-instant-download" href="#">Get Instant Access</a>
                 </div>

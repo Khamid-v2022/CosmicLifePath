@@ -1753,8 +1753,8 @@ textarea:-webkit-autofill:focus {
 }
 
 @media (max-width: 767.98px) {
-  .step-section.with-top-message .step-panel {
-    margin-top: 8px;
+  .step-section .step-panel {
+    margin-top: 14px;
     padding: 1rem
   }
   .step-section .step-panel .section-title {

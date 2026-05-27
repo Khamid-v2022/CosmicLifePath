@@ -33,11 +33,12 @@
             $formattedDate = sprintf('%02d / %02d / %04d', (int) $oldMonth, (int) $oldDay, (int) $oldYear);
         }
     @endphp
-    <section class="step-section with-top-message container">
-        <div class="billing-info">
+    <!-- <section class="step-section with-top-message container"> -->
+    <section class="step-section container">
+        <!-- <div class="billing-info">
             <p class="mb-0 text-light"><strong>IMPORTANT: Do NOT Close This Window Or Click The "Back" Button</strong></p>
             <p class="mb-0">Pressing The "Back" Button May Result in Your Order Being Double-Billed By mistake!</p>
-        </div>
+        </div> -->
         <div class="px-2">
             <div class="step-panel mx-auto">
                 <div id="birthStageDate" class="birth-stage @if($initialStage === 'date') is-active @else d-none @endif">

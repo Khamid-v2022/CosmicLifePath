@@ -25,7 +25,7 @@
 
   @php($flowProgress = trim($__env->yieldContent('flowProgress')))
   @if($flowProgress !== '')
-    <div class="cosmic-flow-progress" aria-hidden="true">
+    <!-- <div class="cosmic-flow-progress" aria-hidden="true">
       <div class="cosmic-flow-progress__track">
         <div
           id="cosmicFlowProgressBar"
@@ -33,7 +33,7 @@
           style="width: {{ (float) $flowProgress }}%"
         ></div>
       </div>
-    </div>
+    </div> -->
     <script>
       window.COSMIC_FLOW_PROGRESS_INITIAL = {{ (float) $flowProgress }};
     </script>

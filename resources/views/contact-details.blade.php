@@ -4,11 +4,11 @@
 @section('flowProgress', '75')
 
 @section('content')
-  <section class="step-section with-top-message container">
-    <div class="billing-info">
+  <section class="step-section container">
+    <!-- <div class="billing-info">
       <p class="mb-0 text-light"><strong>IMPORTANT: Do NOT Close This Window Or Click The "Back" Button</strong></p>
       <p class="mb-0">Pressing The "Back" Button May Result in Your Order Being Double-Billed By mistake!</p>
-    </div>
+    </div> -->
     <div class="px-2">
       <div class="step-panel mx-auto">
         <h2 class="section-title mb-4">Final Step:<em> Where should we send your reading to?</em></h2>

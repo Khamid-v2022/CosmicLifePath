@@ -11,20 +11,20 @@
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
         <!-- <p class="section-label text-center">Special Offer</p> -->
-        <h1 class="section-title step-title text-center mb-4">The Cosmos Has Guided You Here Today On {{ $today }}, {{ $name ?? 'there' }}...<br> Now Is The Time To Begin Your Magical Journey As You Follow Your <i>Cosmic Life Path</i></h1>
+        <h1 class="section-title step-title text-center mb-4">The Cosmos Has Guided You Here Today On {{ $today }}{{ $name ? ", " . $name : '' }}...<br> Now Is The Time To Begin Your Magical Journey As You Follow Your <i>Cosmic Life Path</i></h1>
 
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">
           <img src="{{ asset('imgs/sale-page/main-header.jpg') }}" alt="Cosmic life path hero" class="img-fluid cosmic-result-image article-feature-image">
         </div>
 
-        <p class="step-copy article-copy">All the <strong>unique obstacles and challenges</strong> you have faced in life have guided you here right now, {{ $name ?? 'there' }}.</p>
+        <p class="step-copy article-copy">All the <strong>unique obstacles and challenges</strong> you have faced in life have guided you here right now{{ $name ? ", " . $name : '' }}.</p>
         <p class="step-copy article-copy">This is exactly where you are supposed to be.</p>
         <p class="step-copy article-copy">There’s a reason why you incarnated here on earth.</p>
         <p class="step-copy article-copy">You are here to fulfil your own <strong>personal mission</strong>... to follow your particular <i><strong>Cosmic Life Path</strong></i> that no one else can follow.</p>
         <p class="step-copy article-copy">It’s vital right now that you discover and follow your <strong>distinct <i>Cosmic Life Path</i></strong> so you can play your part in the transition we are currently going through on Earth.</p>
 
 
-        <h2 class="article-subtitle mt-0">It’s what drives me to create this special Cosmic Life Path reading for people like you, {{ $name ?? 'there' }}...</h2>
+        <h2 class="article-subtitle mt-0">It’s what drives me to create this special Cosmic Life Path reading for people like you{{ $name ? ", " . $name : '' }}...</h2>
         
         <div class="article-inline-media my-4">
           <div class="article-inline-copy">
@@ -38,7 +38,7 @@
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> was designed by the <strong>unique cosmic energy patterns of the planets at the time of your birth</strong>.</p>
         <p class="step-copy article-copy">You are now uncovering that divine plan for your life right now.</p>
         <p class="step-copy article-copy">You’re about to discover special talents and gifts you never knew you had, along with how to use them to carry out your life purpose and attract wealth effortlessly.</p>
-        <p class="step-copy article-copy">{{ $name ?? 'there' }}, you will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carryvu want to manifest.</p>
+        <p class="step-copy article-copy">{{ $name ? $name . ", you" : 'You' }} will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carryvu want to manifest.</p>
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> will reveal the secret <strong>you alone can recognize</strong> to have an intimate soul-mate relationship.</p>
         <p class="step-copy article-copy">You will discover <strong>your unique health challenges</strong> and how to overcome them.</p>
         <p class="step-copy article-copy mb-0">You will discover all this and more inside your...</p>
@@ -52,7 +52,7 @@
         </div>
 
 
-        <p class="step-copy article-copy">Here’s just some of what you will discover inside your <i>Cosmic Life Path Reading, {{ $name ?? 'there' }}:</i></p>
+        <p class="step-copy article-copy">Here’s just some of what you will discover inside your <i>Cosmic Life Path Reading{{ $name ? ", " . $name : '' }}:</i></p>
 
         <h3 class="article-subtitle mt-0">Your Cosmic Personality Code:</h3>
         <p class="step-copy article-copy mb-0">This is who you are at the core of your being. The hidden parts of your personality that you are not aware of. You will see hidden gifts <strong>you alone possess,</strong> along with <strong>your distinctive blind spots</strong> that stop you from using them to attract more abundance.</p>
@@ -98,7 +98,7 @@
 
         <h3 class="article-subtitle mt-0">Cosmic Trauma Release</h3>
         <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to<strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p>
-        <p class="step-copy article-copy mb-0">You might not realise it yet, {{ $name ?? 'there' }}, but...</p>
+        <p class="step-copy article-copy mb-0">You might not realise it yet, {{ $name ? $name . "," : '' }} but...</p>
        
         <h2 class="section-title step-title article-major-title mt-5">A <i>Cosmic Life Path Reading</i> Will Transform Your Life...</h2>
         <p class="step-copy article-copy">Clients of mine who get <strong>a Cosmic Life Path Reading</strong> feel a deep sense of joy and awe upon reading it.</p>
@@ -138,7 +138,7 @@
         </div>
 
         <p class="step-copy article-copy">Attract new income streams...new romantic soul-mate relationships...along with vibrant health and energy levels they never experienced before.</p>
-        <p class="step-copy article-copy">The one-of-a-kind gifts and abilities you discover in yourself from a <strong><i>Cosmic Life Path Reading</i></strong> will allow you to finally see the kind of person you are meant to be with, {{ $name ?? 'there' }}.</p>
+        <p class="step-copy article-copy">The one-of-a-kind gifts and abilities you discover in yourself from a <strong><i>Cosmic Life Path Reading</i></strong> will allow you to finally see the kind of person you are meant to be with, {{ $name ?? '' }}.</p>
         <p class="step-copy article-copy">You will finally stop wasting time on relationships that go nowhere.</p>
         <p class="step-copy article-copy">You will <strong>attract the right people</strong> to you to achieve what you need in life.</p>
         <p class="step-copy article-copy">You will <strong>attract the ideal career path for you,</strong> one that is 100% aligned with your <i>Cosmic Life Path</i>.</p>
@@ -146,7 +146,7 @@
         <p class="step-copy article-copy">You will also <strong>see hidden blind spots</strong> in yourself that have held you back from achieving success.</p>
         <p class="step-copy article-copy">A <i>Cosmic Life Path Reading</i> will help you overcome everything that has held you back in life so far... including those negative patterns like distraction, doom scrolling, or other addictions you thought were so hard to overcome before.</p>
 
-        <h2 class="section-title step-title article-major-title mt-5">You will also get the following in your Cosmic Life Path Reading, {{ $name ?? 'there' }}:</h2>
+        <h2 class="section-title step-title article-major-title mt-5">You will also get the following in your Cosmic Life Path Reading, {{ $name ?? '' }}:</h2>
         <ul class="cosmic-benefits article-copy">
           <li><strong>How to understand on the deepest level who you are, what you are capable of.</strong> This is unlike any personality profile you have ever come across. It’s connected to the truest form of who you are.</li>
           <li><strong>The secret to using Astrology to guide your everyday decisions</strong> so you get the best outcomes in your love, wealth, and health.</li>
@@ -234,8 +234,7 @@
         </div>
 
         <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
-          <h2 class="section-title step-title pricing-title mb-4">Choose Your Path, {{ $name ?? 'there' }}</h2>
-
+          <h2 class="section-title step-title pricing-title mb-4">Choose Your Path{{ $name ? ", " . $name : '' }}</h2>
           <div class="row g-4 align-items-stretch">
             <div class="col-lg-6">
               <article class="pricing-card pricing-card-standard h-100">
@@ -317,7 +316,7 @@
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
         </section>
         
-        <h2 class="section-title step-title article-major-title mt-0">{{ $name ?? 'there' }}, Right now, you're standing at a fork in the road…</h2>
+        <h2 class="section-title step-title article-major-title mt-0">{{ $name ? $name . ", " : '' }}Right now, you're standing at a fork in the road…</h2>
         <p class="step-copy article-copy"><strong>The first path is the one you already know.</strong></p>
         <p class="step-copy article-copy">Walk away, forget you were ever here, and tomorrow looks exactly like today.</p>
         <p class="step-copy article-copy">The bills don't get lighter. The relationship doesn't get easier.</p>
@@ -350,7 +349,7 @@
         <p class="step-copy article-copy">Your relationships deepen. Your energy lifts. Your health starts reflecting the life you're building rather than the stress you've been carrying.</p>
         <p class="step-copy article-copy">You stop waiting for life to get better.</p>
         <p class="step-copy article-copy"><strong>You start making it better.</strong></p>
-        <p class="step-copy article-copy">The fork is right in front of you, {{ $name ?? 'there' }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
+        <p class="step-copy article-copy">The fork is right in front of you{{ $name ? ", " . $name : '' }}. One direction keeps you exactly where you are. The other finally moves you forward.</p>
         <p class="step-copy article-copy mb-0"><strong>Choose your path below and claim your reading now.</strong></p>
   
         <div class="text-center my-5">

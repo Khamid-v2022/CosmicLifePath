@@ -325,7 +325,11 @@
         return;
       }
 
-      setFlowProgress(50);
+      if(document.getElementById("hiddenExt").value === "no") {
+        setFlowProgress(67);
+      } else {
+        setFlowProgress(50);
+      }
       syncBirthDateToDetailsForm();
 
       if (!animated) {
@@ -511,7 +515,12 @@
     if (savedState.stage === 'details') {
       activateDetailsStage(false);
     } else {
-      setFlowProgress(25);
+      if(document.getElementById("hiddenExt").value === "no") {
+        setFlowProgress(33);
+      } else {
+        setFlowProgress(25);
+      }
+      
     }
   }
 
@@ -671,6 +680,12 @@
       }
 
       storeDraft();
+
+      if(document.getElementById("hiddenExt").value === "no") {
+        setFlowProgress(100);
+      } else {
+        setFlowProgress(75);
+      }
     });
 
     toggleTimeControls();

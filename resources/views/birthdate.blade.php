@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('title', 'Step #2 - Date of Birth')
-@section('flowProgress', '25')
+
+@if($ext && $ext == 'no')
+    @section('flowProgress', '33')
+@else
+    @section('flowProgress', '25')  
+@endif
 
 @section('content')
     @php

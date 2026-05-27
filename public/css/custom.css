@@ -1731,10 +1731,14 @@ textarea:-webkit-autofill:focus {
 .download-main-img-large {
     width: 210px;
     height: auto;
-    filter:
+    /* filter:
     drop-shadow(0 0 4px  rgba(212, 168, 67, 1))
     drop-shadow(0 0 16px rgba(212, 168, 67, 0.7))
-    drop-shadow(0 0 40px rgba(180, 130, 30, 0.4));
+    drop-shadow(0 0 40px rgba(180, 130, 30, 0.4)); */
+    filter:
+        drop-shadow(0 0 2px rgba(212, 168, 67, 0.8))
+        drop-shadow(0 0 5px rgba(212, 168, 67, 0.5))
+        drop-shadow(0 0 10px rgba(180, 130, 30, 0.25));
 }
 .download-section {
     margin-bottom: 2.2em;

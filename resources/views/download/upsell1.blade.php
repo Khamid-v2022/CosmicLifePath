@@ -74,7 +74,7 @@
                             <p class="text-center mb-0">Finally Understand Why Your Love Life Unfolds the Way It Does</p>
                             <p class="special-zodiac-desc text-light text-start">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
                         </div>
-                        <a class="btn special-zodiac-download" href="#">Get Instant Access</a>
+                        <a class="btn special-instant-download" href="#">Get Instant Access</a>
                     </div>
                 </div>
                 <div class="col-sm-6 mt-5">
@@ -85,7 +85,7 @@
                             <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
                             <p class="special-zodiac-desc text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                         </div>
-                        <a class="btn special-zodiac-download" href="#">Get Instant Access</a>
+                        <a class="btn special-instant-download" href="#">Get Instant Access</a>
                     </div>
                 </div>
             </div>

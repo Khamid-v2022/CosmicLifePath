@@ -74,7 +74,7 @@
                         <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p>
                         <p class="special-zodiac-desc text-light text-start">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                     </div>
-                    <a class="btn special-zodiac-download" href="#">Get Instant Access</a>
+                    <a class="btn special-instant-download" href="#">Get Instant Access</a>
                 </div>
             </div>
         </section>

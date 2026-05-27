@@ -1438,6 +1438,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .reading-stage {
+  margin-top: 20px;
   opacity: 0;
   transition: opacity 0.65s ease, transform 0.65s ease;
 }

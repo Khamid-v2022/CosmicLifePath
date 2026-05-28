@@ -94,7 +94,7 @@
                     <div class="special-zodiac-card" data-sign="{{ $key }}">
                         <img src="/imgs/ebook/horoscope/2d/{{ $key }}.jpg" alt="{{ $info['name'] }}" class="thumb-img special-thumb" />
                         <div class="thumb-label">{{ $info['name'] }}</div>
-                        <a class="btn special-zodiac-download" href="{{ $info['special_offer_url'] }}">Order Now</a>
+                        <a class="btn special-instant-download" href="{{ $info['special_offer_url'] }}">Order Now</a>
                     </div>
                 @endforeach
             </div>
@@ -103,7 +103,7 @@
             <div class="mt-2" data-sign="{{ $key }}" style="max-width: 600px; margin: 0 auto;">
                 <img src="/imgs/ebook/horoscope/12reports-bundle.png" alt="12 Reports Bundle" class="thumb-img special-thumb" />
                 <div class="thumb-label">12 Reports Bundle</div>
-                <a class="btn special-zodiac-download" href="https://clifepath.pay.clickbank.net/?cbitems=fe-bundle97&template=BCoFTclp&vtid=fullreportdl">Full Package - Order Now</a>
+                <a class="btn special-instant-download" href="https://clifepath.pay.clickbank.net/?cbitems=fe-bundle97&template=BCoFTclp&vtid=fullreportdl">Full Package - Order Now</a>
             </div>
         </section>
 

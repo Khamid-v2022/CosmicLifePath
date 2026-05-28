@@ -23,7 +23,15 @@
             @endforeach
         </div>
 
-         <section class="pt-4">
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span class="divider-glyph">✦</span>
+            <div class="divider-line"></div>
+            <span class="divider-glyph">✦</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <section class="pt-4">
             <h1 class="section-title text-center"><em>One Reading Opens the Door. Three Complete the Map.</em></h1>
             <div class="special-access-desc text-center mb-0">Your Cosmic Life Path Reading is your foundation — But your full destiny spans <span class="special-access-em">wealth, love, and energy</span> too. If any of the readings below aren't yet part of your collection, make sure you don't leave without them.</div>
             
@@ -137,7 +145,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="disclaimer-section text-center mt-5">
             ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
         </section>

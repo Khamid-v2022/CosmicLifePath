@@ -409,6 +409,14 @@ class CosmicFlowController extends Controller {
         return view('download.standard', compact('sign'));
     }
 
+    public function downloadBump1(Request $request): View {
+        return view('download.bump1');
+    }
+
+    public function downloadBump2(Request $request): View {
+        return view('download.bump2');
+    }
+
 
     /**
      * Download Full Report (All 12 Signs)

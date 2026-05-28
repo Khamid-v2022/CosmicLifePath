@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Unlocked VIP Cosmic Life Path Reports')
 @section('content')
 {{-- VIP Access Download Page --}}
 <div class="download-page vip">

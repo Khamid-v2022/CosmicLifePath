@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Purchase All 12 Cosmic Life Path Reports')
+@section('title', 'Access to All 12 Cosmic Life Path Reports')
 
 @section('content')
 <div class="download-page vip">

@@ -60,7 +60,11 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/sdl-L7pNx4Rv8Qa2Km', 'downloadStandard')->defaults('sign', 'aquarius')->name('download.standard.aquarius');
     Route::get('/sdl-K9mQa3Lp7Rv1Xn', 'downloadStandard')->defaults('sign', 'pisces')->name('download.standard.pisces');
     
-    Route::get('/download/fullreport', 'downloadFullReport')->name('download.fullreport');
+    // 12 signs Full Report Download page
+    Route::get('/mdl-X8qRv3Lp9Ka2Nm', 'downloadFullReport')->name('download.fullreport');
+
+    Route::get('/b1d-Q7mX9pRv2Ka8Ln', 'downloadBump1')->name('download.bump1');
+    Route::get('/b2d-F4qLp8Nx3Rv7Km', 'downloadBump2')->name('download.bump2');
 
     // Upsell1 pages for each sign
     // Route::get('/u1-Q7mX2pRv8Ka4Ln', 'upsell1')->defaults('sign', 'aries')->name('upsell1.aries');

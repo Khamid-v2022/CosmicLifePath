@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Unlocked Cosmic Life Path Reports')
 @section('content')
 
 {{-- Standard Access Download Page --}}

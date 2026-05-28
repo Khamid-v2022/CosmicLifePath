@@ -8,8 +8,8 @@
     </div>
     <div class="container">
         <div class="download-header">
-            <h1 class="download-title">Purchase <span class="accent">All 12 Cosmic Life Path</span> Reports</h1>
-            <p class="download-desc text-primary mb-4">Unlock the complete collection of personalized reports for every zodiac sign.<br>Perfect for <strong>gifts, research, or your own cosmic exploration!</strong></p>
+            <h1 class="download-title">Welcome to Your <span class="accent">Complete Cosmic Collection</span> </h1>
+            <p class="download-desc text-primary mb-4"><em>All 12 Cosmic Life Path Readings are now yours. Explore every sign, uncover every pattern, and step into the full picture of who you — and everyone around you — are truly meant to be.</em></p>
         </div>
         <div class="fullreport-grid">
             @php($signs = config('variables.signs'))

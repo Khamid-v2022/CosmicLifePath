@@ -19,6 +19,8 @@ Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/private-offer/{sign}', 'sales')->name('sales.page');
     Route::post('/private-offer/{sign}', 'sales')->name('sales.page');
 
+    Route::get('/affiliate', 'affiliatePage')->name('affiliate.page');
+
 
     // Need to remove this route after approved
     // Route::get('/private-offer/{sign}', 'sales_dummy');

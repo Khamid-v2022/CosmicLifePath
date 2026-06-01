@@ -499,4 +499,9 @@ class CosmicFlowController extends Controller {
     public function downloadUpsell3(): View {
         return view('download.upsell3');
     }
+
+
+    public function affiliatePage(): View {
+        return view('affiliate');
+    }
 }

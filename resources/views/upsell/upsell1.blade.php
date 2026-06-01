@@ -3,7 +3,11 @@
 @section('title', 'Your Cosmic Wealth Path Reading - ' . $sign['name'])
 @section('flowProgress', '85')
 @section('content')
-  <section class="small-gap-start step-section container">
+  <section class="download-page">
+    <div class="billing-info">
+      <p class="mb-0 text-light"><strong>⚠️ Do NOT Close This Window Or Click The "Back" Button</strong></p>
+      <p class="mb-0">Pressing The "Back" Button May Result in Your Order Being Double-Billed By mistake!</p>
+    </div>
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
         <!-- Hero Section -->

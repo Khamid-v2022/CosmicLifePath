@@ -1612,9 +1612,9 @@ textarea:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-.video-thumbnail-frame {
+/* .video-thumbnail-frame {
   min-height: 320px;
-}
+} */
 
 .video-thumbnail-overlay {
   position: relative;

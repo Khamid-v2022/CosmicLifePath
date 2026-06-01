@@ -303,28 +303,32 @@
     <!-- GET YOUR LINK -->
     <section class="reveal visible" style="text-align:center;">
         <div class="section-label" style="justify-content:center;">
-        <span style="flex:none">Get Started</span>
+            <span style="flex:none">Get Started</span>
         </div>
         <h2>Grab Your <strong>Affiliate Link</strong></h2>
         <p style="max-width:480px; margin:0 auto 28px;">Sign up below to receive your hoplink, access your email swipes, and be notified of any updates, new swipes, or contest announcements.</p>
         <div class="card" style="max-width:560px; margin:0 auto;">
-        <div class="form-row">
-            <div class="form-field">
-            <label>First Name</label>
-            <input type="text" placeholder="Your first name">
+            <div class="form-row">
+                <div class="form-field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your first name">
+                </div>
+                <div class="form-field">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com">
+                </div>
             </div>
-            <div class="form-field">
-            <label>Email Address</label>
-            <input type="email" placeholder="you@example.com">
+            <div class="form-row">
+                <div class="form-field">
+                    <label>ClickBank ID</label>
+                    <input type="text" id="clickbankId" placeholder="Your CB affiliate ID">
+                </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-field">
-            <label>ClickBank ID</label>
-            <input type="text" placeholder="Your CB affiliate ID">
+            <button class="cta-btn" style="width:100%; margin-top:8px;">Get My Affiliate Link ✦</button>
+            <div class="affiliate-link-wrapper d-none">
+                <div class="affiliate-link" id="affiliateLink">https://hop.clickbank.net/?affiliate={affiID}&vendor=clifepath&cbpage=main</div>
+                <button class="copy-btn" onclick="copySwipe('affiliateLink', this)" fdprocessedid="m4nt10" style="margin-top: 0px; min-width: 120px ">⊕ Copy Swipe</button>
             </div>
-        </div>
-        <button class="cta-btn" style="width:100%; margin-top:8px;">Get My Affiliate Link ✦</button>
         </div>
     </section>
 
@@ -377,5 +381,18 @@
       setTimeout(() => { btn.textContent = '⊕ Copy Swipe'; }, 2000);
     });
   }
+
+    // Generate affiliate link
+    document.querySelector('.cta-btn').addEventListener('click', () => {
+        const cbId = document.getElementById('clickbankId').value.trim();
+        if (!cbId) {
+            alert('Please enter your ClickBank ID.');
+            return;
+        }
+        const link = `https://hop.clickbank.net/?affiliate=${encodeURIComponent(cbId)}&vendor=clifepath&cbpage=main`;
+        document.getElementById('affiliateLink').textContent = link;
+        // $(".affiliate-link-wrapper").removeClass('d-none');
+        document.querySelector('.affiliate-link-wrapper').classList.remove('d-none');
+    });
   </script>
 @endpush

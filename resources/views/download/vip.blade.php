@@ -84,7 +84,14 @@
         <!-- Special Access Unlocked Section -->
         <section class="special-access-section dark-card">
             <h1 class="section-title text-center">Special Access Unlocked!</h1>
-            <div class="special-access-desc text-center">You can also purchase the Cosmic Life Path full reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
+            <div class="special-access-desc text-center mt-5">Missing just ONE hidden insight could change everything…<br>Grab the  <span class="special-access-em">FULL Horoscope Bundle</span> now for only $97 and save 40% today.</div>
+            <div class="mt-2" style="max-width: 800px; margin: 0 auto;">
+                <img src="/imgs/ebook/horoscope/12reports-bundle.png" alt="12 Reports Bundle" class="thumb-img special-thumb" />
+                <div class="thumb-label">12 Reports Bundle</div>
+                <a class="btn special-instant-download" href="https://clifepath.pay.clickbank.net/?cbitems=fe-bundle97&template=BCoFTclp&vtid=fullreportdl">Full Package - Order Now</a>
+            </div>
+
+            <div class="special-access-desc text-center mt-5">You can also purchase the Cosmic Life Path full reports for <span class="special-access-em">all other zodiac signs</span> below. Explore the unique cosmic blueprint of every sign—perfect for friends, family, or your own curiosity!</div>
             <div class="special-zodiac-list" id="specialZodiacList">
                 @php($signs = config('variables.signs'))
                 @foreach($signs as $key => $info)
@@ -99,12 +106,7 @@
                 @endforeach
             </div>
 
-            <div class="special-access-desc text-center mt-5">Missing just ONE hidden insight could change everything…<br>Grab the  <span class="special-access-em">FULL Horoscope Bundle</span> now for only $97 and save 40% today.</div>
-            <div class="mt-2" data-sign="{{ $key }}" style="max-width: 600px; margin: 0 auto;">
-                <img src="/imgs/ebook/horoscope/12reports-bundle.png" alt="12 Reports Bundle" class="thumb-img special-thumb" />
-                <div class="thumb-label">12 Reports Bundle</div>
-                <a class="btn special-instant-download" href="https://clifepath.pay.clickbank.net/?cbitems=fe-bundle97&template=BCoFTclp&vtid=fullreportdl">Full Package - Order Now</a>
-            </div>
+            
         </section>
 
         <section class="pt-4">
@@ -120,7 +122,7 @@
                             <!-- <p class="mb-0 text-center">Uncover the Exact Wealth Blueprint Hidden in Your Birth Chart</p> -->
                             <p class="special-zodiac-desc mb-0 text-light">Reveals the financial identity unique to your sign, the hidden pattern that's been silently blocking abundance, and a personalised 30-day activation plan aligned to your planetary timing.</p>
                         </div>
-                        <a class="btn special-instant-download" href="{{ $info['vip_instant_upsell1_purchase_link'] }}">Get Instant Access</a>
+                        <a class="btn special-instant-download" href="{{ $sign['vip_instant_upsell1_purchase_link'] }}">Get Instant Access</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -131,7 +133,7 @@
                             <!-- <p class="text-center mb-0">Finally Understand Why Your Love Life Unfolds the Way It Does</p> -->
                             <p class="special-zodiac-desc mb-0 text-light">Goes far beyond your sun sign — uncovering your full compatibility blueprint, the relationship patterns encoded in your chart, and exactly how to attract the deep connection you're meant for.</p>
                         </div>
-                        <a class="btn special-instant-download" href="{{ $info['vip_instant_upsell2_purchase_link'] }}">Get Instant Access</a>
+                        <a class="btn special-instant-download" href="{{ $sign['vip_instant_upsell2_purchase_link'] }}">Get Instant Access</a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -142,7 +144,7 @@
                             <!-- <p class="text-center mb-0">Align Your Daily Energy to the Rhythms Already Working in Your Favour</p> -->
                             <p class="special-zodiac-desc mb-0 text-light">Maps your lunar energy rhythm, your planetary flow channels, and your personal recovery code — so you stop pushing against the current and start moving with it.</p>
                         </div>
-                        <a class="btn special-instant-download" href="{{ $info['vip_instant_upsell3_purchase_link'] }}">Get Instant Access</a>
+                        <a class="btn special-instant-download" href="{{ $sign['vip_instant_upsell3_purchase_link'] }}">Get Instant Access</a>
                     </div>
                 </div>
             </div>

@@ -1926,8 +1926,8 @@ textarea:-webkit-autofill:focus {
 }
 
 .each-reading-card .thumb-img {
-  height: 180px;
-  width: auto;
+  width: 200px;
+  height: auto;
 }
 
 .thumb-label {
@@ -2069,7 +2069,7 @@ textarea:-webkit-autofill:focus {
 .special-access-desc {
     color: var(--gold-mid);
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 2.1em;
     font-weight: 400;
     max-width: 700px;
@@ -2096,7 +2096,7 @@ textarea:-webkit-autofill:focus {
     margin-bottom: 0.7em;
 }
 .special-thumb {
-    width: 90%;
+    width: 100%;
     height: auto;
     object-fit: contain;
     /* border-radius: 10px; */

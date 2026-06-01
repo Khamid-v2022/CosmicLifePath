@@ -14,6 +14,12 @@
   
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ filemtime(public_path('css/custom.css')) }}">
 
+  <script>
+    window.clickbank = {
+      vendor: "clifepath"
+    }
+  </script>
+  <script src="https://scripts.clickbank.net/hop.min.js" defer></script>
   @stack('head')
 </head>
 <body class="cosmic-body">
@@ -33,6 +39,7 @@
           id="cosmicFlowProgressBar"
           class="cosmic-flow-progress__fill"
           style="width: {{ (float) $flowProgress }}%"
+           aria-valuenow="25"
         ></div>
       </div>
     </div>

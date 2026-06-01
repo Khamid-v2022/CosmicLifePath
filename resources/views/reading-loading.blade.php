@@ -86,7 +86,7 @@
       mode: 'purchase',
       visibleMs: 5000,
       minDelayMs: 5000,
-      maxDelayMs: 30000,
+      maxDelayMs: 20000,
     };
 
     const loadingStage = document.getElementById('loadingStage');

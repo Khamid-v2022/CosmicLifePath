@@ -422,7 +422,7 @@ textarea:-webkit-autofill:focus {
   font-size: 1.2rem;
   letter-spacing: 0.12em;
   color: var(--fg-dim);
-  max-width: 520px;
+  max-width: 540px;
   line-height: 1.8;
   margin-bottom: 2.4rem;
   opacity: 0;

@@ -64,18 +64,6 @@
     position: relative;
     z-index: 1;
   }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 400px;
-    background: radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
   .eyebrow {
     font-family: 'Cinzel', serif;
     font-size: 11px;
@@ -258,6 +246,10 @@
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .card { padding: 12px; }
   }
 
   .card::before {

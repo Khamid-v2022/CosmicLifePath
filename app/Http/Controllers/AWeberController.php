@@ -60,9 +60,10 @@ class AWeberController extends Controller
         //     'accounts' => $accountResponse->json(),
         // ]);
 
+        $accountId = config('aweber.account_id');
         $response = Http::withToken($tokens['access_token'])->get("https://api.aweber.com/1.0/accounts/{$accountId}/lists");
         dump($response->json());
-        
+
         return 'AWeber Auth Complete.';
     }
 }

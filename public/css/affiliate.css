@@ -59,11 +59,25 @@
 
   /* HERO */
   .hero {
+    min-height: unset;
+    margin-top: 60px;
     text-align: center;
     padding: 80px 24px 60px;
     position: relative;
     z-index: 1;
   }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
   .eyebrow {
     font-family: 'Cinzel', serif;
     font-size: 11px;
@@ -248,10 +262,6 @@
     overflow: hidden;
   }
 
-  @media (max-width: 600px) {
-    .card { padding: 12px; }
-  }
-
   .card::before {
     content: '';
     position: absolute;
@@ -289,88 +299,30 @@
     flex-shrink: 0;
   }
 
-  /* FUNNEL TABLE */
-  .funnel-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
+  /* FUNNEL SNAPSHOT */
+  .funnel-snapshot {
+    display: flex; align-items: center; gap: 0;
+    flex-wrap: nowrap; overflow-x: auto; padding: 8px 0 16px;
   }
-
-  .funnel-table th {
-    font-family: 'Cinzel', serif;
-    font-size: 9px;
-    letter-spacing: 3px;
-    color: var(--gold-dim);
-    text-transform: uppercase;
-    text-align: left;
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--card-border);
+  .funnel-step {
+    flex: 1; min-width: 110px; text-align: center; padding: 18px 12px;
+    background: linear-gradient(135deg, rgba(201,168,76,0.07), rgba(201,168,76,0.02));
+    border: 1px solid var(--card-border); border-radius: 6px;
   }
-
-  .funnel-table td {
-    padding: 14px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    color: var(--champagne);
-    opacity: 0.9;
-  }
-
-  .funnel-table tr:last-child td { border-bottom: none; }
-
-  .funnel-table .earn {
-    color: var(--gold-light);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .funnel-table .tag {
-    display: inline-block;
-    background: rgba(201,168,76,0.08);
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: 3px;
-    font-size: 10px;
-    letter-spacing: 1px;
-    color: var(--gold-dim);
-    padding: 2px 7px;
-    text-transform: uppercase;
-  }
-
-  /* AOV HIGHLIGHT */
-  .aov-box {
-    background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
-    border: 1px solid rgba(201,168,76,0.3);
-    border-radius: 6px;
-    padding: 20px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+  .funnel-step .fs-tag { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 6px; }
+  .funnel-step .fs-name { font-size: 11px; color: var(--champagne); opacity: 0.8; margin-bottom: 8px; line-height: 1.3; }
+  .funnel-step .fs-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--gold-light); line-height: 1; }
+  .funnel-arrow { color: var(--gold-dim); font-size: 16px; padding: 0 6px; flex-shrink: 0; opacity: 0.5; }
+  .funnel-total {
     margin-top: 20px;
+    background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04));
+    border: 1px solid rgba(201,168,76,0.3); border-radius: 6px;
+    padding: 18px 24px; display: flex; align-items: center;
+    justify-content: space-between; gap: 16px; flex-wrap: wrap;
   }
-
-  .aov-box .aov-label {
-    font-family: 'Cinzel', serif;
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: var(--gold-dim);
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-
-  .aov-box .aov-val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 42px;
-    font-weight: 600;
-    color: var(--gold-light);
-    line-height: 1;
-  }
-
-  .aov-box .aov-note {
-    font-size: 13px;
-    color: var(--muted);
-    max-width: 320px;
-  }
+  .funnel-total .ft-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 4px; }
+  .funnel-total .ft-val { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 600; color: var(--gold-light); line-height: 1; }
+  .funnel-total .ft-note { font-size: 13px; color: var(--muted); max-width: 300px; }
 
   /* AUDIENCE */
   .audience-grid {
@@ -415,6 +367,16 @@
     line-height: 1.5;
   }
 
+  /* SWIPE FILTERS */
+  .swipe-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .filter-btn {
+    background: transparent; border: 1px solid var(--card-border); border-radius: 20px;
+    color: var(--muted); font-family: 'Cinzel', serif; font-size: 9px;
+    letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .filter-btn:hover, .filter-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.06); }
+
   /* SWIPE SECTION */
   .swipe-card {
     background: var(--card-bg);
@@ -433,6 +395,18 @@
     cursor: pointer;
     transition: background 0.2s;
   }
+  .swipe-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .swipe-angle-tag {
+    font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px;
+    text-transform: uppercase; padding: 3px 9px; border-radius: 3px; border: 1px solid; flex-shrink: 0;
+  }
+  .angle-curiosity { color: #8ac4c4; border-color: rgba(138,196,196,0.3); background: rgba(138,196,196,0.07); }
+  .angle-authority  { color: #b89de0; border-color: rgba(184,157,224,0.3); background: rgba(184,157,224,0.07); }
+  .angle-urgency    { color: #e09d6a; border-color: rgba(224,157,106,0.3); background: rgba(224,157,106,0.07); }
+  .angle-fear       { color: #c47a7a; border-color: rgba(196,122,122,0.3); background: rgba(196,122,122,0.07); }
+  .angle-social     { color: #7ac47a; border-color: rgba(122,196,122,0.3); background: rgba(122,196,122,0.07); }
+  .angle-identity   { color: #c9a84c; border-color: rgba(201,168,76,0.3);  background: rgba(201,168,76,0.07);  }
+  .swipe-length-badge { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; opacity: 0.7; }
 
   .swipe-header:hover { background: rgba(255,255,255,0.02); }
 
@@ -688,7 +662,6 @@
     opacity: 1;
     transform: none;
   }
-
   .affiliate-link-wrapper {
     display: flex;
     align-items: center;

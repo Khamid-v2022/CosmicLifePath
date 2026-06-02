@@ -9,7 +9,7 @@
     <div class="hero">
         <div class="eyebrow">Affiliate Resource Centre</div>
         <h1>Welcome to<br><em>Cosmic Life Path Reading</em></h1>
-        <p class="hero-sub">Presented by Celestra Vonn · Cosmic Mandala Astrology</p>
+        <p class="hero-sub mb-0">Presented by Celestra Vonn · Cosmic Mandala Astrology</p>
         <div class="gold-divider"></div>
         <p style="font-size:14px; color:var(--muted); max-width:520px; margin:0 auto;">A premium personalised astrology experience purpose-built for high engagement, deep resonance, and exceptional funnel performance across spiritual and self-help verticals.</p>
     </div>
@@ -48,10 +48,10 @@
         <div class="section-label">The Product</div>
         <h2>What Is the <strong>Cosmic Life Path Reading?</strong></h2>
         <div class="card">
-        <p>The <strong style="color:var(--gold-light)">Cosmic Life Path Reading</strong> is a premium, deeply personalised astrology report channelled through <em style="font-family:&#39;Cormorant Garamond&#39;,serif; font-size:17px">Celestra Vonn</em> — psychic astrologer and inheritor of the <strong style="color:var(--gold-light)">Cosmic Mandala Astrology</strong> system, a lineage descending from the legendary prophetess Mother Shipman.</p>
-        <p>Unlike generic horoscope products, this is a sign-specific, identity-level reading that tells the reader precisely who they are cosmically — their hidden strengths, their wealth blocks, their love patterns, and the planetary timing aligned to their unique life path.</p>
-        <p>Delivered as a beautifully designed PDF report, the reading is structured around a proprietary framework that positions astrology not as fortune-telling, but as a precision map of the self. It reads like a private session with a world-class psychic astrologer — and converts accordingly.</p>
-        <p>This is the kind of product your subscribers have been waiting their whole lives for someone to send them.</p>
+            <p>The <strong style="color:var(--gold-light)">Cosmic Life Path Reading</strong> is a premium, deeply personalised astrology report channelled through <em style="font-family:'Cormorant Garamond',serif; font-size:17px">Celestra Vonn</em> — psychic astrologer and inheritor of the <strong style="color:var(--gold-light)">Cosmic Mandala Astrology</strong> system, a lineage descending from the legendary prophetess Mother Shipman.</p>
+            <p>Unlike generic horoscope products, this is a sign-specific, identity-level reading that tells the reader precisely who they are cosmically — their hidden strengths, their wealth blocks, their love patterns, and the planetary timing aligned to their unique life path.</p>
+            <p>Delivered as a beautifully designed PDF report, the reading is structured around a proprietary framework that positions astrology not as fortune-telling, but as a precision map of the self. It reads like a private session with a world-class psychic astrologer — and converts accordingly.</p>
+            <p>This is the kind of product your subscribers have been waiting their whole lives for someone to send them.</p>
         </div>
     </section>
 
@@ -73,118 +73,157 @@
         </div>
     </section>
 
-    <!-- FUNNEL BREAKDOWN -->
-    <section class="reveal visible">
-        <div class="section-label">Funnel Architecture</div>
-        <h2>Your Earning <strong>Potential</strong></h2>
-        <div class="card">
-            <div class="" style="overflow-x:auto;">
-                <table class="funnel-table">
-                    <thead>
-                    <tr>
-                        <th>Step</th>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Your Cut (60%)</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><span class="tag">FE</span></td>
-                        <td>Cosmic Life Path Reading (Main Report)</td>
-                        <td>$47</td>
-                        <td class="earn">$28.20</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag" style="color:#8a8a8a;border-color:rgba(140,140,140,0.2);">DS</span></td>
-                        <td>Downsell</td>
-                        <td>$14.97</td>
-                        <td class="earn" style="font-size:15px;color:var(--muted)">$8.98</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag">OTO 1</span></td>
-                        <td>Cosmic Wealth Path Reading</td>
-                        <td>$67</td>
-                        <td class="earn">$40.20</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag">OTO 2</span></td>
-                        <td>Cosmic Love Path Reading</td>
-                        <td>$47</td>
-                        <td class="earn">$28.20</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag">OTO 3</span></td>
-                        <td>Cosmic Energy Path Reading</td>
-                        <td>$47</td>
-                        <td class="earn">$28.20</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="aov-box">
-                <div>
-                <div class="aov-label">Max Earnings Per Customer</div>
-                <div class="aov-val">$124.80</div>
-                </div>
-                <div class="aov-note">If a customer buys the full funnel at full price, you pocket up to $124.80 from a single click. All commissions are at a flat 60% — no tiers, no exceptions.</div>
-            </div>
-        </div>
-    </section>
+     <!-- FUNNEL SNAPSHOT -->
+  <section class="reveal">
+    <div class="section-label">Earning Potential</div>
+    <h2>One Customer. <strong>Three Ways to Earn.</strong></h2>
+    <p style="margin-bottom: 28px; color: var(--muted); font-size: 14px;">Unlike a standard funnel with a fixed ceiling, the Cosmic Life Path ecosystem is built for repeat revenue. Here's how a single referral can keep paying you.</p>
 
-    <!-- AUDIENCE -->
-    <section class="reveal visible">
-        <div class="section-label">Who Buys This</div>
-        <h2>Your <strong>Perfect Audience</strong></h2>
-        <div class="audience-grid">
-        <div class="audience-item">
-            <div class="audience-icon">♈</div>
-            <div>
-            <h4>Astrology &amp; Spirituality Lists</h4>
-            <p>The natural home. If they follow astrology accounts, read birth charts, or have ever bought a tarot reading — this is for them.</p>
+    <div class="card" style="margin-bottom: 16px;">
+      <div style="display:flex; align-items:flex-start; gap: 20px;">
+        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">1</div>
+        <div style="flex:1">
+          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">The Core Funnel</div>
+          <p style="margin-bottom: 12px; font-size:14px;">Every referred customer enters a four-step funnel. Front end at $47, followed by three one-click upsells at $67, $47, and $47. You earn 60% at every step.</p>
+          <div class="funnel-snapshot">
+            <div class="funnel-step">
+              <div class="fs-tag">Front End</div>
+              <div class="fs-name">Cosmic Life Path</div>
+              <div class="fs-price">$47</div>
             </div>
-        </div>
-        <div class="audience-item">
-            <div class="audience-icon">✨</div>
-            <div>
-            <h4>Law of Attraction / Manifestation</h4>
-            <p>This audience is actively seeking tools that explain why their life is the way it is — this report answers that directly.</p>
+            <div class="funnel-arrow">›</div>
+            <div class="funnel-step">
+              <div class="fs-tag">OTO 1</div>
+              <div class="fs-name">Cosmic Wealth Path</div>
+              <div class="fs-price">$67</div>
             </div>
-        </div>
-        <div class="audience-item">
-            <div class="audience-icon">🌱</div>
-            <div>
-            <h4>Self-Help &amp; Personal Development</h4>
-            <p>People on a self-discovery journey respond powerfully to identity-level content. This reading is identity-first by design.</p>
+            <div class="funnel-arrow">›</div>
+            <div class="funnel-step">
+              <div class="fs-tag">OTO 2</div>
+              <div class="fs-name">Cosmic Love Path</div>
+              <div class="fs-price">$47</div>
             </div>
-        </div>
-        <div class="audience-item">
-            <div class="audience-icon">📋</div>
-            <div>
-            <h4>Quiz &amp; Personality Test Lists</h4>
-            <p>The quiz funnel entry means any list that loves BuzzFeed-style content, Enneagram, or Myers-Briggs will convert naturally here.</p>
+            <div class="funnel-arrow">›</div>
+            <div class="funnel-step">
+              <div class="fs-tag">OTO 3</div>
+              <div class="fs-name">Cosmic Energy Path</div>
+              <div class="fs-price">$47</div>
             </div>
+          </div>
+          <p style="font-size:12px; color:var(--muted); margin: 10px 0 0;">A $14.97 downsell is available for non-buyers on the front end. 60% commission applies at every step.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 16px;">
+      <div style="display:flex; align-items:flex-start; gap: 20px;">
+        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">2</div>
+        <div style="flex:1">
+          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">Backend Report Purchases</div>
+          <p style="font-size:14px; margin-bottom: 10px;">Customers don't stop at their own sign. People buy for their partners, children, parents, and friends — or out of pure curiosity for the signs they're closest to. All 12 individual sign reports are available on the backend, and every purchase through your link earns you 60%.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <div style="background: rgba(201,168,76,0.06); border: 1px solid var(--card-border); border-radius:6px; padding: 12px 16px; flex:1; min-width:160px; text-align:center;">
+              <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:2px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:4px;">Reports Available</div>
+              <div style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:600; color:var(--gold-light);">12</div>
+              <div style="font-size:11px; color:var(--muted);">One for every sign</div>
+            </div>
+            <div style="background: rgba(201,168,76,0.06); border: 1px solid var(--card-border); border-radius:6px; padding: 12px 16px; flex:1; min-width:160px; text-align:center;">
+              <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:2px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:4px;">Your Cut Per Report</div>
+              <div style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:600; color:var(--gold-light);">60%</div>
+              <div style="font-size:11px; color:var(--muted);">Every backend purchase</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <div style="display:flex; align-items:flex-start; gap: 20px;">
+        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">3</div>
+        <div style="flex:1">
+          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">Full Funnel Repeats</div>
+          <p style="font-size:14px; margin-bottom:0;">A customer who loved their reading doesn't stop at one sign. They come back and run through the complete upsell sequence for a second — or third — sign. That means the full funnel commission structure resets with every new sign they purchase. There is no hard ceiling on what a single referred customer can be worth to you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.03)); border: 1px solid rgba(201,168,76,0.3); border-radius:8px; padding: 24px 28px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <div style="font-size:28px;">✦</div>
+      <div>
+        <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:6px;">The Bottom Line</div>
+        <p style="font-size:14px; color:var(--champagne); margin:0; line-height:1.6;">Most funnels give you one shot at one customer. This one gives you a full ecosystem — 12 reports, 3 upsells, and repeat purchase behaviour baked into the product. <strong style="color:var(--gold-light)">Your cookie tracks every purchase for 60 days from their first click.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="reveal">
+    <div class="section-label">Who Buys This</div>
+    <h2>Your <strong>Perfect Audience</strong></h2>
+    <div class="audience-grid">
+      <div class="audience-item">
+        <div class="audience-icon">♈</div>
+        <div>
+          <h4>Astrology &amp; Spirituality Lists</h4>
+          <p>The natural home. If they follow astrology accounts, read birth charts, or have ever bought a tarot reading — this is for them.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-icon">✨</div>
+        <div>
+          <h4>Law of Attraction / Manifestation</h4>
+          <p>This audience is actively seeking tools that explain why their life is the way it is — this report answers that directly.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-icon">🌱</div>
+        <div>
+          <h4>Self-Help &amp; Personal Development</h4>
+          <p>People on a self-discovery journey respond powerfully to identity-level content. This reading is identity-first by design.</p>
+        </div>
+      </div>
+      <div class="audience-item">
+        <div class="audience-icon">📋</div>
+        <div>
+          <h4>Quiz &amp; Personality Test Lists</h4>
+          <p>The quiz funnel entry means any list that loves BuzzFeed-style content, Enneagram, or Myers-Briggs will convert naturally here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- EMAIL SWIPES -->
-    <section class="reveal visible">
+    <section class="reveal">
         <div class="section-label">Email Swipes</div>
         <h2>Ready-to-Send <strong>Promotions</strong></h2>
-        <p style="margin-bottom:24px;">Three high-converting swipes below — click to expand, then copy and paste. Personalise the opening line with your name and list relationship for best results. All swipes are written in British English.</p>
+        <p style="margin-bottom:16px;">All swipes are written in British English. Click to expand, copy, and paste. Filter by angle or length below. Personalise the opening with your name for best results.</p>
 
-        <!-- SWIPE 1 -->
-        <div class="swipe-card">
+        <div class="swipe-filters">
+        <button class="filter-btn active" onclick="filterSwipes('all', this)">All Swipes</button>
+        <button class="filter-btn" onclick="filterSwipes('long', this)">Long-Form</button>
+        <button class="filter-btn" onclick="filterSwipes('short', this)">Short &amp; Punchy</button>
+        <button class="filter-btn" onclick="filterSwipes('curiosity', this)">Curiosity</button>
+        <button class="filter-btn" onclick="filterSwipes('authority', this)">Authority</button>
+        <button class="filter-btn" onclick="filterSwipes('urgency', this)">Urgency</button>
+        <button class="filter-btn" onclick="filterSwipes('identity', this)">Identity</button>
+        <button class="filter-btn" onclick="filterSwipes('social', this)">Social Proof</button>
+        <button class="filter-btn" onclick="filterSwipes('fear', this)">FOMO</button>
+        </div>
+
+        <!-- LONG-FORM -->
+        <div class="swipe-card" data-angle="curiosity" data-length="long">
         <div class="swipe-header" onclick="toggleSwipe(this)">
-            <span class="swipe-title">Swipe 1 — Curiosity / Open Loop</span>
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-curiosity">Curiosity</span>
+            <span class="swipe-length-badge">Long-Form</span>
+            <span class="swipe-title">Open Loop — "Your stars just told me…"</span>
+            </div>
             <span class="swipe-toggle">+</span>
         </div>
         <div class="swipe-body">
             <div class="swipe-subject">Subject Line</div>
             <div class="swipe-subject-line">your stars just told me something about you…</div>
-            <div class="swipe-copy" id="swipe1">
-                Hi [First Name],
+            <div class="swipe-copy" id="swipe1">Hi [First Name],
 
                 I know that sounds strange. But bear with me.
 
@@ -200,7 +239,7 @@
 
                 Take the short quiz here and get yours: [HOPLINK]
 
-                I sent this to a few people last week and the responses have been remarkable.
+                The responses have been remarkable.
 
                 "I've never felt so seen in my life."
                 "I read it twice. Then I cried."
@@ -214,14 +253,17 @@
 
                 P.S. Celestra only uses this system with a small number of people each year. The reading is available now but I can't say for how long.
             </div>
-            <button class="copy-btn" onclick="copySwipe(&#39;swipe1&#39;, this)">⊕ Copy Swipe</button>
+            <button class="copy-btn" onclick="copySwipe('swipe1', this)">⊕ Copy Swipe</button>
         </div>
         </div>
 
-        <!-- SWIPE 2 -->
-        <div class="swipe-card">
+        <div class="swipe-card" data-angle="authority" data-length="long">
         <div class="swipe-header" onclick="toggleSwipe(this)">
-            <span class="swipe-title">Swipe 2 — Mystique / Authority</span>
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-authority">Authority</span>
+            <span class="swipe-length-badge">Long-Form</span>
+            <span class="swipe-title">Mystique — "She predicted it before I told her my name"</span>
+            </div>
             <span class="swipe-toggle">+</span>
         </div>
         <div class="swipe-body">
@@ -229,28 +271,40 @@
             <div class="swipe-subject-line">she predicted it before I even told her my name</div>
             <div class="swipe-copy" id="swipe2">
                 Hi [First Name],
+
                 Her name is Celestra Vonn, and she comes from a lineage of psychic astrologers stretching back centuries — the last living keeper of a system called Cosmic Mandala Astrology.
+
                 This isn't your newspaper horoscope. This isn't a generic "what Scorpio season means for you" piece.
+
                 This is a full, personalised reading of your life — your specific sun sign, your specific patterns, your specific cosmic code — decoded by someone who has spent her entire career doing this.
+
                 The Cosmic Life Path Reading covers:
-                    ✦ Your hidden strengths (the ones even you haven't fully claimed yet)
-                    ✦ Your wealth blocks — and the exact cosmic pattern causing them
-                    ✦ Your love blueprint — why you attract who you attract
-                    ✦ Your energy and vitality cycles, mapped to the planets
-                    ✦ The timing window you're in RIGHT NOW
+
+                ✦ Your hidden strengths (the ones even you haven't fully claimed yet)
+                ✦ Your wealth blocks — and the exact cosmic pattern causing them
+                ✦ Your love blueprint — why you attract who you attract
+                ✦ Your energy and vitality cycles, mapped to the planets
+                ✦ The timing window you're in RIGHT NOW
+
                 Answer five short questions here and receive yours instantly: [HOPLINK]
+
                 Celestra created 12 unique readings — one for each sign. Yours is already waiting.
+
                 [HOPLINK]
+
                 [Your Name]
             </div>
-            <button class="copy-btn" onclick="copySwipe(&#39;swipe2&#39;, this)">⊕ Copy Swipe</button>
+            <button class="copy-btn" onclick="copySwipe('swipe2', this)">⊕ Copy Swipe</button>
         </div>
         </div>
 
-        <!-- SWIPE 3 -->
-        <div class="swipe-card">
+        <div class="swipe-card" data-angle="urgency" data-length="long">
         <div class="swipe-header" onclick="toggleSwipe(this)">
-            <span class="swipe-title">Swipe 3 — Urgency / Direct</span>
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-urgency">Urgency</span>
+            <span class="swipe-length-badge">Long-Form</span>
+            <span class="swipe-title">Direct — "Quick — what's your star sign?"</span>
+            </div>
             <span class="swipe-toggle">+</span>
         </div>
         <div class="swipe-body">
@@ -285,9 +339,136 @@
 
                 P.S. There's a 365-day money-back guarantee, so there's genuinely nothing to lose. Take the quiz and see for yourself.
             </div>
-            <button class="copy-btn" onclick="copySwipe(&#39;swipe3&#39;, this)">⊕ Copy Swipe</button>
+            <button class="copy-btn" onclick="copySwipe('swipe3', this)">⊕ Copy Swipe</button>
         </div>
         </div>
+
+        <!-- SHORT & PUNCHY -->
+        <div class="swipe-card" data-angle="identity" data-length="short">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-identity">Identity</span>
+            <span class="swipe-length-badge">Short &amp; Punchy</span>
+            <span class="swipe-title">"Do you know your cosmic type?"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">do you know your cosmic type?</div>
+            <div class="swipe-copy" id="swipe4">Hi [First Name],
+
+                Most people know their sun sign.
+
+                Very few know what it actually means for their wealth, their relationships, and the life they were cosmically built for.
+
+                This short quiz reveals yours in under two minutes: [HOPLINK]
+
+                It's called the Cosmic Life Path Reading — and it's the most accurate, personalised astrology reading I've come across.
+
+                Go find out: [HOPLINK]
+
+                [Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe4', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-angle="fear" data-length="short">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-fear">FOMO</span>
+            <span class="swipe-length-badge">Short &amp; Punchy</span>
+            <span class="swipe-title">"Your reading is waiting"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">your [Sign] reading is waiting for you</div>
+            <div class="swipe-copy" id="swipe5">
+                Hi [First Name],
+
+                Celestra Vonn has prepared a full Cosmic Life Path Reading for every sign.
+
+                Yours is sitting there right now.
+
+                It covers your hidden strengths, your wealth patterns, your love blueprint — and the exact cosmic timing you're currently in.
+
+                It takes two minutes to claim: [HOPLINK]
+
+                Don't leave it sitting there.
+
+                [Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe5', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-angle="social" data-length="short">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-social">Social Proof</span>
+            <span class="swipe-length-badge">Short &amp; Punchy</span>
+            <span class="swipe-title">"People are losing it over this reading"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">people are losing it over this reading</div>
+            <div class="swipe-copy" id="swipe6">
+                Hi [First Name],
+
+                I've been sharing the Cosmic Life Path Reading with people this week.
+
+                The reactions have been something else.
+
+                "I've never felt so seen."
+                "It explained the last five years of my life."
+                "I sent it to my mum. She cried."
+
+                It's a personalised astrology reading — specific to your sun sign — written by Celestra Vonn, who has spent decades decoding what the stars say about your wealth, love, and life path.
+
+                Take the two-minute quiz here: [HOPLINK]
+
+                [Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe6', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-angle="curiosity" data-length="short">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-curiosity">Curiosity</span>
+            <span class="swipe-length-badge">Short &amp; Punchy</span>
+            <span class="swipe-title">"Why is this so accurate?"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">why is this so accurate?</div>
+            <div class="swipe-copy" id="swipe7">
+                Hi [First Name],
+
+                I don't say this often, but — take the quiz.
+
+                Two minutes. Free to start. And the reading on the other side is unlike anything I've seen in astrology.
+
+                It's called the Cosmic Life Path Reading. Personalised to your sign. Written by Celestra Vonn using a system called Cosmic Mandala Astrology.
+
+                People keep asking how it's so accurate.
+
+                Go find out: [HOPLINK]
+
+                [Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe7', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
     </section>
 
     <!-- CONTEST PLACEHOLDER -->
@@ -347,8 +528,10 @@
         <p style="font-size:13px; color:var(--muted); margin:0;">Questions or custom tools? Reach us at <strong style="color:var(--gold-dim)">support@thecosmiclifepath.com</strong> — we respond within 1–2 business days.</p>
         </div>
     </section>
-
-    </div>
+    <section class="disclaimer-section text-center mt-5" style="font-size: 0.8rem">
+        ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
+    </section>
+</div>
 @endsection
 
 @push('scripts')

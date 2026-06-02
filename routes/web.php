@@ -3,6 +3,10 @@
 use App\Http\Controllers\CosmicFlowController;
 use Illuminate\Support\Facades\Route;
 
+// routes/web.php
+Route::get('/aweber/authorize', [AWeberController::class, 'authorize'])->name('aweber.authorize');
+Route::get('/aweber/callback', [AWeberController::class, 'callback'])->name('aweber.callback');
+
 Route::controller(CosmicFlowController::class)->group(function (): void {
     Route::get('/', 'landing')->name('landing');
     Route::get('/birth-alignment/{sign}', 'birthdatePage')->name('birthdate');

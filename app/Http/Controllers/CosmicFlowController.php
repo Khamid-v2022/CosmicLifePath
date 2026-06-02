@@ -6,6 +6,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
+use App\Jobs\AddAWeberSubscriberJob;
+
 class CosmicFlowController extends Controller {
 
     public function landing(Request $request): View
@@ -167,6 +169,12 @@ class CosmicFlowController extends Controller {
         $request->session()->put('cosmic.reading.contact', $contact);
         $request->session()->put('cosmic.reading.birth', $birth);
         
+        AddAWeberSubscriberJob::dispatch(
+            $contact['email'],
+            $contact['name'],
+            $birth['sign_slug']
+        );
+
         return redirect()->route('reading.loading', $birth['sign_slug']);
     }
 

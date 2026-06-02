@@ -72,6 +72,7 @@ class AWeberService
     // ─────────────────────────────────────────
     private function refreshAccessToken(string $refreshToken): string
     {
+        Log::info('Refreshing AWeber access token');
         $response = Http::asForm()->withBasicAuth(
             config('aweber.client_id'),
             config('aweber.client_secret')
@@ -97,7 +98,9 @@ class AWeberService
             $tokens['expires_in']
         );
 
-        Log::info('AWeber token refreshed successfully');
+        Log::info('AWeber token refreshed successfully', [
+            'expires_in' => $tokens['expires_in'],
+        ]);
 
         return $tokens['access_token'];
     }
@@ -108,46 +111,74 @@ class AWeberService
     public function addSubscriber(string $email, string $name, string $signSlug): bool
     {
         try {
-            $accessToken = $this->getValidAccessToken();
-            $accountId   = config('aweber.account_id');
-            $listId      = config('aweber.list_id');
-            $url         = "{$this->baseUrl}/accounts/{$accountId}/lists/{$listId}/subscribers";
 
-            $response = Http::withToken($accessToken)->post($url, [
+            $accountId = config('aweber.account_id');
+            $listId    = config('aweber.list_id');
+
+            $url = "{$this->baseUrl}/accounts/{$accountId}/lists/{$listId}/subscribers";
+
+            $payload = [
                 'email'           => $email,
                 'name'            => $name,
                 'tags'            => ['interested', $signSlug],
                 'status'          => 'subscribed',
                 'update_existing' => true,
+            ];
+
+            // 1차 시도
+            $accessToken = $this->getValidAccessToken();
+
+            $response = Http::withToken($accessToken)
+                ->post($url, $payload);
+
+            // Access Token이 실제로 만료되었으면 강제 Refresh
+            if ($response->status() === 401) {
+
+                Log::warning('AWeber access token rejected. Refreshing token.');
+
+                $tokens = $this->loadTokens();
+
+                $accessToken = $this->refreshAccessToken(
+                    $tokens['refresh_token']
+                );
+
+                // 2차 시도
+                $response = Http::withToken($accessToken)
+                    ->post($url, $payload);
+            }
+
+            Log::info('AWeber subscriber response', [
+                'status' => $response->status(),
+                'body'   => $response->json(),
+                'email'  => $email,
             ]);
 
-            // 201 Created = New Add Success
-            if ($response->status() === 201) {
-                Log::info('AWeber: new subscriber added', [
+            if (in_array($response->status(), [200, 201])) {
+
+                Log::info('AWeber subscriber synced', [
                     'email' => $email,
                     'tags'  => ['interested', $signSlug],
                 ]);
-                return true;
-            }
 
-            // 200 OK = Existing subscriber updated successfully
-            if ($response->status() === 200) {
-                Log::info('AWeber: existing subscriber updated', ['email' => $email]);
                 return true;
             }
 
             Log::error('AWeber addSubscriber failed', [
                 'status' => $response->status(),
                 'body'   => $response->json(),
+                'email'  => $email,
             ]);
 
             return false;
 
         } catch (\Throwable $e) {
+
             Log::error('AWeber exception in addSubscriber', [
                 'message' => $e->getMessage(),
+                'trace'   => $e->getTraceAsString(),
                 'email'   => $email,
             ]);
+
             return false;
         }
     }

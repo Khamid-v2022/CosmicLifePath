@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CosmicFlowController;
+use App\Http\Controllers\AWeberController;
 use Illuminate\Support\Facades\Route;
 
 // routes/web.php

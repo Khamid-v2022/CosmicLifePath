@@ -236,7 +236,7 @@
         <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path{{ $name ? ", " . $name : '' }}</h2>
           <div class="row g-4 align-items-stretch">
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-2 order-lg-1">
               <article class="pricing-card pricing-card-standard h-100">
                 <div>
                   <p class="pricing-tier">Standard Access</p>
@@ -262,7 +262,7 @@
               </article>
             </div>
 
-            <div class="col-lg-6" id="vip_option">
+            <div class="col-lg-6 order-1 order-lg-2" id="vip_option">
               <article class="pricing-card pricing-card-vip h-100">
                 <div class="pricing-badge">Most Popular - 84% Choose This</div>
                 <div>

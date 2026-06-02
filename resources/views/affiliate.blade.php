@@ -508,7 +508,7 @@
             <button class="cta-btn" style="width:100%; margin-top:8px;">Get My Affiliate Link ✦</button>
             <div class="affiliate-link-wrapper d-none">
                 <div class="affiliate-link" id="affiliateLink">https://hop.clickbank.net/?affiliate={affiID}&vendor=clifepath&cbpage=main</div>
-                <button class="copy-btn" onclick="copySwipe('affiliateLink', this)" fdprocessedid="m4nt10" style="margin-top: 0px; min-width: 120px ">⊕ Copy Swipe</button>
+                <button class="copy-btn" onclick="copySwipe('affiliateLink', this)" fdprocessedid="m4nt10" style="margin-top: 0px; min-width: 120px ">⊕ Copy Link</button>
             </div>
         </div>
     </section>

@@ -12,7 +12,7 @@ class AWeberController extends Controller
     {
         $params = http_build_query([
             'response_type' => 'code',
-            'client_id'     => config('services.aweber.client_id'),
+            'client_id'     => config('aweber.client_id'),
             'redirect_uri'  => route('aweber.callback'),
             'scope'         => 'subscriber.write subscriber.read-extended account.read list.read',
             'state'         => csrf_token(),
@@ -28,8 +28,8 @@ class AWeberController extends Controller
 
         // code → access_token 
         $response = Http::asForm()->withBasicAuth(
-            config('services.aweber.client_id'),
-            config('services.aweber.client_secret')
+            config('aweber.client_id'),
+            config('aweber.client_secret')
         )->post('https://auth.aweber.com/oauth2/token', [
             'grant_type'   => 'authorization_code',
             'code'         => $request->code,

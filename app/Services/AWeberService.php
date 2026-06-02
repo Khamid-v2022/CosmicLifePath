@@ -125,13 +125,13 @@ class AWeberService
                 'update_existing' => true,
             ];
 
-            // 1차 시도
+            // try first time with current access token
             $accessToken = $this->getValidAccessToken();
 
             $response = Http::withToken($accessToken)
                 ->post($url, $payload);
 
-            // Access Token이 실제로 만료되었으면 강제 Refresh
+            // IF Access Token expired, Refresh
             if ($response->status() === 401) {
 
                 Log::warning('AWeber access token rejected. Refreshing token.');
@@ -142,7 +142,7 @@ class AWeberService
                     $tokens['refresh_token']
                 );
 
-                // 2차 시도
+                // try second time with new access token
                 $response = Http::withToken($accessToken)
                     ->post($url, $payload);
             }

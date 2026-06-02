@@ -49,17 +49,20 @@ class AWeberController extends Controller
 
         // return 'AWeber OAuth completed. Save the values to the .env file.';
 
-        $accountResponse = Http::withToken($tokens['access_token'])->get('https://api.aweber.com/1.0/accounts');
+        // $accountResponse = Http::withToken($tokens['access_token'])->get('https://api.aweber.com/1.0/accounts');
 
-        dump([
-            'tokens' => [
-                'AWEBER_ACCESS_TOKEN'     => $tokens['access_token'],
-                'AWEBER_REFRESH_TOKEN'    => $tokens['refresh_token'],
-                'AWEBER_TOKEN_EXPIRES_AT' => now()->addSeconds($tokens['expires_in'])->timestamp,
-            ],
-            'accounts' => $accountResponse->json(),
-        ]);
+        // dump([
+        //     'tokens' => [
+        //         'AWEBER_ACCESS_TOKEN'     => $tokens['access_token'],
+        //         'AWEBER_REFRESH_TOKEN'    => $tokens['refresh_token'],
+        //         'AWEBER_TOKEN_EXPIRES_AT' => now()->addSeconds($tokens['expires_in'])->timestamp,
+        //     ],
+        //     'accounts' => $accountResponse->json(),
+        // ]);
 
+        $response = Http::withToken($tokens['access_token'])->get("https://api.aweber.com/1.0/accounts/{$accountId}/lists");
+        dump($response->json());
+        
         return 'AWeber Auth Complete.';
     }
 }

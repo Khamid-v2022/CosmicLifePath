@@ -335,6 +335,11 @@
 
 @push('scripts')
   <script>
+    gtag('event', 'funnel_step_view', {
+      funnel_name: 'horoscope_sales',
+      step: 8,
+      step_name: 'upsell1'
+    });
     window.COSMIC_SOCIAL_PROOF = {
       enabled: true,
       mode: 'upsell1',

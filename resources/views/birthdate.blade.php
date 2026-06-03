@@ -154,7 +154,7 @@
 
 @push('scripts')
     <script>
-         gtag('event', 'funnel_step_view', {
+        gtag('event', 'funnel_step_view', {
             funnel_name: 'horoscope_sales',
             step: 2,
             step_name: 'birthday_input'

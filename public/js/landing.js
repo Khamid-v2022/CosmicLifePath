@@ -432,6 +432,11 @@
     });
 
     birthForm.addEventListener('submit', (event) => {
+      gtag('event', 'funnel_step_view', {
+        funnel_name: 'horoscope_sales',
+        step: 3,
+        step_name: 'birthplace_input'
+      });
       event.preventDefault();
     });
 

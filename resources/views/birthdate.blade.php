@@ -154,6 +154,12 @@
 
 @push('scripts')
     <script>
+         gtag('event', 'funnel_step_view', {
+            funnel_name: 'horoscope_sales',
+            step: 2,
+            step_name: 'birthday_input'
+        });
+
         window.COSMIC_FORM_RULE = @json($sign['months']);
         window.COSMIC_FORM_STATE = {
                 month: @json($oldMonth),
@@ -178,7 +184,7 @@
             minDelayMs: 5000,
             maxDelayMs: 30000,
         };
-  </script>
+    </script>
 
     @if (config('services.google_maps.key'))
         <script>

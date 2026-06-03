@@ -293,3 +293,14 @@
     <p class="section-desc mt-4"><span class="text-warning">⚠</span> Due to high demand, availability is limited. Select your sign now to secure your FREE reading.</p>
   </section>
 @endsection
+
+
+@push('scripts')
+  <script>
+    gtag('event', 'funnel_step_view', {
+      funnel_name: 'horoscope_sales',
+      step: 1,
+      step_name: 'horoscope_select'
+    });
+  </script>
+@endpush

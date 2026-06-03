@@ -103,6 +103,12 @@
 
 @push('scripts')
   <script>
+    gtag('event', 'funnel_step_view', {
+      funnel_name: 'horoscope_sales',
+      step: 4,
+      step_name: 'contact_input'
+    });
+
     window.COSMIC_SOCIAL_PROOF = {
       enabled: true,
       mode: 'quiz',

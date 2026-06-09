@@ -12,7 +12,6 @@
       <article class="cosmic-article mx-auto">
         <h3 class="article-subtitle text-white">Hey there, <strong class="accent text-light">Celestra Vonn</strong> here again.</h3>
         <p class="step-copy article-copy"><strong>Celestra Vonn</strong> here again,</p>
-        <p class="step-copy article-copy"><strong>Congratulations on getting your <em>Cosmic Love Path Reading</em>.</strong></p>
         <p class="step-copy article-copy">You have my greatest respect for coming this far.</p>
         <p class="step-copy article-copy">Not many people have taken the journey you have here today.</p>
         <p class="step-copy article-copy">I just have one more short message you need to hear.</p>

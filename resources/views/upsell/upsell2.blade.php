@@ -12,7 +12,7 @@
       <article class="cosmic-article mx-auto">
         <h3 class="article-subtitle text-white">Hey there, <strong class="accent text-light">Celestra Vonn</strong> here again.</h3>
         <p class="step-copy article-copy">Just dropping in to say a big congratulations.</p>
-        <p class="step-copy article-copy">Well done on getting your <em>Cosmic Wealth Path Reading</em>. </p>
+        <p class="step-copy article-copy">Well done on getting your <em>Cosmic Life Path Reading</em>. </p>
 
         <div class="article-inline-media article-inline-media-left my-4">
           <div class="article-inline-visual order-2 order-lg-1">
@@ -28,11 +28,11 @@
         </div>
         
         <p class="step-copy article-copy">It’s vital that you hear this before going any further.</p>
-        <p class="step-copy article-copy">You are about to harness the true power of your <em>Cosmic Wealth Path</em> when it comes to living a life of abundance.</p>
-        <p class="step-copy article-copy">As you follow your <em>Cosmic Wealth Path</em> now, there will no longer be anything blocking financial abundance from flowing into your life.</p>
+        <p class="step-copy article-copy">You are about to harness the true power of your <em>Cosmic Life Path</em> when it comes to living a life of abundance.</p>
+        <p class="step-copy article-copy">As you follow your <em>Cosmic Life Path</em> now, there will no longer be anything blocking financial abundance from flowing into your life.</p>
         <p class="step-copy article-copy">I’ve seen so many clients over the years who have completely turned their financial situation around.</p>
         <p class="step-copy article-copy">Many are coming back from debt, even bankruptcy, to become financially abundant once again.</p>
-        <p class="step-copy article-copy">And your future is now more secure than ever with your <em>Cosmic Wealth Path Reading</em>.</p>
+        <p class="step-copy article-copy">And your future is now more secure than ever with your <em>Cosmic Life Path Reading</em>.</p>
         <p class="step-copy article-copy">You can say goodbye to money worries.</p>
         <p class="step-copy article-copy">Never have to say no to your family ever again because money is an issue.</p>
 

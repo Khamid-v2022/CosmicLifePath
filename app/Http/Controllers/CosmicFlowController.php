@@ -35,6 +35,45 @@ class CosmicFlowController extends Controller {
             'month' => ['required', 'integer', 'between:1,12'],
             'day' => ['required', 'integer', 'between:1,31'],
             'year' => ['required', 'integer', 'between:1900,2008'],
+            'ext' => ['nullable', 'string'],
+        ]);
+
+        $sign = $this->findSignOrFail($validated['sign']);
+        $month = (int) $validated['month'];
+        $day = (int) $validated['day'];
+        $year = (int) $validated['year'];
+
+        if (!in_array($day, $sign['months'][$month] ?? [], true)) {
+            return redirect()->route('landing');
+        }
+
+
+        $birth = [
+            'sign' => $sign,
+            'sign_slug' => $validated['sign'],
+            'month' => $month,
+            'day' => $day,
+            'year' => $year,
+            'formatted_date' => sprintf('%02d / %02d / %04d', $month, $day, $year)
+        ];
+
+        // Store in session
+        $request->session()->put('cosmic.reading.birth', $birth);
+
+        if($validated['ext']) {
+            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
+        }
+
+        return redirect()->route('reading.contact', $sign['slug']);
+    }
+
+    public function storeBirthDetails_withPlace(Request $request): RedirectResponse
+    {
+        $validated = $request->validate([
+            'sign' => ['required', 'string'],
+            'month' => ['required', 'integer', 'between:1,12'],
+            'day' => ['required', 'integer', 'between:1,31'],
+            'year' => ['required', 'integer', 'between:1900,2008'],
             'hour' => ['nullable', 'integer', 'between:1,12'],
             'minute' => ['nullable', 'numeric', 'between:0,59'],
             'meridiem' => ['nullable', 'in:AM,PM'],

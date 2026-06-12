@@ -278,7 +278,7 @@
                   <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
                 </ul>
 
-                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth 428)</p>
+                <p class="pricing-group-title">+ 3 Exclusive Bonuses (Worth $331)</p>
                 <ul class="pricing-list pricing-list-bonus">
                   <li>
                     The Secret Language of Fame

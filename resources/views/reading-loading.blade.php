@@ -46,7 +46,7 @@
               <input type="hidden" name="ext" value="{{ $ext }}">
             </form>
             <div class="text-center d-flex justify-content-center">
-              <a href="#" id="showReadingButton" class="hero-cta btn d-none d-flex align-items-center justify-content-center"><span class="d-flex">✨</span>Show Me My Cosmic Life Path Reading<span class="d-flex">✨</span></a>
+              <a href="#" id="showReadingButton" class="hero-cta btn d-flex align-items-center justify-content-center"><span class="d-flex">✨</span>Show Me My Cosmic Life Path Reading<span class="d-flex">✨</span></a>
             </div>
           </div>
         </div>
@@ -89,10 +89,6 @@
     const loadingStage = document.getElementById('loadingStage');
     const videoStage = document.getElementById('videoStage');
 
-    // const playButton = document.getElementById('playVideoButton');
-    // const thumbnailOverlay = document.getElementById('videoThumbnailOverlay');
-    // const videoEmbedWrap = document.getElementById('videoEmbedWrap');
-    // const videoFrame = document.getElementById('celestraVideoFrame');
 
     const showReadingButton = document.getElementById('showReadingButton');
     const summaryForm = document.getElementById('summaryForm');
@@ -112,18 +108,6 @@
       }, 650);
     }
 
-    function beginVideoSequence() {
-      if (showReadingButton) {
-        window.setTimeout(function () {
-          showReadingButton.classList.remove('d-none');
-        }, 20000);
-      }
-
-      // window.setTimeout(function () {
-      //   redirectToResults();
-      // }, 300000);
-    }
-
     window.setTimeout(function () {
       if (!loadingStage || !videoStage) {
         return;
@@ -140,7 +124,6 @@
         loadVidalyticsVideo();
         window.requestAnimationFrame(function () {
           videoStage.classList.add('reading-stage-active');
-          beginVideoSequence();
         });
       }, 650);
     }, 5000);
@@ -151,16 +134,5 @@
         redirectToResults();
       });
     }
-
-    // if (playButton && thumbnailOverlay && videoEmbedWrap && videoFrame) {
-    //   playButton.addEventListener('click', function () {
-    //     const src = videoFrame.dataset.src;
-    //     if (src) {
-    //       videoFrame.src = src;
-    //     }
-    //     thumbnailOverlay.classList.add('d-none');
-    //     videoEmbedWrap.classList.remove('d-none');
-    //   });
-    // }
   </script>
 @endpush

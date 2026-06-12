@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Special Offer')
+@section('title', '(1) Your full report awaits...')
 
 @section('content')
   @php
@@ -10,7 +10,6 @@
   <section class="small-gap-start step-section container">
     <div class="step-panel mx-auto article-panel">
       <article class="cosmic-article mx-auto">
-        <!-- <p class="section-label text-center">Special Offer</p> -->
         <h1 class="section-title step-title text-center mb-4">The Cosmos Has Guided You Here Today On {{ $today }}{{ $name ? ", " . $name : '' }}...<br> Now Is The Time To Begin Your Magical Journey As You Follow Your <i>Cosmic Life Path</i></h1>
 
         <div class="article-image-wrap article-hero-image-wrap text-center mb-4">

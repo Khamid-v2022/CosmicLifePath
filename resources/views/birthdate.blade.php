@@ -177,13 +177,13 @@
             placeUnknown: @json((bool) old('place_unknown')),
         };
 
-        window.COSMIC_SOCIAL_PROOF = {
-            enabled: true,
-            mode: 'quiz',
-            visibleMs: 5000,
-            minDelayMs: 5000,
-            maxDelayMs: 30000,
-        };
+        // window.COSMIC_SOCIAL_PROOF = {
+        //     enabled: true,
+        //     mode: 'quiz',
+        //     visibleMs: 5000,
+        //     minDelayMs: 5000,
+        //     maxDelayMs: 30000,
+        // };
     </script>
 
     @if (config('services.google_maps.key'))

@@ -109,12 +109,12 @@
       step_name: 'contact_input'
     });
 
-    window.COSMIC_SOCIAL_PROOF = {
-      enabled: true,
-      mode: 'quiz',
-      visibleMs: 5000,
-      minDelayMs: 5000,
-      maxDelayMs: 30000,
-    };
+    // window.COSMIC_SOCIAL_PROOF = {
+    //   enabled: true,
+    //   mode: 'quiz',
+    //   visibleMs: 5000,
+    //   minDelayMs: 5000,
+    //   maxDelayMs: 30000,
+    // };
   </script>
 @endpush

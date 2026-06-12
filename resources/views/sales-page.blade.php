@@ -195,7 +195,7 @@
             <p class="step-copy article-copy">This exclusive guide reveals how the world's most iconic figures — billionaires, artists, visionaries, world leaders — unknowingly followed the exact same cosmic blueprint you now hold in your hands. Sign by sign, you will see their personality, their rise, their wounds, and their triumphs mapped perfectly onto the same design written for you at birth.</p>
           </div>
           <div class="article-inline-visual order-1 order-lg-2">
-            <img src="{{ asset('imgs/ebook/bonuse/bonus2.jpg') }}" alt="The Secret Language of Fame" class="download-main-img-large">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus1.jpg') }}" alt="The Secret Language of Fame" class="download-main-img-large">
           </div>
         </div>
          <p class="step-copy article-copy"><strong>When you see your blueprint in the people who changed the world, what becomes possible for you becomes impossible to ignore.</strong></p>
@@ -206,7 +206,7 @@
 
         <div class="article-inline-media article-inline-media-left my-4">
           <div class="article-inline-visual">
-            <img src="{{ asset('imgs/ebook/bonuse/bonus3.jpg') }}" alt="Your Lunar Money Path Report" class="download-main-img-large">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus2.jpg') }}" alt="Your Soul Urge Number Report" class="download-main-img-large">
           </div>
           <div class="article-inline-copy">
             <p class="step-copy article-copy">Your Cosmic Life Path reveals what the stars wrote for you. Your Soul Urge Number reveals what your soul has been quietly asking for your entire life.</p>
@@ -225,7 +225,7 @@
             <p class="step-copy article-copy">This report reveals the precise lunar windows each month when your sign is most cosmically aligned with financial opportunity. Use it to time your decisions, your investments, and your biggest moves for maximum cosmic advantage — month after month, year after year.</p>
           </div>
           <div class="article-inline-visual order-1 order-lg-2">
-            <img src="{{ asset('imgs/ebook/bonuse/bonus1.jpg') }}" alt="Your Lunar Money Path Report" class="download-main-img-large">
+            <img src="{{ asset('imgs/ebook/bonuse/bonus3.jpg') }}" alt="Your Lunar Money Path Report" class="download-main-img-large">
           </div>
         </div>
         <p class="step-copy article-copy"><strong>Use it to time your decisions, your investments, your biggest financial moves, and even your everyday choices for maximum cosmic advantage. Month after month, year after year — the moon is always there, and now you will finally know exactly when to act.</strong></p>
@@ -405,12 +405,35 @@
       step: 7,
       step_name: 'result'
     });
-    window.COSMIC_SOCIAL_PROOF = {
-      enabled: true,
-      mode: 'purchase',
-      visibleMs: 5000,
-      minDelayMs: 5000,
-      maxDelayMs: 30000,
-    };
+    // window.COSMIC_SOCIAL_PROOF = {
+    //   enabled: true,
+    //   mode: 'purchase',
+    //   visibleMs: 5000,
+    //   minDelayMs: 5000,
+    //   maxDelayMs: 30000,
+    // };
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('Setting up IntersectionObserver for social proof...');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  window.COSMIC_SOCIAL_PROOF = {
+                      enabled: true,
+                      mode: 'purchase',
+                      visibleMs: 5000,
+                      minDelayMs: 5000,
+                      maxDelayMs: 30000,
+                  };
+                  if (window.COSMIC_SOCIAL_PROOF && window.COSMIC_SOCIAL_PROOF.enabled) {
+                    window.initCosmicSocialProof(window.COSMIC_SOCIAL_PROOF);
+                  }
+                  observer.disconnect();
+              }
+          });
+      }, { threshold: 0.1 });
+
+      const vipOption = document.getElementById('vip_option');
+      if (vipOption) observer.observe(vipOption);
+    });
   </script>
 @endpush

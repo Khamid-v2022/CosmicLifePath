@@ -72,14 +72,13 @@
     });
 
 
-    window.COSMIC_SOCIAL_PROOF = {
-      enabled: true,
-      mode: 'purchase',
-      visibleMs: 5000,
-      minDelayMs: 5000,
-      maxDelayMs: 20000,
-    };
-
+    // window.COSMIC_SOCIAL_PROOF = {
+    //   enabled: true,
+    //   mode: 'purchase',
+    //   visibleMs: 5000,
+    //   minDelayMs: 5000,
+    //   maxDelayMs: 20000,
+    // };
 
     function loadVidalyticsVideo() {
         (function (v, i, d, a, l, y, t, c, s) {
@@ -93,8 +92,6 @@
         })(window, document, 'Vidalytics', 'vidalytics_embed_wJVfmwAQT5Xg8A1J', 'https://fast.vidalytics.com/embeds/x4wjDf3w/wJVfmwAQT5Xg8A1J/');
     }
     
-
-
     const loadingStage = document.getElementById('loadingStage');
     const videoStage = document.getElementById('videoStage');
 

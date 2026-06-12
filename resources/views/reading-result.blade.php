@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Your Generic Results')
+@section('title', 'Your Results')
 
 @section('content')
   <section class="small-gap-start step-section container">
@@ -125,12 +125,12 @@
 
 @push('scripts')
   <script>
-    window.COSMIC_SOCIAL_PROOF = {
-      enabled: true,
-      mode: 'purchase',
-      visibleMs: 5000,
-      minDelayMs: 5000,
-      maxDelayMs: 30000,
-    };
+    // window.COSMIC_SOCIAL_PROOF = {
+    //   enabled: true,
+    //   mode: 'purchase',
+    //   visibleMs: 5000,
+    //   minDelayMs: 5000,
+    //   maxDelayMs: 30000,
+    // };
   </script>
 @endpush

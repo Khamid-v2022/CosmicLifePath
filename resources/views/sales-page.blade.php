@@ -100,6 +100,13 @@
         <p class="step-copy article-copy">We all carry trauma in our lives. This part of the <i>Cosmic Life Path Reading</i> helps you to<strong>release the personal trauma</strong> held in your cells that holds you back in life...and stops you from being all you can be.</p>
         <p class="step-copy article-copy mb-0">You might not realise it yet, {{ $name ? $name . "," : '' }} but...</p>
        
+        <div class="text-center my-5">
+          <a href="#vip_option" class="btn hero-cta btn step-next-btn">
+            I Am Ready — Send My Full Report Now →
+          </a>
+          <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>
+        </div>
+
         <h2 class="section-title step-title article-major-title mt-5">A <i>Cosmic Life Path Reading</i> Will Transform Your Life...</h2>
         <p class="step-copy article-copy">Clients of mine who get <strong>a Cosmic Life Path Reading</strong> feel a deep sense of joy and awe upon reading it.</p>
         <p class="step-copy article-copy">They understand for the first time their <strong>unique place in the universe</strong> and how to maximise every moment of their lives.</p>

@@ -407,12 +407,13 @@ textarea:-webkit-autofill:focus {
 
 .hero-title {
   /* font-family: 'Cormorant Garamond', serif; */
-  font-size: clamp(2.4rem, 6vw, 2rem);
+  font-size: clamp(1.8rem, 6vw, 2rem);
   font-weight: 300;
   line-height: 1.2;
   margin-bottom: 1rem;
   opacity: 0;
   animation: fadeUp 1s 0.6s forwards;
+  max-width: 980px;
 }
 
 .hero-title em {
@@ -540,8 +541,7 @@ textarea:-webkit-autofill:focus {
 
 .section-desc {
   text-align: center;
-  font-size: 1.2rem;
-  letter-spacing: 0.06em;
+  font-size: 1rem;
   color: var(--fg-dim);
   line-height: 1.8;
 }

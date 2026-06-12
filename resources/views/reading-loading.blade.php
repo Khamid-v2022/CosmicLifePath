@@ -41,12 +41,6 @@
               <input type="hidden" name="birth_day" value="{{ $birth['day'] }}">
               <input type="hidden" name="birth_year" value="{{ $birth['year'] }}">
               <input type="hidden" name="birth_formatted_date" value="{{ $birth['formatted_date'] }}">
-              <input type="hidden" name="birth_hour" value="{{ $birth['hour'] }}">
-              <input type="hidden" name="birth_minute" value="{{ $birth['minute'] }}">
-              <input type="hidden" name="birth_meridiem" value="{{ $birth['meridiem'] }}">
-              <input type="hidden" name="birth_time_unknown" value="{{ $birth['time_unknown'] ? '1' : '0' }}">
-              <input type="hidden" name="birth_place" value="{{ $birth['birth_place'] }}">
-              <input type="hidden" name="birth_place_unknown" value="{{ $birth['place_unknown'] ? '1' : '0' }}">
               <!-- Hidden fields to persist contact data -->
               <input type="hidden" name="contact_name" value="{{ $name ?? null }}">
               <input type="hidden" name="ext" value="{{ $ext }}">

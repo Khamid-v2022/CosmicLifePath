@@ -47,8 +47,10 @@
                         </div>
                     @endif
 
-                    <form id="birthForm" class="birth-form" novalidate>
+                    <form method="POST" action="{{ route('birth.details.submit') }}" id="birthForm" class="birth-form" novalidate>
+                        @csrf
                         <input type="hidden" name="sign" value="{{ $signSlug }}">
+                        <input type="hidden" name="ext" value="{{ $ext }}">
 
                         <label class="birth-label" for="birthMonth">Date of birth</label>
 

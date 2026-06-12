@@ -144,13 +144,7 @@ class CosmicFlowController extends Controller {
                 'month' => (int) $request->input('birth_month'),
                 'day' => (int) $request->input('birth_day'),
                 'year' => (int) $request->input('birth_year'),
-                'formatted_date' => $request->input('birth_formatted_date'),
-                'hour' => (int) $request->input('birth_hour'),
-                'minute' => (int) $request->input('birth_minute'),
-                'meridiem' => $request->input('birth_meridiem'),
-                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
-                'birth_place' => $request->input('birth_place'),
-                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+                'formatted_date' => $request->input('birth_formatted_date')
             ];
         } else {
             // Fall back to session
@@ -177,13 +171,7 @@ class CosmicFlowController extends Controller {
                 'month' => (int) $request->input('birth_month'),
                 'day' => (int) $request->input('birth_day'),
                 'year' => (int) $request->input('birth_year'),
-                'formatted_date' => $request->input('birth_formatted_date'),
-                'hour' => (int) $request->input('birth_hour'),
-                'minute' => (int) $request->input('birth_minute'),
-                'meridiem' => $request->input('birth_meridiem'),
-                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
-                'birth_place' => $request->input('birth_place'),
-                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+                'formatted_date' => $request->input('birth_formatted_date')
             ];
         } else {
             $birth = $request->session()->get('cosmic.reading.birth');
@@ -232,13 +220,7 @@ class CosmicFlowController extends Controller {
                 'month' => (int) $request->input('birth_month'),
                 'day' => (int) $request->input('birth_day'),
                 'year' => (int) $request->input('birth_year'),
-                'formatted_date' => $request->input('birth_formatted_date'),
-                'hour' => (int) $request->input('birth_hour'),
-                'minute' => (int) $request->input('birth_minute'),
-                'meridiem' => $request->input('birth_meridiem'),
-                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
-                'birth_place' => $request->input('birth_place'),
-                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+                'formatted_date' => $request->input('birth_formatted_date')
             ];
 
             $contact = [
@@ -264,12 +246,6 @@ class CosmicFlowController extends Controller {
             'name' => $contact['name'] ?? null,
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
-            'formattedTime' => $birth['time_unknown']
-                ? 'Time not provided'
-                : sprintf('%02d:%02d %s', $birth['hour'], $birth['minute'], $birth['meridiem']),
-            'birthPlace' => $birth['place_unknown']
-                ? 'Place not provided'
-                : $birth['birth_place'],
             'videoUrl' => config('services.cosmic.video_url'),
             'birth' => $birth,
             'ext' => $ext,
@@ -291,12 +267,6 @@ class CosmicFlowController extends Controller {
                 'day' => (int) $request->input('birth_day'),
                 'year' => (int) $request->input('birth_year'),
                 'formatted_date' => $request->input('birth_formatted_date'),
-                'hour' => (int) $request->input('birth_hour'),
-                'minute' => (int) $request->input('birth_minute'),
-                'meridiem' => $request->input('birth_meridiem'),
-                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
-                'birth_place' => $request->input('birth_place'),
-                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
             ];
 
             $contact = [
@@ -324,12 +294,6 @@ class CosmicFlowController extends Controller {
             'name' => $contact ? $contact['name'] ?? null : null,
             'sign' => $birth['sign'],
             'formattedDate' => $birth['formatted_date'],
-            'formattedTime' => $birth['time_unknown']
-                ? 'Time not provided'
-                : sprintf('%02d:%02d %s', $birth['hour'], $birth['minute'], $birth['meridiem']),
-            'birthPlace' => $birth['place_unknown']
-                ? 'Place not provided'
-                : $birth['birth_place'],
             'birth' => $birth,
             'ext' => $ext,
         ]);
@@ -349,13 +313,7 @@ class CosmicFlowController extends Controller {
                 'month' => (int) $request->input('birth_month'),
                 'day' => (int) $request->input('birth_day'),
                 'year' => (int) $request->input('birth_year'),
-                'formatted_date' => $request->input('birth_formatted_date'),
-                'hour' => (int) $request->input('birth_hour'),
-                'minute' => (int) $request->input('birth_minute'),
-                'meridiem' => $request->input('birth_meridiem'),
-                'time_unknown' => (bool) $request->input('birth_time_unknown', false),
-                'birth_place' => $request->input('birth_place'),
-                'place_unknown' => (bool) $request->input('birth_place_unknown', false),
+                'formatted_date' => $request->input('birth_formatted_date')
             ];
 
             $contact = [

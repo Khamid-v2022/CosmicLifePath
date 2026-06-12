@@ -253,7 +253,8 @@
 @endphp
 
 @section('content')
-  <section class="hero container-fluid">
+<div class="landing-page">
+  <section class="hero container">
     <div class="orrery">
       <div class="ring ring-1"><div class="ring-dot"></div></div>
       <div class="ring ring-2"><div class="ring-dot ring-dot-sm"></div></div>
@@ -262,26 +263,21 @@
     </div>
 
     <p class="hero-eyebrow"><strong class="text-white"><i>Free</i></strong> Cosmic Life Path Reading</p>
-    <h1 class="hero-title">Your Personalized<br><em>Cosmic Life Path</em> Reading reveals... purppose in Life</h1>
+    <h1 class="hero-title">Your Personalized <em>Cosmic Life Path Reading</em> Reveals Hidden Gifts, Talents... And Your Unique Divine Purpose In Life</h1>
     <!-- <p class="hero-sub">Reveals Hidden Gifts, Talents... And Your Unique Divine Purpose In Life</p> -->
     <!-- <a href="#zodiac" class="hero-cta btn">REVEAL MY COSMIC PATH →</a> -->
   </section>
-<!-- 
-  <div class="divider container-fluid">
-    <div class="divider-line"></div>
-    <span class="divider-glyph">✦</span>
-    <div class="divider-line"></div>
-  </div> -->
+
 
   <section class="zodiac-section container" id="zodiac">
     <!-- <p class="section-label">THE TWELVE COSMIC SIGNS</p> -->
-    <h2 class="section-title mb-5">Step #1: Select Your Star Sign Below for your <strong>FREE</strong><em>Cosmic Life Path</em> Reading</h2>
+    <h2 class="section-title mb-4">Step #1: Select Your Star Sign Below for your <strong>FREE</strong><em> Cosmic Life Path</em> Reading</h2>
     
 
     <div class="row g-2 zodiac-grid">
       @php($signs = config('variables.signs'))
       @foreach ($signs as $sign)
-        <div class="col-6 col-md-4 col-xl-3">
+        <div class="col-6 col-md-3 col-xl-2">
           <a href="{{ route('birthdate', ['sign' => strtolower($sign['name'])]) }}{{ $ext ? '?ext=' . $ext : '' }}" class="zodiac-card js-open-sign w-100 d-block text-decoration-none" data-sign-slug="{{ strtolower($sign['name']) }}">
             <div class="zodiac-icon" aria-hidden="true">{!! $signSvgs[$sign['name']] !!}</div>
             <p class="zodiac-dates">{{ $sign['dates'] }}</p>
@@ -292,6 +288,7 @@
     </div>
     <p class="section-desc mt-4"><span class="text-warning">⚠</span> Due to high demand, availability is limited. Select your sign now to secure your FREE reading.</p>
   </section>
+</div>
 @endsection
 
 

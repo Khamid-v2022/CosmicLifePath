@@ -2,7 +2,7 @@
 
 @section('title', 'Final Step - Contact Details')
 @section('content')
-  <section class="step-section container">
+  <section class="small-gap-start step-section container">
     <!-- <div class="billing-info">
       <p class="mb-0 text-light"><strong>IMPORTANT: Do NOT Close This Window Or Click The "Back" Button</strong></p>
       <p class="mb-0">Pressing The "Back" Button May Result in Your Order Being Double-Billed By mistake!</p>

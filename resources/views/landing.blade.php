@@ -261,21 +261,21 @@
       <div class="ring ring-4"></div>
     </div>
 
-    <p class="hero-eyebrow">FREE PERSONALISED READING</p>
-    <h1 class="hero-title">Discover Your<br><em>Cosmic Life Path</em></h1>
-    <p class="hero-sub">Uncover the hidden gifts, secret talents, and divine purpose the cosmos encoded into you the moment you were born</p>
-    <a href="#zodiac" class="hero-cta btn">REVEAL MY COSMIC PATH →</a>
+    <p class="hero-eyebrow"><strong class="text-white"><i>Free</i></strong> Cosmic Life Path Reading</p>
+    <h1 class="hero-title">Your Personalized<br><em>Cosmic Life Path</em> Reading reveals... purppose in Life</h1>
+    <!-- <p class="hero-sub">Reveals Hidden Gifts, Talents... And Your Unique Divine Purpose In Life</p> -->
+    <!-- <a href="#zodiac" class="hero-cta btn">REVEAL MY COSMIC PATH →</a> -->
   </section>
-
+<!-- 
   <div class="divider container-fluid">
     <div class="divider-line"></div>
     <span class="divider-glyph">✦</span>
     <div class="divider-line"></div>
-  </div>
+  </div> -->
 
   <section class="zodiac-section container" id="zodiac">
-    <p class="section-label">THE TWELVE COSMIC SIGNS</p>
-    <h2 class="section-title mb-5">Step #1:<em> Select Your Star Sign Below</em></h2>
+    <!-- <p class="section-label">THE TWELVE COSMIC SIGNS</p> -->
+    <h2 class="section-title mb-5">Step #1: Select Your Star Sign Below for your <strong>FREE</strong><em>Cosmic Life Path</em> Reading</h2>
     
 
     <div class="row g-2 zodiac-grid">

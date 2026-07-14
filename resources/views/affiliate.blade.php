@@ -200,6 +200,7 @@
 
         <div class="swipe-filters">
         <button class="filter-btn active" onclick="filterSwipes('all', this)">All Swipes</button>
+        <button class="filter-btn" onclick="filterSwipes('series1', this)">Email Series 1</button>
         <button class="filter-btn" onclick="filterSwipes('long', this)">Long-Form</button>
         <button class="filter-btn" onclick="filterSwipes('short', this)">Short &amp; Punchy</button>
         <button class="filter-btn" onclick="filterSwipes('curiosity', this)">Curiosity</button>
@@ -469,6 +470,220 @@
         </div>
         </div>
 
+        <!-- EMAIL SERIES 1 -->
+        <div class="swipe-card" data-series="1">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-series">Email Series 1</span>
+            <span class="swipe-title">Email Swipe #1 🔥 — "Discover your hidden gifts here…"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">Discover your hidden gifts here…</div>
+            <div class="swipe-copy" id="swipe-series1-1">Hi [First Name],
+
+              It holds the key to helping you see for the first time ever, the hidden gifts and talents you possess.
+
+              It's one of the most powerful underground Astrology methods that ever existed.
+
+              It's called...
+              The Cosmic Mandala.
+
+              >>>You can access your FREE reading here: [HOPLINK]<<<
+
+              Thousands of years old.
+              Tracing its roots back to ancient Egypt.
+
+              In the right hands, it can give you unique insights into hidden gifts and talents you never knew existed.
+
+              You can then use these insights to manifest a life you never dreamed possible before.
+
+              >>>You can access a FREE Cosmic Life Path Reading here today: [HOPLINK]<<<
+
+              To your success,
+
+              [Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe-series1-1', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-series="1">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-series">Email Series 1</span>
+            <span class="swipe-title">Email Swipe #2 — "This is strange, but you need to see it…"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">This is strange [First Name], but you need to see it…</div>
+            <div class="swipe-copy" id="swipe-series1-2">Hi [First Name],
+
+Everyone is talking about how eerie this FREE Cosmic Life Path Reading is.
+
+It's based on an ancient type of Astrology called Cosmic Mandala Astrology...one of the most powerful Astrology methods to ever exist.
+
+People who are using the FREE reading are getting surprising insights into gifts and talents they have never explored before.
+
+These hidden gifts and talents can only be detected by this very special type of reading that picks up information from the cosmos on the day you were born about what you were meant to do in your life.
+
+>>>You can access your FREE Cosmic Life Path Reading right here: [HOPLINK]<<<
+
+Access it now while it's still online.
+
+To your success,
+
+[Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe-series1-2', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-series="1">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-series">Email Series 1</span>
+            <span class="swipe-title">Email Swipe #3 — "You will be shocked…"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">You will be shocked…</div>
+            <div class="swipe-copy" id="swipe-series1-3">Hi [First Name],
+
+The first time anyone does a Cosmic Life Path Reading, their first reaction (most of the time) is shock.
+
+This shock comes from seeing for the first time the true gifts and talents they have.
+
+Nothing is as powerful as a Cosmic Life Path Reading for uncovering these talents.
+
+The reason being...
+
+The Cosmic Life Path reading taps into the energy in the Cosmos on the day you were born and your destiny in life.
+
+The hidden talents and gifts the reading uncovers are linked to this cosmic purpose, which is yours and yours alone.
+
+If you're ready to see for the first time ever the hidden talents and gifts you have...
+
+...and how to use them to manifest the kind of life you've been dreaming of...
+
+>>>Head on over to this link right here: [HOPLINK]<<<
+
+To your success,
+
+[Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe-series1-3', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-series="1">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-series">Email Series 1</span>
+            <span class="swipe-title">Email Swipe #4 — "Choice"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">Choice</div>
+            <div class="swipe-copy" id="swipe-series1-4">Hi [First Name],
+
+What's the greatest secret to a happy life?
+
+Answer = CHOICE.
+
+I'm talking here about the choice to wake up when you want.
+
+To spend the day doing what you want to do.
+
+That could be working on a passion project or spending time with the family.
+
+Or just goofing off.
+
+Having choice in life is incredible.
+
+In order to live that life of choice, though, you need to be tapped into your hidden gifts and talents.
+
+Once you are connected with them...you can manifest whatever kind of life you want.
+
+By far the greatest tool for uncovering those hidden gifts and talents we all have is a Cosmic Life Path Reading.
+
+I've done one recently, and it's opened the door to gifts and talents I never knew I had.
+
+...making me aware of them for the first time ever.
+
+This reading taps into the energy of the Cosmos itself on the day of your birth to uncover the deepest individual potential you have.
+
+It's quite amazing.
+
+See for yourself here with a >>>FREE Cosmic Life Path Reading today: [HOPLINK]<<<
+
+To your success,
+
+[Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe-series1-4', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
+        <div class="swipe-card" data-series="1">
+        <div class="swipe-header" onclick="toggleSwipe(this)">
+            <div class="swipe-meta">
+            <span class="swipe-angle-tag angle-series">Email Series 1</span>
+            <span class="swipe-title">Email Swipe #5 — "Why the law of attraction doesn't work…"</span>
+            </div>
+            <span class="swipe-toggle">+</span>
+        </div>
+        <div class="swipe-body">
+            <div class="swipe-subject">Subject Line</div>
+            <div class="swipe-subject-line">Why the law of attraction doesn't work…</div>
+            <div class="swipe-copy" id="swipe-series1-5">Hi [First Name],
+
+Over 30 million copies of The Secret were sold worldwide.
+
+Millions did their affirmations and wrote down their goals.
+
+And then, for most people...
+
+Nothing happened.
+
+And it's the same today.
+
+People try to change their Brain Waves, say manifesting prayers and mantras, yet for most, it's the same story.
+
+Nothing gets manifested.
+
+Here's why this happens.
+
+For most people...
+
+They have hidden blocks to abundance that stop them from ever attracting the kind of life they crave.
+
+The only way to overcome these inner blocks to abundance, in my experience, is to get deep knowledge of who you are and what divine mission you were meant to accomplish in this incarnation.
+
+That knowledge of what I call your Cosmic Life Path will remove any blocks to your abundance lingering in your life.
+
+A FREE Cosmic Life Path Reading is by far the best way I have found to access these gifts and talents that are unique to you and you alone.
+
+Once you are aware of these gifts, there is no limit to what you can achieve.
+
+>>>You can access your FREE Cosmic Life Path Reading here today: [HOPLINK]<<<
+
+To your success,
+
+[Your Name]
+            </div>
+            <button class="copy-btn" onclick="copySwipe('swipe-series1-5', this)">⊕ Copy Swipe</button>
+        </div>
+        </div>
+
     </section>
 
     <!-- CONTEST PLACEHOLDER -->
@@ -542,6 +757,31 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
   }, { threshold: 0.1 });
   reveals.forEach(r => observer.observe(r));
+
+  // Swipe filters
+  function filterSwipes(filter, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.swipe-card').forEach(card => {
+      const angle = card.dataset.angle;
+      const length = card.dataset.length;
+      const series = card.dataset.series;
+      let show = false;
+
+      if (filter === 'all') {
+        show = true;
+      } else if (filter === 'series1') {
+        show = series === '1';
+      } else if (filter === 'long' || filter === 'short') {
+        show = length === filter;
+      } else {
+        show = angle === filter;
+      }
+
+      card.classList.toggle('filtered-out', !show);
+    });
+  }
 
   // Swipe accordion
   function toggleSwipe(header) {

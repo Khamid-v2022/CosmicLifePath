@@ -386,6 +386,10 @@
     overflow: hidden;
   }
 
+  .swipe-card.filtered-out {
+    display: none;
+  }
+
   .swipe-header {
     padding: 14px 20px;
     border-bottom: 1px solid var(--card-border);
@@ -406,6 +410,7 @@
   .angle-fear       { color: #c47a7a; border-color: rgba(196,122,122,0.3); background: rgba(196,122,122,0.07); }
   .angle-social     { color: #7ac47a; border-color: rgba(122,196,122,0.3); background: rgba(122,196,122,0.07); }
   .angle-identity   { color: #c9a84c; border-color: rgba(201,168,76,0.3);  background: rgba(201,168,76,0.07);  }
+  .angle-series     { color: #d4a574; border-color: rgba(212,165,116,0.3); background: rgba(212,165,116,0.07); }
   .swipe-length-badge { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; opacity: 0.7; }
 
   .swipe-header:hover { background: rgba(255,255,255,0.02); }

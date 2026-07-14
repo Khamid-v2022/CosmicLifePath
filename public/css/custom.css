@@ -402,9 +402,11 @@ textarea:-webkit-autofill:focus {
 }
 
 .hero-eyebrow {
-  /* font-family: 'Cinzel', serif; */
-  font-size: 4rem;
-  line-height: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
   color: var(--gold);
   margin-bottom: 1.25rem;
   opacity: 0;
@@ -412,10 +414,10 @@ textarea:-webkit-autofill:focus {
 }
 
 .hero-title {
-  /* font-family: 'Cormorant Garamond', serif; */
-  font-size: clamp(1.8rem, 6vw, 2rem);
-  font-weight: 300;
-  line-height: 1.2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 3.5vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1.5;
   margin-bottom: 1rem;
   opacity: 0;
   animation: fadeUp 1s 0.6s forwards;
@@ -538,7 +540,9 @@ textarea:-webkit-autofill:focus {
 }
 
 .landing-page .section-title {
-  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
 }
 
 .section-title em {
@@ -1730,12 +1734,13 @@ textarea:-webkit-autofill:focus {
     padding-top: 100px;
   }
   .hero-eyebrow {
-    letter-spacing: 0.1em;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
   }
   .hero-title {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 
   .hero-sub {
@@ -1747,7 +1752,8 @@ textarea:-webkit-autofill:focus {
     font-size: 1.2rem;
   }
   .landing-page .section-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
   }
   .zodiac-section {
     padding-top: 1rem;

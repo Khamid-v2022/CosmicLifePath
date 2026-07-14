@@ -110,30 +110,60 @@ class AWeberService
     // ─────────────────────────────────────────
     public function addSubscriber(string $email, string $name, string $signSlug): bool
     {
-        try {
+        $listId = config('aweber.list_id');
 
+        return $this->postSubscriber($listId, [
+            'email'           => $email,
+            'name'            => $name,
+            'tags'            => ['interested', $signSlug],
+            'status'          => 'subscribed',
+            'update_existing' => true,
+        ], $email);
+    }
+
+    // ─────────────────────────────────────────
+    // Add affiliate signup subscriber
+    // ─────────────────────────────────────────
+    public function addAffiliateSubscriber(string $email, string $name, string $clickbankId): bool
+    {
+        $listId = config('aweber.affiliate_list_id') ?: config('aweber.list_id');
+
+        $payload = [
+            'email'           => $email,
+            'name'            => $name,
+            'tags'            => ['affiliate', 'affiliate-signup'],
+            'status'          => 'subscribed',
+            'update_existing' => true,
+        ];
+
+        $clickbankField = config('aweber.affiliate_clickbank_field');
+        if ($clickbankField) {
+            $payload['custom_fields'] = [
+                $clickbankField => $clickbankId,
+            ];
+        } else {
+            $safeTag = 'cb-' . strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $clickbankId));
+            if ($safeTag !== 'cb-') {
+                $payload['tags'][] = $safeTag;
+            }
+        }
+
+        return $this->postSubscriber($listId, $payload, $email);
+    }
+
+    private function postSubscriber(string $listId, array $payload, string $email): bool
+    {
+        try {
             $accountId = config('aweber.account_id');
-            $listId    = config('aweber.list_id');
 
             $url = "{$this->baseUrl}/accounts/{$accountId}/lists/{$listId}/subscribers";
 
-            $payload = [
-                'email'           => $email,
-                'name'            => $name,
-                'tags'            => ['interested', $signSlug],
-                'status'          => 'subscribed',
-                'update_existing' => true,
-            ];
-
-            // try first time with current access token
             $accessToken = $this->getValidAccessToken();
 
             $response = Http::withToken($accessToken)
                 ->post($url, $payload);
 
-            // IF Access Token expired, Refresh
             if ($response->status() === 401) {
-
                 Log::warning('AWeber access token rejected. Refreshing token.');
 
                 $tokens = $this->loadTokens();
@@ -142,7 +172,6 @@ class AWeberService
                     $tokens['refresh_token']
                 );
 
-                // try second time with new access token
                 $response = Http::withToken($accessToken)
                     ->post($url, $payload);
             }
@@ -151,13 +180,13 @@ class AWeberService
                 'status' => $response->status(),
                 'body'   => $response->json(),
                 'email'  => $email,
+                'list_id'=> $listId,
             ]);
 
             if (in_array($response->status(), [200, 201])) {
-
                 Log::info('AWeber subscriber synced', [
                     'email' => $email,
-                    'tags'  => ['interested', $signSlug],
+                    'tags'  => $payload['tags'] ?? [],
                 ]);
 
                 return true;
@@ -167,16 +196,16 @@ class AWeberService
                 'status' => $response->status(),
                 'body'   => $response->json(),
                 'email'  => $email,
+                'list_id'=> $listId,
             ]);
 
             return false;
-
         } catch (\Throwable $e) {
-
-            Log::error('AWeber exception in addSubscriber', [
+            Log::error('AWeber exception in postSubscriber', [
                 'message' => $e->getMessage(),
                 'trace'   => $e->getTraceAsString(),
                 'email'   => $email,
+                'list_id' => $listId,
             ]);
 
             return false;

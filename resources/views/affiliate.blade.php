@@ -712,23 +712,26 @@ To your success,
         <h2>Grab Your <strong>Affiliate Link</strong></h2>
         <p class="section-intro section-intro-center">Sign up below to receive your hoplink, access your email swipes, and be notified of any updates, new swipes, or contest announcements.</p>
         <div class="card card-narrow">
-            <div class="form-row">
-                <div class="form-field">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Your first name">
+            <form id="affiliateSignupForm" class="affiliate-signup-form" novalidate>
+                @csrf
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="affiliateFirstName">First Name</label>
+                        <input type="text" id="affiliateFirstName" name="first_name" placeholder="Your first name" required autocomplete="given-name">
+                    </div>
+                    <div class="form-field">
+                        <label for="affiliateEmail">Email Address</label>
+                        <input type="email" id="affiliateEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+                    </div>
                 </div>
-                <div class="form-field">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="you@example.com">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="clickbankId">ClickBank ID</label>
+                        <input type="text" id="clickbankId" name="clickbank_id" placeholder="Your CB affiliate ID" required autocomplete="off">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-field">
-                    <label>ClickBank ID</label>
-                    <input type="text" id="clickbankId" placeholder="Your CB affiliate ID">
-                </div>
-            </div>
-            <button class="cta-btn cta-btn-full">Get My Affiliate Link ✦</button>
+                <button type="submit" class="cta-btn cta-btn-full" id="affiliateSignupBtn">Get My Affiliate Link ✦</button>
+            </form>
             <div class="affiliate-link-wrapper d-none">
                 <div class="affiliate-link" id="affiliateLink">https://hop.clickbank.net/?affiliate={affiID}&vendor=clifepath&cbpage=main</div>
                 <button class="copy-btn copy-btn-inline" onclick="copySwipe('affiliateLink', this)">⊕ Copy Link</button>
@@ -818,17 +821,47 @@ To your success,
     });
   }
 
-    // Generate affiliate link
-    document.querySelector('.cta-btn').addEventListener('click', () => {
+    // Affiliate signup + link generation
+    document.getElementById('affiliateSignupForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const firstName = document.getElementById('affiliateFirstName').value.trim();
+        const email = document.getElementById('affiliateEmail').value.trim();
         const cbId = document.getElementById('clickbankId').value.trim();
+        const csrfToken = document.querySelector('#affiliateSignupForm input[name="_token"]').value;
+
+        if (!firstName) {
+            alert('Please enter your first name.');
+            return;
+        }
+        if (!email) {
+            alert('Please enter your email address.');
+            return;
+        }
         if (!cbId) {
             alert('Please enter your ClickBank ID.');
             return;
         }
+
         const link = `https://hop.clickbank.net/?affiliate=${encodeURIComponent(cbId)}&vendor=clifepath&cbpage=main`;
         document.getElementById('affiliateLink').textContent = link;
-        // $(".affiliate-link-wrapper").removeClass('d-none');
         document.querySelector('.affiliate-link-wrapper').classList.remove('d-none');
+
+        fetch('{{ route('affiliate.signup') }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': csrfToken,
+            },
+            body: JSON.stringify({
+                first_name: firstName,
+                email: email,
+                clickbank_id: cbId,
+            }),
+        }).catch(() => {
+            // Link is shown regardless; AWeber sync runs in the background.
+        });
     });
   </script>
 @endpush

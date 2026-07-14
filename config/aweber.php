@@ -11,4 +11,10 @@ return [
 
     'account_id'       => env('AWEBER_ACCOUNT_ID'),
     'list_id'          => env('AWEBER_LIST_ID'),
+
+    // Affiliate signup list (AWeber form 176667181). Falls back to list_id when unset.
+    'affiliate_list_id' => env('AWEBER_AFFILIATE_LIST_ID'),
+
+    // Optional AWeber custom field name for ClickBank ID (create in list settings first).
+    'affiliate_clickbank_field' => env('AWEBER_AFFILIATE_CLICKBANK_FIELD'),
 ];

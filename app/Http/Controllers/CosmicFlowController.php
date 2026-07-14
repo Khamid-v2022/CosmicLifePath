@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use Illuminate\View\View;
 
 use App\Jobs\AddAWeberSubscriberJob;
+use App\Jobs\AddAffiliateAWeberSubscriberJob;
 
 class CosmicFlowController extends Controller {
 
@@ -508,5 +510,22 @@ class CosmicFlowController extends Controller {
 
     public function affiliatePage(): View {
         return view('affiliate');
+    }
+
+    public function affiliateSignup(Request $request): JsonResponse
+    {
+        $data = $request->validate([
+            'first_name'   => ['required', 'string', 'max:100'],
+            'email'        => ['required', 'email', 'max:255'],
+            'clickbank_id' => ['required', 'string', 'max:100'],
+        ]);
+
+        AddAffiliateAWeberSubscriberJob::dispatch(
+            $data['email'],
+            $data['first_name'],
+            $data['clickbank_id']
+        );
+
+        return response()->json(['success' => true]);
     }
 }

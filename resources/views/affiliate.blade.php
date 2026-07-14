@@ -5,40 +5,48 @@
 @endpush
 
 @section('content')
+<div class="affiliate-page">
     <!-- HERO -->
     <div class="hero">
         <div class="eyebrow">Affiliate Resource Centre</div>
         <h1>Welcome to<br><em>Cosmic Life Path Reading</em></h1>
         <p class="hero-sub mb-0">Presented by Celestra Vonn · Cosmic Mandala Astrology</p>
         <div class="gold-divider"></div>
-        <p style="font-size:14px; color:var(--muted); max-width:520px; margin:0 auto;">A premium personalised astrology experience purpose-built for high engagement, deep resonance, and exceptional funnel performance across spiritual and self-help verticals.</p>
+        <p class="hero-lead">A premium personalised astrology experience purpose-built for high engagement, deep resonance, and exceptional funnel performance across spiritual and self-help verticals.</p>
     </div>
 
     <!-- STATS ROW -->
-    <div class="stats-row">
-    <div class="stat-pill">
-        <div class="stat-label">Conversion Rate</div>
-        <div class="stat-value">TBC</div>
-        <div class="stat-desc">Initial data incoming</div>
-        <div class="placeholder-badge">Placeholder</div>
-    </div>
-    <div class="stat-pill">
-        <div class="stat-label">Affiliate EPC</div>
-        <div class="stat-value">TBC</div>
-        <div class="stat-desc">Will update at launch</div>
-        <div class="placeholder-badge">Placeholder</div>
-    </div>
-    <div class="stat-pill">
-        <div class="stat-label">Refund Rate</div>
-        <div class="stat-value">TBC</div>
-        <div class="stat-desc">365-day guarantee funnel</div>
-        <div class="placeholder-badge">Placeholder</div>
-    </div>
-    <div class="stat-pill">
-        <div class="stat-label">Commission</div>
-        <div class="stat-value">60%</div>
-        <div class="stat-desc">Across the entire funnel</div>
-    </div>
+    <div class="stats-section">
+        <div class="stats-section-head">
+            <span class="stats-live-badge"><span class="stats-live-dot" aria-hidden="true"></span>Live Performance</span>
+            <p class="stats-section-note">Real funnel metrics from active affiliate traffic</p>
+        </div>
+        <div class="stats-row">
+            <article class="stat-pill">
+                <span class="stat-label">Conversion Rate</span>
+                <div class="stat-value">0.77%</div>
+                <p class="stat-desc">Visitor-to-buyer conversion</p>
+            </article>
+            <article class="stat-pill">
+                <span class="stat-label">Affiliate EPC</span>
+                <div class="stat-value stat-value-epc" aria-label="$0.36 to $2.64">
+                    <span>$0.36</span>
+                    <span class="stat-epc-dash">–</span>
+                    <span>$2.64</span>
+                </div>
+                <p class="stat-desc">Earnings per click</p>
+            </article>
+            <article class="stat-pill">
+                <span class="stat-label">Avg. Order Value</span>
+                <div class="stat-value">$74.47</div>
+                <p class="stat-desc">Including upsell revenue</p>
+            </article>
+            <article class="stat-pill">
+                <span class="stat-label">Refund Rate</span>
+                <div class="stat-value">5.26%</div>
+                <p class="stat-desc">365-day guarantee funnel</p>
+            </article>
+        </div>
     </div>
 
     <div class="container">
@@ -48,7 +56,7 @@
         <div class="section-label">The Product</div>
         <h2>What Is the <strong>Cosmic Life Path Reading?</strong></h2>
         <div class="card">
-            <p>The <strong style="color:var(--gold-light)">Cosmic Life Path Reading</strong> is a premium, deeply personalised astrology report channelled through <em style="font-family:'Cormorant Garamond',serif; font-size:17px">Celestra Vonn</em> — psychic astrologer and inheritor of the <strong style="color:var(--gold-light)">Cosmic Mandala Astrology</strong> system, a lineage descending from the legendary prophetess Mother Shipman.</p>
+            <p>The <strong class="text-gold">Cosmic Life Path Reading</strong> is a premium, deeply personalised astrology report channelled through <em class="name-em">Celestra Vonn</em> — psychic astrologer and inheritor of the <strong class="text-gold">Cosmic Mandala Astrology</strong> system, a lineage descending from the legendary prophetess Mother Shipman.</p>
             <p>Unlike generic horoscope products, this is a sign-specific, identity-level reading that tells the reader precisely who they are cosmically — their hidden strengths, their wealth blocks, their love patterns, and the planetary timing aligned to their unique life path.</p>
             <p>Delivered as a beautifully designed PDF report, the reading is structured around a proprietary framework that positions astrology not as fortune-telling, but as a precision map of the self. It reads like a private session with a world-class psychic astrologer — and converts accordingly.</p>
             <p>This is the kind of product your subscribers have been waiting their whole lives for someone to send them.</p>
@@ -77,14 +85,14 @@
   <section class="reveal">
     <div class="section-label">Earning Potential</div>
     <h2>One Customer. <strong>Three Ways to Earn.</strong></h2>
-    <p style="margin-bottom: 28px; color: var(--muted); font-size: 14px;">Unlike a standard funnel with a fixed ceiling, the Cosmic Life Path ecosystem is built for repeat revenue. Here's how a single referral can keep paying you.</p>
+    <p class="section-intro">Unlike a standard funnel with a fixed ceiling, the Cosmic Life Path ecosystem is built for repeat revenue. Here's how a single referral can keep paying you.</p>
 
-    <div class="card" style="margin-bottom: 16px;">
-      <div style="display:flex; align-items:flex-start; gap: 20px;">
-        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">1</div>
-        <div style="flex:1">
-          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">The Core Funnel</div>
-          <p style="margin-bottom: 12px; font-size:14px;">Every referred customer enters a four-step funnel. Front end at $47, followed by three one-click upsells at $67, $47, and $47. You earn 60% at every step.</p>
+    <div class="card card-spaced">
+      <div class="funnel-row">
+        <div class="funnel-num">1</div>
+        <div class="funnel-content">
+          <div class="funnel-kicker">The Core Funnel</div>
+          <p class="funnel-copy">Every referred customer enters a four-step funnel. Front end at $47, followed by three one-click upsells at $67, $47, and $47. You earn 60% at every step.</p>
           <div class="funnel-snapshot">
             <div class="funnel-step">
               <div class="fs-tag">Front End</div>
@@ -110,48 +118,48 @@
               <div class="fs-price">$47</div>
             </div>
           </div>
-          <p style="font-size:12px; color:var(--muted); margin: 10px 0 0;">A $14.97 downsell is available for non-buyers on the front end. 60% commission applies at every step.</p>
+          <p class="muted-note">A $14.97 downsell is available for non-buyers on the front end. 60% commission applies at every step.</p>
         </div>
       </div>
     </div>
 
-    <div class="card" style="margin-bottom: 16px;">
-      <div style="display:flex; align-items:flex-start; gap: 20px;">
-        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">2</div>
-        <div style="flex:1">
-          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">Backend Report Purchases</div>
-          <p style="font-size:14px; margin-bottom: 10px;">Customers don't stop at their own sign. People buy for their partners, children, parents, and friends — or out of pure curiosity for the signs they're closest to. All 12 individual sign reports are available on the backend, and every purchase through your link earns you 60%.</p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <div style="background: rgba(201,168,76,0.06); border: 1px solid var(--card-border); border-radius:6px; padding: 12px 16px; flex:1; min-width:160px; text-align:center;">
-              <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:2px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:4px;">Reports Available</div>
-              <div style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:600; color:var(--gold-light);">12</div>
-              <div style="font-size:11px; color:var(--muted);">One for every sign</div>
+    <div class="card card-spaced">
+      <div class="funnel-row">
+        <div class="funnel-num">2</div>
+        <div class="funnel-content">
+          <div class="funnel-kicker">Backend Report Purchases</div>
+          <p class="funnel-copy">Customers don't stop at their own sign. People buy for their partners, children, parents, and friends — or out of pure curiosity for the signs they're closest to. All 12 individual sign reports are available on the backend, and every purchase through your link earns you 60%.</p>
+          <div class="mini-stats">
+            <div class="mini-stat">
+              <div class="mini-stat-label">Reports Available</div>
+              <div class="mini-stat-value">12</div>
+              <div class="mini-stat-desc">One for every sign</div>
             </div>
-            <div style="background: rgba(201,168,76,0.06); border: 1px solid var(--card-border); border-radius:6px; padding: 12px 16px; flex:1; min-width:160px; text-align:center;">
-              <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:2px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:4px;">Your Cut Per Report</div>
-              <div style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:600; color:var(--gold-light);">60%</div>
-              <div style="font-size:11px; color:var(--muted);">Every backend purchase</div>
+            <div class="mini-stat">
+              <div class="mini-stat-label">Your Cut Per Report</div>
+              <div class="mini-stat-value">60%</div>
+              <div class="mini-stat-desc">Every backend purchase</div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card" style="margin-bottom: 20px;">
-      <div style="display:flex; align-items:flex-start; gap: 20px;">
-        <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.06)); border: 1px solid var(--card-border); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--gold);">3</div>
-        <div style="flex:1">
-          <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">Full Funnel Repeats</div>
-          <p style="font-size:14px; margin-bottom:0;">A customer who loved their reading doesn't stop at one sign. They come back and run through the complete upsell sequence for a second — or third — sign. That means the full funnel commission structure resets with every new sign they purchase. There is no hard ceiling on what a single referred customer can be worth to you.</p>
+    <div class="card card-spaced-lg">
+      <div class="funnel-row">
+        <div class="funnel-num">3</div>
+        <div class="funnel-content">
+          <div class="funnel-kicker">Full Funnel Repeats</div>
+          <p class="funnel-copy mb-0">A customer who loved their reading doesn't stop at one sign. They come back and run through the complete upsell sequence for a second — or third — sign. That means the full funnel commission structure resets with every new sign they purchase. There is no hard ceiling on what a single referred customer can be worth to you.</p>
         </div>
       </div>
     </div>
 
-    <div style="background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.03)); border: 1px solid rgba(201,168,76,0.3); border-radius:8px; padding: 24px 28px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
-      <div style="font-size:28px;">✦</div>
+    <div class="callout-box">
+      <div class="callout-glyph">✦</div>
       <div>
-        <div style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:3px; color:var(--gold-dim); text-transform:uppercase; margin-bottom:6px;">The Bottom Line</div>
-        <p style="font-size:14px; color:var(--champagne); margin:0; line-height:1.6;">Most funnels give you one shot at one customer. This one gives you a full ecosystem — 12 reports, 3 upsells, and repeat purchase behaviour baked into the product. <strong style="color:var(--gold-light)">Your cookie tracks every purchase for 60 days from their first click.</strong></p>
+        <div class="callout-kicker">The Bottom Line</div>
+        <p class="callout-copy">Most funnels give you one shot at one customer. This one gives you a full ecosystem — 12 reports, 3 upsells, and repeat purchase behaviour baked into the product. <strong class="text-gold">Your cookie tracks every purchase for 60 days from their first click.</strong></p>
       </div>
     </div>
   </section>
@@ -196,7 +204,7 @@
     <section class="reveal">
         <div class="section-label">Email Swipes</div>
         <h2>Ready-to-Send <strong>Promotions</strong></h2>
-        <p style="margin-bottom:16px;">All swipes are written in British English. Click to expand, copy, and paste. Filter by angle or length below. Personalise the opening with your name for best results.</p>
+        <p class="section-intro">All swipes are written in British English. Click to expand, copy, and paste. Filter by angle or length below. Personalise the opening with your name for best results.</p>
 
         <div class="swipe-filters">
         <button class="filter-btn active" onclick="filterSwipes('all', this)">All Swipes</button>
@@ -697,13 +705,13 @@ To your success,
     </section>
 
     <!-- GET YOUR LINK -->
-    <section class="reveal visible" style="text-align:center;">
-        <div class="section-label" style="justify-content:center;">
-            <span style="flex:none">Get Started</span>
+    <section class="reveal visible section-centered">
+        <div class="section-label section-label-center">
+            <span>Get Started</span>
         </div>
         <h2>Grab Your <strong>Affiliate Link</strong></h2>
-        <p style="max-width:480px; margin:0 auto 28px;">Sign up below to receive your hoplink, access your email swipes, and be notified of any updates, new swipes, or contest announcements.</p>
-        <div class="card" style="max-width:560px; margin:0 auto;">
+        <p class="section-intro section-intro-center">Sign up below to receive your hoplink, access your email swipes, and be notified of any updates, new swipes, or contest announcements.</p>
+        <div class="card card-narrow">
             <div class="form-row">
                 <div class="form-field">
                     <label>First Name</label>
@@ -720,10 +728,10 @@ To your success,
                     <input type="text" id="clickbankId" placeholder="Your CB affiliate ID">
                 </div>
             </div>
-            <button class="cta-btn" style="width:100%; margin-top:8px;">Get My Affiliate Link ✦</button>
+            <button class="cta-btn cta-btn-full">Get My Affiliate Link ✦</button>
             <div class="affiliate-link-wrapper d-none">
                 <div class="affiliate-link" id="affiliateLink">https://hop.clickbank.net/?affiliate={affiID}&vendor=clifepath&cbpage=main</div>
-                <button class="copy-btn" onclick="copySwipe('affiliateLink', this)" fdprocessedid="m4nt10" style="margin-top: 0px; min-width: 120px ">⊕ Copy Link</button>
+                <button class="copy-btn copy-btn-inline" onclick="copySwipe('affiliateLink', this)">⊕ Copy Link</button>
             </div>
         </div>
     </section>
@@ -739,13 +747,14 @@ To your success,
             <li><span class="no">Do Not</span> Use negative promotional tactics such as "scam," "fake," or similar terms in your copy or ads.</li>
             <li><span class="no">Do Not</span> Make specific income, healing, or outcome claims not supported by our materials.</li>
         </ul>
-        <p style="margin-top:20px; font-size:13px; color:var(--muted);">Affiliates found in violation of the above will have their hoplinks disabled immediately. These policies exist to protect the reputation of the product and the commissions of every affiliate supporting it.</p>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Questions or custom tools? Reach us at <strong style="color:var(--gold-dim)">support@thecosmiclifepath.com</strong> — we respond within 1–2 business days.</p>
+        <p class="rules-note">Affiliates found in violation of the above will have their hoplinks disabled immediately. These policies exist to protect the reputation of the product and the commissions of every affiliate supporting it.</p>
+        <p class="rules-contact">Questions or custom tools? Reach us at <strong class="text-gold-dim">support@thecosmiclifepath.com</strong> — we respond within 1–2 business days.</p>
         </div>
     </section>
-    <section class="disclaimer-section text-center mt-5" style="font-size: 0.8rem">
+    <section class="disclaimer-section text-center mt-5">
         ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products
     </section>
+</div>
 </div>
 @endsection
 

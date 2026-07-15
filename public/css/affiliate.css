@@ -413,7 +413,12 @@ html { scroll-behavior: smooth; }
   color: var(--gold-light);
 }
 
-.affiliate-page .funnel-content { flex: 1; min-width: 0; }
+.affiliate-page .funnel-content {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 
 .affiliate-page .funnel-kicker {
   font-family: 'Cinzel', serif;
@@ -546,14 +551,12 @@ html { scroll-behavior: smooth; }
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  overflow-x: auto;
   padding: 0.5rem 0 1rem;
-  -webkit-overflow-scrolling: touch;
 }
 
 .affiliate-page .funnel-step {
   flex: 1;
-  min-width: 120px;
+  min-width: 0;
   text-align: center;
   padding: 1.125rem 0.85rem;
   background: linear-gradient(135deg, rgba(201, 168, 76, 0.09), rgba(201, 168, 76, 0.03));
@@ -587,8 +590,13 @@ html { scroll-behavior: smooth; }
 }
 
 .affiliate-page .funnel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
   color: var(--gold-dim);
   font-size: 1.25rem;
+  line-height: 1;
   padding: 0 0.35rem;
   flex-shrink: 0;
   opacity: 0.6;
@@ -1031,6 +1039,25 @@ html { scroll-behavior: smooth; }
   .affiliate-page .funnel-row {
     flex-direction: column;
     gap: 0.85rem;
+  }
+
+  .affiliate-page .funnel-snapshot {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.25rem 0 0.75rem;
+  }
+
+  .affiliate-page .funnel-arrow {
+    display: none;
+  }
+
+  .affiliate-page .funnel-step {
+    padding: 1rem 0.75rem;
+  }
+
+  .affiliate-page .funnel-step .fs-name {
+    font-size: 0.875rem;
   }
 
   .affiliate-page .swipe-header {

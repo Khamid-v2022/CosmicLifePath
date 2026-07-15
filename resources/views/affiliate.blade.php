@@ -531,21 +531,21 @@
             <div class="swipe-subject-line">This is strange [First Name], but you need to see it…</div>
             <div class="swipe-copy" id="swipe-series1-2">Hi [First Name],
 
-Everyone is talking about how eerie this FREE Cosmic Life Path Reading is.
+                Everyone is talking about how eerie this FREE Cosmic Life Path Reading is.
 
-It's based on an ancient type of Astrology called Cosmic Mandala Astrology...one of the most powerful Astrology methods to ever exist.
+                It's based on an ancient type of Astrology called Cosmic Mandala Astrology...one of the most powerful Astrology methods to ever exist.
 
-People who are using the FREE reading are getting surprising insights into gifts and talents they have never explored before.
+                People who are using the FREE reading are getting surprising insights into gifts and talents they have never explored before.
 
-These hidden gifts and talents can only be detected by this very special type of reading that picks up information from the cosmos on the day you were born about what you were meant to do in your life.
+                These hidden gifts and talents can only be detected by this very special type of reading that picks up information from the cosmos on the day you were born about what you were meant to do in your life.
 
->>>You can access your FREE Cosmic Life Path Reading right here: [HOPLINK]<<<
+                >>>You can access your FREE Cosmic Life Path Reading right here: [HOPLINK]<<<
 
-Access it now while it's still online.
+                Access it now while it's still online.
 
-To your success,
+                To your success,
 
-[Your Name]
+                [Your Name]
             </div>
             <button class="copy-btn" onclick="copySwipe('swipe-series1-2', this)">⊕ Copy Swipe</button>
         </div>
@@ -564,27 +564,27 @@ To your success,
             <div class="swipe-subject-line">You will be shocked…</div>
             <div class="swipe-copy" id="swipe-series1-3">Hi [First Name],
 
-The first time anyone does a Cosmic Life Path Reading, their first reaction (most of the time) is shock.
+                The first time anyone does a Cosmic Life Path Reading, their first reaction (most of the time) is shock.
 
-This shock comes from seeing for the first time the true gifts and talents they have.
+                This shock comes from seeing for the first time the true gifts and talents they have.
 
-Nothing is as powerful as a Cosmic Life Path Reading for uncovering these talents.
+                Nothing is as powerful as a Cosmic Life Path Reading for uncovering these talents.
 
-The reason being...
+                The reason being...
 
-The Cosmic Life Path reading taps into the energy in the Cosmos on the day you were born and your destiny in life.
+                The Cosmic Life Path reading taps into the energy in the Cosmos on the day you were born and your destiny in life.
 
-The hidden talents and gifts the reading uncovers are linked to this cosmic purpose, which is yours and yours alone.
+                The hidden talents and gifts the reading uncovers are linked to this cosmic purpose, which is yours and yours alone.
 
-If you're ready to see for the first time ever the hidden talents and gifts you have...
+                If you're ready to see for the first time ever the hidden talents and gifts you have...
 
-...and how to use them to manifest the kind of life you've been dreaming of...
+                ...and how to use them to manifest the kind of life you've been dreaming of...
 
->>>Head on over to this link right here: [HOPLINK]<<<
+                >>>Head on over to this link right here: [HOPLINK]<<<
 
-To your success,
+                To your success,
 
-[Your Name]
+                [Your Name]
             </div>
             <button class="copy-btn" onclick="copySwipe('swipe-series1-3', this)">⊕ Copy Swipe</button>
         </div>
@@ -603,39 +603,39 @@ To your success,
             <div class="swipe-subject-line">Choice</div>
             <div class="swipe-copy" id="swipe-series1-4">Hi [First Name],
 
-What's the greatest secret to a happy life?
+                What's the greatest secret to a happy life?
 
-Answer = CHOICE.
+                Answer = CHOICE.
 
-I'm talking here about the choice to wake up when you want.
+                I'm talking here about the choice to wake up when you want.
 
-To spend the day doing what you want to do.
+                To spend the day doing what you want to do.
 
-That could be working on a passion project or spending time with the family.
+                That could be working on a passion project or spending time with the family.
 
-Or just goofing off.
+                Or just goofing off.
 
-Having choice in life is incredible.
+                Having choice in life is incredible.
 
-In order to live that life of choice, though, you need to be tapped into your hidden gifts and talents.
+                In order to live that life of choice, though, you need to be tapped into your hidden gifts and talents.
 
-Once you are connected with them...you can manifest whatever kind of life you want.
+                Once you are connected with them...you can manifest whatever kind of life you want.
 
-By far the greatest tool for uncovering those hidden gifts and talents we all have is a Cosmic Life Path Reading.
+                By far the greatest tool for uncovering those hidden gifts and talents we all have is a Cosmic Life Path Reading.
 
-I've done one recently, and it's opened the door to gifts and talents I never knew I had.
+                I've done one recently, and it's opened the door to gifts and talents I never knew I had.
 
-...making me aware of them for the first time ever.
+                ...making me aware of them for the first time ever.
 
-This reading taps into the energy of the Cosmos itself on the day of your birth to uncover the deepest individual potential you have.
+                This reading taps into the energy of the Cosmos itself on the day of your birth to uncover the deepest individual potential you have.
 
-It's quite amazing.
+                It's quite amazing.
 
-See for yourself here with a >>>FREE Cosmic Life Path Reading today: [HOPLINK]<<<
+                See for yourself here with a >>>FREE Cosmic Life Path Reading today: [HOPLINK]<<<
 
-To your success,
+                To your success,
 
-[Your Name]
+                [Your Name]
             </div>
             <button class="copy-btn" onclick="copySwipe('swipe-series1-4', this)">⊕ Copy Swipe</button>
         </div>
@@ -654,39 +654,39 @@ To your success,
             <div class="swipe-subject-line">Why the law of attraction doesn't work…</div>
             <div class="swipe-copy" id="swipe-series1-5">Hi [First Name],
 
-Over 30 million copies of The Secret were sold worldwide.
+                Over 30 million copies of The Secret were sold worldwide.
 
-Millions did their affirmations and wrote down their goals.
+                Millions did their affirmations and wrote down their goals.
 
-And then, for most people...
+                And then, for most people...
 
-Nothing happened.
+                Nothing happened.
 
-And it's the same today.
+                And it's the same today.
 
-People try to change their Brain Waves, say manifesting prayers and mantras, yet for most, it's the same story.
+                People try to change their Brain Waves, say manifesting prayers and mantras, yet for most, it's the same story.
 
-Nothing gets manifested.
+                Nothing gets manifested.
 
-Here's why this happens.
+                Here's why this happens.
 
-For most people...
+                For most people...
 
-They have hidden blocks to abundance that stop them from ever attracting the kind of life they crave.
+                They have hidden blocks to abundance that stop them from ever attracting the kind of life they crave.
 
-The only way to overcome these inner blocks to abundance, in my experience, is to get deep knowledge of who you are and what divine mission you were meant to accomplish in this incarnation.
+                The only way to overcome these inner blocks to abundance, in my experience, is to get deep knowledge of who you are and what divine mission you were meant to accomplish in this incarnation.
 
-That knowledge of what I call your Cosmic Life Path will remove any blocks to your abundance lingering in your life.
+                That knowledge of what I call your Cosmic Life Path will remove any blocks to your abundance lingering in your life.
 
-A FREE Cosmic Life Path Reading is by far the best way I have found to access these gifts and talents that are unique to you and you alone.
+                A FREE Cosmic Life Path Reading is by far the best way I have found to access these gifts and talents that are unique to you and you alone.
 
-Once you are aware of these gifts, there is no limit to what you can achieve.
+                Once you are aware of these gifts, there is no limit to what you can achieve.
 
->>>You can access your FREE Cosmic Life Path Reading here today: [HOPLINK]<<<
+                >>>You can access your FREE Cosmic Life Path Reading here today: [HOPLINK]<<<
 
-To your success,
+                To your success,
 
-[Your Name]
+                [Your Name]
             </div>
             <button class="copy-btn" onclick="copySwipe('swipe-series1-5', this)">⊕ Copy Swipe</button>
         </div>

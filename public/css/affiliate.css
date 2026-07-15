@@ -58,6 +58,7 @@ html { scroll-behavior: smooth; }
 .affiliate-page .hero::before {
   content: '';
   position: absolute;
+  max-width: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);

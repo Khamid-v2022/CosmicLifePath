@@ -14,7 +14,9 @@ class CosmicFlowController extends Controller {
 
     public function landing(Request $request): View
     {
-        $ext = $request->query('ext');
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
+
         return view('landing',  [
             'ext' => $ext
         ]);
@@ -22,7 +24,9 @@ class CosmicFlowController extends Controller {
 
     public function birthdatePage(Request $request, string $sign)
     {
-        $ext = $request->query('ext');
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
+
         return view('birthdate', [
             'ext' => $ext,
             'signSlug' => $sign,
@@ -61,6 +65,7 @@ class CosmicFlowController extends Controller {
 
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
+        remember_funnel_ext($request, $validated['ext'] ?? null);
 
         if($validated['ext']) {
             return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
@@ -125,6 +130,7 @@ class CosmicFlowController extends Controller {
 
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
+        remember_funnel_ext($request, $validated['ext'] ?? null);
 
         if($validated['ext']) {
             return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
@@ -209,7 +215,8 @@ class CosmicFlowController extends Controller {
 
     public function readingRoading(Request $request): View|RedirectResponse
     {
-        $ext = $request->query('ext');    
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
         
         // Try to get data from form submission first, then fall back to session
         $birth = null;
@@ -256,7 +263,8 @@ class CosmicFlowController extends Controller {
 
     public function summary(Request $request): View|RedirectResponse
     {
-        $ext = $request->query('ext'); 
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
 
         $birth = null;
         $contact = null;
@@ -276,7 +284,6 @@ class CosmicFlowController extends Controller {
                 'email' => $request->input('contact_email'),
             ];
 
-            $ext = $request->input('ext'); 
         } else {
             // Fall back to session
             $birth = $request->session()->get('cosmic.reading.birth');
@@ -303,6 +310,8 @@ class CosmicFlowController extends Controller {
 
     public function sales(Request $request): View|RedirectResponse
     {
+        $ext = funnel_ext_from_request($request);
+
         // Try to get data from form submission first, then fall back to session
         $birth = null;
         $contact = null;
@@ -342,6 +351,7 @@ class CosmicFlowController extends Controller {
             'sign' => $birth['sign'],
             'sign_info' => $signInfo,
             'birth' => $birth,
+            'ext' => $ext,
         ]);
     }
 

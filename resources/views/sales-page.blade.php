@@ -402,7 +402,7 @@
     gtag('event', 'funnel_step_view', {
       funnel_name: 'horoscope_sales',
       step: 7,
-      step_name: 'result'
+      step_name: @json(funnel_step_name('result', $ext ?? null))
     });
     // window.COSMIC_SOCIAL_PROOF = {
     //   enabled: true,

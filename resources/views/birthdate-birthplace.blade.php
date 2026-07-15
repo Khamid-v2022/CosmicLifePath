@@ -157,8 +157,10 @@
         gtag('event', 'funnel_step_view', {
             funnel_name: 'horoscope_sales',
             step: 2,
-            step_name: 'birthday_input'
+            step_name: @json(funnel_step_name('birthday_input', $ext))
         });
+
+        window.COSMIC_FUNNEL_EXT = @json($ext);
 
         window.COSMIC_FORM_RULE = @json($sign['months']);
         window.COSMIC_FORM_STATE = {

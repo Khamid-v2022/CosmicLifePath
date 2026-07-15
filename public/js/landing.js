@@ -1,4 +1,8 @@
 (() => {
+  const cosmicFunnelStepName = (base) => (
+    window.COSMIC_FUNNEL_EXT === 'no' ? `${base}_ext_no` : base
+  );
+
   const safeStorage = {
     get(key) {
       try {
@@ -435,7 +439,7 @@
       gtag('event', 'funnel_step_view', {
         funnel_name: 'horoscope_sales',
         step: 3,
-        step_name: 'birthplace_input'
+        step_name: cosmicFunnelStepName('birthplace_input')
       });
     });
 

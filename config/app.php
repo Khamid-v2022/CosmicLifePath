@@ -124,4 +124,5 @@ return [
     ],
 
     'ga4_id' => env('GA4_ID'),
+    'clarity_id' => env('CLARITY_ID'),
 ];

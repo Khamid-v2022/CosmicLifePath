@@ -12,7 +12,7 @@
           <img src="{{ asset('imgs/reading-page/journey-hero.jpg') }}" alt="Cosmic journey hero" class="img-fluid cosmic-result-image article-feature-image">
         </div>
 
-        <p class="step-copy article-copy">You are about to experience a <strong>rare comic shift</strong> when it comes to manifesting more wealth, health, and love in your life.</p>
+        <p class="step-copy article-copy">You are about to experience a <strong>rare cosmic shift</strong> when it comes to manifesting more wealth, health, and love in your life.</p>
         <p class="step-copy article-copy">But first, a quick word of warning.</p>
 
 

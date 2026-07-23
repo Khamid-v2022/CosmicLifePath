@@ -37,7 +37,7 @@
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> was designed by the <strong>unique cosmic energy patterns of the planets at the time of your birth</strong>.</p>
         <p class="step-copy article-copy">You are now uncovering that divine plan for your life right now.</p>
         <p class="step-copy article-copy">You’re about to discover special talents and gifts you never knew you had, along with how to use them to carry out your life purpose and attract wealth effortlessly.</p>
-        <p class="step-copy article-copy">{{ $name ? $name . ", you" : 'You' }} will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carryvu want to manifest.</p>
+        <p class="step-copy article-copy">{{ $name ? $name . ", you" : 'You' }} will also see for the first time ever your <strong>individual hidden inner blocks</strong> you have been carrying all your life that have prevented the success you want to manifest.</p>
         <p class="step-copy article-copy">Your <i>Cosmic Life Path Reading</i> will reveal the secret <strong>you alone can recognize</strong> to have an intimate soul-mate relationship.</p>
         <p class="step-copy article-copy">You will discover <strong>your unique health challenges</strong> and how to overcome them.</p>
         <p class="step-copy article-copy mb-0">You will discover all this and more inside your...</p>
@@ -241,34 +241,8 @@
 
         <section class="pricing-compare my-5" aria-label="Pricing options" id="section_pricing">
           <h2 class="section-title step-title pricing-title mb-4">Choose Your Path{{ $name ? ", " . $name : '' }}</h2>
-          <div class="row g-4 align-items-stretch">
-            <div class="col-lg-6 order-2 order-lg-1">
-              <article class="pricing-card pricing-card-standard h-100">
-                <div>
-                  <p class="pricing-tier">Standard Access</p>
-                  <p class="pricing-price">$14.97</p>
-                  <p class="pricing-subtitle">Your Core Reading</p>
-                </div>
-
-                <ul class="pricing-list">
-                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
-                  <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
-                  <li>The Cosmic Key To Your Personal Wealth</li>
-                  <li>Love Secrets &amp; Soulmate Blueprint</li>
-                  <li>Health Blueprint Written In Your Stars</li>
-                  <li>Life Purpose &amp; Divine Mission Revealed</li>
-                  <li>Deep Trauma Release Unique To Your Sign</li>
-                  <li>Instant Digital Delivery</li>
-                  <li>365-Day Money-Back Guarantee</li>
-                </ul>
-
-                <a href="{{ $sign_info['standard_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
-                  Gain Standard Access Now →
-                </a>
-              </article>
-            </div>
-
-            <div class="col-lg-6 order-1 order-lg-2" id="vip_option">
+          <div class="row g-4 align-items-stretch" style="max-width: 600px; margin: 0 auto;">
+            <div class="col-lg-12" id="vip_option">
               <article class="pricing-card pricing-card-vip h-100">
                 <div class="pricing-badge">Most Popular - 84% Choose This</div>
                 <div>
@@ -277,8 +251,17 @@
                   <p class="pricing-subtitle">Everything + 3 Exclusive Bonuses</p>
                 </div>
 
-                <p class="pricing-group-title pricing-group-title-plus"><em>Everything in Standard Package, PLUS:</em></p>
+                <!-- <p class="pricing-group-title pricing-group-title-plus"><em>Everything in Standard Package, PLUS:</em></p> -->
                 <ul class="pricing-list">
+                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
+                  <!-- <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
+                  <li>The Cosmic Key To Your Personal Wealth</li>
+                  <li>Love Secrets &amp; Soulmate Blueprint</li>
+                  <li>Health Blueprint Written In Your Stars</li>
+                  <li>Life Purpose &amp; Divine Mission Revealed</li>
+                  <li>Deep Trauma Release Unique To Your Sign</li> -->
+                  <li>Instant Digital Delivery</li>
+                  <li>365-Day Money-Back Guarantee</li>
                   <li>Personal Foreword and Insights By Celestra Vonn</li>
                   <li>Priority Email Support</li>
                   <li>First Access To New Readings &amp; Updates Before Anyone Else</li>
@@ -317,6 +300,34 @@
                 </a>
               </article>
             </div>
+            
+            <div class="col-lg-12">
+              <article class="pricing-card pricing-card-standard h-100">
+                <div>
+                  <p class="pricing-tier">Standard Access</p>
+                  <p class="pricing-price">$14.97</p>
+                  <p class="pricing-subtitle">Your Core Reading</p>
+                </div>
+
+                <!-- <ul class="pricing-list">
+                  <li>Complete 30+ Page Cosmic Life Path Reading</li>
+                  <li>Hidden Gifts &amp; Blind Spots Finally Exposed</li>
+                  <li>The Cosmic Key To Your Personal Wealth</li>
+                  <li>Love Secrets &amp; Soulmate Blueprint</li>
+                  <li>Health Blueprint Written In Your Stars</li>
+                  <li>Life Purpose &amp; Divine Mission Revealed</li>
+                  <li>Deep Trauma Release Unique To Your Sign</li>
+                  <li>Instant Digital Delivery</li>
+                  <li>365-Day Money-Back Guarantee</li>
+                </ul> -->
+
+                <a href="{{ $sign_info['standard_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                  Gain Standard Access Now →
+                </a>
+              </article>
+            </div>
+
+              
           </div>
 
           <p class="pricing-trust text-center mb-0">🔒 Secure Checkout - 💳 All Cards Accepted - ✅ 365-Day Money-Back Guarantee</p>

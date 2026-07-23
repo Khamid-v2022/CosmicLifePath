@@ -1465,11 +1465,12 @@ textarea:-webkit-autofill:focus {
 }
 
 .pricing-value {
-  display: block;
-  margin-top: 0.15rem;
+  /* display: block; */
+  /* margin-top: 0.15rem; */
   color: var(--gold-light);
   font-size: 0.86rem;
   letter-spacing: 0.03em;
+  margin-left: 8px;
   font-weight: 600;
 }
 

@@ -125,4 +125,7 @@ return [
 
     'ga4_id' => env('GA4_ID'),
     'clarity_id' => env('CLARITY_ID'),
+
+    // Meta Pixel - homepage only, and only after marketing cookie consent.
+    'meta_pixel_id' => env('META_PIXEL_ID'),
 ];

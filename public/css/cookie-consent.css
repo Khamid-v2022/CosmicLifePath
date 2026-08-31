@@ -1,0 +1,218 @@
+/* Cookie consent banner and settings dialog.
+   Self-contained so it cannot affect existing page styles. */
+
+.clp-cc,
+.clp-cc * {
+  box-sizing: border-box;
+}
+
+.clp-cc[hidden] {
+  display: none !important;
+}
+
+/* ---------- Banner ---------- */
+
+.clp-cc-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483000;
+  background: #080b18;
+  border-top: 1px solid rgba(201, 168, 76, 0.35);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.55);
+  color: #e8e4d9;
+  font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  padding: 16px 18px;
+}
+
+.clp-cc-banner__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clp-cc-banner__text {
+  flex: 1 1 380px;
+  margin: 0;
+}
+
+.clp-cc-banner__text a {
+  color: #e8cc85;
+  text-decoration: underline;
+}
+
+.clp-cc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.clp-cc-btn {
+  appearance: none;
+  border: 1px solid rgba(201, 168, 76, 0.55);
+  background: transparent;
+  color: #e8cc85;
+  border-radius: 4px;
+  padding: 9px 18px;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.clp-cc-btn:hover,
+.clp-cc-btn:focus-visible {
+  background: rgba(201, 168, 76, 0.12);
+  outline: none;
+}
+
+.clp-cc-btn--primary {
+  background: #c9a84c;
+  border-color: #c9a84c;
+  color: #05060e;
+}
+
+.clp-cc-btn--primary:hover,
+.clp-cc-btn--primary:focus-visible {
+  background: #e8cc85;
+}
+
+.clp-cc-btn--link {
+  border-color: transparent;
+  color: #9a9480;
+  text-decoration: underline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* ---------- Settings dialog ---------- */
+
+.clp-cc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(3, 4, 10, 0.78);
+  overflow-y: auto;
+}
+
+.clp-cc-modal__panel {
+  width: 100%;
+  max-width: 560px;
+  background: #080b18;
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 8px;
+  color: #e8e4d9;
+  font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  padding: 22px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.clp-cc-modal__title {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 20px;
+  color: #e8cc85;
+  margin: 0 0 10px;
+}
+
+.clp-cc-modal__intro {
+  margin: 0 0 18px;
+  color: #c9c4b4;
+}
+
+.clp-cc-modal__intro a {
+  color: #e8cc85;
+}
+
+.clp-cc-group {
+  border-top: 1px solid rgba(201, 168, 76, 0.18);
+  padding: 14px 0;
+}
+
+.clp-cc-group__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.clp-cc-group__name {
+  font-weight: 700;
+  color: #e8cc85;
+  margin: 0;
+}
+
+.clp-cc-group__desc {
+  margin: 6px 0 0;
+  color: #9a9480;
+  font-size: 13px;
+}
+
+.clp-cc-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  font-size: 13px;
+  color: #9a9480;
+  cursor: pointer;
+}
+
+.clp-cc-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #c9a84c;
+  cursor: pointer;
+}
+
+.clp-cc-toggle input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.clp-cc-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(201, 168, 76, 0.18);
+  padding-top: 18px;
+  margin-top: 4px;
+}
+
+@media (max-width: 575.98px) {
+  .clp-cc-banner {
+    padding: 14px;
+  }
+
+  .clp-cc-banner__inner {
+    gap: 12px;
+  }
+
+  .clp-cc-actions {
+    width: 100%;
+  }
+
+  .clp-cc-actions .clp-cc-btn {
+    flex: 1 1 auto;
+  }
+
+  .clp-cc-modal__actions .clp-cc-btn {
+    flex: 1 1 auto;
+  }
+}

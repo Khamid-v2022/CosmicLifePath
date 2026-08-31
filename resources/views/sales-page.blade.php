@@ -295,7 +295,7 @@
                   </li>
                 </ul>
 
-                <a href="{{ $sign_info['vip_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
+                <a href="{{ cosmic_clickbank_url($sign_info['vip_purchase_url'] ?? '#') }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-vip">
                   Gain VIP Access Now →
                 </a>
               </article>
@@ -321,7 +321,7 @@
                   <li>365-Day Money-Back Guarantee</li>
                 </ul> -->
 
-                <a href="{{ $sign_info['standard_purchase_url'] ?? '#' }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
+                <a href="{{ cosmic_clickbank_url($sign_info['standard_purchase_url'] ?? '#') }}" target="_blank" rel="noopener noreferrer" class="btn pricing-btn pricing-btn-standard">
                   Gain Standard Access Now →
                 </a>
               </article>

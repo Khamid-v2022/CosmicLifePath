@@ -35,6 +35,20 @@
         </div> -->
         <div class="px-2">
             <div class="step-panel mx-auto">
+                @if ($errors->has('age'))
+                <div id="birthStageAge" class="birth-stage is-active">
+                    <h2 class="section-title"><em>Thank you for your interest</em></h2>
+
+                    <p class="step-copy mb-0">Cosmic Life Path readings are available to adults only.</p>
+                    <p class="step-copy">Based on the date of birth you entered, you need to be at least 18 years old to continue.</p>
+
+                    <div class="birth-error-box mb-3">
+                        {{ $errors->first('age') }}
+                    </div>
+
+                    <p class="step-copy mb-0">If you entered your date of birth by mistake, you can <a href="{{ route('birthdate', ['sign' => $signSlug]) }}">start again</a>.</p>
+                </div>
+                @else
                 <div id="birthStageDate" class="birth-stage @if($initialStage === 'date') is-active @else d-none @endif">
                     <h2 class="section-title">Step #2:<em> Enter Your Date of Birth</em></h2>
 
@@ -79,6 +93,7 @@
                         </div>
                     </form>
                 </div>
+                @endif
 
                 <div id="birthStageDetails" class="birth-stage @if($initialStage === 'details') is-active @else d-none @endif">
                     <h2 class="section-title">Step #3:<em> Enter Your Time & Place of Birth</em></h2>

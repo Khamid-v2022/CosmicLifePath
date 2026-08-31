@@ -53,6 +53,10 @@ class CosmicFlowController extends Controller {
             return redirect()->route('landing');
         }
 
+        if (! $this->isAdult($year, $month, $day)) {
+            return $this->underageResponse();
+        }
+
 
         $birth = [
             'sign' => $sign,
@@ -65,10 +69,14 @@ class CosmicFlowController extends Controller {
 
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
-        remember_funnel_ext($request, $validated['ext'] ?? null);
 
-        if($validated['ext']) {
-            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
+        // Resolved through the helper so a Meta campaign visitor can never be
+        // pushed into the no-opt-in path, even by a posted ext=no.
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
+
+        if ($ext) {
+            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $ext]);
         }
 
         return redirect()->route('reading.contact', $sign['slug']);
@@ -97,6 +105,10 @@ class CosmicFlowController extends Controller {
 
         if (!in_array($day, $sign['months'][$month] ?? [], true)) {
             return redirect()->route('landing');
+        }
+
+        if (! $this->isAdult($year, $month, $day)) {
+            return $this->underageResponse();
         }
 
         $timeUnknown = (bool) ($validated['time_unknown'] ?? false);
@@ -130,10 +142,14 @@ class CosmicFlowController extends Controller {
 
         // Store in session
         $request->session()->put('cosmic.reading.birth', $birth);
-        remember_funnel_ext($request, $validated['ext'] ?? null);
 
-        if($validated['ext']) {
-            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $validated['ext']]);
+        // Resolved through the helper so a Meta campaign visitor can never be
+        // pushed into the no-opt-in path, even by a posted ext=no.
+        $ext = funnel_ext_from_request($request);
+        remember_funnel_ext($request, $ext);
+
+        if ($ext) {
+            return redirect()->route('reading.loading', [$birth['sign_slug'], 'ext' => $ext]);
         }
 
         return redirect()->route('reading.contact', $sign['slug']);
@@ -364,6 +380,36 @@ class CosmicFlowController extends Controller {
         return view('sales-page-dummy', compact('sign'));
     }
 
+
+    /**
+     * Age gate: the full birth date decides, never the year alone.
+     */
+    private function isAdult(int $year, int $month, int $day): bool
+    {
+        if (! checkdate($month, $day, $year)) {
+            return false;
+        }
+
+        $birthDate = \Carbon\Carbon::create($year, $month, $day, 0, 0, 0);
+
+        if ($birthDate === null) {
+            return false;
+        }
+
+        return $birthDate->copy()->addYears(18)->startOfDay()->lessThanOrEqualTo(now()->startOfDay());
+    }
+
+    /**
+     * Under-18 visitors stay on the date-of-birth step and see a short notice
+     * instead of the form. No reading is generated, no email is captured and
+     * nothing about the date or the age is sent anywhere.
+     */
+    private function underageResponse(): RedirectResponse
+    {
+        return back()
+            ->withErrors(['age' => 'You must be at least 18 years old to request a Cosmic Life Path reading.'])
+            ->withInput();
+    }
 
     private function findSignOrFail(string $slug): array
     {

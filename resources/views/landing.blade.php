@@ -299,5 +299,26 @@
       step: 1,
       step_name: @json(funnel_step_name('horoscope_select', $ext))
     });
+
+    // Meta Pixel: one parameter-free QuizStart per page, sent only if the
+    // visitor allowed marketing cookies. The selected sign is never included
+    // and navigation is never delayed.
+    (function () {
+      var sent = false;
+
+      document.querySelectorAll('.js-open-sign').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (sent) {
+            return;
+          }
+
+          sent = true;
+
+          if (typeof window.fbq === 'function') {
+            window.fbq('trackCustom', 'QuizStart');
+          }
+        });
+      });
+    })();
   </script>
 @endpush

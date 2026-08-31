@@ -15,7 +15,7 @@
         <div class="step-panel mx-auto article-panel">
             <div class="cosmic-article mx-auto">
                 <h1 class="section-title step-title text-center ">Privacy Policy</h1>
-                <p class="offer-value text-center mb-5">Last Updated: April 19, 2026</p>
+                <p class="offer-value text-center mb-5">Last Updated: August 31, 2026</p>
                 <!-- <p class="hero-sub">Learn how we protect your personal information and respect your privacy.</p> -->
                 <p class="step-copy article-copy">
                     Your privacy is important to us. It is TheCosmicLifePath.com's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website and other sites we own and operate.
@@ -86,10 +86,30 @@
 
                 <h3 class="article-subtitle mt-0">Cookies and Tracking Technologies</h3>
                 <p class="step-copy article-copy">
-                    We use "cookies" to collect information about you and your activity across our site. A cookie is a small piece of data that our website stores on your computer and accesses each time you visit, so we can understand how you use our site. This helps us serve you content based on preferences you have specified.
+                    We use "cookies" and similar technologies to operate our site and to understand how it is used. A cookie is a small piece of data that our website stores on your device and reads again when you return. We group them into three categories, and you choose which ones we may use.
                 </p>
                 <p class="step-copy article-copy">
-                    Third-party vendors, including advertising and analytics partners, may also use cookies on our website to track and analyse anonymous usage and volume statistical information. You can accept or decline cookies by modifying your browser settings. If you choose to decline cookies, some features of the website may not function as intended.
+                    <strong>Necessary.</strong> Required for the site to work and always active. These keep your session, protect our forms against cross-site request forgery, and remember the cookie choice you make below. This category also holds the advertising click identifiers described in the next section, which are kept in your server-side session for the duration of your visit.
+                </p>
+                <p class="step-copy article-copy">
+                    <strong>Analytics.</strong> Google Analytics 4 and Microsoft Clarity. These tell us which pages people use, where they stop, and how the site performs. Microsoft Clarity also records a playback of page interactions such as clicks and scrolling. Nothing is loaded from Google or Microsoft, and no data is sent to them, unless you allow this category.
+                </p>
+                <p class="step-copy article-copy">
+                    <strong>Marketing.</strong> The Meta (Facebook) Pixel, loaded on our homepage only, and only if you allow this category. If loaded, it sends Meta a page view and a generic "QuizStart" event when you begin the reading flow. That event carries no information about you: not your name, email address, phone number, date or place of birth, star sign, quiz answers, or the reading we generate. We never send those details to Meta.
+                </p>
+                <p class="step-copy article-copy">
+                    We do not claim that this tracking is anonymous. Cookies, click identifiers, IP addresses and device identifiers can be used, alone or in combination, to recognise a device or a person, and the providers named above may process them as personal information under their own privacy policies.
+                </p>
+                <p class="step-copy article-copy">
+                    You can accept all cookies, reject all non-necessary cookies, or choose category by category when you first arrive. You can change your choice at any time using the <a href="#cookie-settings" data-clp-cookie-settings>Cookie Settings</a> link in the footer of every page, or by clearing cookies in your browser. Rejecting analytics or marketing cookies does not restrict the site: the reading flow, the email opt-in and the checkout all work exactly the same.
+                </p>
+
+                <h3 class="article-subtitle mt-0">Advertising Measurement and ClickBank Conversion Reporting</h3>
+                <p class="step-copy article-copy">
+                    When you arrive from one of our advertisements, the link may carry identifiers such as a Meta click identifier (fbclid), a campaign tracking code (vtid), and campaign labels (utm_source, utm_medium, utm_campaign, utm_content, utm_term). We store these in your server-side session so we can tell which advertisement brought you to us. They are kept separate from your name, email address, phone number, date or place of birth, star sign, quiz answers and generated reading, and are never combined with them.
+                </p>
+                <p class="step-copy article-copy">
+                    If you go on to buy, these advertising identifiers are appended to the ClickBank checkout link so that ClickBank, our retailer, can attribute the order to the correct campaign. ClickBank may in turn report that conversion to Meta from its own servers on our behalf. Only the advertising identifiers described above are passed in this way; your birth details, star sign, quiz answers and reading are not. The payment information you enter at checkout is collected and processed by ClickBank under ClickBank's own privacy policy, not by us.
                 </p>
 
                 <h3 class="article-subtitle mt-0">Do Not Track</h3>
@@ -130,7 +150,7 @@
                     <li> An entity that buys, or to which we transfer all or substantially all of our assets and business</li>
                 </ul>
                 <p class="step-copy article-copy">
-                    Third-party services we currently use may include: ClickBank (payment processing), email service providers, and web analytics tools.
+                    Third-party services we currently use include: ClickBank (payment processing, order fulfilment and conversion reporting), AWeber (email delivery), Google Analytics 4 (analytics), Microsoft Clarity (analytics and session replay), and Meta Platforms (advertising measurement, homepage only and only with your marketing cookie consent).
                 </p>
 
                 <h3 class="article-subtitle mt-0">Business Transfers</h3>

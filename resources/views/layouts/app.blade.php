@@ -21,25 +21,36 @@
   </script>
   <script src="https://scripts.clickbank.net/hop.min.js" defer></script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('app.ga4_id') }}"></script>
+  <link rel="stylesheet" href="{{ asset('css/cookie-consent.css') }}?v={{ filemtime(public_path('css/cookie-consent.css')) }}">
+
+  {{-- Consent Mode v2 defaults. Nothing is granted until the visitor chooses. --}}
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ config('app.ga4_id') }}');
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
   </script>
 
-  @if (config('app.clarity_id'))
-  <!-- Microsoft Clarity -->
+  {{--
+    GA4, Microsoft Clarity and the Meta Pixel are loaded by this script, and
+    only after the matching consent. Meta is requested on the homepage only.
+  --}}
   <script>
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", @json(config('app.clarity_id')));
+    window.CLP_CONSENT_CONFIG = {
+      ga4Id: @json(config('app.ga4_id')),
+      clarityId: @json(config('app.clarity_id')),
+      metaPixelId: @json(config('app.meta_pixel_id')),
+      metaPixelEnabled: @json(request()->routeIs('landing'))
+    };
   </script>
-  @endif
+  <script src="{{ asset('js/cookie-consent.js') }}?v={{ filemtime(public_path('js/cookie-consent.js')) }}"></script>
 
   @stack('head')
 </head>
@@ -76,6 +87,8 @@
   @unless (View::hasSection('hideFooter'))
     @include('layouts.partials.footer')
   @endunless
+
+  @include('layouts.partials.cookie-consent')
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   @stack('scripts')
